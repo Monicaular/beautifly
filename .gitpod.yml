@@ -1,0 +1,14 @@
+tasks:
+  - name: Initialize PostgreSQL
+    init: |
+      sudo apt-get update
+      sudo apt-get install -y postgresql postgresql-contrib
+      sudo service postgresql start
+      sudo -u postgres psql -c "CREATE USER gitpod WITH PASSWORD 'password';"
+      sudo -u postgres psql -c "ALTER USER gitpod CREATEDB;"
+      sudo -u postgres createdb django_db -O gitpod
+    command: |
+      sudo service postgresql start
+ports:
+  - port: 8000
+    onOpen: open-preview
