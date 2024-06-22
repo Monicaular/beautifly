@@ -5,6 +5,6 @@ from .models import CarouselItem
 class CarouselItemAdmin(admin.ModelAdmin):
     list_display = ('caption_title', 'is_active')
     list_filter = ('is_active',)
-    search_fields = ('caption_title',)
+    search_fields = ('image', 'caption_title', 'caption_text', 'title_link', 'text_link', 'is_active',)
 
 
