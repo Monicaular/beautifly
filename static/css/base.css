@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/background-food-spices.webp') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #FAFAFA;
+    font-family: "Raleway", sans-serif;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    font-family: "Playwrite IT Moderna", cursive;
+    color: #8D6E63ff;
+    background-color: rgba(139, 195, 74, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.submit-btn {
+    background-color: rgba(255, 235, 59, 1);
+    color: #8D6E63ff;
+}
+
+.submit-btn:hover {
+    background-color: rgba(245, 245, 220, 1);
+}
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+  }
+
