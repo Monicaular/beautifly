@@ -1,0 +1,118 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="" class="dropdown-item">By Price</a>
+                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="" class="dropdown-item ">By Category</a>
+                <a href="" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="food-cupboard-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Food Cupboard
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="food-cupboard-link">
+                <a href="" class="dropdown-item">Pantry Staples</a>
+                <a href="" class="dropdown-item">Flours and Baking</a>
+                <a href="" class="dropdown-item">Dried Fruits</a>
+                <a href="" class="dropdown-item">Nuts and Seeds</a>
+                <a href="" class="dropdown-item">Grains and Rice</a>
+                <a href="" class="dropdown-item">Flours and Powders</a>
+                <a href="" class="dropdown-item">Pasta and Noodles</a>
+                <a href="" class="dropdown-item">Snacks and Treats</a>
+                <a href="" class="dropdown-item">Cooking Ingredients</a>
+                <a href="" class="dropdown-item">Herbs, Spices, Seasonings</a>
+                <a href="" class="dropdown-item">Chilled</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="snacks-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Snacks
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="snacks-link">
+                <a href="" class="dropdown-item">Savoury Snacks</a>
+                <a href="" class="dropdown-item">Sweet Snacks</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="chilled-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Chilled
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="chilled-link">
+                <a href="" class="dropdown-item">Tofu</a>
+                <a href="" class="dropdown-item">Vegan Cheese</a>
+                <a href="" class="dropdown-item">Vegan Meat Alternatives</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="breakfast-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Breakfast
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="breakfast-link">
+                <a href="" class="dropdown-item">Cereals & Muesli</a>
+                <a href="" class="dropdown-item">Nuts & Seeds</a>
+                <a href="" class="dropdown-item">Dried Fruits</a>
+                <a href="" class="dropdown-item">Powders</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--User Account Section-->
+<div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+    <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+        <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="text-center">
+                    <div><i class="fas fa-user fa-lg"></i></div>
+                    <p class="my-0">My Account</p>
+                </div>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                {% if request.user.is_authenticated %}
+                    {% if request.user.is_superuser %}
+                        <a href="" class="dropdown-item">Product Management</a>
+                    {% endif %}
+                    <a href="" class="dropdown-item">My Account</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
+            </div>
+        </li>
+        <li class="list-inline-item">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                <div class="text-center">
+                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                    <p class="my-0">
+                        {% if grand_total %}
+                            £{{ grand_total|floatformat:2 }}
+                        {% else %}
+                            £0.00
+                        {% endif %}
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="text-black nav-link" href="">
+                <div class="text-center">
+                    <div><i class="far fa-heart fa-lg"></i></div>
+                    <p class="my-0">Wishlist</p>
+                </div>
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="text-black nav-link" href="">
+                <div class="text-center">
+                    <div><i class="fas fa-shipping-fast fa-lg"></i></div>
+                    <p class="my-0">Shipping Info</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
