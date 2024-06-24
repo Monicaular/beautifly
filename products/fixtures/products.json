@@ -1,0 +1,5936 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": 100000,
+      "name": "Apple Cider Vinegar",
+      "description": "Apple Cider Vinegar can be used in sauces, pickles or marinades as well as salad dressings mixed with olive or flaxseed oil. Our Organic Apple Cider Vinegar has all the raw enzymes or 'The Mother' included and is mild due to its low acidity. It can also be used as a key ingredients to making a vegan cheese dip.",
+      "price": 2.89,
+      "ingredients": "Organic Raw Apple Cider Vinegar (5% acidity)",
+      "rating": 4.27,
+      "image": "apple-cider-vinegar.webp",
+      "nutritional_facts": {
+        "calories": 20,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0.1,
+        "fiber": 0,
+        "protein": 0.1,
+        "salt": 0
+      },
+      "category": [
+        1,
+        9
+      ]
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": 100001,
+      "name": "Baking Powder",
+      "description": "This non-organic baking powder is a classic raising agent for adding to plain flour when making cakes, scones and puddings.",
+      "price": 3.99,
+      "ingredients": "Mono Calcium Phosphate, Corn Starch, Sodium Bicarbonate.",
+      "rating": 4.25,
+      "image": "baking-powder.webp",
+      "nutritional_facts": {
+        "calories": 0,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        1,
+        2,
+        9
+      ]
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": 100002,
+      "name": "Aduki Beans",
+      "description": "Organic Aduki Beans are a great addition to any food lover's kitchen. Use their sweet and nutty umami goodness to make top-notch stews, soups and savoury dishes. But adukis will also serve you well in creating satisfying desserts as well as Japanese, Chinese and other Far Eastern classics like dim sum.",
+      "price": 6.05,
+      "ingredients": "Organic Aduki Beans",
+      "rating": 4.63,
+      "image": "beans-aduki.jpg",
+      "nutritional_facts": {
+        "calories": 329,
+        "fat": 0.5,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 12.7,
+        "protein": 19.9,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": 100003,
+      "name": "Black Eyed Beans",
+      "description": "Black eyed beans are a fibre-rich protein source that is extremely versatile and popular in vegan and vegetarian diets. Delicious added to stews and hearty meals such as vegan shepherd's pie for added texture and protein.",
+      "price": 5.27,
+      "ingredients": "Black Eyed Beans",
+      "rating": 4.74,
+      "image": "beans-black-eyed.webp",
+      "nutritional_facts": {
+        "calories": 311,
+        "fat": 1.6,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 8.2,
+        "protein": 23.5,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": 100004,
+      "name": "Black Turtle Beans",
+      "description": "Organic black turtle beans, also known as just black beans, are rich in fibre and protein and are a popular ingredient in Latin American cuisine. They have a dense, meaty texture that adds substance to vegetarian dishes such as stews making them popular with vegans as a reliable protein source.",
+      "price": 3.89,
+      "ingredients": "Organic Black Turtle Beans",
+      "rating": 4.78,
+      "image": "beans-black-turtle.webp",
+      "nutritional_facts": {
+        "calories": 284,
+        "fat": 2.4,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 15,
+        "protein": 19,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": 100005,
+      "name": "Butter Beans",
+      "description": "Organic butter beans , also known as lima beans, have a deliciously subtle buttery flavour and a soft, smooth texture. They are often used in baking sweet treats for their moisture and the texture it can add to a bake. Try making butter bean dip instead of hummus or add to stews for added protein.",
+      "price": 7.43,
+      "ingredients": "Organic Butter Beans",
+      "rating": 4.72,
+      "image": "beans-butter-beans.webp",
+      "nutritional_facts": {
+        "calories": 333,
+        "fat": 0.85,
+        "carbohydrates": null,
+        "sugars": 2.11,
+        "fiber": 15.2,
+        "protein": 23.4,
+        "salt": 0.04
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": 100006,
+      "name": "Calypso Beans",
+      "description": "Organic Calypso Beans are a lesser-known yet visually impressive and utterly delicious umami cooking ingredient. Pick some up to make formidable stews, soups, casseroles, vegetarian chili dishes, tomato-based savoury meals and much more.",
+      "price": 8.44,
+      "ingredients": "Organic Calypso Beans",
+      "rating": 4.7,
+      "image": "beans-calypso.webp",
+      "nutritional_facts": {
+        "calories": 234,
+        "fat": 1.8,
+        "carbohydrates": null,
+        "sugars": 2.5,
+        "fiber": 8.3,
+        "protein": 26.1,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": 100007,
+      "name": "Cannellini Beans",
+      "description": "Organic cannellini beans are popularly used in Italy for dishes such as minestrone. They are medium-sized white kidney beans and can take the place of butter beans in recipes such as stews, hotpot and soups.",
+      "price": 4.45,
+      "ingredients": "Organic cannellini beans",
+      "rating": 4.95,
+      "image": "beans-canellini.webp",
+      "nutritional_facts": {
+        "calories": 336,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 1.8,
+        "fiber": 24.9,
+        "protein": 21.1,
+        "salt": 0.03
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": 100008,
+      "name": "Mung Beans",
+      "description": "Our organic mung beans are completely natural and organic and once cooked can be enjoyed hot or cold. Mung beans are one of the best sources of vegan protein and essential amino acids. Many people enjoy mung beans as part of a healthy, balanced diet to contribute to reducing health problems.",
+      "price": 4.71,
+      "ingredients": "Organic Mung Beans",
+      "rating": 4.99,
+      "image": "beans-mung.webp",
+      "nutritional_facts": {
+        "calories": 325,
+        "fat": 1.1,
+        "carbohydrates": null,
+        "sugars": 1.5,
+        "fiber": 10,
+        "protein": 19,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": 100009,
+      "name": "Pinto Beans",
+      "description": "Incredibly similar to Borlotti Beans, these organic pinto beans are great for adding to recipes such as soups, stews, homemade beans on toast, tasty dips and countless more recipes from across Europe and far beyond!",
+      "price": 5.05,
+      "ingredients": "Organic Pinto Beans",
+      "rating": 4.9,
+      "image": "beans-pinto.webp",
+      "nutritional_facts": {
+        "calories": 336,
+        "fat": 1.8,
+        "carbohydrates": null,
+        "sugars": 3.3,
+        "fiber": 18,
+        "protein": 21,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": 100010,
+      "name": "Red Kidney Beans",
+      "description": "Kidney beans are given the name due to their resemblance to the human kidney in shape and colour. They are high in protein and fibre and provide an abundance of nutrients to a meal of your choosing.",
+      "price": 5.93,
+      "ingredients": "Organic Red Kidney Beans",
+      "rating": 4.71,
+      "image": "beans-red-kidney.webp",
+      "nutritional_facts": {
+        "calories": 277,
+        "fat": 1.4,
+        "carbohydrates": null,
+        "sugars": 2.5,
+        "fiber": 15,
+        "protein": 22,
+        "salt": 0.1
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": 100011,
+      "name": "Soya Beans",
+      "description": "Soya beans are vegan friendly and can be used in many ways as a vegan protein source in recipes in the same way as chickpeas. Belonging to the legume family, the soya bean which has been important in oriental cuisine for a number of years, and the soya beans only got introduced to the western world recently where it has become more of an important protein source for vegans and vegetarians.",
+      "price": 3.15,
+      "ingredients": "Organic SOYA Beans",
+      "rating": 4.87,
+      "image": "beans-soya.webp",
+      "nutritional_facts": {
+        "calories": 359,
+        "fat": 16,
+        "carbohydrates": null,
+        "sugars": 5.5,
+        "fiber": 15.5,
+        "protein": 40,
+        "salt": 0.04
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": 100012,
+      "name": "Black Rice",
+      "description": "Organic Black Rice is an excellent accompaniment to several dishes from several cuisines. Black rice is similar to brown rice and is rich in fibre and protein. The dark colour means that it is packed full of vitamins and nutrients including anthocyanins. Anthocyanins are present in rich coloured foods such as black rice, raspberries, blueberries and purple broccoli.",
+      "price": 7.02,
+      "ingredients": "Organic Black Rice",
+      "rating": 4.89,
+      "image": "black-rice.webp",
+      "nutritional_facts": {
+        "calories": 342,
+        "fat": 3.4,
+        "carbohydrates": null,
+        "sugars": 1.2,
+        "fiber": 8.5,
+        "protein": 9.9,
+        "salt": 0.02
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": 100013,
+      "name": "Dry Chickpeas",
+      "description": "Organic Chickpeas add protein, fibre and a vibrant mix of vitamins and minerals to all kinds of recipes, they are great in curries and are the main ingredient for making hummus. Because of its incredible versatility, you can use these organic chickpeas such as, roasting them with warming spices and enjoying them as a go-to healthy snack. You can also use it to make curries like chana masala, an Indian side dish that is popular with vegans.",
+      "price": 4.51,
+      "ingredients": "Organic Chickpeas",
+      "rating": 4.94,
+      "image": "chickpeas-whole.webp",
+      "nutritional_facts": {
+        "calories": 336,
+        "fat": 5.4,
+        "carbohydrates": null,
+        "sugars": 2.6,
+        "fiber": 10.7,
+        "protein": 21.4,
+        "salt": 0.1
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": 100014,
+      "name": "Cornflakes",
+      "description": "Made from 100% organic corn, our cornflakes are loaded with essential nutrients and vitamins. Mainly used at breakfast time, these cornflakes are also used a lot in making corn flake cakes or you can make a tasty cereal bar.",
+      "price": 9.79,
+      "ingredients": "100% organic maize",
+      "rating": 4.99,
+      "image": "cornflakes.webp",
+      "nutritional_facts": {
+        "calories": 382,
+        "fat": 0.9,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 3.1,
+        "protein": 6.8,
+        "salt": 0
+      },
+      "category": [
+        6,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": 100015,
+      "name": "Organic Mango Pieces (Sweet)",
+      "description": "These Organic Mango Pieces have a deliciously sweet taste, this product is also known as the Brooks variety, they have a pale colour and sweet flavour with a soft bite. When it is naturally dried, the mango's natural colour and shape is preserved and it also goes to a chewy texture which is a satisfying thing to sink your teeth into.",
+      "price": 17.16,
+      "ingredients": "Organic Mango, No added sugar",
+      "rating": 4.92,
+      "image": "dried-fruit-mango.webp",
+      "nutritional_facts": {
+        "calories": 303,
+        "fat": 0.6,
+        "carbohydrates": null,
+        "sugars": 61,
+        "fiber": 7.7,
+        "protein": 2.2,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": 100016,
+      "name": "Dried Apple Rings",
+      "description": "These chewy, succulent and super-sweet apple rings are a perfect snack, and a wonderful baking fodder too. Use them to make handy fruit and nut snacks, classic apple pies and other tangy, fruity desserts. Add spices like vanilla, ginger, cinnamon and cardamom to your apple rings, and soak, bake, or even batter them! Extra-delicious with ice cream.",
+      "price": 9.23,
+      "ingredients": "Apple Rings, preservative, SULPHUR DIOXIDE",
+      "rating": 4.82,
+      "image": "dried-fruits-apple-rings.webp",
+      "nutritional_facts": {
+        "calories": 243,
+        "fat": 0.3,
+        "carbohydrates": null,
+        "sugars": 57.2,
+        "fiber": 8.7,
+        "protein": 1,
+        "salt": 0.3
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": 100017,
+      "name": "Dried Apricots",
+      "description": "Dried apricots are highly nutritious and a great source of natural fruit fibre. Enjoy as a snack or dice up and add to baking and cooking such as Moroccan cuisine. Because of its versatility, these dried apricots are perfect for adding to a number of recipes like porridges, curries, jams and so many more sweet and savoury recipes. ",
+      "price": 12.69,
+      "ingredients": "Dried apricots, SULPHUR DIOXIDE",
+      "rating": 4.9,
+      "image": "dried-fruits-apricots.webp",
+      "nutritional_facts": {
+        "calories": 287,
+        "fat": 0.5,
+        "carbohydrates": null,
+        "sugars": 53.4,
+        "fiber": 7.3,
+        "protein": 3.4,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": 100018,
+      "name": "Dried Sweet Cherries",
+      "description": "This top-quality foodstuff will help you make world-beating porridge, fruit crumbles and countless other sweet treats. It's also great when added to muesli and other cereals too.",
+      "price": 46,
+      "ingredients": "Organic Sweet Cherries",
+      "rating": 4.99,
+      "image": "dried-fruits-cherries.webp",
+      "nutritional_facts": {
+        "calories": 293,
+        "fat": 0.1,
+        "carbohydrates": null,
+        "sugars": 107,
+        "fiber": 4,
+        "protein": 3.7,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": 100019,
+      "name": "Dried Figs",
+      "description": "Organic dried figs are naturally sweet and juicy and great for snacking on. They are rich in vitamins and minerals and high in soluble fibre, which can be great for a healthy digestive system. Fresh figs are delicately soft and fruity and great paired with cheese and used to make chutneys.",
+      "price": 11.54,
+      "ingredients": "Organic Dried Figs",
+      "rating": 4.9,
+      "image": "dried-fruits-figs.webp",
+      "nutritional_facts": {
+        "calories": 249,
+        "fat": 0.9,
+        "carbohydrates": null,
+        "sugars": 47.9,
+        "fiber": 9.8,
+        "protein": 3.3,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": 100020,
+      "name": "Peach Halves Dried",
+      "description": "Discover the delightful taste of our premium Dried Peach Halves, a healthy and convenient snack that captures the essence of summer all year round. These succulent treats offer a burst of natural sweetness and a chewy texture that can be enjoyed on their own or added to various dishes.",
+      "price": 12.09,
+      "ingredients": "Peaches, Preservative; E220 (SULPHUR DIOXIDE)",
+      "rating": 4.77,
+      "image": "dried-fruits-peaches.webp",
+      "nutritional_facts": {
+        "calories": 219,
+        "fat": 0.7,
+        "carbohydrates": null,
+        "sugars": 67,
+        "fiber": 13,
+        "protein": 3.2,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": 100021,
+      "name": "Dried Pears",
+      "description": "These top-notch unsweetened pear halves will embue your porridge, cereals, puddings, desserts, and a sweet snack with superb natural tang and sweetness. Pick some up to impress your taste buds, friends, family, and guests.",
+      "price": 19.39,
+      "ingredients": "Pears, Preservative; E220 (SULPHUR DIOXIDE)",
+      "rating": 4.89,
+      "image": "dried-fruits-pears.webp",
+      "nutritional_facts": {
+        "calories": 262,
+        "fat": 0.6,
+        "carbohydrates": null,
+        "sugars": 62.2,
+        "fiber": 7.5,
+        "protein": 1.9,
+        "salt": 0.02
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": 100022,
+      "name": "Pitted Deglet Noir Dates",
+      "description": "Deglet Nour dates can be enjoyed as a sweet snack to satisfy those cravings and can be used as a natural sweetener in various different baking recipes. They are sweet, juicy and have a dreamy caramel texture and flavour.",
+      "price": 8.23,
+      "ingredients": "Organic Dates Pitted Deglet Nour",
+      "rating": 4.95,
+      "image": "dried-fruits-pitted-dates.webp",
+      "nutritional_facts": {
+        "calories": 339,
+        "fat": 0.6,
+        "carbohydrates": null,
+        "sugars": 72.5,
+        "fiber": 7.5,
+        "protein": 2.5,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": 100023,
+      "name": "Dried Cranberries",
+      "description": "Our dried cranberries are sweetened with sugar giving it a more enjoyable flavour than fresh cranberries, which can have a slightly bitter taste. Great added to home baking in muffins, biscuits, cakes and bread. Buy cranberries to sprinkle on top of your morning oats for a subtly sweet, warming and nutritious breakfast.",
+      "price": 8.85,
+      "ingredients": "Cranberries, sugar, vegetable oil",
+      "rating": 4.64,
+      "image": "dry-fruits-cranberries.webp",
+      "nutritional_facts": {
+        "calories": 364,
+        "fat": 1.37,
+        "carbohydrates": null,
+        "sugars": 77.1,
+        "fiber": 3.8,
+        "protein": 0.56,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": 100024,
+      "name": "Goji Berries",
+      "description": "Goji berries can be enjoyed as a snack or added to baking or even topping your breakfast bowl - they work great on smoothie bowls along with your favourite nuts, seeds, and a dollop of coconut yoghurt.",
+      "price": 18.49,
+      "ingredients": "Organic Goji Berries",
+      "rating": 4.86,
+      "image": "dry-fruits-goji-berries.webp",
+      "nutritional_facts": {
+        "calories": 349,
+        "fat": 0.39,
+        "carbohydrates": null,
+        "sugars": 45.61,
+        "fiber": 13,
+        "protein": 14.26,
+        "salt": 0.75
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": 100025,
+      "name": "Pitted Prunes",
+      "description": "Dried pitted prunes are a great source of dietary fibre and a delicious go-to snack throughout the day. There are a number of health benefits associated with consuming prunes such as improving digestion and providing energy. Although high in natural sugars, do not cause blood sugar levels to spike, which prevents dips in energy.",
+      "price": 9.17,
+      "ingredients": "chilean ashlock pitted prunes, sunflower oil, potassium sorbate (E202)",
+      "rating": 4.66,
+      "image": "dry-fruits-pitted-prunes.webp",
+      "nutritional_facts": {
+        "calories": 296,
+        "fat": 0.6,
+        "carbohydrates": null,
+        "sugars": 60,
+        "fiber": 16.1,
+        "protein": 1.9,
+        "salt": 0.05
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": 100026,
+      "name": "Thompson Raisins",
+      "description": "Known for their naturally sweet taste and plump texture, these sun-dried grapes offer a rich, fruity flavour that can enhance a wide variety of dishes. Whether you are baking bread, adding a touch of sweetness to a salad, or simply enjoying them as a healthy snack, Thompson Raisins provide the perfect burst of natural sweetness.",
+      "price": 4.65,
+      "ingredients": "Thompson Raisins, Vegetable Oil",
+      "rating": 4.78,
+      "image": "dry-fruits-thompson-raisins.webp",
+      "nutritional_facts": {
+        "calories": 297,
+        "fat": 0.5,
+        "carbohydrates": null,
+        "sugars": 69,
+        "fiber": 4.3,
+        "protein": 2.1,
+        "salt": 0
+      },
+      "category": [
+        3,
+        13
+      ]
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": 100027,
+      "name": "Brown Rice Flour",
+      "description": "This top-quality organic brown rice flour is stoneground to make it extra-fine and absolutely unbeatable as a versatile cooking ingredient. Rice flour is a fantastic culinary asset to own: use it to make magical crackers, noodles, pancakes, dumplings, homemade bread and much more. It's also a great thickening agent and works well in soups, gravies, stuffings, sauces and stews.",
+      "price": 4.36,
+      "ingredients": "Organic Brown Rice Flour Stoneground",
+      "rating": 4.8,
+      "image": "flour-brown-rice.webp",
+      "nutritional_facts": {
+        "calories": 348,
+        "fat": 2.8,
+        "carbohydrates": null,
+        "sugars": 1.2,
+        "fiber": 1.9,
+        "protein": 6.9,
+        "salt": 0
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": 100028,
+      "name": "Defatted Almond Flour",
+      "description": "Ideal for baking and cooking alike, it's a fantastic low-carb and gluten-free alternative to traditional wheat flour. Whether you're whipping up a batch of fluffy pancakes or crafting a crust for your favourite pie, our flour is your ally for delectable creations with a healthier twist.",
+      "price": 13.23,
+      "ingredients": "Almond flour from part-oiled, blanched, sweet almonds",
+      "rating": 4.77,
+      "image": "flour-defatted-almond-flour.webp",
+      "nutritional_facts": {
+        "calories": 365,
+        "fat": 10,
+        "carbohydrates": null,
+        "sugars": 8,
+        "fiber": 18,
+        "protein": 45,
+        "salt": 0.05
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": 100029,
+      "name": "Gluten-Free Plain White Flour (Doves Farm)",
+      "description": "This special flour blend is milled from gluten free ingredients is a great alternative to everyday wheat flour. Follow a gluten free recipe or adapt a traditional recipe by adding a little extra liquid.",
+      "price": 3.29,
+      "ingredients": "Flour blend (rice, potato, tapioca, maize, buckwheat)",
+      "rating": 4.62,
+      "image": "flour-gluten-free-doves-baking-top.webp",
+      "nutritional_facts": {
+        "calories": 353,
+        "fat": 1.3,
+        "carbohydrates": null,
+        "sugars": 0.2,
+        "fiber": 0.8,
+        "protein": 5,
+        "salt": 0.03
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": 100030,
+      "name": "Gluten-Free Self-Raising White Flour (Doves Farm)",
+      "description": "Award-winning gluten free self raising flour blend from Doves Farm. A blend of naturally gluten free ingredients, use this flour as an alternative to self raising flour made from wheat.",
+      "price": 3.29,
+      "ingredients": "Flour blend (rice, potato, tapioca, maize & buckwheat), raising agents (mono-calcium phosphate, sodium bicarbonate), thickener (xanthan gum).",
+      "rating": 4.7,
+      "image": "flour-gluten-free-doves-top.webp",
+      "nutritional_facts": {
+        "calories": 348,
+        "fat": 1.1,
+        "carbohydrates": null,
+        "sugars": 0.4,
+        "fiber": 0.2,
+        "protein": 4.6,
+        "salt": 0.87
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+      "sku": 100031,
+      "name": "Semolina (Fine)",
+      "description": "One of the world's most versatile ingredients, semolina is loved universally not only for its flavour and nutritional value but for its durability.It's coarsely ground from durum wheat and will serve you well in making traditional pasta, gnocchi, bread, pizza bases and semolina pudding.",
+      "price": 2.47,
+      "ingredients": "organic WHEAT semolina",
+      "rating": 4.9,
+      "image": "flour-semolina.webp",
+      "nutritional_facts": {
+        "calories": 349,
+        "fat": 1.6,
+        "carbohydrates": null,
+        "sugars": 0.6,
+        "fiber": 2.9,
+        "protein": 11,
+        "salt": 0
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 33,
+    "model": "products.product",
+    "fields": {
+      "sku": 100032,
+      "name": "Plain White Flour",
+      "description": "Plain white flour is one of those classic, quintessential cooking and baking ingredients. It's been used throughout the UK and Europe for centuries. And thanks to it's versatility, wonderful texture and very useful physical properties, this is likely to remain the case for centuries.",
+      "price": 2.68,
+      "ingredients": "organic flour (organic WHEAT flour, calcium, iron, niacin, thiamin)",
+      "rating": 4.71,
+      "image": "flour-white-wheat.webp",
+      "nutritional_facts": {
+        "calories": 343,
+        "fat": 1.9,
+        "carbohydrates": null,
+        "sugars": 1.9,
+        "fiber": 2.7,
+        "protein": 11.3,
+        "salt": 0.01
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 34,
+    "model": "products.product",
+    "fields": {
+      "sku": 100033,
+      "name": "Whole Wheat Flour",
+      "description": "It is created by grinding wheat in its whole form for all of the natural goodness of the full grain. The finished product is a healthy whole grain that makes the perfect bread and other creations. Wholemeal flour will require you to knead the dough for longer to build up elasticity.",
+      "price": 3.13,
+      "ingredients": "organic strong WHOLEWHEAT flour",
+      "rating": 4.87,
+      "image": "flour-whole-wheat.webp",
+      "nutritional_facts": {
+        "calories": 338,
+        "fat": 2.3,
+        "carbohydrates": null,
+        "sugars": 2.8,
+        "fiber": 10.7,
+        "protein": 14.4,
+        "salt": 0
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 35,
+    "model": "products.product",
+    "fields": {
+      "sku": 100034,
+      "name": "Freeze-Dried Blackcurrants",
+      "description": "Introducing our premium Freeze Dried Whole Blackcurrants, a must-have superfood to elevate your daily diet. Bursting with an intense, tart flavour that perfectly balances sweet and sour notes, these blackcurrants are a delicious way to infuse your meals with a vibrant taste and a nutritional punch.",
+      "price": 48.75,
+      "ingredients": "100% Whole Blackcurrants",
+      "rating": 4.89,
+      "image": "freeze-dried-blackcurrants.webp",
+      "nutritional_facts": {
+        "calories": 312,
+        "fat": 2,
+        "carbohydrates": null,
+        "sugars": 42,
+        "fiber": 21,
+        "protein": 7,
+        "salt": 0.01
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 36,
+    "model": "products.product",
+    "fields": {
+      "sku": 100035,
+      "name": "Freeze-Dried Blueberry Powder",
+      "description": "Experience the incredible power of blueberries in your own kitchen with our exceptional 100% Pure Freeze Dried Blueberry Powder! Bursting with natural antioxidants, our blueberry powder is a must-have addition to your daily diet.",
+      "price": 66.14,
+      "ingredients": "100% Pure Blueberries",
+      "rating": 4.94,
+      "image": "freeze-dried-blueberry-powder.webp",
+      "nutritional_facts": {
+        "calories": 336,
+        "fat": 1.4,
+        "carbohydrates": null,
+        "sugars": 58.1,
+        "fiber": 25.4,
+        "protein": 2.6,
+        "salt": 0.025
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 37,
+    "model": "products.product",
+    "fields": {
+      "sku": 100036,
+      "name": "Freeze-Dried Dragon Fruit",
+      "description": "Each slice offers a tantalisingly sweet and slightly tangy flavour, capturing the essence of tropical bliss in every bite. Our dragon fruit slices are not only a delightful snack on their own but also a versatile ingredient that can enhance the visual appeal and taste of your meals.",
+      "price": 69.55,
+      "ingredients": "100% Red Dragon Fruit",
+      "rating": 4.99,
+      "image": "freeze-dried-dragon-fruit.webp",
+      "nutritional_facts": {
+        "calories": 393,
+        "fat": 5.4,
+        "carbohydrates": null,
+        "sugars": 54,
+        "fiber": 5,
+        "protein": 7.1,
+        "salt": 0
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 38,
+    "model": "products.product",
+    "fields": {
+      "sku": 100037,
+      "name": "Freeze-Dried Raspberries",
+      "description": "Freeze dried raspberries have a deliciously sweet flavour and a light and airy feel. Great for snacking on or topping your favourite breakfast or rehydrate to use in baking muffins, cakes and biscuits. Available in bulk sizes for keen bakers and businesses.",
+      "price": 116.45,
+      "ingredients": "Freeze Dried Whole Raspberries",
+      "rating": 4.92,
+      "image": "freeze-dried-raspberries.webp",
+      "nutritional_facts": {
+        "calories": 263,
+        "fat": 1.9,
+        "carbohydrates": null,
+        "sugars": 30.1,
+        "fiber": 29.3,
+        "protein": 8.1,
+        "salt": 0.02
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 39,
+    "model": "products.product",
+    "fields": {
+      "sku": 100038,
+      "name": "Freeze-Dried Sour Cherry",
+      "description": "Perfectly preserved at the peak of their ripeness, these sour cherries retain all their natural tartness and nutritional goodness. Whether you're looking to add a zesty kick to your morning cereal, elevate your baking recipes, or simply enjoy a healthy snack straight from the bag, our Freeze Dried Sour Cherries are the versatile ingredient your pantry has been missing.",
+      "price": 50.65,
+      "ingredients": "100% Whole Sour Cherries",
+      "rating": 4.82,
+      "image": "freeze-dried-sour-cherry.webp",
+      "nutritional_facts": {
+        "calories": 377,
+        "fat": 2.1,
+        "carbohydrates": null,
+        "sugars": 60,
+        "fiber": 11,
+        "protein": 7.1,
+        "salt": 0.06
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 40,
+    "model": "products.product",
+    "fields": {
+      "sku": 100039,
+      "name": "Freeze-Dried Acai Berry Powder",
+      "description": "Acai berries are high in nutrients, amino acids and vitamins which make them a great food for energy. The Acai berry powder can be mixed into smoothies and drinks for an easy way to boost your daily nutrients. The high amount of fibre present in the berries could also make them great for a healthy bowel function.",
+      "price": 97.68,
+      "ingredients": "Organic Acai berries",
+      "rating": 4.9,
+      "image": "fruit-powder-acai-berry.webp",
+      "nutritional_facts": {
+        "calories": 563,
+        "fat": 49,
+        "carbohydrates": null,
+        "sugars": 0.2,
+        "fiber": 32.6,
+        "protein": 10.7,
+        "salt": 0.3
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 41,
+    "model": "products.product",
+    "fields": {
+      "sku": 100040,
+      "name": "Acerola Cherry Powder",
+      "description": "Acerola Cherry Powder, also known as Barbados or West Indian Cherries, are native to South, and Central America, and are known as being one of the richest natural sources of vitamin C. Acerola cherries are often harvested while still green, as this is when the vitamin C content is at its highest.",
+      "price": 115.2,
+      "ingredients": "Organic Acerola Cherry Powder",
+      "rating": 4.99,
+      "image": "fruit-powder-acerola-cherry.webp",
+      "nutritional_facts": {
+        "calories": 344,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 21,
+        "fiber": 8.8,
+        "protein": 2.3,
+        "salt": 1.1
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 42,
+    "model": "products.product",
+    "fields": {
+      "sku": 100041,
+      "name": "Banana Powder",
+      "description": "Banana powder is a fantastic product, which you need in your cupboards. This versatile powder is fantastic to add to smoothies, porridge or baking for extra vitamins and minerals.",
+      "price": 36.99,
+      "ingredients": "Organic Banana Powder",
+      "rating": 4.9,
+      "image": "fruit-powder-banana.webp",
+      "nutritional_facts": {
+        "calories": 355,
+        "fat": 0.3,
+        "carbohydrates": null,
+        "sugars": 73.8,
+        "fiber": 5.7,
+        "protein": 4.1,
+        "salt": 0.1
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 43,
+    "model": "products.product",
+    "fields": {
+      "sku": 100042,
+      "name": "Raspberry Powder",
+      "description": "Organic Raspberry Fruit Powder is long-lasting and very tasty. It's also a great way to ensure a regular supply of this classic and completely unique flavour. Blend it into smoothies, shakes and fresh juices for added nutrition and flavourful 'oomph'.",
+      "price": 75.9,
+      "ingredients": "Organic Raspberry Fruit Powder",
+      "rating": 4.77,
+      "image": "fruit-powder-raspberry.webp",
+      "nutritional_facts": {
+        "calories": 256,
+        "fat": 2.1,
+        "carbohydrates": null,
+        "sugars": 33.3,
+        "fiber": 32.9,
+        "protein": 9.1,
+        "salt": 0
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 44,
+    "model": "products.product",
+    "fields": {
+      "sku": 100043,
+      "name": "Garlic Granules",
+      "description": "Dried garlic granules have so many uses in the kitchen. Use them to fry or bake vegetables, mushrooms and other foods, or let their flavour infuse your tomato-based dishes, curries, soups and other hot sauces. Alternatively, create a simple flavourful garnish by mixing them with a high-quality seasoning (such as Himalayan salt), ready to grind over all your favourite meals.",
+      "price": 14.35,
+      "ingredients": "GARLIC",
+      "rating": 4.89,
+      "image": "garlic-granules.webp",
+      "nutritional_facts": {
+        "calories": 331,
+        "fat": 0.73,
+        "carbohydrates": null,
+        "sugars": 2.43,
+        "fiber": 9,
+        "protein": 16.55,
+        "salt": 0.15
+      },
+      "category": [
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "pk": 45,
+    "model": "products.product",
+    "fields": {
+      "sku": 100044,
+      "name": "Black Quinoa",
+      "description": "Black quinoa is a crunchier and more flavorful counterpart of white quinoa but still as useful and versatile. It's packed with protein and plenty of nutritious goodness, and you can use it not only in place of rice, lentils, pulses, pasta and other umami foods - but also to make many great sweet vegan recipes.",
+      "price": 9.71,
+      "ingredients": "Organic Quinoa Grain (Black)",
+      "rating": 4.95,
+      "image": "grain-black-quinoa.webp",
+      "nutritional_facts": {
+        "calories": 356,
+        "fat": 7.1,
+        "carbohydrates": null,
+        "sugars": 3.5,
+        "fiber": 7,
+        "protein": 14,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 46,
+    "model": "products.product",
+    "fields": {
+      "sku": 100045,
+      "name": "Buckwheat",
+      "description": "Despite its name, raw organic buckwheat is not actually wheat at all. It can be enjoyed in place of other grains such as rice, couscous or quinoa. And it can also be used as porridge and topped with your favourite sweet and healthy toppings such as fresh or dried fruit, nuts and seeds.",
+      "price": 6.3,
+      "ingredients": "Organic Buckwheat Raw",
+      "rating": 4.64,
+      "image": "grain-buckwheat.webp",
+      "nutritional_facts": {
+        "calories": 388,
+        "fat": 3.4,
+        "carbohydrates": null,
+        "sugars": 0.4,
+        "fiber": 2.1,
+        "protein": 7.5,
+        "salt": 0.1
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 47,
+    "model": "products.product",
+    "fields": {
+      "sku": 100046,
+      "name": "White Couscous",
+      "description": "Organic white couscous is slightly sweeter and less earthy than its wholewheat counterpart. It's the perfect ally for making French, Spanish, Italian and Mediterranean meals, tomato-sauces, creamy dishes, salads, fried vegetables and many an exotic dish.",
+      "price": 5.18,
+      "ingredients": "Organic Couscous White",
+      "rating": 4.86,
+      "image": "grain-cous-cous.webp",
+      "nutritional_facts": {
+        "calories": 349,
+        "fat": 1.5,
+        "carbohydrates": null,
+        "sugars": 2.5,
+        "fiber": 3.5,
+        "protein": 12,
+        "salt": 0.01
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 48,
+    "model": "products.product",
+    "fields": {
+      "sku": 100047,
+      "name": "Giant White Couscous",
+      "description": "Giant white couscous is a classic grain which is puffy and delightfully stodgy. Use its matchless umami flavour to make exceptional salads, Mediterranean dishes, soups, vegetable medleys and a whole host of other tasty wholesome recipes.",
+      "price": 6.74,
+      "ingredients": "Soft WHEAT Flour",
+      "rating": 4.66,
+      "image": "grain-giant-cous-cous.webp",
+      "nutritional_facts": {
+        "calories": 356,
+        "fat": 1.5,
+        "carbohydrates": null,
+        "sugars": 3.6,
+        "fiber": 7.3,
+        "protein": 12,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 49,
+    "model": "products.product",
+    "fields": {
+      "sku": 100048,
+      "name": "Kamut Grain",
+      "description": "Kamut Grain is a fantastic wheat product which has a smooth texture and a taste that is both nutty and buttery. It is a great addition to stews, and salads and can be used as an alternative to rice in several dishes.",
+      "price": 6.03,
+      "ingredients": "KAMUT brand khorasan wheat grain.",
+      "rating": 4.78,
+      "image": "grain-kamut-grain.webp",
+      "nutritional_facts": {
+        "calories": 337,
+        "fat": 2.07,
+        "carbohydrates": null,
+        "sugars": 1.61,
+        "fiber": 10.58,
+        "protein": 14.5,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 50,
+    "model": "products.product",
+    "fields": {
+      "sku": 100049,
+      "name": "Popping Corn",
+      "description": "A snacking favourite across the UK, Europe and far beyond. You really cannot beat popping your very own popcorn in the oven or microwave. This tip-top popcorn has both an irresistable brittle-soft crunch and a very versatile flavour. Perfect for both super-sweet and salty-savoury vegan and lower-GI popcorn recipes.",
+      "price": 2.43,
+      "ingredients": "Popping Corn",
+      "rating": 4.8,
+      "image": "grain-popping-corn.webp",
+      "nutritional_facts": {
+        "calories": 365,
+        "fat": 4.74,
+        "carbohydrates": null,
+        "sugars": 0.64,
+        "fiber": 7.3,
+        "protein": 9.42,
+        "salt": 0.09
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 51,
+    "model": "products.product",
+    "fields": {
+      "sku": 100050,
+      "name": "Red Quinoa",
+      "description": "Red quinoa is a rare grain and has a mild, sweet fluffy texture. It is also the crunchier and more flavorful counterpart of white quinoa but is still as useful and versatile. Not only a perfect rice and couscous alternative but quinoa can also be added to salads, stir-fries and try replacing your morning oats with quinoa for a fluffy alternative to porridge.",
+      "price": 6.47,
+      "ingredients": "Organic Quinoa Grain (Red)",
+      "rating": 4.77,
+      "image": "grain-red-quinoa.webp",
+      "nutritional_facts": {
+        "calories": 354,
+        "fat": 6.1,
+        "carbohydrates": null,
+        "sugars": 0.7,
+        "fiber": 7,
+        "protein": 14.1,
+        "salt": 0.01
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 52,
+    "model": "products.product",
+    "fields": {
+      "sku": 100051,
+      "name": "Spelt Grain",
+      "description": "Spelt is a type of wheat that was widely grown in Roman times and is now widely introduced into baking across the world, it is widely used because of its high protein content. The whole grain can be used as a substitute for risotto rice and can be ground into flour at home if required.",
+      "price": 4.82,
+      "ingredients": "organic SPELT grain",
+      "rating": 4.62,
+      "image": "grain-spelt.webp",
+      "nutritional_facts": {
+        "calories": 320,
+        "fat": 2.6,
+        "carbohydrates": null,
+        "sugars": 2.7,
+        "fiber": 10,
+        "protein": 15,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 53,
+    "model": "products.product",
+    "fields": {
+      "sku": 100052,
+      "name": "Brown Basmati Rice",
+      "description": "Organic basmati brown rice includes the bran and germ, meaning it contains much more fibre content than white basmati rice that has these removed. Basmati rice is a unique grain, it expands more than twice its length when it is cooking, also unlike other rice, it expands lengthways.",
+      "price": 4.5,
+      "ingredients": "Organic Basmati Brown Rice",
+      "rating": 4.88,
+      "image": "grains-brown-rice.webp",
+      "nutritional_facts": {
+        "calories": 357,
+        "fat": 2.6,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 3,
+        "protein": 8.3,
+        "salt": 0.01
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 54,
+    "model": "products.product",
+    "fields": {
+      "sku": 100053,
+      "name": "Buckwheat Flakes",
+      "description": "Buckwheat flakes are a great breakfast ingredient and have a delicious, mild and almost nutty flavour. Use to make porridge, muesli and even breakfast muffins to start the day right.",
+      "price": 6.49,
+      "ingredients": "Organic Buckwheat Flakes",
+      "rating": 4.78,
+      "image": "grains-buckwheat-flakes.webp",
+      "nutritional_facts": {
+        "calories": 352,
+        "fat": 2.6,
+        "carbohydrates": null,
+        "sugars": 0.9,
+        "fiber": 2.1,
+        "protein": 9.6,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 55,
+    "model": "products.product",
+    "fields": {
+      "sku": 100054,
+      "name": "Bulgur Wheat",
+      "description": "Bulgur wheat is created by milling the wheat berries into smaller pieces, this process will give your cooking an advantage by reducing the cooking time while retaining all the nutritious goodness of whole bulgur wheat.",
+      "price": 2.89,
+      "ingredients": "Bulgur WHEAT",
+      "rating": 4.98,
+      "image": "grains-bulgur-wheat.webp",
+      "nutritional_facts": {
+        "calories": 342,
+        "fat": 1.3,
+        "carbohydrates": null,
+        "sugars": 0.41,
+        "fiber": 12.5,
+        "protein": 12.3,
+        "salt": 0.04
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 56,
+    "model": "products.product",
+    "fields": {
+      "sku": 100055,
+      "name": "Hulled Millet",
+      "description": "Organic hulled millet is a versatile small grain that can be used in place of couscous or rice at mealtimes. Millet needs to be hulled before human consumption as the grain is naturally hard and indigestible.",
+      "price": 3.83,
+      "ingredients": "organic MILLET hulled",
+      "rating": 4.94,
+      "image": "grains-hulled-millet.webp",
+      "nutritional_facts": {
+        "calories": 378,
+        "fat": 4.22,
+        "carbohydrates": null,
+        "sugars": 0.1,
+        "fiber": 8.5,
+        "protein": 11,
+        "salt": 0.01
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 57,
+    "model": "products.product",
+    "fields": {
+      "sku": 100056,
+      "name": "Jumbo Oats",
+      "description": "These oats can enhance several recipes in a number of different recipes, such as it pairs well with all fresh and dried fruit, nuts and seeds and even chocolate, and they can be made into overnight oats for a quick and easy healthy breakfast. ",
+      "price": 2.8,
+      "ingredients": "Organic Jumbo Porridge OATS",
+      "rating": 4.94,
+      "image": "grains-jumbo-oats.webp",
+      "nutritional_facts": {
+        "calories": 370,
+        "fat": 8.4,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 10.8,
+        "protein": 12.1,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 58,
+    "model": "products.product",
+    "fields": {
+      "sku": 100057,
+      "name": "Oat Groats",
+      "description": "Oat groats are the hulled kernels of oats and have had minimal processing. Groats are a whole grain and include the fibre-rich part of the grain and retain the endosperm. This is what your traditional porridge oats look like before they are milled and rolled to make flakes.",
+      "price": 3.54,
+      "ingredients": "organic OAT groats",
+      "rating": 4.99,
+      "image": "grains-oat-groats.webp",
+      "nutritional_facts": {
+        "calories": 359,
+        "fat": 7,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 5,
+        "protein": 14,
+        "salt": 0.025
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 59,
+    "model": "products.product",
+    "fields": {
+      "sku": 100058,
+      "name": "Porridge Oats",
+      "description": "Oats can be enjoyed at any time of day for a healthy meal that is good for the body. It is a slow-release energy food that keeps you satisfied and fuller for longer whilst feeling full of energy ready to take on anything.",
+      "price": 3,
+      "ingredients": "organic porridge OATS",
+      "rating": 4.8,
+      "image": "grains-porridge-oasts.webp",
+      "nutritional_facts": {
+        "calories": 367,
+        "fat": 5.45,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 7.5,
+        "protein": 11.8,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 60,
+    "model": "products.product",
+    "fields": {
+      "sku": 100059,
+      "name": "White Quinoa",
+      "description": "Organic quinoa is a fantastic grain that is rich in protein and high in fibre making it the perfect ingredient for anyone on a vegan diet. It is the perfect alternative to rice or couscous and does not have any gluten-containing ingredients.",
+      "price": 5.97,
+      "ingredients": "Organic Quinoa Grain",
+      "rating": 4.97,
+      "image": "grains-quinoa-white.webp",
+      "nutritional_facts": {
+        "calories": 387,
+        "fat": 6.3,
+        "carbohydrates": null,
+        "sugars": 1.6,
+        "fiber": 4.9,
+        "protein": 12.5,
+        "salt": 0.1
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 61,
+    "model": "products.product",
+    "fields": {
+      "sku": 100060,
+      "name": "Rye Grain",
+      "description": "Discover the rich, hearty flavour of our Organic Rye Grain. Known for its robust and slightly nutty taste, this grain is a versatile addition to your pantry, perfect for a variety of culinary applications.",
+      "price": 2.29,
+      "ingredients": "Organic Rye Grain",
+      "rating": 4.94,
+      "image": "grains-rye.png",
+      "nutritional_facts": {
+        "calories": 342,
+        "fat": 2,
+        "carbohydrates": null,
+        "sugars": 2.8,
+        "fiber": 6.4,
+        "protein": 12,
+        "salt": 0.1
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 62,
+    "model": "products.product",
+    "fields": {
+      "sku": 100061,
+      "name": "Tricolour Quinoa",
+      "description": "Our Organic Quinoa Grain (Tricolour) is a combination of 70% White, 15% Red and 15% Black Quinoa. Quinoa is versatile, quick-cooking and very nutritious. It is often used by people on gluten-free diets. It is incredibly popular as it adds a pop of colour to meals such as salads and stir-fries.",
+      "price": 6.48,
+      "ingredients": "Organic Quinoa Grain Tricolour 15% Red, 15% Black, 70% White",
+      "rating": 4.84,
+      "image": "grains-tricolor-quinoa.webp",
+      "nutritional_facts": {
+        "calories": 389,
+        "fat": 3.8,
+        "carbohydrates": null,
+        "sugars": 1.9,
+        "fiber": 8.8,
+        "protein": 13,
+        "salt": 0.1
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 63,
+    "model": "products.product",
+    "fields": {
+      "sku": 100062,
+      "name": "Granola",
+      "description": "The best granola comes in the smallest sizes and this granola is small in size but packs a massive flavour. This cereal is packed with dried fruit and mixed seeds to make it a healthy breakfast for everyone.",
+      "price": 11.5,
+      "ingredients": "granola base* (gluten free scottish oat flakes*), coconut sugar*, buckwheat raw*, coconut powder*, linseeds milled*, sultanas*(sunflower oil*), apricots chopped*(rice flour*), coconut chips toasted*. *organic",
+      "rating": 4.87,
+      "image": "granola.webp",
+      "nutritional_facts": {
+        "calories": 387,
+        "fat": 11.01,
+        "carbohydrates": null,
+        "sugars": 34.15,
+        "fiber": 7.55,
+        "protein": 6.7,
+        "salt": 0.05
+      },
+      "category": [
+        1,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 64,
+    "model": "products.product",
+    "fields": {
+      "sku": 100063,
+      "name": "Acacia Honey",
+      "description": "This Organic Raw Acacia Honey comes from the black locust or false acacia tree. Raw Acacia Bulgarian Honey is a light and clear colour and is both nutritious and mouth-wateringly tasty.",
+      "price": 12.6,
+      "ingredients": "Raw Acacia Bulgarian Honey",
+      "rating": 4.85,
+      "image": "honey.webp",
+      "nutritional_facts": {
+        "calories": 320,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 80,
+        "fiber": 0,
+        "protein": 0.8,
+        "salt": 0
+      },
+      "category": [
+        1,
+        9
+      ]
+    }
+  },
+  {
+    "pk": 65,
+    "model": "products.product",
+    "fields": {
+      "sku": 100064,
+      "name": "Irish Kombu",
+      "description": "Organic Irish Kombu (Kelp) is a brown seaweed and one of a number of different varieties of kelp found in Irish waters. It is good source of glutamic acid, an amino acid responsible for umami - a delicious, savoury taste.",
+      "price": 73.5,
+      "ingredients": "Organic Irish Kombu",
+      "rating": 4.9,
+      "image": "irish-kombu.webp",
+      "nutritional_facts": {
+        "calories": 95,
+        "fat": 1.9,
+        "carbohydrates": null,
+        "sugars": 0.1,
+        "fiber": 32.1,
+        "protein": 14,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 66,
+    "model": "products.product",
+    "fields": {
+      "sku": 100065,
+      "name": "Apricot Jam",
+      "description": "This nutritious range from FruTeto Italia is simply crushed fruit in a jar. It has been created to replace traditional jam. Made from organic fruit only, without pectin, preservatives or refined sugar. We cook it gently in small batches using hand picked, fully ripe fruit from the orchard.",
+      "price": 4.32,
+      "ingredients": "Fruit* (7 apricots*, apple*), grape juice concentrate*, lemon juice*. Contains naturally occurring sugars from fruit only. *Organic",
+      "rating": 4.86,
+      "image": "jam-apricot.png",
+      "nutritional_facts": {
+        "calories": 188,
+        "fat": 0.5,
+        "carbohydrates": null,
+        "sugars": 38,
+        "fiber": 0,
+        "protein": 0.4,
+        "salt": 0.03
+      },
+      "category": [
+        1,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 67,
+    "model": "products.product",
+    "fields": {
+      "sku": 100066,
+      "name": "Blueberry Jam",
+      "description": "This nutritious range from FruTeto Italia is crushed fruit in a jar. It has been created to replace traditional jam. Made from organic fruit only, without preservatives or refined sugar. We cook it gently in small batches using hand-picked, fully ripe fruit from the orchard.",
+      "price": 4.32,
+      "ingredients": "Fruit* (184 blueberries*) , grape juice concentrate*, lemon juice*, Pectin*, *Organic. Contains naturally occurring sugars from fruit only.",
+      "rating": 4.68,
+      "image": "jam-blueberry.webp",
+      "nutritional_facts": {
+        "calories": 162,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 38,
+        "fiber": 0,
+        "protein": 0.9,
+        "salt": 0.01
+      },
+      "category": [
+        1,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 68,
+    "model": "products.product",
+    "fields": {
+      "sku": 100067,
+      "name": "Raspberry Jam",
+      "description": "This nutritious range from FruTeto Italia is simply crushed fruit in a jar. It has been created to replace traditional jam. This raspberry spread is delicious by the spoonful, or on toast or brioche, it can also be swirled into natural yogurt or smoothies. Or used to make desserts like sorbet or jam tarts.   ",
+      "price": 4.32,
+      "ingredients": "Fruit* (130 raspberries*, apple*), grape juice concentrate*, lemon juice*. Contains naturally occurring sugars from fruit only. *Organic",
+      "rating": 4.78,
+      "image": "jam-raspberry.jpg",
+      "nutritional_facts": {
+        "calories": 165,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 36,
+        "fiber": 0,
+        "protein": 0.9,
+        "salt": 0
+      },
+      "category": [
+        1,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 69,
+    "model": "products.product",
+    "fields": {
+      "sku": 100068,
+      "name": "Strawberry Jam",
+      "description": "This strawberry spread is delicious by the spoonful in the dark days of winter or spread on hot toast - why not try it the Italian way without butter? As an alternative to compote, it is perfect for drizzling over desserts.",
+      "price": 4.32,
+      "ingredients": "Fruit* (28 strawberries*), grape juice concentrate*, lemon juice* Contains naturally occurring sugars from fruit only. *Organic",
+      "rating": 4.76,
+      "image": "jam-strawberry.png",
+      "nutritional_facts": {
+        "calories": 167,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 38,
+        "fiber": 0,
+        "protein": 0.9,
+        "salt": 0.03
+      },
+      "category": [
+        1,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 70,
+    "model": "products.product",
+    "fields": {
+      "sku": 100069,
+      "name": "Lentils (Brown)",
+      "description": "These organic brown lentils mix excellently with all other pulses, beans, lentils, rice and stodgy food, as well as virtually every savoury spice in existence - and a number of herbs. Grab some of these moreish, heart-warming lentils to make classic Indian dahl dishes, crowd-pleasing soups and many more favour-winning meals.",
+      "price": 3.91,
+      "ingredients": "Organic Brown Lentils",
+      "rating": 4.94,
+      "image": "lentils-brown.webp",
+      "nutritional_facts": {
+        "calories": 310,
+        "fat": 2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 9,
+        "protein": 24,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 71,
+    "model": "products.product",
+    "fields": {
+      "sku": 100070,
+      "name": "Lentils (Green)",
+      "description": "These large and very striking green lentils turn green once cooked, they are high in fibre, protein and they are a perfect slow-cooker ingredient, and ideal for stews, broths and casseroles.",
+      "price": 4.59,
+      "ingredients": "Organic Green Lentils",
+      "rating": 4.7,
+      "image": "lentils-green.png",
+      "nutritional_facts": {
+        "calories": 304,
+        "fat": 1.6,
+        "carbohydrates": null,
+        "sugars": 2,
+        "fiber": 17,
+        "protein": 23.4,
+        "salt": 0.02
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 72,
+    "model": "products.product",
+    "fields": {
+      "sku": 100071,
+      "name": "Lentils (Red)",
+      "description": "Red lentils are one of the easiest legumes to cook, they are packed with protein, iron and fibre. They are used in various savoury dishes such as curries, soups and dahls.",
+      "price": 3.64,
+      "ingredients": "Red Split Lentils 99.8%, sunflower oil 0.2%",
+      "rating": 4.97,
+      "image": "lentils-red.webp",
+      "nutritional_facts": {
+        "calories": 338,
+        "fat": 1,
+        "carbohydrates": null,
+        "sugars": 2.4,
+        "fiber": 4.9,
+        "protein": 28.1,
+        "salt": 0
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 73,
+    "model": "products.product",
+    "fields": {
+      "sku": 100072,
+      "name": "Lentils (Yellow Split)",
+      "description": "Yellow split lentils add a great colour to dishes and are used in the Indian dish dhal. A protein rich carbohydrate full of fibre and nutrients. Great for sprinkling on salads or adding to a flavour-rich stew and are prepared in the same way as other lentils.",
+      "price": 5.61,
+      "ingredients": "Yellow Split Lentils, Sunflower Oil",
+      "rating": 4.76,
+      "image": "lentils-yellow-split.webp",
+      "nutritional_facts": {
+        "calories": 314,
+        "fat": 2.2,
+        "carbohydrates": null,
+        "sugars": 4,
+        "fiber": 23.2,
+        "protein": 25.3,
+        "salt": 0.05
+      },
+      "category": [
+        1,
+        5
+      ]
+    }
+  },
+  {
+    "pk": 74,
+    "model": "products.product",
+    "fields": {
+      "sku": 100073,
+      "name": "Matcha Powder",
+      "description": "Matcha green tea is one of the finest â€“ if not the finest â€“ tea in the world. This wonderful, hailing from the Far East, is a vibrant green powder is a real wonder food, full of goodness and itâ€™s extremely tasty too.",
+      "price": 85.4,
+      "ingredients": "Tencha (Green Tea) 100% (Camellia sinensis)",
+      "rating": 4.7,
+      "image": "matcha-powder.webp",
+      "nutritional_facts": {
+        "calories": 40,
+        "fat": 1,
+        "carbohydrates": null,
+        "sugars": 5,
+        "fiber": 35,
+        "protein": 30,
+        "salt": 0
+      },
+      "category": [
+        6,
+        18
+      ]
+    }
+  },
+  {
+    "pk": 75,
+    "model": "products.product",
+    "fields": {
+      "sku": 100074,
+      "name": "Mixed Nuts (No Peanuts)",
+      "description": "We believe our mixed nuts to be a flawless standalone snack. It's great for bulking out breakfasts like porridge or cereals and adding to cakes and desserts. Our finest mixture of nuts, we and many of our customers, believe them to be just about as delicious as mixed nuts get.",
+      "price": 28.28,
+      "ingredients": "ALMONDS, CASHEWS, HAZELNUTS, WALNUT halves, BRAZILS, PECANS",
+      "rating": 4.87,
+      "image": "mixed-nuts-no-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 634,
+        "fat": 61.2,
+        "carbohydrates": null,
+        "sugars": 2.4,
+        "fiber": 7.2,
+        "protein": 16.1,
+        "salt": 0
+      },
+      "category": [
+        4,
+        8
+      ]
+    }
+  },
+  {
+    "pk": 76,
+    "model": "products.product",
+    "fields": {
+      "sku": 100075,
+      "name": "Assorted Muesli",
+      "description": "This very simple muesli base is delicious and highly nutritious, it is perfect for pairing with any nuts, fruits, seeds, spices and sweet foods.",
+      "price": 3.3,
+      "ingredients": "Organic Porridge OATS, Organic Jumbo OATS, Organic WHEAT Flakes, Organic BARLEY Flakes",
+      "rating": 4.83,
+      "image": "muesli-assorted.webp",
+      "nutritional_facts": {
+        "calories": 374,
+        "fat": 4.5,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 10.3,
+        "protein": 10.7,
+        "salt": 0
+      },
+      "category": [
+        1,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 77,
+    "model": "products.product",
+    "fields": {
+      "sku": 100076,
+      "name": "Gluten-Free Muesli",
+      "description": "Kick start your day with our gluten free fruity oat muesli, a unique blend of real fruits & crunchy seeds. Mix with yoghurt or your choice of milk for a tasty a fulfilling breakfast. This gluten-free muesli is full of fibre, vital nutrients and slow-releasing energy, which ensures you are feeling fuller for longer.",
+      "price": 6.37,
+      "ingredients": "OATS gluten free, sultanas (sunflower oil), dates chopped(rice flour), sunflower seeds, linseeds brown, flame raisins (sunflower oil), papaya diced (dehydrated, with sugar & SULPHUR DIOXIDE).",
+      "rating": 4.78,
+      "image": "muesli-gluten-free.webp",
+      "nutritional_facts": {
+        "calories": 385,
+        "fat": 7.46,
+        "carbohydrates": null,
+        "sugars": 21.81,
+        "fiber": 10.5,
+        "protein": 9.68,
+        "salt": 0.04
+      },
+      "category": [
+        1,
+        17
+      ]
+    }
+  },
+  {
+    "pk": 78,
+    "model": "products.product",
+    "fields": {
+      "sku": 100077,
+      "name": "Nutritional Yeast Flakes",
+      "description": "Our nutritional yeast flakes (also known as nooch) are fortified with B12 providing a rich source of vitamins and minerals which is ideal for vegans. Yeast flakes are a natural food grown on fortified beet molasses under carefully controlled conditions.",
+      "price": 22.59,
+      "ingredients": "Nutritional Yeast (Saccharomyces cerevisiae, inactive), Vitamin D yeast, cyanocobalamin (B12).",
+      "rating": 4.88,
+      "image": "nutritional-yeast-flakes.webp",
+      "nutritional_facts": {
+        "calories": 344,
+        "fat": 4,
+        "carbohydrates": null,
+        "sugars": 12.4,
+        "fiber": 22,
+        "protein": 51,
+        "salt": 0.2
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 79,
+    "model": "products.product",
+    "fields": {
+      "sku": 100078,
+      "name": "Almond Butter",
+      "description": "Our Organic Raw Almond Butter is made from 100% raw organic almonds and is completely vegan and vegetarian friendly. There has been no heat treatment to our almonds to remove the skins. This increases the fibre content of the almond butter too.",
+      "price": 27.98,
+      "ingredients": "organic almonds",
+      "rating": 4.8,
+      "image": "nuts-almonds-almond-butter.webp",
+      "nutritional_facts": {
+        "calories": 632,
+        "fat": 54,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 4,
+        "protein": 24,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 80,
+    "model": "products.product",
+    "fields": {
+      "sku": 100079,
+      "name": "Almond Cream",
+      "description": "Organic dairy-free almond cooking cream, alternative to dairy and soya single creams.",
+      "price": 1.78,
+      "ingredients": "Water, almond* (7%), sunflower oil*, agave syrup*, stabiliser (arabic gum*, xanthane gum), emulsifier: sunflower lecithin*, sea salt, natural flavouring*. *organic",
+      "rating": 4.82,
+      "image": "nuts-almonds-almond-cream.webp",
+      "nutritional_facts": {
+        "calories": 93,
+        "fat": 8.5,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 3.7,
+        "protein": 1.3,
+        "salt": 0.1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 81,
+    "model": "products.product",
+    "fields": {
+      "sku": 100080,
+      "name": "Almond Flour",
+      "description": "Almond flour has a sweet, nutty flavour and is an essential baking ingredient amongst avid bakers and is perfect for making cakes, pastries and biscuits. Being Keto, low carb and vegan friendly, this is the perfect flour alternative for those who need to add to their baking repertoire.",
+      "price": 9.89,
+      "ingredients": "Blanched Almond Flour",
+      "rating": 4.68,
+      "image": "nuts-almonds-almond-flour.webp",
+      "nutritional_facts": {
+        "calories": 637,
+        "fat": 54.1,
+        "carbohydrates": null,
+        "sugars": 6.9,
+        "fiber": 10.7,
+        "protein": 24.1,
+        "salt": 0.05
+      },
+      "category": [
+        2,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 82,
+    "model": "products.product",
+    "fields": {
+      "sku": 100081,
+      "name": "Almond Milk",
+      "description": "This drink is 100% vegan-friendly and is perfect to add to coffee or just to drink on its own. With this drink being lactose-free, this is perfect for those with specific dietary requirements.",
+      "price": 17.75,
+      "ingredients": "Natural spring water, organic rice (14%), organic italian almonds (1%), organic cold-pressed sunflower oil, sea salt.",
+      "rating": 4.83,
+      "image": "nuts-almonds-almond-milk.webp",
+      "nutritional_facts": {
+        "calories": 56,
+        "fat": 1.49,
+        "carbohydrates": null,
+        "sugars": 4.7,
+        "fiber": 0.2,
+        "protein": 0.2,
+        "salt": 0.1
+      },
+      "category": [
+        11
+      ]
+    }
+  },
+  {
+    "pk": 83,
+    "model": "products.product",
+    "fields": {
+      "sku": 100082,
+      "name": "Baked Salted Almonds",
+      "description": "Almonds are not only extremely healthy but they are also packed with nourishing properties and are a fantastic healthy snack on the go. The interior of the nut reveals a smooth and creamy texture that is packed full of natural flavours and protein.",
+      "price": 12.08,
+      "ingredients": "ALMONDS (99%), salt",
+      "rating": 4.81,
+      "image": "nuts-almonds-baked-salted-almonds.webp",
+      "nutritional_facts": {
+        "calories": 625,
+        "fat": 52,
+        "carbohydrates": null,
+        "sugars": 4.8,
+        "fiber": 11.6,
+        "protein": 26.2,
+        "salt": 1.5
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 84,
+    "model": "products.product",
+    "fields": {
+      "sku": 100083,
+      "name": "Chocolate Almonds",
+      "description": "Experience the luscious union of smooth milk chocolate and crunchy almonds with our Milk Chocolate Almonds. These tasty morsels are not just for indulgence; they're perfect for adding a gourmet touch to your desserts, or for elevating your midday snacking.",
+      "price": 10.99,
+      "ingredients": "Milk Chocolate (65%), (sugar, MILK powder, cocoa butter, cocoa mass, vegetable fat (palm SG), whey (MILK), emulsifier: sunflower lecithin (E322), glazing agents: gum arabic (E414), shellac (E904). ALMOND nut (35%). Milk chocolate contains vegetable fat in addition to cocoa butter. Cocoa solids 20% minimum.",
+      "rating": 4.96,
+      "image": "nuts-almonds-chocolate-almonds.webp",
+      "nutritional_facts": {
+        "calories": 566,
+        "fat": 36.2,
+        "carbohydrates": null,
+        "sugars": 40.1,
+        "fiber": 5.3,
+        "protein": 11.6,
+        "salt": 0.2
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 85,
+    "model": "products.product",
+    "fields": {
+      "sku": 100084,
+      "name": "Salted Almond Butter",
+      "description": "Almonds are roasted in their natural brown skins before being ground to a smooth texture. Ingredients Roasted : Almonds (99.5%), Salt (0.5%). Gluten Free, Dairy Free, Yeast Free, Refined Sugar Free, Egg Free, Vegetarian, Vegan, Wheat FreeSoya Free, Fish Free, Shellfish Free, Sulphite Free, Celery Free, Mustard Free, Lupin Free, Mollusc Free, GMO Free, Additive Free. Delicious as a spread or use as a cooking ingredient.",
+      "price": 6.48,
+      "ingredients": "organic roasted ALMONDS (99.5%), sea salt (0.5%)",
+      "rating": 4.95,
+      "image": "nuts-almonds-salted-almond-butter.webp",
+      "nutritional_facts": {
+        "calories": 650,
+        "fat": 55.5,
+        "carbohydrates": null,
+        "sugars": 4,
+        "fiber": 11.7,
+        "protein": 25.3,
+        "salt": 0.5
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 86,
+    "model": "products.product",
+    "fields": {
+      "sku": 100085,
+      "name": "Smoked Almonds",
+      "description": "These Smoked Almonds are not only extremely healthy but they are also packed with nourishing properties and are a fantastic healthy snack on the go. The interior of the nut reveals a smooth and creamy texture that is packed full of natural flavours and protein.",
+      "price": 14.65,
+      "ingredients": "ALMOND, rapeseed oil, salt, dextrose, rice flour, dried yeast, sugar, yeast extract powder, spice (smoked paprika, black pepper), onion powder, garlic powder, smoke flavouring, natural flavouring, citric acid.",
+      "rating": 4.82,
+      "image": "nuts-almonds-smoked-almonds.webp",
+      "nutritional_facts": {
+        "calories": 633,
+        "fat": 53.3,
+        "carbohydrates": null,
+        "sugars": 5.8,
+        "fiber": 9.5,
+        "protein": 22.1,
+        "salt": 2.2
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 87,
+    "model": "products.product",
+    "fields": {
+      "sku": 100086,
+      "name": "Almonds",
+      "description": "Almonds are loaded with protein and fibre and packed with vitamins, minerals and other essential nutrients. They have a creamy texture, are highly versatile and taste great raw, roasted, soaked, ground, blended or baked into your favourite foods.",
+      "price": 9.89,
+      "ingredients": "ALMONDS",
+      "rating": 4.77,
+      "image": "nuts-almonds.webp",
+      "nutritional_facts": {
+        "calories": 589,
+        "fat": 49.9,
+        "carbohydrates": null,
+        "sugars": 4.4,
+        "fiber": 12.5,
+        "protein": 21.2,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 88,
+    "model": "products.product",
+    "fields": {
+      "sku": 100087,
+      "name": "Brazil Nuts",
+      "description": "Organic Brazil nuts are 100% organic and an excellent source of protein and fibre whilst remaining low in carbohydrates. This makes them a great nut for a healthy balanced diet and is particularly popular on a keto diet.",
+      "price": 14.89,
+      "ingredients": "organic BRAZIL nuts",
+      "rating": 4.76,
+      "image": "nuts-brazil-nuts.webp",
+      "nutritional_facts": {
+        "calories": 681,
+        "fat": 68,
+        "carbohydrates": null,
+        "sugars": 2.8,
+        "fiber": 8.6,
+        "protein": 13,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 89,
+    "model": "products.product",
+    "fields": {
+      "sku": 100088,
+      "name": "Cashew Butter",
+      "description": "This organic smooth cashew butter is made using 96% cashews and a dash of sunflower oil. The cashews are roasted, then ground to produce a perfectly smooth texture.",
+      "price": 11.54,
+      "ingredients": "Organic Roasted Cashew Nuts (96%), Organic Sunflower Oil.",
+      "rating": 4.79,
+      "image": "nuts-cashew-butter.webp",
+      "nutritional_facts": {
+        "calories": 659,
+        "fat": 55.5,
+        "carbohydrates": null,
+        "sugars": 5.6,
+        "fiber": 4.3,
+        "protein": 20.6,
+        "salt": 0.1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 90,
+    "model": "products.product",
+    "fields": {
+      "sku": 100089,
+      "name": "Cashews (Pieces)",
+      "description": "These naturally sweet and creamy nuts are an excellent source of protein, fibre, essential minerals and many other healthy properties. They are often used in cooking both sweet and savoury meals. Soak them and add them to curries, or whizz them up to create a very 'bioavailable' nut butter. Cashew nut pieces can be scattered into stir-fries, salads, soups, curries and pretty much most savoury dishes",
+      "price": 8.4,
+      "ingredients": "CASHEW nuts",
+      "rating": 4.83,
+      "image": "nuts-cashews-in-pieces.webp",
+      "nutritional_facts": {
+        "calories": 568,
+        "fat": 44,
+        "carbohydrates": null,
+        "sugars": 5.9,
+        "fiber": 3,
+        "protein": 15.1,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 91,
+    "model": "products.product",
+    "fields": {
+      "sku": 100090,
+      "name": "Roasted Salt Pepper Cashews",
+      "description": "Discover the bold and sophisticated flavour of our Sea Salt & Black Pepper Cashew Nuts. These premium cashews are delicately seasoned with a perfect blend of sea salt and black pepper, creating a savoury snack that is both crunchy and irresistible. The distinct taste profile offers a satisfying balance of subtle heat from the black pepper and a touch of sea salt, perfectly complementing the natural sweetness of the cashews.",
+      "price": 15.18,
+      "ingredients": "Cashew nuts (94%), Sea Salt, Spice (Black Pepper), Rice Flour, Maltodextrin, Tapioca and/or Maize Starch, Sugar, Lemon Juice Powder, Natural Flavourings.",
+      "rating": 4.88,
+      "image": "nuts-cashews-roasted-salt-pepper.webp",
+      "nutritional_facts": {
+        "calories": 594,
+        "fat": 43.9,
+        "carbohydrates": null,
+        "sugars": 5.1,
+        "fiber": 3.1,
+        "protein": 17.3,
+        "salt": 1.4
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 92,
+    "model": "products.product",
+    "fields": {
+      "sku": 100091,
+      "name": "Roasted Salted Cashews",
+      "description": "These delicious nuts have been roasted and lightly salted, making them perfect for immediate snacking. Be creative and top salads, Buddha bowls and Asian-inspired cuisine for an added crunch packed full of nutrition. They are rich in fibre and contain a number of nutrients and vitamins that are essential for our body to function.",
+      "price": 18.23,
+      "ingredients": "CASHEW Nuts, GROUNDNUT Oil, Salt",
+      "rating": 4.76,
+      "image": "nuts-cashews-roasted-salted.webp",
+      "nutritional_facts": {
+        "calories": 624,
+        "fat": 50.9,
+        "carbohydrates": null,
+        "sugars": 5.3,
+        "fiber": 3,
+        "protein": 24.2,
+        "salt": 1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 93,
+    "model": "products.product",
+    "fields": {
+      "sku": 100092,
+      "name": "Chestnuts",
+      "description": "These chestnuts are cultivated in the Ardeche region of France by some 80 organic co-operatives and growers. The Ardeche is well known for its chestnut groves that were planted as far back as the 13th century.",
+      "price": 5.9,
+      "ingredients": "organically grown CHESTNUTS",
+      "rating": 4.8,
+      "image": "nuts-chestnuts.webp",
+      "nutritional_facts": {
+        "calories": 177,
+        "fat": 1.3,
+        "carbohydrates": null,
+        "sugars": 8.3,
+        "fiber": 0,
+        "protein": 2.6,
+        "salt": 0.1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 94,
+    "model": "products.product",
+    "fields": {
+      "sku": 100093,
+      "name": "Coconut Chips",
+      "description": "Rich in protein, coconut chips are great added to trail mix for a tasty snack or used in desserts and baking. Sprinkle on smoothie bowls for a decorative finish.",
+      "price": 7.76,
+      "ingredients": "Organic Coconut Chips, Raw",
+      "rating": 4.97,
+      "image": "nuts-coconut-chips.webp",
+      "nutritional_facts": {
+        "calories": 656,
+        "fat": 60.5,
+        "carbohydrates": null,
+        "sugars": 7.5,
+        "fiber": 11.8,
+        "protein": 7.4,
+        "salt": 0.1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 95,
+    "model": "products.product",
+    "fields": {
+      "sku": 100094,
+      "name": "Coconut Cream",
+      "description": "This deliciously rich Coconut Cream is a more concentrated, thicker version of coconut milk, made by pressing fresh organic coconut meat. This tropical ingredient is the perfect dairy free alternative to cream and can be used in both sweet and savoury Oriental, Indian and Caribbean dishes. Coconut fat content 22%.",
+      "price": 2.96,
+      "ingredients": "n/a",
+      "rating": 4.74,
+      "image": "nuts-coconut-cream.webp",
+      "nutritional_facts": {
+        "calories": 218,
+        "fat": 22,
+        "carbohydrates": null,
+        "sugars": 1.5,
+        "fiber": 1,
+        "protein": 2,
+        "salt": 0.02
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 96,
+    "model": "products.product",
+    "fields": {
+      "sku": 100095,
+      "name": "Coconut Drink (Rude Health)",
+      "description": "Coconut Drink. A refreshing alternative to milk. Pour yourself some sunshine.",
+      "price": 19.73,
+      "ingredients": "Natural spring water, organic rice, organic coconut milk (4%), sea salt.",
+      "rating": 4.8,
+      "image": "nuts-coconut-drink-rude-health.webp",
+      "nutritional_facts": {
+        "calories": 53,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 4.2,
+        "fiber": 0.7,
+        "protein": 0.1,
+        "salt": 0.1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 97,
+    "model": "products.product",
+    "fields": {
+      "sku": 100096,
+      "name": "Coconut Flour",
+      "description": "Organic Coconut Flour is packed full of vitamins, minerals and nutrients and is a fantastic baking ingredient. This high fibre, low carbohydrate product has no gluten containing ingredients and is extremely popular among avid bakers and recipe creators. Available in bulk sizes.",
+      "price": 4.58,
+      "ingredients": "Organic Coconut Flour",
+      "rating": 4.96,
+      "image": "nuts-coconut-flour.webp",
+      "nutritional_facts": {
+        "calories": 416,
+        "fat": 11,
+        "carbohydrates": null,
+        "sugars": 19,
+        "fiber": 31,
+        "protein": 19,
+        "salt": 0.5
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 98,
+    "model": "products.product",
+    "fields": {
+      "sku": 100097,
+      "name": "Coconut Milk Powder",
+      "description": "Organic coconut milk powder is made from freshly squeezed coconut milk and is suitable for vegans and vegetarians as a dairy-free milk alternative, simply add a touch of warm water and stir or add directly to hot tea and coffee.",
+      "price": 11.64,
+      "ingredients": "Organic Coconut Milk (80%) as liquid, Organic Maltodextrin (Tapioca based) 20% (as solid).",
+      "rating": 4.72,
+      "image": "nuts-coconut-milk-powder.webp",
+      "nutritional_facts": {
+        "calories": 578,
+        "fat": 42,
+        "carbohydrates": null,
+        "sugars": 46.5,
+        "fiber": 2.9,
+        "protein": 3.5,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 99,
+    "model": "products.product",
+    "fields": {
+      "sku": 100098,
+      "name": "Coconut Milk",
+      "description": "Our organic coconut milk is made from the meat of mature Sri Lankan coconuts. The milk is extracted from the freshly grated flesh and blended with water to create a luxurious, velvety smooth coconut milk which is 100% natural and organic. ",
+      "price": 2.16,
+      "ingredients": "Coconut (50%), Water",
+      "rating": 4.85,
+      "image": "nuts-coconut-milk.webp",
+      "nutritional_facts": {
+        "calories": 181,
+        "fat": 18,
+        "carbohydrates": null,
+        "sugars": 1.7,
+        "fiber": 0.74,
+        "protein": 1.9,
+        "salt": 0.05
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 100,
+    "model": "products.product",
+    "fields": {
+      "sku": 100099,
+      "name": "Coconut Oil",
+      "description": "This particular oil is incredibly healthy, with many beneficial properties. And with undisputed status as the worlds best cooking and baking oil, organic virgin coconut oil will always be one of our very best-selling wholefoods.",
+      "price": 12,
+      "ingredients": "Organic Extra Virgin Raw Coconut Oil",
+      "rating": 4.76,
+      "image": "nuts-coconut-oil.webp",
+      "nutritional_facts": {
+        "calories": 895,
+        "fat": 99.2,
+        "carbohydrates": null,
+        "sugars": 0.1,
+        "fiber": 0.1,
+        "protein": 0.2,
+        "salt": 0.3
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 101,
+    "model": "products.product",
+    "fields": {
+      "sku": 100100,
+      "name": "Coconut Sugar",
+      "description": "Our organic coconut nectar sugar is subtly sweet, similar to brown sugar but with a slight hint of caramel. It is made from the blossom of the coconut plant and can be used in baking in place of sugars. Since organic coconut nectar sugar is not highly processed like other sugars, the colour, sweetness and flavour can vary.",
+      "price": 6.92,
+      "ingredients": "Organic Coconut Nectar Sugar",
+      "rating": 4.96,
+      "image": "nuts-coconut-sugar.webp",
+      "nutritional_facts": {
+        "calories": 388,
+        "fat": 0.13,
+        "carbohydrates": null,
+        "sugars": 95.3,
+        "fiber": 1.2,
+        "protein": 0.77,
+        "salt": 0.2
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 102,
+    "model": "products.product",
+    "fields": {
+      "sku": 100101,
+      "name": "Toasted Coconut Chips",
+      "description": "Naturally sweet with no added sugar, toasted coconut chips are high in protein & fibre. Plus they are easy for you, try adding them to your baking, cooking, muesli or just eat them as a sweet & healthy snack.",
+      "price": 7.35,
+      "ingredients": "Coconut, No added sugar",
+      "rating": 4.93,
+      "image": "nuts-coconut-toasted-chips.webp",
+      "nutritional_facts": {
+        "calories": 700,
+        "fat": 62,
+        "carbohydrates": null,
+        "sugars": 3,
+        "fiber": 22,
+        "protein": 8,
+        "salt": 0.08
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 103,
+    "model": "products.product",
+    "fields": {
+      "sku": 100102,
+      "name": "Crunchy Peanut Butter",
+      "description": "Our own brand, luxurious crunchy peanut butter is made with 100% nuts and no palm oil for the ultimate nut butter. Ideal for topping breakfasts, adding to smoothies or recipes and for combining with fresh apple slices for the perfect, healthy snack.",
+      "price": 8.39,
+      "ingredients": "Roasted PEANUTS 100%.",
+      "rating": 4.99,
+      "image": "nuts-crunchy-peanut-butter.webp",
+      "nutritional_facts": {
+        "calories": 560,
+        "fat": 46.1,
+        "carbohydrates": null,
+        "sugars": 6.2,
+        "fiber": 7.3,
+        "protein": 25.7,
+        "salt": 0.01
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 104,
+    "model": "products.product",
+    "fields": {
+      "sku": 100103,
+      "name": "Desiccated Coconut",
+      "description": "This Organic Desiccated Coconut is a healthy food loverâ€™s dream ingredient.",
+      "price": 6.37,
+      "ingredients": "Organic Coconut, Desiccated",
+      "rating": 4.8,
+      "image": "nuts-desiccaated-coconut.webp",
+      "nutritional_facts": {
+        "calories": 659,
+        "fat": 64.5,
+        "carbohydrates": null,
+        "sugars": 7.4,
+        "fiber": 16.3,
+        "protein": 6.9,
+        "salt": 0.09
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 105,
+    "model": "products.product",
+    "fields": {
+      "sku": 100104,
+      "name": "Dry Roasted Peanuts",
+      "description": "Nutrient-rich peanuts are made even better, our peanuts have been dry roasted with a touch of seasoning to enhance the natural flavours and make them even more enjoyable. You can enjoy them as a snack at any time of day as part of a healthy lifestyle.",
+      "price": 7.74,
+      "ingredients": "PEANUTS (93%); Seasoning (Salt [35%]; WHEAT Flour [25%]; Flavour Enhancer E621 [15%]; Yeast Extract [7.5%]; Maltodextrin WHEAT, Maize or Potato] [7.5%]; Onion Powder [3%]; Anti-Caking Agents E341, E551 [3%]; Yeast Powder; Spices CELERY, Cinnamon, Turmeric]; Sunflower Oil; Herbs [Oregano, Thyme]; Colour E160c; Tacking Solution [Water, Sorbitol, Gum Acacia]",
+      "rating": 4.78,
+      "image": "nuts-dry-roasted-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 608,
+        "fat": 49.3,
+        "carbohydrates": null,
+        "sugars": 3.9,
+        "fiber": 7.8,
+        "protein": 27.3,
+        "salt": 1.96
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 106,
+    "model": "products.product",
+    "fields": {
+      "sku": 100105,
+      "name": "Hazelnuts (In Shell)",
+      "description": "There really is nothing quite like cracking your very own hazelnuts! These firm, brittle-crunch gems are always a pleasure to snack on, and buying them in their shells will bestow your household with a fantastic foodie feature. And cracking them might just help ward off over-indulgence too!",
+      "price": 9.55,
+      "ingredients": "HAZELNUTS",
+      "rating": 4.81,
+      "image": "nuts-hazelnuts-in-shell.webp",
+      "nutritional_facts": {
+        "calories": 639,
+        "fat": 62.7,
+        "carbohydrates": null,
+        "sugars": 4.3,
+        "fiber": 9.7,
+        "protein": 16.2,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 107,
+    "model": "products.product",
+    "fields": {
+      "sku": 100106,
+      "name": "Hazelnuts",
+      "description": "Organic Hazelnuts are one of the most popular nuts around. They are perfect for snacking on straight out the bag or adding to baking recipes for added nutrition. Hazelnuts are packed full of vitamins and minerals and are rich in dietary fibre, which is great for healthy digestion.",
+      "price": 15.97,
+      "ingredients": "organic HAZELNUTS",
+      "rating": 4.83,
+      "image": "nuts-hazelnuts.webp",
+      "nutritional_facts": {
+        "calories": 656,
+        "fat": 64,
+        "carbohydrates": null,
+        "sugars": 4,
+        "fiber": 6.5,
+        "protein": 14,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 108,
+    "model": "products.product",
+    "fields": {
+      "sku": 100107,
+      "name": "Macadamia Nuts (Halves)",
+      "description": "Organic macadamia nut halves are crunchy, creamy and delicious. They are small size means making them a choice for adding to baking recipes such as healthy, nutty banana bread muffins for a breakfast with a difference or afternoon treat.",
+      "price": 16.07,
+      "ingredients": "organic MACADAMIA nuts",
+      "rating": 4.82,
+      "image": "nuts-macadamia-nuts-halves.webp",
+      "nutritional_facts": {
+        "calories": 739,
+        "fat": 75.8,
+        "carbohydrates": null,
+        "sugars": 4.6,
+        "fiber": 8.6,
+        "protein": 7.9,
+        "salt": 0.01
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 109,
+    "model": "products.product",
+    "fields": {
+      "sku": 100108,
+      "name": "Naked Salted Peanuts",
+      "description": "Roasted and salted peanuts have been lightly seasoned and roasted to enhance the natural flavours and goodness of a nutrient-rich snack. Not only are they a protein-packed snack and a firm favourite with those with a healthy and active lifestyle.",
+      "price": 7.39,
+      "ingredients": "PEANUTS (95%), Rapeseed oil, Salt",
+      "rating": 4.99,
+      "image": "nuts-naked-salted-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 609,
+        "fat": 49.2,
+        "carbohydrates": null,
+        "sugars": 4.7,
+        "fiber": 8.6,
+        "protein": 22.9,
+        "salt": 1.6
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 110,
+    "model": "products.product",
+    "fields": {
+      "sku": 100109,
+      "name": "Organic Cooked and Peeled Chestnuts",
+      "description": "These chestnuts are cultivated in the Ardeche region of France by some 80 organic co-operatives and growers. The Ardeche is well known for its chestnut groves that were planted as far back as the 13th century.",
+      "price": 5.9,
+      "ingredients": "organically grown CHESTNUTS",
+      "rating": 4.74,
+      "image": "nuts-organic-cooked-and-peeled-chestnuts.webp",
+      "nutritional_facts": {
+        "calories": 177,
+        "fat": 1.3,
+        "carbohydrates": null,
+        "sugars": 8.3,
+        "fiber": 0,
+        "protein": 2.6,
+        "salt": 0.1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 111,
+    "model": "products.product",
+    "fields": {
+      "sku": 100110,
+      "name": "Pale Skin Peanuts",
+      "description": "Indulge in the pure, earthy goodness of our Organic Paleskin Peanuts.",
+      "price": 5.47,
+      "ingredients": "Organic PEANUTS",
+      "rating": 4.86,
+      "image": "nuts-paleskin-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 556,
+        "fat": 41,
+        "carbohydrates": null,
+        "sugars": 4.8,
+        "fiber": 7.7,
+        "protein": 30,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 112,
+    "model": "products.product",
+    "fields": {
+      "sku": 100111,
+      "name": "Peanut Butter",
+      "description": "Our own brand of luxurious organic smooth peanut butter made from 100% nuts contains no palm oil.",
+      "price": 10.49,
+      "ingredients": "100% Organic PEANUTS.",
+      "rating": 4.76,
+      "image": "nuts-peanut-butter.webp",
+      "nutritional_facts": {
+        "calories": 567,
+        "fat": 46.3,
+        "carbohydrates": null,
+        "sugars": 4.7,
+        "fiber": 8.5,
+        "protein": 25.8,
+        "salt": 0.018
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 113,
+    "model": "products.product",
+    "fields": {
+      "sku": 100112,
+      "name": "Roasted Salted Peanuts",
+      "description": "Roasted and salted peanuts have been lightly seasoned and roasted to enhance the natural flavours and goodness of a nutrient-rich snack. Not only are they a protein-packed snack and a firm favourite with those with a healthy and active lifestyle.",
+      "price": 7.39,
+      "ingredients": "PEANUTS (95%), Rapeseed oil, Salt",
+      "rating": 4.97,
+      "image": "nuts-peanuts-roasted-and-salted.webp",
+      "nutritional_facts": {
+        "calories": 609,
+        "fat": 49.2,
+        "carbohydrates": null,
+        "sugars": 4.7,
+        "fiber": 8.6,
+        "protein": 27.9,
+        "salt": 1.6
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 114,
+    "model": "products.product",
+    "fields": {
+      "sku": 100113,
+      "name": "Pecans (In Shell)",
+      "description": "Pecans are soft, delicious and highly nutritious - and there's nothing like cracking your own! Use them for light snacking, combining with other nuts or seeds, baking into sweet and nutty cakes, making desserts. Pecans also work well in many savoury settings including pie making and bread baking.",
+      "price": 24.09,
+      "ingredients": "PECAN nuts",
+      "rating": 4.77,
+      "image": "nuts-pecans-in-shell.webp",
+      "nutritional_facts": {
+        "calories": 690,
+        "fat": 72,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 10,
+        "protein": 9,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 115,
+    "model": "products.product",
+    "fields": {
+      "sku": 100114,
+      "name": "Pecans",
+      "description": "Raw organic pecan nut halves are softer than other nuts and have a slightly sweet flavour than lends itself well to sweet baking. Add to homemade granola bars along with cranberries and pumpkin seeds for a nutritious treat that is packed full of goodness!",
+      "price": 24.27,
+      "ingredients": "organic PECAN nuts",
+      "rating": 4.97,
+      "image": "nuts-pecans.webp",
+      "nutritional_facts": {
+        "calories": 689,
+        "fat": 70.1,
+        "carbohydrates": null,
+        "sugars": 4.3,
+        "fiber": 4.7,
+        "protein": 9.2,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 116,
+    "model": "products.product",
+    "fields": {
+      "sku": 100115,
+      "name": "Pine Nuts",
+      "description": "Frequently added to meat, fish, salads and vegetable dishes or baked into bread. In Italian, they are called pinole and are an essential component of Italian pesto sauce.",
+      "price": 30.17,
+      "ingredients": "Pine Nuts",
+      "rating": 4.93,
+      "image": "nuts-pine-nuts.webp",
+      "nutritional_facts": {
+        "calories": 700,
+        "fat": 68.4,
+        "carbohydrates": null,
+        "sugars": 3.6,
+        "fiber": 3.7,
+        "protein": 13.7,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 117,
+    "model": "products.product",
+    "fields": {
+      "sku": 100116,
+      "name": "Pistachio Nuts",
+      "description": "These pistachio nuts are raw, shelled and unsalted, any saltiness in flavour is completely natural. They are partially green in colour and a fantastic healthy snack.",
+      "price": 29.91,
+      "ingredients": "PISTACHIOS",
+      "rating": 4.78,
+      "image": "nuts-pistachio-nuts.webp",
+      "nutritional_facts": {
+        "calories": 573,
+        "fat": 45.4,
+        "carbohydrates": null,
+        "sugars": 7.7,
+        "fiber": 10.3,
+        "protein": 20.3,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 118,
+    "model": "products.product",
+    "fields": {
+      "sku": 100117,
+      "name": "Raw Macadamia Nuts",
+      "description": "Whole, raw macadamia nuts are a highly nutritious snack suitable for any time of day. High in protein and packed full of fibre, these nuts are a great option to enhance your daily nutrient intake.",
+      "price": 17.87,
+      "ingredients": "MACADAMIA nuts",
+      "rating": 4.77,
+      "image": "nuts-raw-macadamia-nuts.webp",
+      "nutritional_facts": {
+        "calories": 739,
+        "fat": 75.8,
+        "carbohydrates": null,
+        "sugars": 4.6,
+        "fiber": 8.6,
+        "protein": 7.9,
+        "salt": 0.01
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 119,
+    "model": "products.product",
+    "fields": {
+      "sku": 100118,
+      "name": "Redskin Peanuts",
+      "description": "These peanuts are not just a treat for your taste buds but a versatile ingredient that can transform any dish. With their deep, earthy tones and a hint of sweetness, our Redskin Peanuts are perfectly balanced to offer a taste sensation that's both indulgent and comforting.",
+      "price": 6.05,
+      "ingredients": "PEANUTS",
+      "rating": 4.85,
+      "image": "nuts-redskin-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 570,
+        "fat": 45,
+        "carbohydrates": null,
+        "sugars": 0.01,
+        "fiber": 9,
+        "protein": 26.5,
+        "salt": 0.01
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 120,
+    "model": "products.product",
+    "fields": {
+      "sku": 100119,
+      "name": "Roasted Peanuts (In Shell)",
+      "description": "These very special peanuts have been roasted in their shell. The result is a lightly smoked, crisp and deeply satisfying nut that is kept in its shell for freshness. Simply break open and enjoy!",
+      "price": 4.94,
+      "ingredients": "PEANUTS",
+      "rating": 4.75,
+      "image": "nuts-roasted-peanuts-in-shell.webp",
+      "nutritional_facts": {
+        "calories": 579,
+        "fat": 46,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 25.6,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 121,
+    "model": "products.product",
+    "fields": {
+      "sku": 100120,
+      "name": "Salt and Vinegar Peanuts",
+      "description": "Salt and vinegar peanuts are not your typical flavour of peanut but they are growing in popularity day by day. The pairing of salt, vinegar and the peanut are a match made in heaven, enjoy these nuts either as a snack by yourself or with some friends.",
+      "price": 5.64,
+      "ingredients": "PEANUTS (94%), salt & vinegar seasoning 4% (sea salt, cider vinegar powder, sugar, acid (citric acid, malt vinegar powder, (BARLEY), malic acid, colour (caramel), yeast extract powder, turmeric), rapeseed oil",
+      "rating": 4.9,
+      "image": "nuts-salt-and-vinegar-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 555,
+        "fat": 45,
+        "carbohydrates": null,
+        "sugars": 6.3,
+        "fiber": 5.8,
+        "protein": 24,
+        "salt": 1.86
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 122,
+    "model": "products.product",
+    "fields": {
+      "sku": 100121,
+      "name": "Walnuts (Halves)",
+      "description": "These Californian walnut halves are among the most nutritious, versatile and delicious nuts in the world.",
+      "price": 10.47,
+      "ingredients": "WALNUTS",
+      "rating": 4.75,
+      "image": "nuts-wallnuts-halves.webp",
+      "nutritional_facts": {
+        "calories": 688,
+        "fat": 65.2,
+        "carbohydrates": null,
+        "sugars": 2.6,
+        "fiber": 6.7,
+        "protein": 15.2,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 123,
+    "model": "products.product",
+    "fields": {
+      "sku": 100122,
+      "name": "Walnuts (In Shell)",
+      "description": "These in-shell Californian walnuts are highly nutritious and versatile, they make a delicious snack and are great when used in baking and cooking, just simply crack open and enjoy.",
+      "price": 12.58,
+      "ingredients": "WALNUTS",
+      "rating": 4.88,
+      "image": "nuts-wallnuts-in-shell.webp",
+      "nutritional_facts": {
+        "calories": 654,
+        "fat": 65.2,
+        "carbohydrates": null,
+        "sugars": 2.6,
+        "fiber": 6.7,
+        "protein": 15.2,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 124,
+    "model": "products.product",
+    "fields": {
+      "sku": 100123,
+      "name": "Wasabi Coated Peanuts",
+      "description": "Very popular in the Asian cuisine, the wasabi peanuts are unsalted peanuts which have been coated in the popular Japanese flavour to provide a hot and tasty layer that is incredibly enjoyable and the perfect savoury snack.",
+      "price": 12.11,
+      "ingredients": "PEANUTS (32%), Modified Corn Starch (23%), Corn Starch (15.5%), WHEAT Flour (GLUTEN 15.5%), sugar, Dextrin, salt, coconut oil, seaweed, Wasabi Powder (0.45%)(wasabi Japonica, Horseradish, Dextrin, Modified Corn Starch), colour:E144",
+      "rating": 4.99,
+      "image": "nuts-wasabi-coated-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 448,
+        "fat": 18,
+        "carbohydrates": null,
+        "sugars": 10.8,
+        "fiber": 2.4,
+        "protein": 13.2,
+        "salt": 1
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 125,
+    "model": "products.product",
+    "fields": {
+      "sku": 100124,
+      "name": "Whole Cashew Nuts",
+      "description": "Whole cashew nuts are a great healthy snack packed full of nutrients. They can be enjoyed as they are or roasted for extra flavour. Cashew nuts are great for making desserts and pasta sauce too.",
+      "price": 13.41,
+      "ingredients": "CASHEW nuts",
+      "rating": 4.99,
+      "image": "nuts-whole-cashew-nuts.webp",
+      "nutritional_facts": {
+        "calories": 568,
+        "fat": 44,
+        "carbohydrates": null,
+        "sugars": 5.9,
+        "fiber": 3,
+        "protein": 15.1,
+        "salt": 0
+      },
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "pk": 126,
+    "model": "products.product",
+    "fields": {
+      "sku": 100125,
+      "name": "Oat Bran",
+      "description": "Organic oat bran is a rich source of soluble fibre and great for gut health. It is 100% organic and can be enjoyed as a high-fibre hot porridge or added to baking.",
+      "price": 4.12,
+      "ingredients": "organic OATBRAN",
+      "rating": 4.84,
+      "image": "oat-bran.webp",
+      "nutritional_facts": {
+        "calories": 365,
+        "fat": 7.2,
+        "carbohydrates": null,
+        "sugars": 1.3,
+        "fiber": 14,
+        "protein": 18,
+        "salt": 0.13
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 127,
+    "model": "products.product",
+    "fields": {
+      "sku": 100126,
+      "name": "Avocado Oil (Clearspring)",
+      "description": "Avocado oil benefits our health in three main ways Â– through its superior fatty acid profile, high in monounsaturated fats; through its phytosterols, particularly the good levels of beta-sitosterol; and through its strong nutrient content. These three reasons make avocado oil a very healthy alternative to other cooking oils you may currently be using. Certainly unhealthy heat processed oils like cottonseed, corn, soy or canola oil, but also healthy oils like olive oil, due to its far higher smoke point. The fact that it tastes great too makes it even better.",
+      "price": 9.79,
+      "ingredients": "NILL",
+      "rating": 4.75,
+      "image": "oils-avocado-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 0,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 128,
+    "model": "products.product",
+    "fields": {
+      "sku": 100127,
+      "name": "Flax Oil (Clearspring)",
+      "description": "Clearspring flax oil is an excellent vegan source of Omega 3 alpha linolenic acid (ALA), cold pressed from 100% European organic flaxseeds.",
+      "price": 5.93,
+      "ingredients": "Organic cold-pressed flaxseed oil",
+      "rating": 4.99,
+      "image": "oils-flax-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 828,
+        "fat": 92,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 129,
+    "model": "products.product",
+    "fields": {
+      "sku": 100128,
+      "name": "Olive Oil (Clearspring)",
+      "description": "This special blend of mild and fruity Dolce di Rossano olives from Calabria with more pungent Coratina olives from Puglia produce an oil that is ideal for salads, sautÃ©ing, baking, dressings and dips.",
+      "price": 13.91,
+      "ingredients": "Organic 100% Italian extra virgin oil",
+      "rating": 4.94,
+      "image": "oils-olive-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 828,
+        "fat": 92,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 130,
+    "model": "products.product",
+    "fields": {
+      "sku": 100129,
+      "name": "Sesame Oil (Clearspring)",
+      "description": "With its abundance of nutrients, Clearspring Organic Sesame Oil is exceptionally stable, and resistant to rancidity. Its light flavour and healthy balance of omega-6 and omega-3 essential fatty acids, sesame oil is valued throughout Asia as the most versatile culinary oil.",
+      "price": 9.23,
+      "ingredients": "Organic SESAME oil",
+      "rating": 4.75,
+      "image": "oils-sesame-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 828,
+        "fat": 92,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 131,
+    "model": "products.product",
+    "fields": {
+      "sku": 100130,
+      "name": "Toasted Sesame Oil (Clearspring)",
+      "description": "The rich nutty aroma and flavour of Clearspring Organic Toasted Sesame Oil gives an authentic oriental taste to food.",
+      "price": 10.99,
+      "ingredients": "100% organic SESAME oil",
+      "rating": 4.87,
+      "image": "oils-sesame-toasted-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 828,
+        "fat": 92,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 132,
+    "model": "products.product",
+    "fields": {
+      "sku": 100131,
+      "name": "Sunflower Oil (Clearspring)",
+      "description": "Organic Sunflower Oil, with its golden yellow colour and distinct, nutty flavour, is a popular general-purpose oil.",
+      "price": 5.49,
+      "ingredients": "Organic Sunflower Oil",
+      "rating": 4.95,
+      "image": "oils-sunflower-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 828,
+        "fat": 92,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 133,
+    "model": "products.product",
+    "fields": {
+      "sku": 100132,
+      "name": "Onion Powder",
+      "description": "Onion powder is one of the world's best ingredients, it is great for frying, baking and all kinds of hot cooking. It's a key flavour in a number of cuisines across the world including Mexican, and Indian. The powder works with practically any other vegetable dish and a great number of spices and virtually all herbs too.",
+      "price": 7.05,
+      "ingredients": "Onion Powder",
+      "rating": 4.84,
+      "image": "onion-powder.webp",
+      "nutritional_facts": {
+        "calories": 331,
+        "fat": 0.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 9,
+        "protein": 16.6,
+        "salt": 0.2
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 134,
+    "model": "products.product",
+    "fields": {
+      "sku": 100133,
+      "name": "Organic Sprouting Mix",
+      "description": "Our organic sprouting mix is a unique blend of lentils, beans and pulses and sprouts in just 3 days. Once sprouted, sprinkle on salads and meals for a boost in fibre.",
+      "price": 11.29,
+      "ingredients": "Mung Beans*, Green Lentils*, Brown Lentils*, Chick Peas*, Aduki Beans*, Peas*. *Organic",
+      "rating": 4.92,
+      "image": "organic-sprouting-mix.webp",
+      "nutritional_facts": {
+        "calories": 384,
+        "fat": 9.7,
+        "carbohydrates": null,
+        "sugars": 4.3,
+        "fiber": 19.6,
+        "protein": 22.7,
+        "salt": 0
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 135,
+    "model": "products.product",
+    "fields": {
+      "sku": 100134,
+      "name": "Chickpea Pasta (Gluten-Free)",
+      "description": "Clearspring Organic Chickpea Pasta is made from naturally gluten free chickpea flour and a pinch of psyllium husk for added fibre. Chickpeas are a nutritious legume that has been used for centuries as a high protein, high fibre staple food. This delicately flavoured sedanini makes a nourishing and satisfying meal and can be enjoyed hot with your favourite sauce or cold in summer salads. A genuine alternative to durum wheat pasta, not just for those avoiding gluten but for all to enjoy. Produced in a dedicated gluten and nut free facility which only uses renewable energy",
+      "price": 4.16,
+      "ingredients": "Organic Chickpea flour (100%)",
+      "rating": 4.91,
+      "image": "pasta-chickpea-pasta-gluten-free.webp",
+      "nutritional_facts": {
+        "calories": 357,
+        "fat": 5.5,
+        "carbohydrates": null,
+        "sugars": 2.5,
+        "fiber": 9.5,
+        "protein": 22,
+        "salt": 0
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 136,
+    "model": "products.product",
+    "fields": {
+      "sku": 100135,
+      "name": "Wholegrain Fusili Pasta",
+      "description": "Organic Wholewheat Fusilli pasta is great for a quick and easy healthy dinner, the spiral shape allows it to hold onto sauces and other ingredients well.",
+      "price": 5.01,
+      "ingredients": "Durum WHOLEWHEAT",
+      "rating": 4.87,
+      "image": "pasta-fusili-wholegrain.webp",
+      "nutritional_facts": {
+        "calories": 337,
+        "fat": 2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 70,
+        "protein": 11.5,
+        "salt": 0.01
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 137,
+    "model": "products.product",
+    "fields": {
+      "sku": 100136,
+      "name": "Lasagna Sheets",
+      "description": "A family favourite across the UK, Lasagne is an Italian dish which is made by layering sauces and protein together to create a heavenly combination.",
+      "price": 7.1,
+      "ingredients": "organic WHEAT semolina, water",
+      "rating": 4.97,
+      "image": "pasta-lasagna-sheets.webp",
+      "nutritional_facts": {
+        "calories": 357,
+        "fat": 1.8,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 3.3,
+        "protein": 12.4,
+        "salt": 0.01
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 138,
+    "model": "products.product",
+    "fields": {
+      "sku": 100137,
+      "name": "Penne Pasta",
+      "description": "These medium length tubes are a very popular type of organic pasta, loved by our many customers. Use them to make traditional Italian dishes, but you'll also find they mix well with creamy sauces, tomato-based sauces, vegetarian and vegan pesto, and virtually anything you wish!",
+      "price": 5.07,
+      "ingredients": "Durum WHEAT semolina",
+      "rating": 4.76,
+      "image": "pasta-penne.webp",
+      "nutritional_facts": {
+        "calories": 350,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 6.7,
+        "fiber": 2.6,
+        "protein": 10.5,
+        "salt": 0
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 139,
+    "model": "products.product",
+    "fields": {
+      "sku": 100138,
+      "name": "Quinoa Pasta (Gluten-Free)",
+      "description": "Clearspring organic Gluten Free pasta is made from protein rich green split pea flour and white quinoa flour, simply mixed with a little water to create a firm texture with a satisfying bite. Made in Italy by second generation millers, this bright green fusilli has a pronounced pea flavour and counts as one of your 5-a-day.",
+      "price": 4.17,
+      "ingredients": "Green split pea flour* (85%), quinoa flour* (15%). *organic",
+      "rating": 4.92,
+      "image": "pasta-quinoa-gluten-free.webp",
+      "nutritional_facts": {
+        "calories": 346,
+        "fat": 2.5,
+        "carbohydrates": null,
+        "sugars": 2.8,
+        "fiber": 7.2,
+        "protein": 21,
+        "salt": 0.02
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 140,
+    "model": "products.product",
+    "fields": {
+      "sku": 100139,
+      "name": "Red Lentil Pasta (Gluten-Free)",
+      "description": "Not just for lentil lovers, this Red Lentil Penne offers a quick meal and is perfect if you want to add more protein and fibre to your diet. Not only gluten and egg-free but also organic, this pasta is made in Italy with 100% red lentils and delicious served hot with your favourite sauce or cold in a salad.",
+      "price": 3.89,
+      "ingredients": "red lentil flour*. *organic",
+      "rating": 4.98,
+      "image": "pasta-red-lentil-gluten-free.webp",
+      "nutritional_facts": {
+        "calories": 335,
+        "fat": 1.8,
+        "carbohydrates": null,
+        "sugars": 2.6,
+        "fiber": 8.8,
+        "protein": 20,
+        "salt": 0.01
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 141,
+    "model": "products.product",
+    "fields": {
+      "sku": 100140,
+      "name": "Spaghetti Pasta",
+      "description": "This organic white spaghetti is one of the most flexible threads of tasty pasta in the world. Loosely translated its name means 'length of cord', and it's great for connecting many different ingredients from vegetables to beans and pulses any just about any sauce going.",
+      "price": 5.31,
+      "ingredients": "Durum WHEAT semolina",
+      "rating": 4.8,
+      "image": "pasta-spaghetti.webp",
+      "nutritional_facts": {
+        "calories": 350,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 6.7,
+        "fiber": 2.6,
+        "protein": 10.5,
+        "salt": 0
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 142,
+    "model": "products.product",
+    "fields": {
+      "sku": 100141,
+      "name": "Spinach Tagliatelle",
+      "description": "This sturdy pasta has a rich flavor that can stand up to the heartiest of sauces: decadent cream sauces, rustic vegetable sauces and even chunky meat sauces, like Bolognese.",
+      "price": 8.88,
+      "ingredients": "Durum Wheat Semolina* (Gluten), Spinach* (3%). *Organic.",
+      "rating": 4.87,
+      "image": "pasta-spinach-tagliatelle.webp",
+      "nutritional_facts": {
+        "calories": 357,
+        "fat": 1.5,
+        "carbohydrates": null,
+        "sugars": 2.2,
+        "fiber": 3.5,
+        "protein": 12,
+        "salt": 0.02
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 143,
+    "model": "products.product",
+    "fields": {
+      "sku": 100142,
+      "name": "Tricolore Penne Pasta",
+      "description": "Our Tricolore Penne is handmade from just four simple, plant-based ingredients. Made in small batches, it's traditionally bronze-drawn and dried at low temperatures for over 20 hours to give the ultimate flavour & texture.",
+      "price": 10,
+      "ingredients": "Durum Wheat, Semolina Flour (98%), Spinach (1%), Beetroot (1%), Water",
+      "rating": 4.96,
+      "image": "pasta-tricolore-penne.webp",
+      "nutritional_facts": {
+        "calories": 292,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 3.9,
+        "fiber": 2.8,
+        "protein": 8.8,
+        "salt": 0.01
+      },
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "pk": 144,
+    "model": "products.product",
+    "fields": {
+      "sku": 100143,
+      "name": "Pea Seeds for Sprouting",
+      "description": "Introducing our premium Pea Sprouting Seeds, specifically selected for their superior sprouting performance and health benefits.",
+      "price": 6.51,
+      "ingredients": "Organic Pea Seeds for Sprouting",
+      "rating": 4.86,
+      "image": "pea-seeds-for-sprouting.webp",
+      "nutritional_facts": {
+        "calories": 0,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 145,
+    "model": "products.product",
+    "fields": {
+      "sku": 100144,
+      "name": "Raw Cacao Nibs",
+      "description": "Our organic cacao nibs are great for adding to baking or for sprinkling on breakfast bowls such as warm porridge oats or nutritious smoothie bowls and even ice cream too!",
+      "price": 24.27,
+      "ingredients": "100% Organic Cacao Beans (Nibs)",
+      "rating": 4.99,
+      "image": "raw-cacao-nibs.webp",
+      "nutritional_facts": {
+        "calories": 564,
+        "fat": 51.5,
+        "carbohydrates": null,
+        "sugars": 1.3,
+        "fiber": 28,
+        "protein": 12.4,
+        "salt": 0.08
+      },
+      "category": [
+        18
+      ]
+    }
+  },
+  {
+    "pk": 146,
+    "model": "products.product",
+    "fields": {
+      "sku": 100145,
+      "name": "Red Rice",
+      "description": "Very popular in the Asian cuisine, the wasabi peanuts are unsalted peanuts which have been coated in the popular Japanese flavour to provide a hot and tasty layer that is incredibly enjoyable and the perfect savoury snack.",
+      "price": 6.51,
+      "ingredients": "red rice",
+      "rating": 4.79,
+      "image": "red-rice.webp",
+      "nutritional_facts": {
+        "calories": 360,
+        "fat": 2.5,
+        "carbohydrates": null,
+        "sugars": 0.12,
+        "fiber": 2.7,
+        "protein": 7.2,
+        "salt": 0.03
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 147,
+    "model": "products.product",
+    "fields": {
+      "sku": 100146,
+      "name": "Red Wine Vinegar (Clearspring)",
+      "description": "Clearspring Organic Red Wine Vinegar is made with selected organic grapes from Emilia Romagna, which are pressed and then slowly fermented in accordance with a time-honoured tradition.",
+      "price": 3.39,
+      "ingredients": "Red wine from organic agriculture",
+      "rating": 4.95,
+      "image": "red-wine-vinegar-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 21,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0.5,
+        "fiber": 0.05,
+        "protein": 0,
+        "salt": 0.04
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 148,
+    "model": "products.product",
+    "fields": {
+      "sku": 100147,
+      "name": "Risotto Rice",
+      "description": "This organic white arborio is the rice of choice for avid risotto lovers. It will give you sweet, plump and stodgy goodness without fail. Arborio rice can also be used in various settings, including soups, stews, salads and complementation to any hot meal.",
+      "price": 6.47,
+      "ingredients": "Organic Risotto White [Arborio]",
+      "rating": 4.81,
+      "image": "risotto-rice.webp",
+      "nutritional_facts": {
+        "calories": 353,
+        "fat": 0.5,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0.5,
+        "protein": 7.4,
+        "salt": 0.3
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 149,
+    "model": "products.product",
+    "fields": {
+      "sku": 100148,
+      "name": "Celtic Sea Salt",
+      "description": "Discover the rich taste of our Celtic Grey Sea Salt (Coarse) â€“ a culinary treasure that boosts each dish with its robust flavour.",
+      "price": 5.95,
+      "ingredients": "Coarse Celtic Grey Sea Salt",
+      "rating": 4.75,
+      "image": "salt-celtic.webp",
+      "nutritional_facts": {
+        "calories": 0,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        18
+      ]
+    }
+  },
+  {
+    "pk": 150,
+    "model": "products.product",
+    "fields": {
+      "sku": 100149,
+      "name": "Coarse Sea Salt",
+      "description": "All kitchens need a supply of salt, and it does not come better than our own coarsley ground sea salt. Because of its wider grains, the coarse salt is more widely used in the culinary industry.",
+      "price": 1.79,
+      "ingredients": "natural sea salt",
+      "rating": 4.76,
+      "image": "salt-coarse-sea-salt.webp",
+      "nutritional_facts": {
+        "calories": 0,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        18
+      ]
+    }
+  },
+  {
+    "pk": 151,
+    "model": "products.product",
+    "fields": {
+      "sku": 100150,
+      "name": "Himalayan Fine Salt",
+      "description": "With it having an eye-catching pink colour and distinctive taste, the fine Himalayan rose pink salt is used as normal salt in that you can use it in seasonings for most savoury recipes.",
+      "price": 3.99,
+      "ingredients": "himalayan rose pink salt",
+      "rating": 4.91,
+      "image": "salt-himalayan-fine.webp",
+      "nutritional_facts": {
+        "calories": 0,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        18
+      ]
+    }
+  },
+  {
+    "pk": 152,
+    "model": "products.product",
+    "fields": {
+      "sku": 100151,
+      "name": "Seed Blend",
+      "description": "The omega seed mix is a blend of some of the popular seeds including sunflower, golden linseed, pumpkin, sesame and hemp seeds. The hemp seeds are very crunchy and not suitable for sensitive or weak teeth.",
+      "price": 6.15,
+      "ingredients": "Organic Sunflower Seeds, Organic Golden Linseed, Organic Pumpkin Seeds, Organic SESAME Seeds, Organic Hemp Seeds",
+      "rating": 4.83,
+      "image": "seed-blend.webp",
+      "nutritional_facts": {
+        "calories": 555,
+        "fat": 45.7,
+        "carbohydrates": null,
+        "sugars": 2.4,
+        "fiber": 18.7,
+        "protein": 22.6,
+        "salt": 0
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 153,
+    "model": "products.product",
+    "fields": {
+      "sku": 100152,
+      "name": "Alfalfa Seeds",
+      "description": "Organic alfalfa seeds are 100% organic and highly nutritious, which makes them perfect for enhancing a healthy diet. Alfalfa seeds, also known as Lucerne are great for sprouting beginners as they are easy to plant and tend to sprout within 7-10 days, at which point they are ready to be washed and used to top healthy meals such as salads.",
+      "price": 17.16,
+      "ingredients": "Organic Alfalfa Seeds",
+      "rating": 4.83,
+      "image": "seeds-alfalfa.webp",
+      "nutritional_facts": {
+        "calories": 24,
+        "fat": 0.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 4,
+        "salt": 0
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 154,
+    "model": "products.product",
+    "fields": {
+      "sku": 100153,
+      "name": "Chia Seeds",
+      "description": "Chia seeds are a powerhouse of nutrients and packed full of protein and fibre. These low-calorie seeds are a powerhouse of nutrients and packed full of protein and fibre. They can be added to smoothies and oats or used to create chia pudding and chia egg which are great for vegan baking.",
+      "price": 8.58,
+      "ingredients": "Organic Chia Seed",
+      "rating": 4.94,
+      "image": "seeds-chia.webp",
+      "nutritional_facts": {
+        "calories": 436,
+        "fat": 31,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 37.9,
+        "protein": 20,
+        "salt": 0.05
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 155,
+    "model": "products.product",
+    "fields": {
+      "sku": 100154,
+      "name": "Decorticated Hemp Seeds",
+      "description": "100% Organic Shelled Hemp Seeds are exceptionally nutritious and a source of minerals, plus a complete protein source. They are perfect for sprinkling on top of dishes. Why not try adding to your breakfast, yogurt, or salad?",
+      "price": 13.99,
+      "ingredients": "100% Organic Shelled Hemp Seeds.",
+      "rating": 4.84,
+      "image": "seeds-decorticated-hemp.webp",
+      "nutritional_facts": {
+        "calories": 598,
+        "fat": 46,
+        "carbohydrates": null,
+        "sugars": 3.5,
+        "fiber": 5.4,
+        "protein": 32,
+        "salt": 0.04
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 156,
+    "model": "products.product",
+    "fields": {
+      "sku": 100155,
+      "name": "Flax Linseeds",
+      "description": "Golden linseeds are one of the most complete and highly nutritious seeds we sell. They are a fantastic source of vegan protein, various minerals and other healthy attributes. Their unique crisp-brittle crunch is also a real crowd-pleaser with our customers.",
+      "price": 3.67,
+      "ingredients": "Golden Linseeds",
+      "rating": 4.99,
+      "image": "seeds-flax-linseeds.webp",
+      "nutritional_facts": {
+        "calories": 487,
+        "fat": 36.6,
+        "carbohydrates": null,
+        "sugars": 2.1,
+        "fiber": 24.4,
+        "protein": 22,
+        "salt": 0
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 157,
+    "model": "products.product",
+    "fields": {
+      "sku": 100156,
+      "name": "Hemp Seeds",
+      "description": "Our Organic Hemp Seeds are an excellent source of protein, fibre and vital vitamins and minerals, they are best sprinkled on breakfasts and salads to get the full hemp taste experience.",
+      "price": 7.39,
+      "ingredients": "Organic Hemp Seeds",
+      "rating": 4.83,
+      "image": "seeds-hemp-seeds.webp",
+      "nutritional_facts": {
+        "calories": 567,
+        "fat": 44,
+        "carbohydrates": null,
+        "sugars": 2,
+        "fiber": 7,
+        "protein": 34,
+        "salt": 0
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 158,
+    "model": "products.product",
+    "fields": {
+      "sku": 100157,
+      "name": "Peeled Pumpkin Seeds",
+      "description": "Premium, high quality Organic European pumpkin seeds are high in nutrients, proteins, healthy fats and fibre. They are slightly larger than average and produced naturally.",
+      "price": 16.1,
+      "ingredients": "organic pumpkin seeds",
+      "rating": 4.94,
+      "image": "seeds-peeled-pumpkin.webp",
+      "nutritional_facts": {
+        "calories": 618,
+        "fat": 49.5,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 8.8,
+        "protein": 24.4,
+        "salt": 0.045
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 159,
+    "model": "products.product",
+    "fields": {
+      "sku": 100158,
+      "name": "Peeled Sunflower Seeds",
+      "description": "Organic sunflower seeds are packed with nutrients and are rich in protein, fibre and healthy fats. Sprinkle on fresh salads, add to bread making or make your own trail mix by teaming it with pumpkin seeds, cranberries and almonds.",
+      "price": 4.65,
+      "ingredients": "Organic Sunflower Seeds",
+      "rating": 4.85,
+      "image": "seeds-peeled-sunflower.webp",
+      "nutritional_facts": {
+        "calories": 576,
+        "fat": 47.5,
+        "carbohydrates": null,
+        "sugars": 1.7,
+        "fiber": 6.3,
+        "protein": 19.8,
+        "salt": 0.01
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 160,
+    "model": "products.product",
+    "fields": {
+      "sku": 100159,
+      "name": "Poppy Seeds",
+      "description": "These seeds are grown raw, and are the naturally dried seeds of Papaver somniferum plant.",
+      "price": 6.38,
+      "ingredients": "Poppy Seeds - Blue",
+      "rating": 4.97,
+      "image": "seeds-poppy-seeds.webp",
+      "nutritional_facts": {
+        "calories": 533,
+        "fat": 4.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 18,
+        "salt": 0
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 161,
+    "model": "products.product",
+    "fields": {
+      "sku": 100160,
+      "name": "White Sesame Seeds",
+      "description": "Our Organic White Sesame Seeds are popularly used in Japanese cuisine for coating sushi or tofu or sprinkled on noodles. They are also used when baking bread and bagels for decoration.",
+      "price": 7.51,
+      "ingredients": "organic white SESAME seeds",
+      "rating": 4.88,
+      "image": "seeds-white-sesame.webp",
+      "nutritional_facts": {
+        "calories": 573,
+        "fat": 49.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 11.8,
+        "protein": 11.7,
+        "salt": 0.03
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 162,
+    "model": "products.product",
+    "fields": {
+      "sku": 100161,
+      "name": "Black Sesame Seeds",
+      "description": "Organic black sesame seeds have a unique flavour and very pleasing crunch.  These Black Sesame Seeds are completely organic, vegan and packed full of nutrition. For such tiny seeds, these seeds retain a wealth of nutrients and are a fantastic source of essential fatty acids that are good for the body.",
+      "price": 7.49,
+      "ingredients": "organic black SESAME seeds",
+      "rating": 4.97,
+      "image": "sesame-black.webp",
+      "nutritional_facts": {
+        "calories": 573,
+        "fat": 49.7,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 11.8,
+        "protein": 17.7,
+        "salt": 0.03
+      },
+      "category": [
+        17
+      ]
+    }
+  },
+  {
+    "pk": 163,
+    "model": "products.product",
+    "fields": {
+      "sku": 100162,
+      "name": "Baked Sea Salt and Vinegar Fava Beans",
+      "description": "These crunchy delights are seasoned to perfection, combining the sharp tang of vinegar with a hint of sea salt, creating a mouth-watering balance of flavours that will keep you reaching for more.",
+      "price": 9.73,
+      "ingredients": "Broad Beans, Flavour 4% (Sea Salt, Cider Vinegar Powder, Acid: Citric Acid, Malic Acid; Sugar, Malt Vinegar Powder [BARLEY], Caramelised Sugar Powder, Yeast Extract Powder, Natural Flavouring), Rapeseed Oil",
+      "rating": 4.84,
+      "image": "snacks-baked-sea-salt-and-vinegar-fava-beans.webp",
+      "nutritional_facts": {
+        "calories": 393,
+        "fat": 12.7,
+        "carbohydrates": null,
+        "sugars": 1.5,
+        "fiber": 18,
+        "protein": 24.3,
+        "salt": 1.9
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 164,
+    "model": "products.product",
+    "fields": {
+      "sku": 100163,
+      "name": "Banana Chips",
+      "description": "Dried banana chips are a great natural confectionery that can be enjoyed as a guilt-free snack to curb a sweet tooth. Our tasty sweet banana chips have been fried in coconut oil before the drying process to provide a subtle coconut flavour.",
+      "price": 6.21,
+      "ingredients": "Banana, Coconut Oil, Refined Cane Sugar, Banana Flavour.",
+      "rating": 4.87,
+      "image": "snacks-banana-chips.webp",
+      "nutritional_facts": {
+        "calories": 441,
+        "fat": 26.47,
+        "carbohydrates": null,
+        "sugars": 29.41,
+        "fiber": 5.9,
+        "protein": 2.94,
+        "salt": 0
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 165,
+    "model": "products.product",
+    "fields": {
+      "sku": 100164,
+      "name": "Carob Coated Brazil Nuts",
+      "description": "When cravings call, these carob-coated brazil nuts are an indulgent treat which is enjoyed across the world. Coating your fruits or nuts in either carob or yoghurt is a fantastic way to cure your sweet tooth without being too calorific.",
+      "price": 14.75,
+      "ingredients": "sugar, BRAZIL (NUT) (30%), vegetable fat (palm SG), WHEY (from MILK), carob powder (6%), rice flour, emulsifier (sunflower lecithin E322), glazing agents; gum arabic, shellac E904",
+      "rating": 4.86,
+      "image": "snacks-carob-coated-brazil-nuts.webp",
+      "nutritional_facts": {
+        "calories": 575,
+        "fat": 41.2,
+        "carbohydrates": null,
+        "sugars": 44.3,
+        "fiber": 1.6,
+        "protein": 5.8,
+        "salt": 0.3
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 166,
+    "model": "products.product",
+    "fields": {
+      "sku": 100165,
+      "name": "Carob Coated Peanuts",
+      "description": "This nourishing and delicious snack is the perfect way to cure your sweet tooth, Carob is a bean which grows on trees and has a naturally sweet flavour which is a perfect alternative to chocolate. ",
+      "price": 5.8,
+      "ingredients": "PEANUTS (45%), sugar, vegetable fat (palm SG), WHEY (from MILK), carob powder (5%), rice flour, emulsifier (sunflower lecithin) E322, glazing agents: gum arabic, shellac E904",
+      "rating": 4.99,
+      "image": "snacks-carob-coated-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 572,
+        "fat": 40.2,
+        "carbohydrates": null,
+        "sugars": 33.5,
+        "fiber": 4.1,
+        "protein": 13.5,
+        "salt": 0.7
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 167,
+    "model": "products.product",
+    "fields": {
+      "sku": 100166,
+      "name": "Dark Chocolate Brazil Nuts",
+      "description": "Organic dark chocolate-coated Brazil nuts are a delicious, indulgent treat for when cravings call. Using whole Brazil nuts and coating in smooth, dark chocolate these are so incredibly moreish you won't want to share.",
+      "price": 24.44,
+      "ingredients": "Organic BRAZIL nuts (25%), Organic chocolate (74,9%) (cane sugar, cocoa mass, cocoa butter, natural vanilla aroma), Arabic gum with polydextrose",
+      "rating": 4.75,
+      "image": "snacks-dark-chocolate-brazil-nuts.webp",
+      "nutritional_facts": {
+        "calories": 569,
+        "fat": 42.2,
+        "carbohydrates": null,
+        "sugars": 35.5,
+        "fiber": 7.7,
+        "protein": 7.2,
+        "salt": 0.01
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 168,
+    "model": "products.product",
+    "fields": {
+      "sku": 100167,
+      "name": "Giant Salted Corn",
+      "description": "This fried corn are incredible in taste and texture, as they are seriously crunchy and have a nutty flavour. These little pieces of gold are lightly fried to perfection to provide your pallet with an incredible flavour.",
+      "price": 10.68,
+      "ingredients": "corn, sunflower oil, salt",
+      "rating": 4.86,
+      "image": "snacks-giant-salted-corn.webp",
+      "nutritional_facts": {
+        "calories": 429,
+        "fat": 15,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 5.9,
+        "protein": 6.6,
+        "salt": 2
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 169,
+    "model": "products.product",
+    "fields": {
+      "sku": 100168,
+      "name": "Honey Roasted Peanuts",
+      "description": "Indulge in the delightful taste of our Honey Roasted Peanuts, a perfect blend of sweet and salty flavours. Each peanut is generously coated with pure honey and then slowly roasted to golden brown perfection, creating a crunchy outer shell that bursts with sweetness in every bite. The rich, buttery taste of the peanuts is beautifully contrasted by the addition of sea salt, offering a delightful snack that is hard to resist.",
+      "price": 6.7,
+      "ingredients": "PEANUTS (77%), sugar, rapeseed oil, honey2%, salt, stabiliser (xanthan gum)",
+      "rating": 4.92,
+      "image": "snacks-honey-roasted-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 559,
+        "fat": 39,
+        "carbohydrates": null,
+        "sugars": 24,
+        "fiber": 6.2,
+        "protein": 21,
+        "salt": 0.72
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 170,
+    "model": "products.product",
+    "fields": {
+      "sku": 100169,
+      "name": "Milk Chocolate Brazil Nuts",
+      "description": "Our Milk Chocolate coated Brazil nuts are a delicious, indulgent treat for when cravings call. Using whole Brazil nuts and coating in smooth milk chocolate these are so incredibly moreish you won't want to share.",
+      "price": 15.24,
+      "ingredients": "sugar, BRAZIL NUT (30%), MILK powder, cocoa butter, cocoa mass, vegetable fat (palm oil SG), whey (from MILK), emulsifier (sunflower lecithin) E322, glazing agents: gum arabic, shellac E904. Milk chocolate, Milk solids 20% minimum, cocoa solids 20% minimum. Contains vegetable fats in addition to Cocoa butter.",
+      "rating": 4.89,
+      "image": "snacks-milk-chocolate-brazil-nuts.webp",
+      "nutritional_facts": {
+        "calories": 577,
+        "fat": 40.8,
+        "carbohydrates": null,
+        "sugars": 41.9,
+        "fiber": 2.1,
+        "protein": 9.4,
+        "salt": 0.2
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 171,
+    "model": "products.product",
+    "fields": {
+      "sku": 100170,
+      "name": "Milk Chocolate Cashews",
+      "description": "Indulge in the delightful blend of premium cashews and smooth milk chocolate with our Milk Chocolate Cashews. Our carefully selected nuts are coated in creamy milk chocolate, creating a perfect combination of crunch and sweetness in every bite.",
+      "price": 12.3,
+      "ingredients": "Milk chocolate (65%), (sugar, MILK powder, cocoa butter, cocoa mass, vegetable fat (palm sg), whey (MILK), emulsifier: sunflower lecithin (E322), glazing agents: gum arabic (E414), shellac (E904)). CASHEW NUT (35%), Milk chocolate contains vegetable fat in addition to cocoa butter. Cocoa solids 20% min, milk solids 20% min.",
+      "rating": 4.96,
+      "image": "snacks-milk-chocolate-cashews.webp",
+      "nutritional_facts": {
+        "calories": 546,
+        "fat": 35.6,
+        "carbohydrates": null,
+        "sugars": 40.1,
+        "fiber": 1.2,
+        "protein": 11.5,
+        "salt": 0.2
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 172,
+    "model": "products.product",
+    "fields": {
+      "sku": 100171,
+      "name": "Milk Chocolate Peanuts",
+      "description": "Indulge in the delectable fusion of rich, creamy milk chocolate and crunchy roasted peanuts with our Milk Chocolate Peanuts.Each bite offers a perfect balance of sweet and savoury flavours, providing an irresistible snack that satisfies your sweet tooth while delivering a delightful crunch.",
+      "price": 10.43,
+      "ingredients": "PEANUTS (48%), sugar, MILK powder, cocoa butter, cocoa mass, vegetable fat (palm MB), WHEY (from MILK), emulsifier (sunflower lecithin) E22, glazing agents: gum arabic, shellac E904",
+      "rating": 4.95,
+      "image": "snacks-milk-chocolate-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 552,
+        "fat": 36.8,
+        "carbohydrates": null,
+        "sugars": 33.5,
+        "fiber": 5.2,
+        "protein": 15.5,
+        "salt": 0.2
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 173,
+    "model": "products.product",
+    "fields": {
+      "sku": 100172,
+      "name": "Mixed Nuts with Raisins",
+      "description": "A practically perfect mixture of nuts and juicy raisins. We believe our nuts and raisins mix to be a flawless standalone snack. It's great for bulking out breakfasts like porridge or cereals and sweet dishes like fruit salads and desserts.",
+      "price": 19.18,
+      "ingredients": "ALMONDS, Black Flame raisins, CASHEWS, WALNUT halves, HAZELNUTS, PECAN halves, BRAZILS, Vegetable oil",
+      "rating": 4.88,
+      "image": "snacks-mixed-nuts-with-raisins.webp",
+      "nutritional_facts": {
+        "calories": 500,
+        "fat": 36.8,
+        "carbohydrates": null,
+        "sugars": 25.1,
+        "fiber": 5.8,
+        "protein": 10.6,
+        "salt": 0
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 174,
+    "model": "products.product",
+    "fields": {
+      "sku": 100173,
+      "name": "Roasted and Salted Pistachio Nuts",
+      "description": "Our roasted and salted pistachios are full of flavour, they are a healthy source of protein and fats, which are essential to a daily diet. They are partially green in colour and have a natural salt flavour. They are a fantastic healthy snack",
+      "price": 19.19,
+      "ingredients": "PISTACHIOS, salt",
+      "rating": 4.8,
+      "image": "snacks-roasted-and-salted-pistachio-nuts.webp",
+      "nutritional_facts": {
+        "calories": 579,
+        "fat": 46.4,
+        "carbohydrates": null,
+        "sugars": 7.2,
+        "fiber": 11.6,
+        "protein": 24.9,
+        "salt": 1
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 175,
+    "model": "products.product",
+    "fields": {
+      "sku": 100174,
+      "name": "Roasted Edamame Beans",
+      "description": "Edamame beans are a powerful small green bean that boast an excellent nutrition profile. Packed full of protein and fibre they contain all of the essential amino acids that are required by our body to function daily. Edamame beans are plant based and a perfect protein source for vegans and vegetarians that may struggle to consume enough protein in their day to day diet.",
+      "price": 15.94,
+      "ingredients": "edamame beans, palm oil, salt. (Palm oil is RSPO certified)",
+      "rating": 4.97,
+      "image": "snacks-roasted-endamame-beans.webp",
+      "nutritional_facts": {
+        "calories": 412,
+        "fat": 13.5,
+        "carbohydrates": null,
+        "sugars": 1,
+        "fiber": 13,
+        "protein": 43,
+        "salt": 1.25
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 176,
+    "model": "products.product",
+    "fields": {
+      "sku": 100175,
+      "name": "Salted Caramel Peanuts",
+      "description": "Indulge in the perfect blend of sweet and salty with our Salted Caramel Peanuts. Each crunchy peanut is generously coated with a smooth, luscious caramel that enrobes your taste buds in a delightful symphony of flavours. The harmonious balance of rich caramel sweetness and a hint of sea salt creates an irresistible snack ideal for any occasion.",
+      "price": 13.84,
+      "ingredients": "PEANUTS (57%), sugar (39%), honey, salt.",
+      "rating": 4.91,
+      "image": "snacks-salted-caramel-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 523,
+        "fat": 28.4,
+        "carbohydrates": null,
+        "sugars": 43.7,
+        "fiber": 4.6,
+        "protein": 15.5,
+        "salt": 0.7
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 177,
+    "model": "products.product",
+    "fields": {
+      "sku": 100176,
+      "name": "Seaweed Peanuts",
+      "description": "These very moreish, crispy and crunchy seaweed peanut snacks are a great stomach liner and party food. The roasted peanuts are coated in a range of tasty flavours which include, sesame and curry powder. All together when combined with the creamy peanuts, creates a very tasty treat.",
+      "price": 12.58,
+      "ingredients": "PEANUTS, WHEAT flour, sugar, modified corn starch, WHEAT starch, SESAME seeds, salt, raising agent E503ii, corn starch, seaweed, SOYA sauce, chili powder, raising agent E500, onion powder, curry powder, colour E100, E150a, E141ii, E160b, E160c",
+      "rating": 4.99,
+      "image": "snacks-seaweed-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 466,
+        "fat": 20,
+        "carbohydrates": null,
+        "sugars": 19,
+        "fiber": 5,
+        "protein": 13,
+        "salt": 1
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 178,
+    "model": "products.product",
+    "fields": {
+      "sku": 100177,
+      "name": "Sesame Sticks",
+      "description": "If you are looking for a simple but effective healthy snack, look no further than these Sesame Sticks. Made from Chickpea Flour, the sticks can be enjoyed on their own or as a party snack for everyone to enjoy. You can often find these sticks, adding an extra crunch in a bombay mix.",
+      "price": 5.12,
+      "ingredients": "Gram Flour, Maize Flour, Rapeseed Oil, Potato Starch, Sesame Seeds, Salt",
+      "rating": 4.75,
+      "image": "snacks-sesame-sticks.webp",
+      "nutritional_facts": {
+        "calories": 499,
+        "fat": 27.6,
+        "carbohydrates": null,
+        "sugars": 1.8,
+        "fiber": 4.6,
+        "protein": 9.2,
+        "salt": 2.7
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 179,
+    "model": "products.product",
+    "fields": {
+      "sku": 100178,
+      "name": "Sweet Chilli Peas",
+      "description": "Enhance your snacking with our Sweet Chilli Peas, they are ideal for snack lovers and spice enthusiasts, these peas offer a delicious blend of sweet and spicy flavours that will tantalise your taste buds. Packed with protein and fibre, these peas are not only tasty but also nutritious.",
+      "price": 14.81,
+      "ingredients": "green peas, modified corn starch, sunflower oil, sugar, WHEAT flour, sweet chilli seasoning (sugar, spices and herbs [4.5% chilli, cumin, parsley, coriander, ginger, anise seed], tomato powder, yeast extract, garlic powder, onion powder, acid[E330], sunflower oil, colour [E160c], flavour).",
+      "rating": 4.99,
+      "image": "snacks-sweet-chilli-peas.webp",
+      "nutritional_facts": {
+        "calories": 404,
+        "fat": 9.5,
+        "carbohydrates": null,
+        "sugars": 9,
+        "fiber": 9,
+        "protein": 15,
+        "salt": 0.9
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 180,
+    "model": "products.product",
+    "fields": {
+      "sku": 100179,
+      "name": "Yoghurt Coated Peanuts",
+      "description": "One of the most beloved nuts, adored throughout the world, covered in a sweet, creamy yoghurt coating. What could be more satisfying?",
+      "price": 9.71,
+      "ingredients": "PEANUTS (45%), Sugar, Vegetable Fat (Palm MB), Whey (from MILK), Rice Flour, Yogurt Powder (from MILK) 3%, Emulsifier (Sunflower Lecithin) E322, Glazing agents: Maize protein, Gum Arabic.",
+      "rating": 4.97,
+      "image": "snacks-yoghurt-coated-peanuts.webp",
+      "nutritional_facts": {
+        "calories": 581,
+        "fat": 40,
+        "carbohydrates": null,
+        "sugars": 35.3,
+        "fiber": 4.1,
+        "protein": 14.3,
+        "salt": 0.7
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 181,
+    "model": "products.product",
+    "fields": {
+      "sku": 100180,
+      "name": "Yoghurt Coated Raisins",
+      "description": "Super sweet, tart, tangy, creamy and absolutely delicious, these yoghurt coated raisins will always impress your taste buds, family, friends and guests alike. ",
+      "price": 8.58,
+      "ingredients": "Raisins (34%), Sugar, Vegetable Fat (Palm MB), Whey (from MILK), (Yogurt Powder (from MILK) 3%), Rice Flour, Emulsifier: Sunflower Lecithin E322, Glazing agents:Maize protein, Gum Arabic.",
+      "rating": 4.82,
+      "image": "snacks-yoghurt-coated-raisins.webp",
+      "nutritional_facts": {
+        "calories": 455,
+        "fat": 19.5,
+        "carbohydrates": null,
+        "sugars": 64,
+        "fiber": 1.4,
+        "protein": 2.6,
+        "salt": 0.5
+      },
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "pk": 182,
+    "model": "products.product",
+    "fields": {
+      "sku": 100181,
+      "name": "Miso Soup (Clearspring)",
+      "description": "Miso is a flavourful Japanese soya food that makes a rich, satisfying soup. This luxurious tasting organic miso soup is made with two varieties of miso and two kinds of sea vegetable.",
+      "price": 4.39,
+      "ingredients": "Freeze-dried Brown Rice Miso* (81%) (whole SOYA beans*, brown rice*, sea salt), freeze-dried sweet white miso* (11%) (rice*, whole SOYA beans*, sea salt), dried green onions*, sea vegetables (3%) (kombu powder, wakame). *organic",
+      "rating": 4.99,
+      "image": "soup-miso-clearspring.webp",
+      "nutritional_facts": {
+        "calories": 285,
+        "fat": 8.6,
+        "carbohydrates": null,
+        "sugars": 20,
+        "fiber": 0,
+        "protein": 21,
+        "salt": 20.3
+      },
+      "category": [
+        11
+      ]
+    }
+  },
+  {
+    "pk": 183,
+    "model": "products.product",
+    "fields": {
+      "sku": 100182,
+      "name": "White Miso (Japanese)",
+      "description": "This paste is a mainly savoury flavour because of itâ€™s umami content, it is perfectly used in soups, broths and in dressings and glazes. Some of the substitutes that can be used instead of Miso are Soy sauce, Fish sauce and tahini.",
+      "price": 5.49,
+      "ingredients": "Cultured rice* (42%), water, SOYA beans* (21%), sea salt. *organically grown",
+      "rating": 4.85,
+      "image": "soupds-white-miso-japanesse.webp",
+      "nutritional_facts": {
+        "calories": 171,
+        "fat": 4,
+        "carbohydrates": null,
+        "sugars": 22,
+        "fiber": 0.6,
+        "protein": 7.7,
+        "salt": 5.5
+      },
+      "category": [
+        11
+      ]
+    }
+  },
+  {
+    "pk": 184,
+    "model": "products.product",
+    "fields": {
+      "sku": 100183,
+      "name": "Soya Chunks (Uncooked)",
+      "description": "Soya chunks or TVP as they are also known as are made from 100% soya beans. Our soya protein chunks are the perfect substitute for meat such as chicken and pork. Perfect for vegetarians and vegans who perhaps miss some of their favourite meat containing meals such as sizzling fajitas or comforting stews.",
+      "price": 7.29,
+      "ingredients": "SOYA Beans",
+      "rating": 4.91,
+      "image": "soya-chunks-uncooked.webp",
+      "nutritional_facts": {
+        "calories": 338,
+        "fat": 0.48,
+        "carbohydrates": null,
+        "sugars": 29.73,
+        "fiber": 3.5,
+        "protein": 53.76,
+        "salt": 0.03
+      },
+      "category": [
+        14
+      ]
+    }
+  },
+  {
+    "pk": 185,
+    "model": "products.product",
+    "fields": {
+      "sku": 100184,
+      "name": "Soya Mince (Plain)",
+      "description": "Made from 100% soya beans, our plain soya mince is packed full of protein and a perfect meat substitute for vegetarians and vegans. Soya mince is great addition to popular dishes and is a fantastic replica of ground beef mince.",
+      "price": 6.22,
+      "ingredients": "100% defatted SOY flour",
+      "rating": 4.8,
+      "image": "soya-mince-plain.webp",
+      "nutritional_facts": {
+        "calories": 314,
+        "fat": 1.5,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 16,
+        "protein": 52,
+        "salt": 0
+      },
+      "category": [
+        14
+      ]
+    }
+  },
+  {
+    "pk": 186,
+    "model": "products.product",
+    "fields": {
+      "sku": 100185,
+      "name": "Ancho Chilli Flakes",
+      "description": "Spice up your dishes with our authentic Ancho Chilli Flakes. Sourced from Mexico, these sun-dried and hand-crushed chilli flakes offer mild heat and a rich, smoky flavour that will tantalise your taste buds.",
+      "price": 10.86,
+      "ingredients": "100% red ancho chillies (capsicum annuum)",
+      "rating": 4.89,
+      "image": "spices-ancho-chilli-flakes.webp",
+      "nutritional_facts": {
+        "calories": 281,
+        "fat": 8.2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 21.6,
+        "protein": 11.86,
+        "salt": 0.11
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 187,
+    "model": "products.product",
+    "fields": {
+      "sku": 100186,
+      "name": "Barbecue Seasoning",
+      "description": "Perfect for seasoning ribs, chicken, pulled pork and many other meat dishes. Why not try in pastas, soups or sauces? Also goes great with potatoes, courgettes and cauliflower.",
+      "price": 4.8,
+      "ingredients": "Dried Onion (23%), Salt, Chilli Powder (Chilli Pepper, Cumin, Salt, Oregano, Garlic), Brown Sugar, Ground Coriander Seed, Paprika (8%), Dried Garlic, Mustard Flour, Flavouring (contains Milk), Parsley (2%), Tomato Powder, Cayenne Pepper, Acid (Citric Acid), Bay Leaves, Basil, Oregano, Anti-Caking Agent (Silicon Dioxide)",
+      "rating": 4.92,
+      "image": "spices-barbecue-seasoning.webp",
+      "nutritional_facts": {
+        "calories": 277,
+        "fat": 6.1,
+        "carbohydrates": null,
+        "sugars": 19.1,
+        "fiber": 0,
+        "protein": 9,
+        "salt": 20.88
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 188,
+    "model": "products.product",
+    "fields": {
+      "sku": 100187,
+      "name": "Black Peppercorns",
+      "description": "One of the most essential spices around the world, black peppercorns are used in a various amount of cuisines, because of its incredible versatility.",
+      "price": 7.99,
+      "ingredients": "Peppercorns Black",
+      "rating": 4.87,
+      "image": "spices-black-peppercorns.webp",
+      "nutritional_facts": {
+        "calories": 251,
+        "fat": 3.3,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 25,
+        "protein": 10.4,
+        "salt": 0.1
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 189,
+    "model": "products.product",
+    "fields": {
+      "sku": 100188,
+      "name": "Cardamom Pods",
+      "description": "Green cardamom pods originate from the plant native to South India and are most popularly used to create authentic tasting Indian and Middle Eastern cuisine. They offer a fragrant, complex flavour that adds a punch to curries and is a fantastic spice used in baking.",
+      "price": 56.48,
+      "ingredients": "Cardamom Pods Green",
+      "rating": 4.89,
+      "image": "spices-cardamom-pods.webp",
+      "nutritional_facts": {
+        "calories": 311,
+        "fat": 6.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 28,
+        "protein": 10.76,
+        "salt": 0.05
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 190,
+    "model": "products.product",
+    "fields": {
+      "sku": 100189,
+      "name": "Cardamom Powder",
+      "description": "This pleasing green powder is yielded from the seeds of the famous green cardamom pod. It smells divine, looks beautiful, and presents a wealth of opportunities to you in the kitchen.",
+      "price": 114.85,
+      "ingredients": "Organic Cardamom Powder",
+      "rating": 4.95,
+      "image": "spices-cardamom-powder.webp",
+      "nutritional_facts": {
+        "calories": 311,
+        "fat": 6.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 28,
+        "protein": 10.76,
+        "salt": 0.1
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 191,
+    "model": "products.product",
+    "fields": {
+      "sku": 100190,
+      "name": "Chilli Flakes",
+      "description": "Their vibrant colour and rich flavour go beyond mere heat, offering a smoky essence with a fruity hint that enhances any meal. Perfect for deepening the flavours of pizzas, pasta, stir-fries, or even for adding a spicy touch to oils and dressings, our chilli flakes are deliciously versatile.",
+      "price": 11.87,
+      "ingredients": "Chilli Flakes",
+      "rating": 4.79,
+      "image": "spices-chilli-flakes.webp",
+      "nutritional_facts": {
+        "calories": 415,
+        "fat": 14.1,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 15.6,
+        "protein": 14,
+        "salt": 2.5
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 192,
+    "model": "products.product",
+    "fields": {
+      "sku": 100191,
+      "name": "Chilli Powder",
+      "description": "Our chilli powder ranges from being orange to deep red with a pungent and characteristic taste. It adds a kick to dishes such as chilli con carne and curries.",
+      "price": 7.37,
+      "ingredients": "Chilli Powder",
+      "rating": 4.91,
+      "image": "spices-chilli-powder.webp",
+      "nutritional_facts": {
+        "calories": 318,
+        "fat": 17.3,
+        "carbohydrates": null,
+        "sugars": 7.2,
+        "fiber": 27.2,
+        "protein": 12,
+        "salt": 0.08
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 193,
+    "model": "products.product",
+    "fields": {
+      "sku": 100192,
+      "name": "Cinnamon Powder",
+      "description": "Ground Cinnamon is a spice with a truly distinctive flavour. It has naturally sweet undertones and pairs well with sweet treats, homemade baking or sprinkled on hot drinks and porridge.",
+      "price": 10.17,
+      "ingredients": "Cinnamon Ground",
+      "rating": 4.88,
+      "image": "spices-cinnamon-powder.webp",
+      "nutritional_facts": {
+        "calories": 247,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 53.1,
+        "protein": 4,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 194,
+    "model": "products.product",
+    "fields": {
+      "sku": 100193,
+      "name": "Cloves",
+      "description": "This unmistakable, heart-warming spice is a must-have ingredient - especially if you like curries, rice dishes and traditional Indian cuisine. Brew these superior 100% organic cloves as a tea or infuse their magical flavour into stews, broths and soups.",
+      "price": 23.89,
+      "ingredients": "organic cloves",
+      "rating": 4.82,
+      "image": "spices-cloves.webp",
+      "nutritional_facts": {
+        "calories": 323,
+        "fat": 20.1,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 6,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 195,
+    "model": "products.product",
+    "fields": {
+      "sku": 100194,
+      "name": "Coarse Black Pepper",
+      "description": "One of the most recognised flavours in the world the coarse black pepper is known for its robust texture and it is perfect to sprinkle on steaks, burgers, and chips.",
+      "price": 16.28,
+      "ingredients": "ground black pepper",
+      "rating": 4.9,
+      "image": "spices-coarse-black-pepper.webp",
+      "nutritional_facts": {
+        "calories": 317,
+        "fat": 13,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 14.8,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 196,
+    "model": "products.product",
+    "fields": {
+      "sku": 100195,
+      "name": "Cumin Seeds",
+      "description": "Cumin seeds shine in savoury dishes and lend themselves well to spice blends such as garam masala and taco seasoning, making them a staple in global cuisines from Indian to Mexican. Beyond their culinary uses, cumin seeds are also reputed for their health benefits, including aiding digestion and boosting immunity.",
+      "price": 15.14,
+      "ingredients": "Cumin Seed",
+      "rating": 4.99,
+      "image": "spices-cumin-seeds.webp",
+      "nutritional_facts": {
+        "calories": 375,
+        "fat": 22.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 10.5,
+        "protein": 17.8,
+        "salt": 0.4
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 197,
+    "model": "products.product",
+    "fields": {
+      "sku": 100196,
+      "name": "Crystallised Ginger Sticks",
+      "description": "This natural standalone confectionery is not only great on its own, but heavenly when dipped in homemade chocolate, or blended with other fruits, nuts and sweet-supportive spices.",
+      "price": 10.1,
+      "ingredients": "cane sugar*, ginger (24%)*. *organic",
+      "rating": 4.97,
+      "image": "spices-cystallised-ginger-sticks.webp",
+      "nutritional_facts": {
+        "calories": 322,
+        "fat": 0.1,
+        "carbohydrates": null,
+        "sugars": 72,
+        "fiber": 1.8,
+        "protein": 0.2,
+        "salt": 0.05
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 198,
+    "model": "products.product",
+    "fields": {
+      "sku": 100197,
+      "name": "Fenugreek Leaves",
+      "description": "The leaf is a popular leaf used in the Indian cuisine, they are added to dishes such as curries, dahls, dips, and methis. You can also use the leaves to garnish soups, pitta/flatbread, and many other delicious recipes.",
+      "price": 30.72,
+      "ingredients": "Fenugreek Leaves [Methi]",
+      "rating": 4.89,
+      "image": "spices-fenugreek-leaves.webp",
+      "nutritional_facts": {
+        "calories": 35,
+        "fat": 0.2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 4.6,
+        "salt": 0.19
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 199,
+    "model": "products.product",
+    "fields": {
+      "sku": 100198,
+      "name": "Garlic Powder",
+      "description": "Dried garlic is much more efficient, more concentrated, longer-lasting and easier to use than fresh garlic cloves. Add to recipes in the same way as you would garlic cloves.",
+      "price": 13.06,
+      "ingredients": "GARLIC",
+      "rating": 4.75,
+      "image": "spices-garlic-powder.webp",
+      "nutritional_facts": {
+        "calories": 331,
+        "fat": 0.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 90,
+        "protein": 16.6,
+        "salt": 0.2
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 200,
+    "model": "products.product",
+    "fields": {
+      "sku": 100199,
+      "name": "Ginger Dry Cut Root",
+      "description": "Dried ginger root cut is a fantastic cupboard essential ingredient for adding to various recipes in either sweet or savoury varieties. Ginger is particularly popular in Indian and Oriental cuisine.",
+      "price": 15.12,
+      "ingredients": "ginger",
+      "rating": 4.95,
+      "image": "spices-ginger-dry-cut-root.webp",
+      "nutritional_facts": {
+        "calories": 380,
+        "fat": 6.4,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 5.9,
+        "protein": 8.5,
+        "salt": 0.1
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 201,
+    "model": "products.product",
+    "fields": {
+      "sku": 100200,
+      "name": "Ground Black Pepper",
+      "description": "Top-quality 100% organic ground black pepper, perfect for sprinkling on or into all your most cherished recipes. This classic foodstuff is super-handy for mixing with other herbs and spices, as well as making classic curry blends from across the continents.",
+      "price": 11.9,
+      "ingredients": "Organic Pepper Black Ground",
+      "rating": 4.91,
+      "image": "spices-ground-black-pepper.webp",
+      "nutritional_facts": {
+        "calories": 317,
+        "fat": 13,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 14.8,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 202,
+    "model": "products.product",
+    "fields": {
+      "sku": 100201,
+      "name": "Ground Cumin",
+      "description": "Use ground cumin to create authentic curry powders, pastes and blends from all over the world. Bake beautiful bread, aromatic vegetable dishes, a soothing natural tea or two and pickles, chutneys and preserves of the very highest order. Ground cumin (also known as Jeera Powder) is also essential for making lots of Asian, Middle Eastern, North African, Mediterranean and Mexican cuisine.",
+      "price": 14.72,
+      "ingredients": "Cumin Ground",
+      "rating": 4.97,
+      "image": "spices-ground-cumin.webp",
+      "nutritional_facts": {
+        "calories": 375,
+        "fat": 22.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 10.5,
+        "protein": 17.8,
+        "salt": 0.4
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 203,
+    "model": "products.product",
+    "fields": {
+      "sku": 100202,
+      "name": "Ground Curry",
+      "description": "Organic Medium Curry Powder is a powerhouse of flavour! It is a classic blend of organically grown aromatic herbs and spices including coriander, turmeric, cumin, mustard, cayenne pepper, garlic, black pepper, salt, ginger and bay leaves - perfect for Indian cuisine.",
+      "price": 23,
+      "ingredients": "Coriander, Turmeric, Cumin, MUSTARD, Cayenne, Garlic, Black Pepper, Salt, Ginger and Bay Leaves",
+      "rating": 4.96,
+      "image": "spices-ground-curry.webp",
+      "nutritional_facts": {
+        "calories": 312,
+        "fat": 13.4,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 28.7,
+        "protein": 12.4,
+        "salt": 1.2
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 204,
+    "model": "products.product",
+    "fields": {
+      "sku": 100203,
+      "name": "Ground Ginger",
+      "description": "Perfect for regular sweet baking and savoury cooking for several cuisines like Far Eastern, Middle Eastern, Pacific, and Indian European. It's much more efficient, concentrated, longer-lasting and easier to use than fresh ginger - and retains its matchless spicy flavour when dried.",
+      "price": 19.22,
+      "ingredients": "Organic Ginger Ground",
+      "rating": 4.99,
+      "image": "spices-ground-ginger.webp",
+      "nutritional_facts": {
+        "calories": 335,
+        "fat": 4.2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 9,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 205,
+    "model": "products.product",
+    "fields": {
+      "sku": 100204,
+      "name": "Habanero Chilli Flakes",
+      "description": "These convenient and incredibly easy-to-use chilli flakes make them an essential addition for home cooks seeking to spice up their dishes. From mouthwatering spicy tacos and flavorful habanero hot sauce, to hearty chilli con carne and zesty guacamole, these habanero chilli flakes add an irresistible spicy kick to any culinary creation.",
+      "price": 70.2,
+      "ingredients": "100% dehydrated habanero chilli (capsicum chinense)",
+      "rating": 4.98,
+      "image": "spices-habanero-chilli-flakes.webp",
+      "nutritional_facts": {
+        "calories": 318,
+        "fat": 17.27,
+        "carbohydrates": null,
+        "sugars": 10.34,
+        "fiber": 27.2,
+        "protein": 12.01,
+        "salt": 0.08
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 206,
+    "model": "products.product",
+    "fields": {
+      "sku": 100205,
+      "name": "Himalayan Salt",
+      "description": "Himalayan Salt is not only great for adding to your foods, but it is also a fantastic replacement for bath salts. When this salt is used in the bath, it is great for relieving muscle and joint pain and releasing toxins from the body.",
+      "price": 3.99,
+      "ingredients": "himalayan rose pink salt",
+      "rating": 4.8,
+      "image": "spices-himalayan-salt.webp",
+      "nutritional_facts": {
+        "calories": 0,
+        "fat": 0,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 207,
+    "model": "products.product",
+    "fields": {
+      "sku": 100206,
+      "name": "Mixed Peppercorns",
+      "description": "Peppercorns are a must-have wholefood we all love to use daily. So why not make the priceless impact of this spice even more brilliant? This dynamic mix of peppercorns will give your recipes a broader peppery hit than they have ever had, and look fantastic ground freshly atop any recipe.",
+      "price": 37.67,
+      "ingredients": "Peppercorns - Black, Pink, Pimento, White & Green",
+      "rating": 4.89,
+      "image": "spices-mixed-peppercorns.webp",
+      "nutritional_facts": {
+        "calories": 317,
+        "fat": 13,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 14.8,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 208,
+    "model": "products.product",
+    "fields": {
+      "sku": 100207,
+      "name": "Mulled Wine Spice Blend",
+      "description": "Discover the enchanting aroma and distinctive taste of our Mulled Wine Spice, a must-have for your festive gatherings. This meticulously crafted blend combines the warming flavours of cinnamon, cloves, nutmeg, and allspice infusing your wine with a rich and inviting essence that epitomises the spirit of the holiday season.",
+      "price": 23.83,
+      "ingredients": "Cassia Bark, Orange Peel, Lemon Peel, Crushed Allspice, Nutmeg & Cloves",
+      "rating": 4.94,
+      "image": "spices-mulled-wine.webp",
+      "nutritional_facts": {
+        "calories": 295,
+        "fat": 6.7,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 40.8,
+        "protein": 5.5,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 209,
+    "model": "products.product",
+    "fields": {
+      "sku": 100208,
+      "name": "Nutmeg Powder",
+      "description": "Ground nutmeg has a warm, subtle spice with nutty undertones and is perfect for both sweet and savoury baking and cooking. Nutmeg comes from the dark-leaved evergreen tree known as Myristica fragrans. It is a spice made by grinding the seeds of the tree into a powder form and is used as a popular spice around the world.",
+      "price": 20.37,
+      "ingredients": "Nutmeg Ground",
+      "rating": 4.96,
+      "image": "spices-nutmeg-powder.webp",
+      "nutritional_facts": {
+        "calories": 525,
+        "fat": 36.31,
+        "carbohydrates": null,
+        "sugars": 28,
+        "fiber": 20.8,
+        "protein": 5.84,
+        "salt": 0.04
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 210,
+    "model": "products.product",
+    "fields": {
+      "sku": 100209,
+      "name": "Nutmeg",
+      "description": "Nutmeg is a must-have ingredient for those who love to bake. Use it to make heaps of classic cakes, desserts, sweet treats and snacks. But these precious whole nutmegs are also great for savoury dishes, propping up breads, curries, stews and dynamic sauces from across the UK, Europe, India, North Africa and beyond.",
+      "price": 56.67,
+      "ingredients": "Nutmeg Whole",
+      "rating": 4.87,
+      "image": "spices-nutmeg.webp",
+      "nutritional_facts": {
+        "calories": 525,
+        "fat": 36.31,
+        "carbohydrates": null,
+        "sugars": 28,
+        "fiber": 20.8,
+        "protein": 5.84,
+        "salt": 0.04
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 211,
+    "model": "products.product",
+    "fields": {
+      "sku": 100210,
+      "name": "Pink Peppercorn",
+      "description": "Pink peppercorns are visually striking and a great addition to any kitchen cupboard. Not only will they make your cooking visually striking, but their flavour will also help recipes really sing to your taste buds.",
+      "price": 27.19,
+      "ingredients": "Peppercorns Pink",
+      "rating": 4.97,
+      "image": "spices-pink-peppercorn.webp",
+      "nutritional_facts": {
+        "calories": 317,
+        "fat": 13,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 14.8,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 212,
+    "model": "products.product",
+    "fields": {
+      "sku": 100211,
+      "name": "Cinnamon Sticks",
+      "description": "Ceylon cinnamon sticks, also known as Ceylon cinnamon quills, can provide a delicate spice infusion to Autumnal or festive recipes. These wonderfully aromatic cinnamon sticks are yielded from Ceylon plants native to Sri Lanka - and are distinctly more nutritious and tastier than its cousin Cassia.",
+      "price": 47.15,
+      "ingredients": "Ceylon Cinnamon Quills (Sticks)",
+      "rating": 4.82,
+      "image": "spices-sinnamon-sticks.webp",
+      "nutritional_facts": {
+        "calories": 247,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 53.1,
+        "protein": 3.99,
+        "salt": 0.03
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 213,
+    "model": "products.product",
+    "fields": {
+      "sku": 100212,
+      "name": "Smoked Paprika",
+      "description": "Smoked Paprika is amazing, its versatility makes it a must-have for your spice rack. You can add fantastic flavour and colour to a number of dishes by simply adding this spice to them.",
+      "price": 10.34,
+      "ingredients": "Paprika Smoked",
+      "rating": 4.84,
+      "image": "spices-smoked-paprika.webp",
+      "nutritional_facts": {
+        "calories": 390,
+        "fat": 10.4,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 19.2,
+        "protein": 14,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 214,
+    "model": "products.product",
+    "fields": {
+      "sku": 100213,
+      "name": "Star Anise",
+      "description": "Star anise is the fruit of a plant shaped like a star, or a flower. Despite the similar name, star anise and aniseed are from two completely different plants but with the same flavour compound known as anethole. Aniseed has an almost potent flavour often used in liquor, however, star anise has a more intense liquorice flavour and is a key ingredient in five spice.",
+      "price": 28.39,
+      "ingredients": "Star Anise",
+      "rating": 4.84,
+      "image": "spices-star-anise.webp",
+      "nutritional_facts": {
+        "calories": 140,
+        "fat": 6,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 8,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 215,
+    "model": "products.product",
+    "fields": {
+      "sku": 100214,
+      "name": "Sweet Paprika",
+      "description": "This is sweet, mild paprika. Whether you use a little or a lot, this paprika will bestow your dishes with both depth and distinctiveness. Perfect for making classic cuisine from any continent - and creating novel new recipes too.",
+      "price": 8.09,
+      "ingredients": "Sweet Paprika",
+      "rating": 4.83,
+      "image": "spices-sweet-paprika.webp",
+      "nutritional_facts": {
+        "calories": 282,
+        "fat": 34.9,
+        "carbohydrates": null,
+        "sugars": 10.34,
+        "fiber": 34.9,
+        "protein": 14.14,
+        "salt": 0.17
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 216,
+    "model": "products.product",
+    "fields": {
+      "sku": 100215,
+      "name": "Tikka Masala Spice Blend",
+      "description": "Originally from India, this spice mix is a british classic takeaway which is a favourite all across the UK. It is a great to add a number of different of recipes like salads, sandwiches and kebabs.",
+      "price": 3.02,
+      "ingredients": "coriander, turmeric, salt, MUSTARD powder, cumin, garlic powder, ginger, chilli powder, paprika, citric acid, cardamom, turmeric extract, sunflower oil.",
+      "rating": 4.78,
+      "image": "spices-tikka-masala.webp",
+      "nutritional_facts": {
+        "calories": 258,
+        "fat": 11.2,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 23.5,
+        "protein": 10.1,
+        "salt": 19.2
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 217,
+    "model": "products.product",
+    "fields": {
+      "sku": 100216,
+      "name": "Turmeric Powder",
+      "description": "Turmeric is widely used in Indian curries for its wonderful earthy flavour. It can easily adapt to a wide variety of sweet and savoury recipes from Cinnamon and Turmeric lattes to coconut turmeric curries - it provides an unmistakable colour and flavour to any dish.",
+      "price": 2.62,
+      "ingredients": "Turmeric",
+      "rating": 4.81,
+      "image": "spices-turmeric-powder.webp",
+      "nutritional_facts": {
+        "calories": 312,
+        "fat": 3.3,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 22.7,
+        "protein": 9.7,
+        "salt": 0.1
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 218,
+    "model": "products.product",
+    "fields": {
+      "sku": 100217,
+      "name": "White Ground Pepper",
+      "description": "Ground white pepper, ready for sprinkling on or into all your most cherished recipes. This top-notch product is super-handy for mixing with other herbs and spices, as well as making classic curry blends from across the continents. Extremely well matched to mashed potatoes, mushrooms, onions, fried vegetables and classic European soups and stews.",
+      "price": 4.8,
+      "ingredients": "Pepper White Ground",
+      "rating": 4.94,
+      "image": "spices-white-ground-pepper.webp",
+      "nutritional_facts": {
+        "calories": 296,
+        "fat": 2.1,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 26.2,
+        "protein": 10.4,
+        "salt": 0
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 219,
+    "model": "products.product",
+    "fields": {
+      "sku": 100218,
+      "name": "Zaatar Spice Blend",
+      "description": "A blended mixture of selected spices, popular in the Middle East. This blend is made from toasted sesame seeds, thyme, sumac and salt, our zaatar spice blend is a great addition to the spice pantry.",
+      "price": 3.73,
+      "ingredients": "Toasted SESAME Seeds, Thyme, Sumac, Salt",
+      "rating": 4.84,
+      "image": "spices-zaatar.webp",
+      "nutritional_facts": {
+        "calories": 461,
+        "fat": 27.86,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 18.92,
+        "protein": 14.48,
+        "salt": 4.73
+      },
+      "category": [
+        10
+      ]
+    }
+  },
+  {
+    "pk": 220,
+    "model": "products.product",
+    "fields": {
+      "sku": 100219,
+      "name": "Split Chickpeas (Chana Dal)",
+      "description": "The name Chana Dal comes from Chana, being the Indian name for chickpea, and Dal means that a pulse has been split in half. The best thing about the Chana Dal is that it is quickly cooked and can be easily manipulated into a paste or just left by itself.",
+      "price": 6.96,
+      "ingredients": "*peeled chick peas, *sunflower oil. *organic",
+      "rating": 4.94,
+      "image": "split-chickpeas-chana-dal.webp",
+      "nutritional_facts": {
+        "calories": 345,
+        "fat": 6.5,
+        "carbohydrates": null,
+        "sugars": 4.4,
+        "fiber": 21.5,
+        "protein": 20.3,
+        "salt": 0.07
+      },
+      "category": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 221,
+    "model": "products.product",
+    "fields": {
+      "sku": 100220,
+      "name": "Yellow Split Peas",
+      "description": "Closely related to the lentil, these Yellow Split Peas are perfect to use when thickening soups and stews. And they can also be used as a substitute for chickpeas in making hummus and adding to curries like Dahls.",
+      "price": 3.02,
+      "ingredients": "Yellow Split Peas",
+      "rating": 4.93,
+      "image": "split-peas-yellow.webp",
+      "nutritional_facts": {
+        "calories": 339,
+        "fat": 1.2,
+        "carbohydrates": null,
+        "sugars": 8,
+        "fiber": 25.5,
+        "protein": 24.6,
+        "salt": 0
+      },
+      "category": [
+        5
+      ]
+    }
+  },
+  {
+    "pk": 222,
+    "model": "products.product",
+    "fields": {
+      "sku": 100221,
+      "name": "French Onion Stock Cubes",
+      "description": "Organic French Onion Stock Cubes",
+      "price": 2.19,
+      "ingredients": "Sea salt, sustainable palm oil*, onion*(23%), potato starch*, natural flavouring, yeast extract, caramelised sugar*, herbs* and spices*(black pepper*, parsley*, turmeric*, lovage*, rosemary*, thyme*). *Organic ingredients",
+      "rating": 4.88,
+      "image": "stock-cubes-french-onion.webp",
+      "nutritional_facts": {
+        "calories": 7,
+        "fat": 0.4,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0.9
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 223,
+    "model": "products.product",
+    "fields": {
+      "sku": 100222,
+      "name": "Mushroom Stock Cubes",
+      "description": "Organic Mushroom Stock Cubes",
+      "price": 2.19,
+      "ingredients": "Sea salt, potato starch*, sustainable palm oil*, mushrooms* (5.6%), yeast extract, garlic*, herbs*(thyme*, rosemary*, lovage*, parsley*), onion*, caramelised sugar*, turmeric*, black pepper*. *Organic ingredient",
+      "rating": 4.99,
+      "image": "stock-cubes-mushroom.webp",
+      "nutritional_facts": {
+        "calories": 7,
+        "fat": 0.4,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0.9
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 224,
+    "model": "products.product",
+    "fields": {
+      "sku": 100223,
+      "name": "Tomato Stock Cubes",
+      "description": "Organic Tomato & Herb Stock Cubes",
+      "price": 2.19,
+      "ingredients": "Sea salt, sustainable palm oil*, tomato*(18%), potato starch*, yeast extract, herbs*(oregano*,turmeric*, black pepper*, garlic*, thyme*, lovage*, rosemary*, parsley*) natural flavourings, vegetables* (beetroot*, onion*). *Organic ingredient",
+      "rating": 4.78,
+      "image": "stock-cubes-tomato.webp",
+      "nutritional_facts": {
+        "calories": 8,
+        "fat": 0.6,
+        "carbohydrates": null,
+        "sugars": 0.2,
+        "fiber": 0,
+        "protein": 0.1,
+        "salt": 0.9
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 225,
+    "model": "products.product",
+    "fields": {
+      "sku": 100224,
+      "name": "Vegetable Low Salt Stock Cubes",
+      "description": "Organic Vegetable Stock Cubes - Low Salt",
+      "price": 1.9,
+      "ingredients": "Sustainable palm oil*, potato starch*, vegetables* 24% (onion*, carrot*, leek*, celery*), glucose syrup*, sea salt, yeast extract, natural flavouring, herbs* and spices* (garlic*, lovage*, parsley*, nutmeg*, oregano*, turmeric*, rosemary*, thyme*). *Organic ingredient",
+      "rating": 4.79,
+      "image": "stock-cubes-vegebtable-low-salt.webp",
+      "nutritional_facts": {
+        "calories": 9,
+        "fat": 0.5,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 0,
+        "protein": 0.1,
+        "salt": 0.1
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 226,
+    "model": "products.product",
+    "fields": {
+      "sku": 100225,
+      "name": "Vegetable Stock Cubes",
+      "description": "Organic Vegetable Stock Cubes",
+      "price": 2.19,
+      "ingredients": "Sea salt, potato starch*, sustainable palm oil*, sugar*, vegetables* 6.8% (celery*, onion*, carrot* parsnip*, tomato*), sunflower oil*, yeast extract, caramelised sugar*, herbs* and spices* (lovage*, turmeric*, parsely*, black pepper*). *Organic ingredients",
+      "rating": 4.81,
+      "image": "stock-cubes-vegetables.webp",
+      "nutritional_facts": {
+        "calories": 7,
+        "fat": 0.4,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0.9
+      },
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "pk": 227,
+    "model": "products.product",
+    "fields": {
+      "sku": 100226,
+      "name": "Sushi Rice",
+      "description": "Clearsprings Organic Sushi Rice is ideal for creating delicious, perfectly cooked rice that can be used in Japans most celebrated dish, sushi.",
+      "price": 3.95,
+      "ingredients": "organically grown rice",
+      "rating": 4.8,
+      "image": "sushi-rice.jpg",
+      "nutritional_facts": {
+        "calories": 353,
+        "fat": 1,
+        "carbohydrates": null,
+        "sugars": 0.4,
+        "fiber": 1.5,
+        "protein": 7.2,
+        "salt": 0.01
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 228,
+    "model": "products.product",
+    "fields": {
+      "sku": 100227,
+      "name": "Tahini",
+      "description": "Our Organic Dark Roasted Tahini is made from 100% unshelled organic sesame seeds and has a creamy, smooth consistency making it easy to drizzle on your fave meals.",
+      "price": 5.66,
+      "ingredients": "organic sesame seeds",
+      "rating": 4.91,
+      "image": "tahini.webp",
+      "nutritional_facts": {
+        "calories": 633,
+        "fat": 56.4,
+        "carbohydrates": null,
+        "sugars": 0.3,
+        "fiber": 0,
+        "protein": 18,
+        "salt": 0.03
+      },
+      "category": [
+        1,
+        9
+      ]
+    }
+  },
+  {
+    "pk": 229,
+    "model": "products.product",
+    "fields": {
+      "sku": 100228,
+      "name": "White Basmati Rice",
+      "description": "Basmati rice is a unique grain, it expands more than twice its length when it's cooking, also unlike other rice, it expands lengthways. Having both white and brown versions, the basmati rice both give us vital nutrients which we need to live, with brown basmati rice has more fibre and vitamins in but the white version is easier to digest.",
+      "price": 3.93,
+      "ingredients": "Organic Basmati White Rice",
+      "rating": 4.95,
+      "image": "white-rice.webp",
+      "nutritional_facts": {
+        "calories": 356,
+        "fat": 1.1,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 2.2,
+        "protein": 6.76,
+        "salt": 0
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 230,
+    "model": "products.product",
+    "fields": {
+      "sku": 100229,
+      "name": "Wild Rice",
+      "description": "Organic Wild Rice is a special type of rice that is very chewy and tasty when boiled. It contains several vital nutrients and is higher in protein than your regular rice. But it is also very versatile, tasty and well-suited to countless classic recipes enjoyed across the UK and Europe.",
+      "price": 28.13,
+      "ingredients": "Organic Wild Rice",
+      "rating": 4.95,
+      "image": "wild-rice.webp",
+      "nutritional_facts": {
+        "calories": 357,
+        "fat": 1.1,
+        "carbohydrates": null,
+        "sugars": 2.5,
+        "fiber": 6.2,
+        "protein": 14.7,
+        "salt": 0.02
+      },
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "pk": 231,
+    "model": "products.product",
+    "fields": {
+      "sku": 100230,
+      "name": "Vegan Violife Cheese Slices",
+      "description": "The classic flavour that gives you your cheesy hit in a variety of recipes, in a humble sandwich or grilled for ultimate comfort food. Add to a plate some grapes, crackers and chutney alongside this vegan cheese will blow you away with its flavour.",
+      "price": 3.84,
+      "ingredients": "Water, Coconut oil (23%), Modified Starch*, Starch, Sea salt, Flavourings, Olive extract, Colour: B-Carotene, Vitamin B12. *Not to be confused with GMO (Genetically Modified) ingredients.",
+      "rating": 4.7,
+      "image": "vegan-violife-cheese-slices.webp",
+      "nutritional_facts": {
+        "calories": 60,
+        "fat": 4.5,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0.08
+      },
+      "category": [
+        15
+      ]
+    }
+  },
+  {
+    "pk": 232,
+    "model": "products.product",
+    "fields": {
+      "sku": 100231,
+      "name": "Vegan Violife Cream Cheese",
+      "description": "Your favourite Vegan treat in a spreadable, creamy variety. It speaks for itself.",
+      "price": 3.4,
+      "ingredients": "Water, Coconut Oil (23%), Starch, Sea Salt, Acidity Regulator: Glucono-Delta-Lactone, Flavourings, Olive Extract, Vitamin B12.",
+      "rating": 4.6,
+      "image": "vegan-violife-cream-cheese.webp",
+      "nutritional_facts": {
+        "calories": 239,
+        "fat": 23,
+        "carbohydrates": null,
+        "sugars": 0,
+        "fiber": 0,
+        "protein": 0,
+        "salt": 0.14
+      },
+      "category": [
+        15
+      ]
+    }
+  },
+  {
+    "pk": 233,
+    "model": "products.product",
+    "fields": {
+      "sku": 100232,
+      "name": "Smoked Tofu (Taifun)",
+      "description": "A classic version of Smoked Tofu. Enjoy cold on bread or in a salad. Excellent pan-fried with vegetable dishes, rice, potatoes or pasta.",
+      "price": 4.19,
+      "ingredients": "Tofu 93% (SOYA BEANS, water, coagulating agents: magnesium chloride, calcium sulfate), SOYA sauce* (water, SOYA BEANS, wheat, sea salt), beech wood smoke. organic",
+      "rating": 4.8,
+      "image": "smoked-tofu-taifun.webp",
+      "nutritional_facts": {
+        "calories": 168,
+        "fat": 9,
+        "carbohydrates": null,
+        "sugars": 0.5,
+        "fiber": 0,
+        "protein": 19,
+        "salt": 1.7
+      },
+      "category": [
+        14
+      ]
+    }
+  },
+  {
+    "pk": 234,
+    "model": "products.product",
+    "fields": {
+      "sku": 100233,
+      "name": "Firm Tofu (Taifun)",
+      "description": "This traditional basic tofu is full of high-quality vegetable protein and extremely versatile. Tangy, spicy, sweet or sour this natural tofu can be prepared to take on any desired taste. Due to its firm texture, it is particularly suitable for frying.",
+      "price": 2.71,
+      "ingredients": "Water, SOYA BEANS* 55%, coagulating agents: magnesium chloride, calcium sulfate. organic",
+      "rating": 4.5,
+      "image": "firm-tofu-taifun.webp",
+      "nutritional_facts": {
+        "calories": 119,
+        "fat": 6.7,
+        "carbohydrates": null,
+        "sugars": 0.5,
+        "fiber": 0,
+        "protein": 13,
+        "salt": 0.1
+      },
+      "category": [
+        14
+      ]
+    }
+  }
+]

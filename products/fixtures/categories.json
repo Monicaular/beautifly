@@ -1,0 +1,138 @@
+[
+  {
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+      "name": "pantry_staples",
+      "friendly_name": "Pantry Staples"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+      "name": "flours_and_baking",
+      "friendly_name": "Flours and Baking"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+      "name": "dried_fruits",
+      "friendly_name": "Dried Fruits"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+      "name": "nuts_and_seeds",
+      "friendly_name": "Nuts and Seeds"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+      "name": "grains_and_rice",
+      "friendly_name": "Grains and Rice"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "flours_and_powders",
+      "friendly_name": "Flours and Powders"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "pasta_and_noodles",
+      "friendly_name": "Pasta and Noodles"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+      "name": "snacks_and_treats",
+      "friendly_name": "Snacks and Treats"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "cooking_ingredients",
+      "friendly_name": "Cooking Ingredients"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.category",
+    "fields": {
+      "name": "herbs_species_seasonings",
+      "friendly_name": "Herbs, Spices, and Seasonings"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.category",
+    "fields": {
+      "name": "chilled",
+      "friendly_name": "Chilled Foods"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.category",
+    "fields": {
+      "name": "savoury_snacks",
+      "friendly_name": "Savoury Snacks"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.category",
+    "fields": {
+      "name": "sweet_snacks",
+      "friendly_name": "Sweet Snacks"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.category",
+    "fields": {
+      "name": "tofu",
+      "friendly_name": "Tofu"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.category",
+    "fields": {
+      "name": "vegan_cheese",
+      "friendly_name": "Vegan Cheese"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.category",
+    "fields": {
+      "name": "cereals_and_muesli",
+      "friendly_name": "Cereals and Muesli"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.category",
+    "fields": {
+      "name": "powders",
+      "friendly_name": "Powders"
+    }
+  }
+]
