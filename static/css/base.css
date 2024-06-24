@@ -117,6 +117,42 @@ body {
     width: 100%;
 }
 
+/* -------------------------------- Product detail page */
+
+.custom-tabs .nav-link {
+    color: #8D6E63ff;
+}
+.custom-tabs .nav-link.active {
+    color: #8D6E63ff;
+}
+.custom-tabs .nav-link:hover {
+    color: #8D6E63ff;
+}
+
+/* Nutritional Facts List */
+.nutritional-facts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nutritional-facts li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nutritional-facts .key {
+    font-weight: bold;
+    flex-basis: 50%; 
+}
+
+.nutritional-facts .value {
+    flex-basis: 50%;
+    text-align: right;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -141,7 +177,7 @@ body {
     }
   }
 
-/* -----------------------------Mobile Products page */
+/* Mobile Products page */
 
 @media (max-width: 992px) {
     .btn-primary {
@@ -155,7 +191,7 @@ body {
     }
 }
 
-/*----------Push products list down on mobile*/
+/* Push products list down on mobile*/
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
