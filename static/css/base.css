@@ -106,7 +106,15 @@ body {
 }
 
 .list-group-item.active {
-    background-color: initial;
+    background-color: rgba(139, 195, 74, 0.7) !important;
+    color: #8D6E63ff !important;
+    border-style: none!important;
+}
+
+.cart-btn {
+    background-color: rgba(139, 195, 74, 0.7);
+    color: white;
+    width: 100%;
 }
 
 /* -------------------------------- Media Queries */
@@ -144,6 +152,17 @@ body {
     }
     .list-group-item-action {
         padding: 0.75rem 1.25rem;
+    }
+}
+
+/*----------Push products list down on mobile*/
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
 
