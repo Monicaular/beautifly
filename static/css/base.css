@@ -76,7 +76,7 @@ body {
     width: fit-content;
     padding: 10px;
     margin: 0 auto;
-    color: #ffffff; /* Text color */
+    color: #ffffff; 
     background-color: rgba(141, 110, 99, 0.7);
     border-radius: 5px; 
 }
@@ -152,6 +152,19 @@ body {
     flex-basis: 50%;
     text-align: right;
 }
+
+/*----------------------------------Icons stylings */
+
+.bi.bi-heart-fill {
+    color: rgba(255, 152, 0, 1);
+}
+
+.bi.bi-heart {
+    color: rgba(255, 152, 0, 1);
+}
+/*-----------------------------------Breadcrumb Nav */
+
+
 
 /* -------------------------------- Media Queries */
 
