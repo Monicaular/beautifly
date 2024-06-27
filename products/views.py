@@ -1,6 +1,7 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import Product, Category
 
 def all_products(request):
@@ -8,9 +9,11 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    categories = None
+    selected_categories = [] 
     sort = None
     direction = None
+
+    categories = Category.objects.all()
 
     if request.GET:
         if 'sort' in request.GET:
@@ -43,8 +46,8 @@ def all_products(request):
 
     context = {
         'products': products,
-        'search_term': query,
-        'current_categories': categories,
+        'selected_categories': selected_categories,
+        'categories': categories,  # Pass all categories to the template
         'current_sorting': current_sorting,
     }
 

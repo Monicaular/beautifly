@@ -117,6 +117,33 @@ body {
     width: 100%;
 }
 
+/* Sidebar Categories */
+
+.sidebar-fixed {
+    position: fixed;
+}
+
+.btn-categories:hover {
+    background-color: rgba(141, 110, 99, 0.5);
+    color:#FAFAFAff;
+}
+
+
+.list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color:rgba(141, 110, 99, 0.5);
+    color: #FAFAFAff;
+}
+
+
+.form-check-input {
+    margin-top: 5px !important;
+}
+
 /* -------------------------------- Product detail page */
 
 .custom-tabs .nav-link {

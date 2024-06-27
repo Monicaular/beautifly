@@ -12,6 +12,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
+
      <!-- Breadcrumb Navigation -->
      <nav class="breadcrumb-nav" aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -24,7 +25,9 @@
             {% endif %}
         </ol>
     </nav>
-    <!-- End Breadcrumb Navigation -->
+    <!--End of Breadcrumb Navigation -->
+    
+    <!--Products page title-->
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Products</h2>
@@ -32,28 +35,33 @@
         </div>
     </div>
     <div class="row">
+    <!-- End of Products page title-->
 
-        <div class="col-lg-3 order-2 order-lg-1 mb-3 mb-lg-0">
-
-            <button class="btn d-lg-none mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesCollapse" aria-expanded="false" aria-controls="categoriesCollapse">
-                Categories
+         <!-- Sidebar for Categories -->
+         <div class="col-lg-3 order-2 order-lg-1 mb-3 mb-lg-0 d-none d-lg-block side-bar">
+            <div class="sidebar-fixed">
+            <button class="logo-font mb-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesCollapse" aria-expanded="false" aria-controls="categoriesCollapse">
+                Select Categories:
             </button>
-
             <div class="collapse d-lg-block" id="categoriesCollapse">
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action active logo-font">
-                        All Categories
-                    </a>
-                    <hr>
-                    {% for category in categories %}
-                    <a href="{% url 'products_by_category' category.id %}" class="list-group-item list-group-item-action">
-                        {{ category.name }}
-                    </a>
-                    {% endfor %}
-                </div>
+                <form id="categoryForm" method="get">
+                    <div class="list-group">
+                        {% for category in categories %}
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <label for="category{{ forloop.counter }}" class="form-check-label mb-0">{{ category.friendly_name }}</label>
+                            <div class="form-check">
+                                <input class="form-check-input category-checkbox" type="checkbox" value="{{ category.name }}" id="category{{ forloop.counter }}" name="category" {% if category.name in selected_categories %}checked{% endif %}>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </form>
+            </div>
             </div>
         </div>
+        <!-- End of Sidebar for Categories -->
 
+        <!--Prducts list display-->
         <div class="col-lg-9 order-1 order-lg-2">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
@@ -138,4 +146,47 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+<script>
+    // Function to handle category checkbox change
+    document.querySelectorAll('.category-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', () => {
+            updateProducts();
+        });
+    });
+
+    // Function to update product listing based on selected categories
+    function updateProducts() {
+        const selectedCategories = Array.from(document.querySelectorAll('.category-checkbox:checked')).map(el => el.value);
+
+        const params = new URLSearchParams(window.location.search);
+        if (selectedCategories.length > 0) {
+            params.set('category', selectedCategories.join(','));
+        } else {
+            params.delete('category');
+        }
+
+        history.replaceState(null, null, '?' + params.toString());
+
+        
+        document.getElementById('categoryForm').submit();
+    }
+
+    // Initial update based on current URL parameters
+    window.onload = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        let selectedCategories = urlParams.get('category');
+        if (selectedCategories) {
+            selectedCategories = selectedCategories.split(',');
+            selectedCategories.forEach(category => {
+                const checkbox = document.querySelector('.category-checkbox[value="' + category + '"]');
+                if (checkbox) {
+                    checkbox.checked = true;
+                }
+            });
+        }
+    };
+</script>
 {% endblock %}
