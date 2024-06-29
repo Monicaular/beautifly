@@ -1,1 +1,1 @@
-web: gunicorn wholefoods.wsgi
+web: gunicorn wholefoods.wsgi:application
