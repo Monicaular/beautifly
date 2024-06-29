@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<!--Carousel Section-->
+<div class="carousel-container d-none d-lg-block d-md-block">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        {% for item in carousel_items %}
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button>
+        {% endfor %}
+    </div>
+    <div class="carousel-inner">
+        {% for item in carousel_items %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <img src="{% if item.image %}{{ item.image.url }}{% else %}https://via.placeholder.com/150{% endif %}" class="d-block w-100 carousel-image" alt="{{ item.caption_title }}">
+            {% if item.caption_title or item.caption_text %}
+            <div class="carousel-caption d-none d-md-block">
+                {% if item.title_link %}
+                <a href="{{ item.caption_title }}" target="_blank" class="carousel-link">
+                    <h5 class="carousel-title">{{ item.caption_title }}</h5>
+                </a>
+                {% else %}
+                    <h5 class="carousel-title">{{ item.caption_title }}</h5>
+                {% endif %}
+                {% if item.text_link %}
+                    <a href="{{ item.text_link }}" target="_blank" class="carousel-link">
+                        <p class="carousel-text">{{ item.caption_text }}</p>
+                    </a>
+                {% else %}
+                    <p class="carousel-text">{{ item.caption_text }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+
+<!-- Categories Section -->
+<div class="container my-5">
+    <div class="row">
+        <h2 class="text-center mb-4">Shop by Category</h2>
+        {% for category in categories %}
+        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card h-100 border-0 shadow">
+                <a href="{% url 'products' %}?category={{ category.name }}">
+                    {% if category.image %}
+                    <img class="card-img-top img-fluid" src="{{ category.image.url }}" alt="{{ category.friendly_name }}">
+                    {% else %}
+                    <img class="card-img-top img-fluid" src="{% static 'images/default_category.jpg' %}" alt="{{ category.friendly_name }}">
+                    {% endif %}
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ category.friendly_name }}</h5>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}
