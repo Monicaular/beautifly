@@ -19,15 +19,19 @@ def all_products(request):
         if 'sort' in request.GET:
             sort = request.GET['sort']
             sort_key = sort
+
             if sort == 'name':
-                products.annotate(lower_mane=Lower('name'))
+                products = products.annotate(lower_name=Lower('name'))
                 sort_key = 'lower_name'
+
             if sort_key == 'category':
                 sort_key = 'category__name'
             
             direction = request.GET.get('direction', 'asc')
+
             if direction == 'desc':
                 sort_key = f'-{sort_key}'
+                
             products = products.order_by(sort_key)
 
         if 'category' in request.GET:

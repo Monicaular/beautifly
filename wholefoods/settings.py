@@ -20,7 +20,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEBUG' in os.environ
 
-ALLOWED_HOSTS = ['8000-monicaular-wholesomebas-d6fccy3ilk8.ws.codeinstitute-ide.net','.herokuapp.com']
+ALLOWED_HOSTS = ['8000-monicaular-wholesomebas-d6fccy3ilk8.ws.codeinstitute-ide.net','.herokuapp.com', '8000-monicaular-wholesomebas-4poe6kbejh7.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -184,4 +184,4 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-monicaular-wholesomebas-d6fccy3ilk8.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://8000-monicaular-wholesomebas-4poe6kbejh7.ws.codeinstitute-ide.net']
