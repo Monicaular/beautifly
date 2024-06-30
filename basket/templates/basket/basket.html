@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <h1>MY SHOPPING BASKET</h1>
+    {% if basket_items %}
+    <div class="buttons">
+        <button class="continue-shopping">Continue Shopping</button>
+        <button class="checkout">Proceed to Checkout</button>
+    </div>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Clear All</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in basket_items %}
+            <tr>
+                <td>{{ item.name}}</td>
+                <td>{{ item.price}}</td>
+                <td>quantity</td>
+                <td><a href="{% url 'clear-item' item.id %}" class="btn clear">Clear</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h2>ORDER SUMMARY</h2>
+    <table class="summary-table">
+        <tbody>
+            <tr>
+                <td>Subtotal:</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Delivery:</td>
+                <td>£2.00</td>
+            </tr>
+            <tr>
+                <td>Tax:</td>
+                <td>£1.00</td>
+            </tr>
+            <tr>
+                <td>Grand Total:</td>
+                <td>£13.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="checkout-button">
+        <button class="checkout">Proceed to Checkout</button>
+    </div>
+    {% else %}
+    <p class="empty-message">Your basket is empty.</p>
+    <a href="{% url 'products' %}" class="btn">Keep Shopping</a>
+    {% endif %}
+</div>
+
+
+{% endblock %}
