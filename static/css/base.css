@@ -1,3 +1,38 @@
+/* Definifing colour classes */
+
+
+.pigment-green { background-color: #4CAF50; }
+.cinereous { background-color: #8D6E63; }
+.timberwolf { background-color: #D7CCC8; }
+.cornsilk { background-color: #FFF8E1; }
+.aureolin { background-color: #FFEB3B; }
+.beige { background-color: #F5F5DC; }
+.orange-peel { background-color: #FF9800; }
+.seasalt { background-color: #FAFAFA; }
+.yellow-green { background-color: #8BC34A; }
+
+
+.pigment-green-text { color: #4CAF50; }
+.cinereous-text { color: #8D6E63; }
+.timberwolf-text { color: #D7CCC8; }
+.cornsilk-text { color: #FFF8E1; }
+.aureolin-text { color: #FFEB3B; }
+.beige-text { color: #F5F5DC; }
+.orange-peel-text { color: #FF9800; }
+.seasalt-text { color: #FAFAFA; }
+.yellow-green-text { color: #8BC34A; }
+
+
+.gradient-top { background: linear-gradient(0deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-right { background: linear-gradient(90deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-bottom { background: linear-gradient(180deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-left { background: linear-gradient(270deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-top-right { background: linear-gradient(45deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-bottom-right { background: linear-gradient(135deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-top-left { background: linear-gradient(225deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-bottom-left { background: linear-gradient(315deg, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+.gradient-radial { background: radial-gradient(circle, #4CAF50, #8D6E63, #D7CCC8, #FFF8E1, #FFEB3B, #F5F5DC, #FF9800, #FAFAFA, #8BC34A); }
+
 html {
     height: 100%;
 }
@@ -172,6 +207,45 @@ body {
 
 
 /* -------------------------------- Product detail page */
+
+/* Add to cart section */
+
+.btn-link-as-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 48%;
+    text-align: center; /* Center text */
+    height: 40px;
+}
+
+.seasalt-btn {
+    background-color: #FAFAFA;
+    color: black;
+    border: 1px solid black;
+}
+
+.seasalt-btn:hover {
+    background-color: rgba(141, 110, 99, 0.6);
+    color: #FAFAFA;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+
+/*-------------------------*/
 
 .custom-tabs .nav-link {
     color: #8D6E63ff;

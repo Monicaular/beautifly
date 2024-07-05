@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.db.models.functions import Lower
+import decimal
 from .models import Product, Category
 from urllib.parse import urlencode
 
@@ -69,7 +70,7 @@ def all_products(request):
     context = {
         'products': products,
         'selected_categories': selected_categories,
-        'categories': categories,  # Pass all categories to the template
+        'categories': categories, 
         'current_sorting': current_sorting,
         'query': query,
         'querystring': querystring,
@@ -82,10 +83,31 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     categories = product.category.all()
+    quantity_options = []
+    
+    if product.has_multiple_sizes:
+        predefined_quantities = ['100g', '250g', '1kg']
 
+        for quantity in predefined_quantities:
+            price = product.get_price_for_quantity(quantity)
+            if price is not None:
+                quantity_options.append({
+                    'quantity': quantity,
+                    'price': price
+                    })
+    else:
+        if product.fixed_size_price is not None:
+            quantity_options.append({
+                'quantity': '1',
+                'price': product.fixed_size_price
+            })
+    unit_num = request.session.get('unit_num', 1)
+    
     context = {
         'product': product,
         'categories': categories,
+        'quantity_options': quantity_options,
+        'unit_num': unit_num,
     }
 
     return render(request, 'products/product_detail.html', context)

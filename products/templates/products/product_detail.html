@@ -42,8 +42,10 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0">{{ product.name }}</p>
+                {% if product.price %}
+                <p>£{{ product.price }}/kg</p>
+                {% endif %}
                 <a class="btn btn-sm position-absolute top-0 end-0 m-2"><i class="far fa-heart"></i></a>
-                <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                 {% if product.category.exists %}
                     <p class="small mt-1 mb-0">
                         {% for category in product.category.all %}
@@ -69,10 +71,42 @@
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
-                <div class="cart-btn">
-                    <a href="#" type="button" class="btn btn-block text-white">Add to Basket <i
-                            class="fa-solid fa-basket-shopping"></i></a>
-                </div>
+
+                <!-- Add to Cart Form -->
+                <form id="add-to-basket-form" class="form" action="" method="POST">
+                    {% csrf_token %}
+                     {% if product.has_multiple_sizes %}
+                     <div class="form-group">
+                        <label>Select Quantity:</label>
+                        <div class="quantity-options">
+                            {% for option in quantity_options %}
+                                <label>
+                                    <input type="radio" name="quantity" value="{{ option.quantity }}" />
+                                    {{ option.quantity }} - £{{ option.price }}
+                                </label><br>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="form-group">
+                        <label for="num_units">Number of Units:</label>
+                        <input id="num_units" class="form-control" type="number" name="num_units" value="1" min="1">
+                    </div>
+                        <div class="col-12 button-row">
+                            <a href="{% url 'products' %}" class="btn-link-as-button seasalt-btn">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="btn text-uppercase cinereous">Keep Shopping</span>
+                            </a>
+                            <a href="javascript:void(0);" onclick="document.getElementById('add-to-cart-form').submit();" class="btn-link-as-button seasalt-btn">
+                                <span class="text-uppercase">Add to Basket</span>
+                            </a>
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    </div>
+                </form>
+                <!-- End Add to Cart Form -->
 
 
             </div>
@@ -116,3 +150,4 @@
     </div>
 </div>
 {% endblock %}
+
