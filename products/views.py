@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.db.models.functions import Lower
-import decimal
 from .models import Product, Category
 from urllib.parse import urlencode
 
@@ -111,5 +110,3 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
-
-

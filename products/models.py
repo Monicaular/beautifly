@@ -1,5 +1,5 @@
 from django.db import models
-import decimal
+from decimal import Decimal
 
 class Category(models.Model):
 
@@ -21,11 +21,11 @@ class Product(models.Model):
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    fixed_size_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     ingredients = models.TextField()
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     nutritional_facts = models.JSONField(null=True, blank=True)
+    fixed_size_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     has_multiple_sizes = models.BooleanField(default=True)
 
     def __str__(self):
@@ -33,9 +33,9 @@ class Product(models.Model):
 
     def get_price_for_quantity(self, quantity):
         quantity_to_kg = {
-            '100g': decimal.Decimal('0.1'),
-            '250g': decimal.Decimal('0.25'),
-            '1kg': decimal.Decimal('1'),
+            '100g': Decimal('0.1'),
+            '250g': Decimal('0.25'),
+            '1kg': Decimal('1'),
         }
 
         price_per_kg = self.price
@@ -46,4 +46,3 @@ class Product(models.Model):
             return total_price
         else:
             return None
-        

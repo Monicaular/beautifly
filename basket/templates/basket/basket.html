@@ -16,6 +16,9 @@
 <div class="container">
     <h1>MY SHOPPING BASKET</h1>
     {% if basket_items %}
+    <div class="table-responsive rounded">
+        {{ basket_items }}
+    </div>
     <div class="buttons">
         <button class="continue-shopping">Continue Shopping</button>
         <button class="checkout">Proceed to Checkout</button>
@@ -34,8 +37,8 @@
             <tr>
                 <td>{{ item.name}}</td>
                 <td>{{ item.price}}</td>
-                <td>quantity</td>
-                <td><a href="{% url 'clear-item' item.id %}" class="btn clear">Clear</a></td>
+                <td></td>
+                <td><a href="" class="btn clear">Clear</a></td>
             </tr>
             {% endfor %}
         </tbody>
@@ -45,7 +48,7 @@
         <tbody>
             <tr>
                 <td>Subtotal:</td>
-                <td>$10.00</td>
+                <td>£10.00</td>
             </tr>
             <tr>
                 <td>Delivery:</td>

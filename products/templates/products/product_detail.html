@@ -72,8 +72,8 @@
                 <small class="text-muted">No Rating</small>
                 {% endif %}
 
-                <!-- Add to Cart Form -->
-                <form id="add-to-basket-form" class="form" action="" method="POST">
+                 <!-- Add to Basket Form -->
+                 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                     {% csrf_token %}
                      {% if product.has_multiple_sizes %}
                      <div class="form-group">
@@ -99,16 +99,14 @@
                                 </span>
                                 <span class="btn text-uppercase cinereous">Keep Shopping</span>
                             </a>
-                            <a href="javascript:void(0);" onclick="document.getElementById('add-to-cart-form').submit();" class="btn-link-as-button seasalt-btn">
+                            <button type="submit" class="btn-link-as-button seasalt-btn">
                                 <span class="text-uppercase">Add to Basket</span>
-                            </a>
+                            </button>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </form>
-                <!-- End Add to Cart Form -->
-
-
+                <!-- End Add to Basket Form -->
             </div>
         </div>
     </div>
