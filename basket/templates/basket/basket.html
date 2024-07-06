@@ -13,59 +13,97 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container">
+<div class="container my-5">
     <h1>MY SHOPPING BASKET</h1>
     {% if basket_items %}
-    <div class="table-responsive rounded">
-        {{ basket_items }}
-    </div>
-    <div class="buttons">
-        <button class="continue-shopping">Continue Shopping</button>
-        <button class="checkout">Proceed to Checkout</button>
-    </div>
-    <table class="product-table">
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Clear All</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for item in basket_items %}
-            <tr>
-                <td>{{ item.name}}</td>
-                <td>{{ item.price}}</td>
-                <td></td>
-                <td><a href="" class="btn clear">Clear</a></td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    <h2>ORDER SUMMARY</h2>
-    <table class="summary-table">
-        <tbody>
-            <tr>
-                <td>Subtotal:</td>
-                <td>£10.00</td>
-            </tr>
-            <tr>
-                <td>Delivery:</td>
-                <td>£2.00</td>
-            </tr>
-            <tr>
-                <td>Tax:</td>
-                <td>£1.00</td>
-            </tr>
-            <tr>
-                <td>Grand Total:</td>
-                <td>£13.00</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="checkout-button">
-        <button class="checkout">Proceed to Checkout</button>
+    <div class="row">
+        <div class="col-lg-8">
+            <table class="product-table table table-bordered table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Product</th>
+                        <th> Name</th>
+                        <th>SKU</th>
+                        <th>Size</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in basket_items %}
+                    <tr>
+                        <td class="p-3 w-25"> <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
+                                class="img-fluid rounded"></td>
+                        <td class="p-3">{{ item.product.name}}</td>
+                        <td class="p-3">{{ item.product.sku|upper }}</td>
+                        <td class="p-3">{{ item.size }}</td>
+                        <td class="p-3">{{ item.num_units }}</td>
+                        <td class="p-3">£{{ item.total_price|floatformat:2 }}</td>
+                        <td class="p-3"><a href="" class="btn clear">Remove</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="8" class="pt-5 text-right">
+                            <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: £{{ shipping|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_shipping_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    You could get free delivery by spending just <strong>£{{ free_shipping_delta|floatformat:2 }}</strong> more!
+                                </p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="8" class="text-right">
+                            <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="" class="btn btn-dark rounded-0 btn-lg">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2>ORDER SUMMARY</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Subtotal:</td>
+                                <td>£{{ total|floatformat:2 }}</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery:</td>
+                                <td>£{{ shipping|floatformat:2 }}</td>
+                            </tr>
+                            <tr>
+                                <td>Grand Total:</td>
+                                <td>£{{ grand_total|floatformat:2 }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="checkout-button">
+                        <button class="checkout">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     {% else %}
     <p class="empty-message">Your basket is empty.</p>

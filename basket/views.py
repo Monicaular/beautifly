@@ -35,10 +35,10 @@ def add_to_basket(request, item_id):
 
     else:
         quantity_in_kg = 1
-        total_price = product.fixed_size_price * num_units
+        total_price = product.fixed_size_price * num_units if product.fixed_size_price else product.price * num_units
 
     basket = request.session.get('basket', {})
-    item_id = f"{product_id}-{size}"
+    item_id = f"{item_id}-{size}"
 
     if item_id in basket:
         basket[item_id]['quantity'] += num_units
