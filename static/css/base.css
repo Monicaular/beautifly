@@ -304,7 +304,26 @@ body {
 .bi.bi-heart {
     color: rgba(255, 152, 0, 1);
 }
-/*-----------------------------------Breadcrumb Nav */
+/*-----------------------------------Basket Page*/
+
+.quantity-controls {
+    position: relative;
+    text-align: center; /* Center align the content inside */
+}
+
+.update-link {
+    display: block;
+    width: 50%;
+    margin-top: 5px;
+    border: none;
+    color: #8D6E63ff;
+    background-color: rgba(139, 195, 74, 0.2);
+}
+
+
+.remove-icon-container i {
+    color: #FF9800;
+}
 
 
 

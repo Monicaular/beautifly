@@ -3,6 +3,8 @@ from django.http import HttpResponseBadRequest, HttpResponse
 from products.models import Product
 from decimal import Decimal
 
+
+
 def view_basket(request):
     """ A view that renders the basket content page """
 
