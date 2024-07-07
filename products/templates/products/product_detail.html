@@ -77,11 +77,11 @@
                     {% csrf_token %}
                      {% if product.has_multiple_sizes %}
                      <div class="form-group">
-                        <label>Select Quantity:</label>
+                        <label>Select Size:</label>
                         <div class="quantity-options">
                             {% for option in quantity_options %}
                                 <label>
-                                    <input type="radio" name="quantity" value="{{ option.quantity }}" />
+                                    <input type="radio" name="size" value="{{ option.quantity }}" required/>
                                     {{ option.quantity }} - £{{ option.price }}
                                 </label><br>
                             {% endfor %}
@@ -90,7 +90,7 @@
                     {% endif %}
                     <div class="form-group">
                         <label for="num_units">Number of Units:</label>
-                        <input id="num_units" class="form-control" type="number" name="num_units" value="1" min="1">
+                        <input id="num_units" class="form-control" type="number" name="num_units" value="1" min="1" required>
                     </div>
                         <div class="col-12 button-row">
                             <a href="{% url 'products' %}" class="btn-link-as-button seasalt-btn">
