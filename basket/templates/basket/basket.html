@@ -42,9 +42,34 @@
                         {% else %}
                         <td class="p-3">One Size</td>
                         {% endif %}
-                        <td class="p-3">{{ item.num_units }}</td>
+                        <td class="p-3">
+                            <form class="form update-form" method="POST" action="">
+                                {% csrf_token %}
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button type="button" class="decrement-qty btn-sm pigment-green-btn rounded-0"
+                                            data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                            <span><i class="fas fa-minus fa-sm"></i></span>
+                                        </button>
+                                    </div>
+                                    <input class="form-control form-control-sm qty_input" type="number" name="quantity"
+                                        value="{{ item.num_units }}" min="1" max="99" data-item_id="{{ item.item_id }}"
+                                        id="id_qty_{{ item.item_id }}">
+                                    <div class="input-group-append">
+                                        <button type="button" class="increment-qty btn-sm pigment-green-btn rounded-0"
+                                            data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                            <span><i class="fas fa-plus fa-sm"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                {% if item.product.has_sizes %}
+                                <input type="hidden" name="product_size" value="{{ item.size }}">
+                                {% endif %}
+                                <button type="submit" class="update-link text-info btn-link-as-button"><small>Update</small></button>
+                            </form>
+                        </td>
                         <td class="p-3">£{{ item.total_price|floatformat:2 }}</td>
-                        <td class="p-3"><a href="" class="btn clear">Remove</a></td>
+                        <td class="p-3"><a href="#" class="remove-item btn btn-sm" id="remove_{{ item.product.id }}"><small>Remove</small></a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -91,4 +116,52 @@
 </div>
 
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/unit-number-update-script.html' %}
+
+<script type="text/javascript">
+
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        e.preventDefault();
+        const form = $(this).prev('.update-form');
+        form.submit();
+    });
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        e.preventDefault();
+        const csrfToken = "{{ csrf_token }}";
+        const itemId = $(this).attr('id').split('remove_')[1];
+        const url = `/basket/remove/${itemId}`;
+        const data = {'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+         .done(() => {
+             location.reload();
+         });
+    });
+
+    // Increment quantity
+    $('.increment-qty').click(function(e) {
+        e.preventDefault();
+        const closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        let currentValue = parseInt($(closestInput).val(), 10);
+        $(closestInput).val(currentValue + 1);
+    });
+
+    // Decrement quantity
+    $('.decrement-qty').click(function(e) {
+        e.preventDefault();
+        const closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        let currentValue = parseInt($(closestInput).val(), 10);
+        if (currentValue > 1) {
+            $(closestInput).val(currentValue - 1);
+        }
+    });
+
+</script>
 {% endblock %}
