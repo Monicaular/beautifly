@@ -49,6 +49,7 @@ def adjust_basket(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
 
     size = request.POST.get('size')
+
     try:
         quantity = int(request.POST.get('quantity', 1))
     except ValueError:
@@ -60,6 +61,8 @@ def adjust_basket(request, item_id):
 
     if quantity > 0:
         basket[item_key]['quantity'] = quantity
+    else:
+        basket.pop(item_key, None)
 
     request.session['basket'] = basket
 
@@ -102,3 +105,67 @@ def adjust_basket(request, item_id):
 
    
     return redirect('view_basket')
+
+def remove_from_basket(request, item_id):
+    """ Remove the item from the shopping basket """
+
+    try:
+        item_id = int(item_id)
+    except ValueError:
+        return HttpResponseBadRequest('Invalid product ID.')
+
+    product = get_object_or_404(Product, pk=item_id)
+
+    basket = request.session.get('basket', {})
+
+    item_key = str(item_id)
+    if product.has_multiple_sizes:
+        size = request.POST.get('size')
+        item_key = f"{item_id}-{size}" if size else str(item_id)
+
+   
+    if item_key in basket:
+        del basket[item_key]
+
+   
+    request.session['basket'] = basket
+
+    
+    basket_total = Decimal('0.00')
+    product_count = 0
+
+    for item_key, item_data in basket.items():
+        product = get_object_or_404(Product, pk=item_data['product_id'])
+        quantity = item_data['quantity']
+        size = item_data.get('size', '')
+
+      
+        if product.has_multiple_sizes and size:
+            price_for_size = product.get_price_for_size(size)
+            if price_for_size is not None:
+                product_total = price_for_size * quantity
+            else:
+                product_total = Decimal('0.00')
+        else:
+            product_total = (product.fixed_size_price * quantity
+                             if product.fixed_size_price else product.price * quantity)
+
+        basket_total += product_total
+        product_count += quantity
+
+   
+    if basket_total < settings.FREE_SHIPPING_THRESHOLD and basket_total > Decimal('0.00'):
+        shipping = (basket_total * Decimal(settings.STANDARD_SHIPPING_PERCENTAGE) / Decimal('100')).quantize(Decimal('0.01'))
+        free_shipping_delta = (settings.FREE_SHIPPING_THRESHOLD - basket_total).quantize(Decimal('0.01'))
+    else:
+        shipping = Decimal('0.00')
+        free_shipping_delta = Decimal('0.00')
+
+    grand_total = basket_total + shipping
+
+    request.session['total'] = str(basket_total)
+    request.session['shipping'] = str(shipping)
+    request.session['free_shipping_delta'] = str(free_shipping_delta)
+    request.session['grand_total'] = str(grand_total)
+
+    return HttpResponse(status=200)

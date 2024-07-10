@@ -32,7 +32,7 @@
                 </thead>
                 <tbody>
                     {% for item in basket_items %}
-                    <tr>
+                    <tr data-item_id="{{ item.product.id }}">
                         <td class="p-3 w-25"> <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
                                 class="img-fluid rounded"></td>
                         <td class="p-3">{{ item.product.name}}</td>
@@ -54,18 +54,22 @@
                                             <span class="icon"><i class="fas fa-minus"></i></span>
                                         </button>
                                     </div>
-                                    <input id="quantity_{{ item.item_id }}" class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}">
+                                    <input id="quantity_{{ item.item_id }}" class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="0" max="99" data-item_id="{{ item.item_id }}">
                                     <div class="input-group-append">
                                         <button type="button" class="pigment-green-btn btn-sm rounded-0 increment-qty" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                             <span class="icon"><i class="fas fa-plus"></i></span>
                                         </button>
                                     </div>
                                 </div>
-                                <button type="submit" class="update-link"><small>Update</small></button>
+                                <button type="submit" class="update-link"><small>Update Quantity</small></button>
                             </form>                            
                         </td>
                         <td class="p-3">£{{ item.total_price|floatformat:2 }}</td>
-                        <td class="p-3"><a href="#" class="remove-item remove-icon-container" id="remove_{{ item.item_id }}"><i class="fa-solid fa-square-xmark fa-xl"></i></a></td>
+                        <td class="p-3">
+                            <button class="btn remove-item" data-item_id="{{ item.product.id }}">
+                            <i class="fas fa-trash remove-icon"></i>
+                        </button>
+                    </td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -117,8 +121,6 @@
 {% block postloadjs %}
 {{ block.super }}
 
-
-
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', () => {
         const handleEnableDisable = (itemId) => {
@@ -126,12 +128,48 @@
             const decrementBtn = document.getElementById(`decrement-qty_${itemId}`);
             const incrementBtn = document.getElementById(`increment-qty_${itemId}`);
             const currentValue = parseInt(qtyInput.value, 10);
-            const minusDisabled = currentValue < 2;
-            const plusDisabled = currentValue > 98;
+            const minusDisabled = currentValue < 1;
+            const plusDisabled = currentValue > 99;
 
             decrementBtn.disabled = minusDisabled;
             incrementBtn.disabled = plusDisabled;
         };
+
+        const removeItemFromBasket = (itemId) => {
+        fetch(`/basket/remove/${itemId}/`, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': document.querySelector('input[name="csrfmiddlewaretoken"]').value,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({}),
+        })
+        .then(response => {
+            if (response.ok) {
+                console.log(`Item ${itemId} removed successfully.`);
+                
+                const element = document.querySelector(`tr[data-item_id="${itemId}"]`);
+                if (element) {
+                    element.remove();
+                } else {
+                    console.error(`Failed to find item ${itemId} in the UI.`);
+                }
+            } else {
+                console.error(`Failed to remove item ${itemId}. Server responded with status ${response.status}.`);
+            }
+        })
+        .catch(error => {
+            console.error(`Error removing item ${itemId}:`, error);
+        });
+    };
+
+    document.querySelectorAll('.remove-item').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const itemId = button.dataset.item_id;
+            removeItemFromBasket(itemId);
+        });
+    });
 
         document.querySelectorAll('.qty_input').forEach((input) => {
             const itemId = input.dataset.item_id;
