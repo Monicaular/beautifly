@@ -43,33 +43,29 @@
                         <td class="p-3">One Size</td>
                         {% endif %}
                         <td class="p-3">
-                            <form class="form update-form" method="POST" action="">
+                            <form class="form update-form" method="POST" action="{% url 'adjust_basket' item.product.id %}">
                                 {% csrf_token %}
-                                <div class="input-group">
+                                <input type="hidden" name="item_id" value="{{ item.product.id }}">
+                                <input type="hidden" name="size" value="{{ item.size }}">
+                                <label for="quantity">Quantity:</label>
+                                <div class="input-group w-70">
                                     <div class="input-group-prepend">
-                                        <button type="button" class="decrement-qty btn-sm pigment-green-btn rounded-0"
-                                            data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
-                                            <span><i class="fas fa-minus fa-sm"></i></span>
+                                        <button type="button" class="pigment-green-btn btn-sm rounded-0 decrement-qty" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                            <span class="icon"><i class="fas fa-minus"></i></span>
                                         </button>
                                     </div>
-                                    <input class="form-control form-control-sm qty_input" type="number" name="quantity"
-                                        value="{{ item.num_units }}" min="1" max="99" data-item_id="{{ item.item_id }}"
-                                        id="id_qty_{{ item.item_id }}">
+                                    <input id="quantity_{{ item.item_id }}" class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}">
                                     <div class="input-group-append">
-                                        <button type="button" class="increment-qty btn-sm pigment-green-btn rounded-0"
-                                            data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-                                            <span><i class="fas fa-plus fa-sm"></i></span>
+                                        <button type="button" class="pigment-green-btn btn-sm rounded-0 increment-qty" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                            <span class="icon"><i class="fas fa-plus"></i></span>
                                         </button>
                                     </div>
                                 </div>
-                                {% if item.product.has_sizes %}
-                                <input type="hidden" name="product_size" value="{{ item.size }}">
-                                {% endif %}
                                 <button type="submit" class="update-link"><small>Update</small></button>
-                            </form>
+                            </form>                            
                         </td>
                         <td class="p-3">£{{ item.total_price|floatformat:2 }}</td>
-                        <td class="p-3"><a href="#" class="remove-item remove-icon-container" id="remove_{{ item.product.id }}"><i class="fa-solid fa-square-xmark fa-xl"></i></a></td>
+                        <td class="p-3"><a href="#" class="remove-item remove-icon-container" id="remove_{{ item.item_id }}"><i class="fa-solid fa-square-xmark fa-xl"></i></a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
@@ -120,48 +116,52 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% include 'products/includes/unit-number-update-script.html' %}
+
+
 
 <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        const handleEnableDisable = (itemId) => {
+            const qtyInput = document.getElementById(`quantity_${itemId}`);
+            const decrementBtn = document.getElementById(`decrement-qty_${itemId}`);
+            const incrementBtn = document.getElementById(`increment-qty_${itemId}`);
+            const currentValue = parseInt(qtyInput.value, 10);
+            const minusDisabled = currentValue < 2;
+            const plusDisabled = currentValue > 98;
 
-    // Update quantity on click
-    $('.update-link').click(function(e) {
-        e.preventDefault();
-        const form = $(this).prev('.update-form');
-        form.submit();
+            decrementBtn.disabled = minusDisabled;
+            incrementBtn.disabled = plusDisabled;
+        };
+
+        document.querySelectorAll('.qty_input').forEach((input) => {
+            const itemId = input.dataset.item_id;
+            handleEnableDisable(itemId);
+
+            input.addEventListener('change', () => {
+                handleEnableDisable(itemId);
+            });
+        });
+
+        document.querySelectorAll('.increment-qty').forEach((button) => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const itemId = button.dataset.item_id;
+                const input = document.getElementById(`quantity_${itemId}`);
+                input.value = parseInt(input.value, 10) + 1;
+                handleEnableDisable(itemId);
+            });
+        });
+
+        document.querySelectorAll('.decrement-qty').forEach((button) => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const itemId = button.dataset.item_id;
+                const input = document.getElementById(`quantity_${itemId}`);
+                input.value = parseInt(input.value, 10) - 1;
+                handleEnableDisable(itemId);
+            });
+        });
     });
-
-    // Remove item and reload on click
-    $('.remove-item').click(function(e) {
-        e.preventDefault();
-        const csrfToken = "{{ csrf_token }}";
-        const itemId = $(this).attr('id').split('remove_')[1];
-        const url = `/basket/remove/${itemId}`;
-        const data = {'csrfmiddlewaretoken': csrfToken};
-
-        $.post(url, data)
-         .done(() => {
-             location.reload();
-         });
-    });
-
-    // Increment quantity
-    $('.increment-qty').click(function(e) {
-        e.preventDefault();
-        const closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-        let currentValue = parseInt($(closestInput).val(), 10);
-        $(closestInput).val(currentValue + 1);
-    });
-
-    // Decrement quantity
-    $('.decrement-qty').click(function(e) {
-        e.preventDefault();
-        const closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-        let currentValue = parseInt($(closestInput).val(), 10);
-        if (currentValue > 1) {
-            $(closestInput).val(currentValue - 1);
-        }
-    });
-
 </script>
+
 {% endblock %}

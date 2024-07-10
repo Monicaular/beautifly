@@ -11,25 +11,25 @@ def basket_contents(request):
     
     for item_key, item_data in basket.items():
         product = get_object_or_404(Product, pk=item_data['product_id'])
-        num_units = item_data['quantity']
+        quantity = item_data['quantity']
         size = item_data.get('size', '')
 
         if product.has_multiple_sizes and size:
-            price_for_size = product.get_price_for_quantity(size)
+            price_for_size = product.get_price_for_size(size)
             if price_for_size is not None:
-                product_total = price_for_size * num_units
+                product_total = price_for_size * quantity
             else:
                 product_total = Decimal('0.00')
         else:
-            product_total = product.fixed_size_price * num_units if product.fixed_size_price else product.price * num_units
+            product_total = product.fixed_size_price * quantity if product.fixed_size_price else product.price * quantity
 
 
         basket_total += product_total
-        product_count += num_units
+        product_count += quantity
 
         basket_items.append({
                 'item_id': item_key,
-                'num_units': num_units,
+                'quantity': quantity,
                 'product': product,
                 'total_price': product_total,
                 'size': size,

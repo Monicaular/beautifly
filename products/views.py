@@ -82,31 +82,31 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     categories = product.category.all()
-    quantity_options = []
+    size_options = []
     
     if product.has_multiple_sizes:
-        predefined_quantities = ['100g', '250g', '1kg']
+        predefined_sizes = ['100g', '250g', '1kg']
 
-        for quantity in predefined_quantities:
-            price = product.get_price_for_quantity(quantity)
+        for size in predefined_sizes:
+            price = product.get_price_for_size(size)
             if price is not None:
-                quantity_options.append({
-                    'quantity': quantity,
+                size_options.append({
+                    'size': size,
                     'price': price
                     })
     else:
         if product.fixed_size_price is not None:
-            quantity_options.append({
-                'quantity': '1',
+            size_options.append({
+                'size': '1',
                 'price': product.fixed_size_price
             })
-    unit_num = request.session.get('unit_num', 1)
+    size = request.session.get('size', 1)
     
     context = {
         'product': product,
         'categories': categories,
-        'quantity_options': quantity_options,
-        'unit_num': unit_num,
+        'size_options': size_options,
+        
     }
 
     return render(request, 'products/product_detail.html', context)

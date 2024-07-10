@@ -31,8 +31,8 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-    def get_price_for_quantity(self, quantity):
-        quantity_to_kg = {
+    def get_price_for_size(self, size):
+        size_to_kg = {
             '100g': Decimal('0.1'),
             '250g': Decimal('0.25'),
             '1kg': Decimal('1'),
@@ -40,9 +40,9 @@ class Product(models.Model):
 
         price_per_kg = self.price
 
-        if quantity in quantity_to_kg:
-            quantity_in_kg = quantity_to_kg[quantity]
-            total_price = round(price_per_kg * quantity_in_kg, 2)
+        if size in size_to_kg:
+            size_in_kg = size_to_kg[size]
+            total_price = round(price_per_kg * size_in_kg, 2)
             return total_price
         else:
             return None
