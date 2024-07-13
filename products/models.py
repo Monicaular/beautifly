@@ -40,3 +40,17 @@ class NutritionalFacts(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.product.name}"
+
+class RelatedProduct(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='related_products')
+    related_product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='related_to')
+
+    def __str__(self):
+        return f"{self.product.name} - {self.related_product.name}"
+
+class FastFact(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='fast_facts')
+    fact = models.TextField()
+
+    def __str__(self):
+        return f"{self.product.name} - {self.fact[:40]}"

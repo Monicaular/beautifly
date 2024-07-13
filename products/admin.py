@@ -1,10 +1,21 @@
 from django.contrib import admin
-from .models import Product, Category, NutritionalFacts
+from .models import Product, Category, NutritionalFacts, RelatedProduct, FastFact
 
 
-class NutritionalFactsInline(admin.TabularInline):  # or admin.StackedInline for different layout
+class NutritionalFactsInline(admin.TabularInline):
     model = NutritionalFacts
-    extra = 1  # Number of extra forms to display
+    extra = 1 
+
+class RelatedProductInline(admin.TabularInline):
+    model = RelatedProduct
+    fk_name = 'product'
+    verbose_name_plural = 'Related Products'
+
+class FastFactInline(admin.TabularInline):
+    model = FastFact
+    fk_name = 'product'
+    verbose_name_plural = 'Fast Facts'
+
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -18,7 +29,11 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku', )
 
-    inlines = [NutritionalFactsInline]  # Include the inline here
+    inlines = [
+        NutritionalFactsInline,
+        RelatedProductInline,
+        FastFactInline,
+    ] 
 
     def get_categories(self, obj):
         return ", ".join([category.name for category in obj.category.all()])
@@ -32,7 +47,6 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
-
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(NutritionalFacts)
+
