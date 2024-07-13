@@ -133,11 +133,11 @@ body {
 /* Card styling */
 .product-card {
     border: 1px solid #e5e5e5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(255, 152, 0, 0.4);
 }
 
 .product-card:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 15px rgba(255, 152, 0, 1);
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
 }
@@ -242,7 +242,14 @@ body {
 
 /* -------------------------------- Product detail page */
 
+.main-image {
+    border-radius: 10px;
+    box-shadow: 10px 15px 15px rgba(141, 110, 99, 1);
+}
 
+.rating {
+    margin: 10px;
+}
 /* Add to cart section */
 
 .btn-link-as-button {
@@ -284,15 +291,22 @@ body {
 
 .custom-tabs .nav-link {
     color: #8D6E63ff;
+    font-weight: bold;
+    
 }
+
 .custom-tabs .nav-link.active {
     color: #8D6E63ff;
+    border: 1px solid #8D6E63ff;
+    
 }
 .custom-tabs .nav-link:hover {
     color: #8D6E63ff;
+    background-color: rgba(139, 195, 74, 0.5);
 }
 
 /* Nutritional Facts List */
+
 .nutritional-facts {
     list-style: none;
     padding: 0;
@@ -315,6 +329,23 @@ body {
     flex-basis: 50%;
     text-align: right;
 }
+
+#description, 
+#ingredients,
+#nutritional,
+#interesting-facts {
+    background-color: rgba(139, 195, 74, 0.5);
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(255, 235, 59, 0.5);
+}
+
+.fast-facts {
+    list-style-type: none;
+}
+
 
 /*----------------------------------Icons stylings */
 

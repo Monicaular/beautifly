@@ -12,13 +12,14 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
-     <!-- Breadcrumb Navigation -->
+    <!-- Breadcrumb Navigation -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{% url 'homepage' %}">Home</a></li>
             <li class="breadcrumb-item"><a href="{% url 'products' %}">Products</a></li>
             {% for category in categories %}
-                <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ category.name }}">{{ category.friendly_name }}</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'products' %}?category={{ category.name }}">{{
+                    category.friendly_name }}</a></li>
             {% endfor %}
             <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
         </ol>
@@ -30,7 +31,8 @@
             <div class="image-container my-5">
                 {% if product.image %}
                 <a href="#">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid main-image" src="{{ product.image.url }}"
+                        alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="">
@@ -41,7 +43,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
+                <h4 class="mb-0">{{ product.name }}</h4>
                 {% if product.price %}
                 <p class="product-price">£{{ product.price }}</p>
                 {% endif %}
@@ -50,14 +52,14 @@
                 {% endif %}
                 <a class="btn btn-sm position-absolute top-0 end-0 m-2"><i class="far fa-heart"></i></a>
                 {% if product.category.exists %}
-                    <p class="small mt-1 mb-0">
-                        {% for category in product.category.all %}
-                            <a class="text-muted" href="{% url 'products' %}?category={{ category.name }}">
-                                <i class="bi bi-tags"></i>{{ category.friendly_name }}
-                            </a>
-                            {% if not forloop.last %}, {% endif %}
-                        {% endfor %}
-                    </p>
+                <p class="small mt-1 mb-0">
+                    {% for category in product.category.all %}
+                    <a class="text-muted" href="{% url 'products' %}?category={{ category.name }}">
+                        <i class="bi bi-tags"></i>{{ category.friendly_name }}
+                    </a>
+                    {% if not forloop.last %}, {% endif %}
+                    {% endfor %}
+                </p>
                 {% endif %}
                 {% if product.rating %}
                 <small class="text-muted">
@@ -75,22 +77,21 @@
                 <small class="text-muted">No Rating</small>
                 {% endif %}
                 <div class="cart-btn">
-                    <a href="" type="button" class="btn btn-block text-white">Add to Basket <i class="fa-solid fa-basket-shopping"></i></a>
+                    <a href="" type="button" class="btn btn-block text-white">Add to Basket <i
+                            class="fa-solid fa-basket-shopping"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    
-
-    
 
     <!-- Product Details Tabs -->
     <div class="row mt-5">
         <div class="col-12 col-md-8 offset-md-2">
             <ul class="nav nav-tabs custom-tabs" id="productTabs" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description"
-                        type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                        data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                        aria-selected="true">Description</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients"
@@ -98,15 +99,19 @@
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="nutritional-tab" data-bs-toggle="tab" data-bs-target="#nutritional"
-                        type="button" role="tab" aria-controls="nutritional" aria-selected="false">Nutritional Facts</button>
+                        type="button" role="tab" aria-controls="nutritional" aria-selected="false">Nutritional
+                        Facts</button>
                 </li>
+
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="interesting-facts-tab" data-bs-toggle="tab" data-bs-target="#interesting-facts"
-                        type="button" role="tab" aria-controls="interesting-facts" aria-selected="false">Interesting Facts</button>
+                    <button class="nav-link" id="interesting-facts-tab" data-bs-toggle="tab"
+                        data-bs-target="#interesting-facts" type="button" role="tab" aria-controls="interesting-facts"
+                        aria-selected="false">Interesting Facts</button>
                 </li>
             </ul>
             <div class="tab-content mt-4" id="productTabsContent">
-                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <div class="tab-pane fade show active product-description" id="description" role="tabpanel"
+                    aria-labelledby="description-tab">
                     <p>{{ product.description }}</p>
                 </div>
                 <div class="tab-pane fade" id="ingredients" role="tabpanel" aria-labelledby="ingredients-tab">
@@ -123,24 +128,43 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <div class="tab-pane fade" id="interesting-facts" role="tabpanel" aria-labelledby="interesting-facts-tab">
-                    <p>Interesting Facts:</p>
+                {% if product.fast_facts.exists %}
+                <div class="tab-pane fade" id="interesting-facts" role="tabpanel"
+                    aria-labelledby="interesting-facts-tab">
+
+
                     <ul>
                         {% for fact in product.fast_facts.all %}
-                        <li>
-                            <span class="key">{{ fact.fact }}</span>
+                        <li class='fast-facts'>
+                            <i class="fas fa-leaf"></i><span class="key"> {{ fact.fact }}</span>
                         </li>
                         {% endfor %}
                     </ul>
+
                 </div>
+                {% else %}
+                <div class="tab-pane fade" id="interesting-facts" role="tabpanel"
+                    aria-labelledby="interesting-facts-tab">
+                    <ul>
+                        <li class='fast-facts'>
+                            <i class="fas fa-leaf"></i> <span class="key">No facts yet</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                {% endif %}
+
+
             </div>
-        </div>    
+        </div>
     </div>
     <!-- End Product Details Tabs -->
+    {% if product.related_product %}
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="mb-4 offset-lg-1">Related Products</h2>
+                <h4 class="mb-4 offset-lg-1 p-3">Related Products</h4>
             </div>
         </div>
         <div class="row offset-lg-1">
@@ -148,31 +172,33 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card h-100 product-card">
                     <a href="{% url 'product_detail' related_product.related_product.id %}">
-                        <img src="{{ related_product.related_product.image.url }}" class="card-img-top" alt="{{ related_product.related_product.name }}">
+                        <img src="{{ related_product.related_product.image.url }}" class="card-img-top"
+                            alt="{{ related_product.related_product.name }}">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">{{ related_product.related_product.name }}</h5>
                         <p class="card-text product-price">£{{ related_product.related_product.price }}</p>
-                        <a href="{% url 'product_detail' related_product.related_product.id %}" class="btn btn-primary">View Product</a>
+                        <a href="{% url 'product_detail' related_product.related_product.id %}"
+                            class="btn btn-primary">View Product</a>
                     </div>
                 </div>
             </div>
             {% if forloop.counter|divisibleby:4 %}
-                <div class="w-100 d-none d-lg-block"></div>
+            <div class="w-100 d-none d-lg-block"></div>
             {% endif %}
             {% if forloop.counter|divisibleby:3 %}
-                <div class="w-100 d-none d-md-block d-lg-none"></div>
+            <div class="w-100 d-none d-md-block d-lg-none"></div>
             {% endif %}
             {% if forloop.counter|divisibleby:2 %}
-                <div class="w-100 d-none d-sm-block d-md-none"></div>
+            <div class="w-100 d-none d-sm-block d-md-none"></div>
             {% endif %}
             {% if forloop.counter|divisibleby:1 %}
-                <div class="w-100 d-block d-sm-none"></div>
+            <div class="w-100 d-block d-sm-none"></div>
             {% endif %}
             {% endfor %}
         </div>
     </div>
-    
+    {% endif %}
     <!-- End Related Products -->
 </div>
 {% endblock %}
