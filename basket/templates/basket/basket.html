@@ -22,7 +22,7 @@
                 <thead class="thead-light">
                     <tr>
                         <th>Product</th>
-                        <th> Name</th>
+                        <th>Name</th>
                         <th>SKU</th>
                         <th>Size</th>
                         <th>Quantity</th>
@@ -31,17 +31,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
-                    <tr data-item_id="">
-                        <td class="p-3 w-25"> <img src="" alt=""
+                    {% for item in basket_items %}
+                    <tr data-item_id="{{ item.product.id }}">
+                        <td class="p-3 w-25"> <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"
                                 class="img-fluid rounded"></td>
-                        <td class="p-3"></td>
-                        <td class="p-3"></td>
-                        
-                        <td class="p-3"></td>
-                        
-                        <td class="p-3">One Size</td>
-                        
+                        <td class="p-3">{{ item.product.name}}</td>
+                        <td class="p-3">{{ item.product.sku|upper }}</td>
+                        <td class="p-3">{{ item.size }}</td>
                         <td class="p-3">
                             <form class="form update-form" method="POST"
                                 action="">
@@ -77,7 +73,7 @@
                             </button>
                         </td>
                     </tr>
-                    
+                    {% endfor %}
                 </tbody>
                 <tfoot>
                     <tr>
