@@ -7,7 +7,7 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
-    image = models.ImageField(upload_to='categories/', null=True, blank=True)
+    
 
     def __str__(self):
         return self.name
@@ -24,25 +24,19 @@ class Product(models.Model):
     ingredients = models.TextField()
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
-    nutritional_facts = models.JSONField(null=True, blank=True)
-    fixed_size_price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
-    has_multiple_sizes = models.BooleanField(default=True)
+    
 
     def __str__(self):
         return self.name
 
-    def get_price_for_size(self, size):
-        size_to_kg = {
-            '100g': Decimal('0.1'),
-            '250g': Decimal('0.25'),
-            '1kg': Decimal('1'),
-        }
+class NutritionalFacts(models.Model):
+    product = models.ForeignKey(Product, related_name='nutritional_facts', on_delete=models.CASCADE)
+    name = models.CharField(max_length=255)
+    amount = models.CharField(max_length=255)
+    unit = models.CharField(max_length=50, null=True, blank=True)
 
-        price_per_kg = self.price
+    class Meta:
+        verbose_name_plural = 'Nutritional Facts'
 
-        if size in size_to_kg:
-            size_in_kg = size_to_kg[size]
-            total_price = round(price_per_kg * size_in_kg, 2)
-            return total_price
-        else:
-            return None
+    def __str__(self):
+        return f"{self.name} - {self.product.name}"
