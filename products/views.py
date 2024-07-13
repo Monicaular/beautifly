@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, NutritionalFacts, RelatedProduct, FastFact
 from urllib.parse import urlencode
 
 def all_products(request):
@@ -82,12 +82,17 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     categories = product.category.all()
-    
+    nutritional_facts = product.nutritional_facts.all()
+    related_products = product.related_products.all()
+    fast_facts = product.fast_facts.all()
     
     context = {
         'product': product,
         'categories': categories,
-        
+        'nutritional_facts': nutritional_facts,
+        'related_products': related_products,
+        'interesting_facts': fast_facts,
+
     }
 
     return render(request, 'products/product_detail.html', context)
