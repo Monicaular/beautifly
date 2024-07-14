@@ -19,7 +19,6 @@
     <div class="row">
         <div class="col-lg-12">
             <table class="product-table table table-bordered table-hover">
-                {{ basket_items}}
                 <thead class="thead-light">
                     <tr>
                         <th>Product</th>
@@ -27,7 +26,7 @@
                         <th>SKU</th>
                         <th>Size</th>
                         <th>Quantity</th>
-                        <th>Total Price</th>
+                        <th>Subtotal</th>
                         <th>Remove</th>
                     </tr>
                 </thead>
@@ -38,7 +37,7 @@
                                 class="img-fluid rounded"></td>
                         <td class="p-3">{{ item.product.name}}</td>
                         <td class="p-3">{{ item.product.sku|upper }}</td>
-                        <td class="p-3">{{ item.size }}</td>
+                        <td class="p-3">{{ item.product.size }}</td>
                         <td class="p-3">
                             <form class="form update-form" method="POST"
                                 action="">
@@ -67,7 +66,7 @@
                                 
                             </form>
                         </td>
-                        <td class="p-3"></td>
+                        <td class="p-3">£{{ item.subtotal|floatformat:2 }}</td>
                         <td class="p-3">
                             <button class="btn remove-item" id="remove_{{ item.product.id }}" data-item_id="{{ item.product.id}}" data-size="{{ item.size }}">
                                 <i class="fas fa-trash remove-icon"></i>
@@ -81,16 +80,16 @@
                         <td colspan="12" class="pt-5 text-right">
                             <h2>ORDER SUMMARY</h2>
                             <hr>
-                            <h6><strong>Basket Total: £<span id="basket-total"></span></strong>
+                            <h6><strong>Basket Total: £{{ total|floatformat:2 }}<span id="basket-total"></span></strong>
                             </h6>
-                            <h6>Shipping: £<span id="basket-shipping"></span></h6>
+                            <h6>Shipping: £{{ shipping|floatformat:2 }}<span id="basket-shipping"></span></h6>
                             <hr>
-                            <h4 class="mt-4"><strong>Grand Total: £<span id="basket-grand-total"></span></strong></h4>
-                            
+                            <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}<span id="basket-grand-total"></span></strong></h4>
+                            {%  if free_shipping_delta > 0 %}
                             <p class="mb-1">
-                                You could get free delivery by spending just <strong>£</strong> more!
+                                You could get free delivery by spending just <strong>£{{ free_shipping_delta}}</strong> more!
                             </p>
-                            
+                            {% endif %}
                         </td>
                     </tr>
                     <tr>

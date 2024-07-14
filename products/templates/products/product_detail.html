@@ -76,7 +76,7 @@
                 {% else %}
                 <small class="text-muted">No Rating</small>
                 {% endif %}
-                <!-- Add to basket form -->
+                
                 <!-- Add to basket form -->
 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
     {% csrf_token %}
@@ -183,7 +183,7 @@
         </div>
     </div>
     <!-- End Product Details Tabs -->
-    {% if product.related_product %}
+    {% if product.related_products %}
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -193,7 +193,7 @@
         <div class="row offset-lg-1">
             {% for related_product in product.related_products.all %}
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100 product-card">
+                <div class="card h-50 w-50 product-card">
                     <a href="{% url 'product_detail' related_product.related_product.id %}">
                         <img src="{{ related_product.related_product.image.url }}" class="card-img-top"
                             alt="{{ related_product.related_product.name }}">

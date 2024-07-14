@@ -13,12 +13,14 @@ def basket_contents(request):
 
     for item_id, quantity in basket.items():
         product = get_object_or_404(Product, pk=item_id)
-        total += quantity * product.price
+        subtotal = quantity * product.price
+        total += subtotal
         product_count += quantity
         basket_items.append({
             'item_id': item_id,
             'quantity': quantity,
             'product': product,
+            'subtotal': subtotal,
         })
 
     if total < settings.FREE_SHIPPING_THRESHOLD:
