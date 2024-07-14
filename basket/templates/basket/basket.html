@@ -40,35 +40,30 @@
                         <td class="p-3">{{ item.product.size }}</td>
                         <td class="p-3">
                             <form class="form update-form" method="POST"
-                                action="">
-                                
-                                <input type="hidden" name="item_id" value="">
-                                <input type="hidden" name="size" value="">
+                                action="{% url 'adjust_basket' item.item_id %}">
+                            {% csrf_token %}
+                            <div class="form-group">
                                 <label for="quantity">Quantity:</label>
-                                <div class="input-group w-70">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <button type="button" class="pigment-green-btn btn-sm rounded-0 decrement-qty"
-                                            data-item_id="" id="decrement-qty_{{ item.item_id }}">
-                                            <span class="icon"><i class="fas fa-minus"></i></span>
-                                        </button>
+                                        <button type="button" class="pigment-green-btn rounded-0 decrement-qty btn-sm" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                            <span><i class="fas fa-minus fa-sm"></i></span>
                                     </div>
-                                    <input id="quantity_{{ item.item_id }}" class="form-control qty_input" type="number"
-                                        name="quantity" value="{{ item.quantity }}" min="0" max="99"
-                                        data-item_id="{{ item.item_id }}">
+                                    <input id="quantity_{{ item.item_id }}" class="form-control qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}">
                                     <div class="input-group-append">
-                                        <button type="button" class="pigment-green-btn btn-sm rounded-0 increment-qty"
-                                            data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                        <button type="button" class="pigment-green-btn rounded-0 increment-qty btn-sm" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                            <span><i class="fas fa-plus fa-sm"></i></span>
                                         </button>
                                     </div>
                                 </div>
+                            </div>
                                 <button type="submit" class="update-link"><small>Update Quantity</small></button>
                                 
                             </form>
                         </td>
                         <td class="p-3">£{{ item.subtotal|floatformat:2 }}</td>
                         <td class="p-3">
-                            <button class="btn remove-item" id="remove_{{ item.product.id }}" data-item_id="{{ item.product.id}}" data-size="{{ item.size }}">
+                            <button class="btn remove-link" id="remove_{{ item.item_id }}" data-item_id="{{ item.item_id}}">
                                 <i class="fas fa-trash remove-icon"></i>
                             </button>
                         </td>
@@ -122,8 +117,45 @@
 {% endblock %}
 
 {% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/adjust-quantity-script.html' %}
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+    // Update quantity on click
+    document.querySelectorAll('.update-link').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const form = this.closest('.update-form');
+            form.submit();
+        });
+    });
 
+    // Remove item and reload on click
+    document.querySelectorAll('.remove-link').forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const csrfToken = "{{ csrf_token }}";
+            const itemId = this.dataset.item_id;
+            const url = `/basket/remove/${itemId}/`;
+            const data = new FormData();
+            data.append('csrfmiddlewaretoken', csrfToken);
 
-
+            fetch(url, {
+                method: 'POST',
+                body: data,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    location.reload();
+                } else {
+                    console.error('Failed to remove item.');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+});
+</script>
 
 {% endblock %}
