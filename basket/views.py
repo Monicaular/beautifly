@@ -57,10 +57,11 @@ def remove_from_basket(request, item_id):
             del basket[str(item_id)]
             request.session['basket'] = basket
             messages.success(request, 'Item removed successfully from basket.')
+            return JsonResponse({'success': True})
         else:
             messages.error(request, 'Item not found in basket.')
+            return JsonResponse({'success': False, 'error': 'Item not found in basket'}, status=404)
 
     except Exception as e:
         messages.error(request, f'Error removing item from basket: {str(e)}')
-
-    return redirect(reverse('view_basket'))
+        return JsonResponse({'success': False, 'error': str(e)}, status=500)

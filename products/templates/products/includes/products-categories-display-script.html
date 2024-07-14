@@ -1,0 +1,63 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle category checkbox change
+        document.querySelectorAll('.category-checkbox').forEach(checkbox => { checkbox.addEventListener('change', updateProducts);
+    });
+
+    // Function to update product listing based on selected categories
+        function updateProducts() {
+            const selectedCategories = Array.from(document.querySelectorAll('.category-checkbox:checked')).map(el => el.value);
+
+            const params = new URLSearchParams(window.location.search);
+            if (selectedCategories.length > 0) {
+                params.set('category', selectedCategories.join(','));
+            } else {
+                params.delete('category');
+            }
+
+            history.replaceState(null, null, '?' + params.toString());
+
+            
+            document.getElementById('categoryForm').submit();
+        }
+
+        // Function to handle sorting dropdown change
+        document.getElementById('sort-selector').addEventListener('change', function() {
+            const selector = this;
+            const currentUrl = new URL(window.location.href);
+
+            const selectedVal = selector.value;
+            if (selectedVal !== "reset") {
+                const [sort, direction] = selectedVal.split("_");
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+            }
+
+            // Redirect to the updated URL
+            window.location.href = currentUrl.href;
+            });
+
+        // Initial setup based on current URL parameters for sorting
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentSorting = urlParams.get('sort');
+        if (currentSorting) {
+            document.getElementById('sort-selector').value = currentSorting + '_' + urlParams.get('direction');
+        }
+
+        // Initial update based on current URL parameters for categories
+        let selectedCategories = urlParams.get('category');
+        if (selectedCategories) {
+            selectedCategories = selectedCategories.split(',');
+            selectedCategories.forEach(category => {
+                const checkbox = document.querySelector('.category-checkbox[value="' + category + '"]');
+                if (checkbox) {
+                    checkbox.checked = true;
+                }
+            });
+        }
+    });
+</script>

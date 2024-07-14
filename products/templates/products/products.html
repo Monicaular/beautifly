@@ -37,35 +37,7 @@
     <div class="row">
     <!-- End of Products page title-->
 
-     <!-- Sorting dropdown -->
-     <div class="row mt-1 mb-2">
-        <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-            <div class="sort-select-wrapper">
-                <form id="sort-form" method="GET">
-                    <select id="sort-selector" name="sort" class="custom-select custom-select-sm rounded-0 border {% if current_sorting != 'None_None' %}border-info{% else %}border-black{% endif %}">
-                        <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                        <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                        <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                        <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
-                        <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
-                        <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                        <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                        <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                        <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
-                    </select>
-                </form>
-            </div>
-        </div>
-        <div class="col-md-6 mb-2">
-            <p class="text-muted mt-3 text-center text-md-right">
-                {% if search_term or current_categories or current_sorting != 'None_None' %}
-                    <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
-                {% endif %}
-                {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-            </p>
-        </div>
-    </div>
-    <!-- End of Sorting dropdown -->
+    {% include 'products/includes/sorting-dropdown.html' %}
 
          <!-- Sidebar for Categories -->
          <div class="col-lg-3 order-2 order-lg-1 mb-3 mb-lg-0 d-none d-lg-block side-bar">
@@ -146,7 +118,7 @@
                                     {% endif %}
                                     <div class=" text-center">
                                         <div class="cart-btn">
-                                        <a href="" type="button" class="btn btn-block text-white">Add to Basket <i class="fa-solid fa-basket-shopping"></i></a>
+                                        <a href="{% url 'product_detail' product.id %}" type="button" class="btn btn-block text-white">Add to Basket <i class="fa-solid fa-basket-shopping"></i></a>
                                     </div>
                                     </div>
                                 </div>
@@ -210,67 +182,5 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    // Function to handle category checkbox change
-        document.querySelectorAll('.category-checkbox').forEach(checkbox => { checkbox.addEventListener('change', updateProducts);
-    });
-
-    // Function to update product listing based on selected categories
-        function updateProducts() {
-            const selectedCategories = Array.from(document.querySelectorAll('.category-checkbox:checked')).map(el => el.value);
-
-            const params = new URLSearchParams(window.location.search);
-            if (selectedCategories.length > 0) {
-                params.set('category', selectedCategories.join(','));
-            } else {
-                params.delete('category');
-            }
-
-            history.replaceState(null, null, '?' + params.toString());
-
-            
-            document.getElementById('categoryForm').submit();
-        }
-
-        // Function to handle sorting dropdown change
-        document.getElementById('sort-selector').addEventListener('change', function() {
-            const selector = this;
-            const currentUrl = new URL(window.location.href);
-
-            const selectedVal = selector.value;
-            if (selectedVal !== "reset") {
-                const [sort, direction] = selectedVal.split("_");
-
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
-            }
-
-            // Redirect to the updated URL
-            window.location.href = currentUrl.href;
-            });
-
-        // Initial setup based on current URL parameters for sorting
-        const urlParams = new URLSearchParams(window.location.search);
-        const currentSorting = urlParams.get('sort');
-        if (currentSorting) {
-            document.getElementById('sort-selector').value = currentSorting + '_' + urlParams.get('direction');
-        }
-
-        // Initial update based on current URL parameters for categories
-        let selectedCategories = urlParams.get('category');
-        if (selectedCategories) {
-            selectedCategories = selectedCategories.split(',');
-            selectedCategories.forEach(category => {
-                const checkbox = document.querySelector('.category-checkbox[value="' + category + '"]');
-                if (checkbox) {
-                    checkbox.checked = true;
-                }
-            });
-        }
-    });
-</script>
+{% include 'products/includes/products-categories-display-script.html' %}
 {% endblock %}
