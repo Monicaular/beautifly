@@ -252,6 +252,21 @@ body {
 .rating {
     margin: 10px;
 }
+
+/* Increase/decrease units number buttons*/
+
+.pigment-green-btn {
+    background-color: rgba(76, 175, 80, 0.5);
+    border-color: #4CAF50;
+    color: #fff;
+    height: 40px;
+}
+
+.pigment-green-btn:hover {
+    background-color: rgba(76, 175, 80, 0.8);
+    border-color: #4CAF50;
+}
+
 /* Add to cart section */
 
 .btn-link-as-button {

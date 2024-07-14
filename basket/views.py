@@ -1,6 +1,4 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.http import HttpResponseBadRequest, HttpResponse, JsonResponse
-from django.views.decorators.http import require_POST
 from django.conf import settings
 from products.models import Product
 from decimal import Decimal
@@ -12,4 +10,17 @@ def view_basket(request):
     
     return render(request, 'basket/basket.html')
 
+def add_to_basket(request, item_id):
+    """ Add a quantity of the specified product to the shopping basket """
 
+    quantity = int(request.POST.get('quantity'))
+    redirect_url = request.POST.get('redirect_url')
+    basket = request.session.get('basket', {})
+
+    if item_id in list(basket.keys()):
+        basket[item_id] += quantity
+    else:
+        basket[item_id] = quantity
+
+    request.session['basket'] = basket
+    return redirect(redirect_url)
