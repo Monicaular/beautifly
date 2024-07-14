@@ -1,0 +1,51 @@
+<script type="text/javascript">
+    // Disable +/- buttons outside 1-99 range
+    function handleEnableDisable(itemId) {
+        const currentValue = parseInt(document.querySelector(`#quantity_${itemId}`).value);
+        const minusDisabled = currentValue < 2;
+        const plusDisabled = currentValue > 98;
+        document.querySelector(`#decrement-qty_${itemId}`).disabled = minusDisabled;
+        document.querySelector(`#increment-qty_${itemId}`).disabled = plusDisabled;
+    }
+
+    // Ensure proper enabling/disabling of all inputs on page load
+    const allQtyInputs = document.querySelectorAll('.qty_input');
+    allQtyInputs.forEach(input => {
+        const itemId = input.dataset.item_id;
+        handleEnableDisable(itemId);
+    });
+
+    // Check enable/disable every time the input is changed
+    allQtyInputs.forEach(input => {
+        input.addEventListener('change', () => {
+            const itemId = input.dataset.item_id;
+            handleEnableDisable(itemId);
+        });
+    });
+
+    // Increment quantity
+    document.querySelectorAll('.increment-qty').forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+            const closestInput = button.closest('.input-group').querySelector('.qty_input');
+            let currentValue = parseInt(closestInput.value);
+            closestInput.value = currentValue + 1;
+            const itemId = button.dataset.item_id;
+            handleEnableDisable(itemId);
+        });
+    });
+
+    // Decrement quantity
+    document.querySelectorAll('.decrement-qty').forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+            const closestInput = button.closest('.input-group').querySelector('.qty_input');
+            let currentValue = parseInt(closestInput.value);
+            closestInput.value = currentValue - 1;
+            const itemId = button.dataset.item_id;
+            handleEnableDisable(itemId);
+        });
+    });
+
+
+</script>
