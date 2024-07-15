@@ -1,10 +1,52 @@
-<div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+<div id="successToast" class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-success"></div>
     <div class="toast-header">
         <strong class="me-auto">Success</strong>
         <small class="text-muted">just now</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body">
+        <div class="toast-message">
         {{ message }}
     </div>
+        <hr class="my-2">
+        {% if grand_total %}
+            <p class="mb-1">Your Basket:</p>
+            <div class="basket-preview">
+                {% for item in basket_items %}
+                    <div class="row mb-2">
+                        <div class="col-3">
+                            <img src="{{ item.product.image.url }}" class="img-fluid" alt="{{ item.product.name }}">
+                        </div>
+                        <div class="col-9">
+                            <p class="mb-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="mb-0 small">Quantity: {{ item.quantity }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <p class="text-end mt-3">
+                    <strong>Total: £{{ grand_total|floatformat:2 }}</strong>
+                </p>
+                {% if free_shipping_delta > 0 %}
+                <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
+                    Spend <strong>£{{ free_shipping_delta }}</strong> more to get free delivery!
+                </p>
+                {% else %}
+                <p class="mb-0 p-2 bg-success shadow-sm text-white text-center">
+                    Your total basket is <strong>£{{ grand_total|floatformat:2 }}</strong> You qualify for free delivery!
+                </p>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+{% if basket_items %}
+<div class="toast-footer">
+    <a href="{% url 'view_basket' %}" class="btn btn-black btn-block rounded-0">
+        <span class="text-uppercase">Go To Secure Checkout</span>
+        <span class="icon">
+            <i class="fas fa-lock"></i>
+        </span>
+    </a>
+</div>
+{% endif %}
 </div>

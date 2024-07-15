@@ -86,9 +86,30 @@ body {
     right: 20px;
     width: 300px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px #8D6E63ff;
     z-index: 9999;
 }
+
+.toast-success {
+    background-color: #4CAF50;
+    padding: 5px;
+}
+
+.toast-warning {
+    background-color: #dbf115;
+    padding: 5px;
+}
+
+.toast-error {
+    background-color: #d32317;
+    padding: 5px;
+}
+
+.toast-info {
+    background-color: #5643c2;
+    padding: 5px;
+}
+
 
 /*----------------------------------Carousel Section */
 
@@ -275,7 +296,7 @@ body {
     border-color: #4CAF50;
 }
 
-/* Add to cart section */
+/* Add to basket section */
 
 .btn-link-as-button {
     display: inline-flex;
@@ -382,6 +403,12 @@ body {
     color: rgba(255, 152, 0, 1);
 }
 /*-----------------------------------Basket Page*/
+
+.basket-preview {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 .update-link {
     margin-top: 5px;

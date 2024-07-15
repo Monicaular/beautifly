@@ -59,7 +59,7 @@ def remove_from_basket(request, item_id):
         if str(item_id) in basket:
             del basket[str(item_id)]
             request.session['basket'] = basket
-            messages.success(request, 'Item removed successfully from basket.')
+            messages.success(request, 'Item successfully removed from basket.')
             return HttpResponse(status=200)
         else:
             messages.error(request, 'Item not found in basket.')
