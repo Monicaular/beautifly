@@ -144,18 +144,27 @@
                 method: 'POST',
                 body: data,
             })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    location.reload();
+            .then(response => {
+                if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response;
+                })
+            .then(response => {
+                if (response.status === 200) {
+                    location.reload(); 
+                } else if (response.status === 404) {
+                    console.error('Item not found in basket.');
                 } else {
                     console.error('Failed to remove item.');
                 }
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
         });
     });
-});
 </script>
 
 {% endblock %}
