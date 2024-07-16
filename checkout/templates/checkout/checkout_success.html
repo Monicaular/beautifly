@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Success Message -->
+    <div class="row mt-5">
+        <div class="col text-center">
+            <h2 class="logo-font text-success">Order Successful!</h2>
+            <p class="lead">Thank you for your purchase.</p>
+            <p>An email confirmation will be sent to <strong>{{ order.email }}</strong></p>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Order Details -->
+    <div class="row mb-5">
+        <div class="col-12 col-lg-8 offset-lg-2">
+            <h3 class="text-center">Order Details</h3>
+            <table class="table table-bordered table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>SKU</th>
+                        <th>Size</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in order.lineitems.all %}
+                    <tr>
+                        <td class="p-3 w-25"> 
+                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded">
+                        </td>
+                        <td class="p-3">{{ item.product.name }}</td>
+                        <td class="p-3">{{ item.product.sku|upper }}</td>
+                        <td class="p-3">{{ item.product.size }}</td>
+                        <td class="p-3">{{ item.quantity }}</td>
+                        <td class="p-3">£{{ item.get_subtotal|floatformat:2 }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-right"><strong>Total:</strong></td>
+                        <td>£{{ order.grand_total|floatformat:2 }}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- Continue Shopping Button -->
+    <div class="row mb-5">
+        <div class="col text-center">
+            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">
+                <span class="font-weight-bold">Continue Shopping</span>
+                <span class="icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{% endblock %}
