@@ -25,6 +25,63 @@
         </div>
     </div>
 
+    <!-- Order and Delivery Details -->
+        <div class="col-12 col-lg-8 offset-lg-2">
+            <div class="row">
+                <!-- Order Summary -->
+                <div class="col-lg-6 mb-4">
+                    <div class="section">
+                    <h4>Order Information</h4>
+                    <p><strong>Order Number:</strong> {{ order.order_number }}</p>
+                    <p><strong>Order Date:</strong> {{ order.date }}</p>
+                    <p><strong>Grand Total:</strong> £{{ order.grand_total|floatformat:2 }}</p>
+                </div>
+            </div>
+                <!-- Delivery Information -->
+                <div class="col-lg-6 mb-4">
+                    <div class="section">
+                    <h4>Delivery Information</h4>
+                    <p><strong>Delivering to:</strong></p>
+                    <p>{{ order.full_name }}</p>
+                    <p>{{ order.street_address1 }}</p>
+                    {% if order.street_address2 %}
+                        <p>{{ order.street_address2 }}</p>
+                    {% endif %}
+                    <p>{{ order.town_or_city }}</p>
+                    {% if order.county %}
+                        <p>{{ order.county }}</p>
+                    {% endif %}
+                    <p>{{ order.postcode }}</p>
+                    <p>{{ order.country }}</p>
+                    <p><strong>Phone Number:</strong> {{ order.phone_number }}</p>
+                </div>
+            </div>
+            </div>
+
+            <!-- Billing Information (if different from delivery information) -->
+            {% if order.billing_full_name %}
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="section"></div>
+                        <h4>Billing Information</h4>
+                        <p>{{ order.billing_full_name }}</p>
+                        <p>{{ order.billing_street_address1 }}</p>
+                        {% if order.billing_street_address2 %}
+                            <p>{{ order.billing_street_address2 }}</p>
+                        {% endif %}
+                        <p>{{ order.billing_town_or_city }}</p>
+                        {% if order.billing_county %}
+                            <p>{{ order.billing_county }}</p>
+                        {% endif %}
+                        <p>{{ order.billing_postcode }}</p>
+                        <p>{{ order.billing_country }}</p>
+                    </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
     <!-- Order Details -->
     <div class="row mb-5">
         <div class="col-12 col-lg-8 offset-lg-2">
