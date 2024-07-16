@@ -22,6 +22,8 @@ def checkout(request):
         'grand_total': basket_contents(request)['grand_total'],
         'order_form': order_form,
         'total_quantity': total_quantity,
+        'stripe_public_key': 'pk_test_51L7g7u2QlfePk4wlJYKjg6GUDBCFWIliokOfQYuqsh8YQTSxdfkerRXsCousl50sV8LT4piXLajpy63c5I3GVzB200uyEgU1PC',
+        'client_secret': 'test client secret',
     }
 
     return render(request, 'checkout/checkout.html', context)
