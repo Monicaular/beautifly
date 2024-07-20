@@ -86,7 +86,7 @@
     <div class="row mb-5">
         <div class="col-12 col-lg-8 offset-lg-2">
             <h3 class="text-center">Order Details</h3>
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered table-hover compact-table">
                 <thead class="thead-light">
                     <tr>
                         <th>Product</th>
@@ -107,11 +107,16 @@
                         <td class="p-3">{{ item.product.sku|upper }}</td>
                         <td class="p-3">{{ item.product.size }}</td>
                         <td class="p-3">{{ item.quantity }}</td>
+
                         <td class="p-3">£{{ item.lineitem_total|floatformat:2 }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>
                 <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-right"><strong>Delivery Charge:</strong></td>
+                        <td>£{{ order.shipping_cost|floatformat:2 }}</td>
+                    </tr>
                     <tr>
                         <td colspan="5" class="text-right"><strong>Total:</strong></td>
                         <td>£{{ order.grand_total|floatformat:2 }}</td>

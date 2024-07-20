@@ -188,8 +188,6 @@ body {
 
 /* Sidebar Categories */
 
-
-
 .btn-categories:hover {
     background-color: rgba(141, 110, 99, 0.5);
     color:#FAFAFAff;
@@ -398,6 +396,27 @@ body {
     border-color: #4CAF50;
     transform: scale(1.5);
 }
+
+/* -------------------------------------Tables on several pages*/
+
+.compact-table {
+    width: 100%;
+    margin: auto;
+    font-size: 14px;  /* Adjust this value as needed */
+}
+
+.compact-table th, .compact-table td {
+    padding: 5px 8px;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.compact-table img {
+    max-width: 80px;
+    height: auto;
+}
+
+
 
 
 /* -------------------------------- Media Queries */
