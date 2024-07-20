@@ -1,6 +1,6 @@
 from django import forms
 from .models import Order
-import pycountry
+from django_countries.widgets import CountrySelectWidget
 
 
 class OrderForm(forms.ModelForm):
@@ -11,7 +11,7 @@ class OrderForm(forms.ModelForm):
                   'town_or_city', 'postcode', 'country',
                   'county',)
         widgets = {
-            'country': forms.Select(choices=[(country.alpha_2, country.name) for country in pycountry.countries])
+            'country': CountrySelectWidget(attrs={'class': 'stripe-style-input'})
         }
 
     def __init__(self, *args, **kwargs):
@@ -24,28 +24,20 @@ class OrderForm(forms.ModelForm):
             'full_name': 'Full Name',
             'email': 'Email Address',
             'phone_number': 'Phone Number',
-            'country': 'Country',
             'postcode': 'Post Code',
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
-            'county': 'County',
+            'county': 'County, State or Locality',
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            else:
-                placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder
+            if field != 'country':
+                if self.fields[field].required:
+                    placeholder = f'{placeholders[field]} *'
+                else:
+                    placeholder = placeholders[field]
+                self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
-
-
-    def get_country_choices(self):
-        # Get list of countries and convert to a format suitable for Django choices
-        countries = [(country.alpha_2, country.name) for country in pycountry.countries]
-        return [('','Select Country')] + sorted(countries, key=lambda x: x[1])
-
-         

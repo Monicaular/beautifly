@@ -6,16 +6,20 @@
 #payment-form .form-control,
 #card-element {
     color: #000;
-    border: 1px solid #8D6E63ff;
-}
-
-#div_id_country {
-  border: 1px solid #8D6E63ff;
-  border-radius: 5px;
 }
 
 #id_country {
   height: 100%;
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #7f858b !important;
 }
 
 .StripeElement,
