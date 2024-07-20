@@ -9,6 +9,15 @@
     border: 1px solid #8D6E63ff;
 }
 
+#div_id_country {
+  border: 1px solid #8D6E63ff;
+  border-radius: 5px;
+}
+
+#id_country {
+  height: 100%;
+}
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -34,7 +43,7 @@
 }
 
 .stripe-style-input::placeholder {
-    color: rgba(139, 195, 74, 0.7);
+    color: #7f858b;
 }
 
 .section {
@@ -44,6 +53,7 @@
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+  text-overflow: ellipsis;
 }
 .section h4 {
   margin-top: 0;

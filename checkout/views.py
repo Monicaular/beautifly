@@ -1,12 +1,38 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.http import HttpResponse
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 from basket.contexts import basket_contents
 from .models import Order, OrderLineItem
 from .forms import OrderForm
 from products.models import Product
+from .utils import get_iso_country_code
 
 import stripe
+import json
+
+@require_POST
+def cache_checkout_data(request):
+    try:
+        # Extract PaymentIntent ID from the client secret
+        pid = request.POST.get('client_secret').split('_secret')[0]
+        
+        # Set the Stripe API key
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        
+        # Modify the PaymentIntent metadata
+        stripe.PaymentIntent.modify(pid, metadata={
+            'basket': json.dumps(request.session.get('basket', {})),
+            'save_info': request.POST.get('save_info'),
+            'username': request.user.username if request.user.is_authenticated else '',
+        })
+        
+        return HttpResponse(status=200)
+    except Exception as e:
+        # Display error message and return HTTP 400 response
+        messages.error(request, 'Sorry, your payment cannot be processed right now. Please try again later.')
+        return HttpResponse(content=str(e), status=400)
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -14,19 +40,7 @@ def checkout(request):
 
     if request.method == 'POST':
         basket = request.session.get('basket', {})
-
-        form_data = {
-            'full_name': request.POST['full_name'],
-            'email': request.POST['email'],
-            'phone_number': request.POST['phone_number'],
-            'country': request.POST['country'],
-            'postcode': request.POST['postcode'],
-            'town_or_city': request.POST['town_or_city'],
-            'street_address1': request.POST['street_address1'],
-            'street_address2': request.POST['street_address2'],
-            'county': request.POST['county'],
-        }
-        order_form = OrderForm(form_data)
+        order_form = OrderForm(request.POST)
 
         if order_form.is_valid():
             order = order_form.save()

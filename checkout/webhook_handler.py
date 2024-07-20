@@ -20,7 +20,20 @@ class StripeWH_Handler:
         """
         Handle the payment_intent.succeeded event
         """
-        payment_intent = event.get('data', {}).get('object', {})
+        intent = event.data.object
+        pid = intent.id
+        basket = intent.metadata.basket
+        save_info = intent.metadata.save_info
+
+        # Get the Charge object
+        stripe_charge = stripe.Charge.retrieve(intent.latest_charge)
+
+        billing_details = stripe_charge.billing_details
+        shipping_details = intent.shipping
+        grand_total = round(stripe_charge.amount / 100, 2)
+
+        print(intent)
+
         # Process the payment_intent
         return HttpResponse(
             content=f'PaymentIntent succeeded: {payment_intent["id"]}',

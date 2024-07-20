@@ -1,5 +1,6 @@
 from django import forms
 from .models import Order
+import pycountry
 
 
 class OrderForm(forms.ModelForm):
@@ -9,6 +10,9 @@ class OrderForm(forms.ModelForm):
                   'street_address1', 'street_address2',
                   'town_or_city', 'postcode', 'country',
                   'county',)
+        widgets = {
+            'country': forms.Select(choices=[(country.alpha_2, country.name) for country in pycountry.countries])
+        }
 
     def __init__(self, *args, **kwargs):
         """
@@ -37,3 +41,11 @@ class OrderForm(forms.ModelForm):
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
+
+
+    def get_country_choices(self):
+        # Get list of countries and convert to a format suitable for Django choices
+        countries = [(country.alpha_2, country.name) for country in pycountry.countries]
+        return [('','Select Country')] + sorted(countries, key=lambda x: x[1])
+
+         
