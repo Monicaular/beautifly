@@ -43,7 +43,14 @@ def checkout(request):
         order_form = OrderForm(request.POST)
 
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            # Extract the payment intent ID from the client_secret
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_basket = json.dumps(basket)  # Save basket as JSON
+            order.save()
+
+            # Create OrderLineItems for each item in the basket
             for item_id, item_data in basket.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -59,6 +66,7 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_basket'))
+            
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
