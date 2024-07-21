@@ -1,0 +1,36 @@
+Dear {{ order.full_name }},
+
+Thank you for your order from Wholesome Basket! We are excited to process your order and get it delivered to you as soon as possible. Below are the details of your order:
+
+**Order Number:** {{ order.order_number }}
+**Order Date:** {{ order.date|date:"F j, Y" }}
+
+**Delivery Address:**
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+
+**Order Summary:**
+
+{% for item in order.lineitems.all %}
+- **{{ item.product.name }}** (Quantity: {{ item.quantity }}) - £{{ item.lineitem_total }}
+{% endfor %}
+
+**Subtotal:** £{{ order.order_total }}
+**Shipping:** £{{ order.shipping_cost }}
+**Grand Total:** £{{ order.grand_total }}
+
+
+You can view your order status and history by logging into your account on our website.
+
+If you have any questions or need further assistance, please do not hesitate to contact our customer service team at [support@wholesomebasket.com](mailto:support@wholesomebasket.com) or call us at 123-456-7890.
+
+Thank you for choosing Wholesome Basket. We look forward to serving you again!
+
+Best regards,
+
+The Wholesome Basket Team
+
+**Follow us on:**
+- [Facebook](https://facebook.com/wholesomebasket)
+- [Twitter](https://twitter.com/wholesomebasket)
+- [Instagram](https://instagram.com/wholesomebasket)
