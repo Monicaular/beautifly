@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block page_header %}
+
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+     <!--Checkout Page title-->
+     <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Product Management</h2>
+            <h3 class="text-muted">Add a product</h3>
+            <hr>
+        </div>
+    </div>
+    <!-- End of Checkout Page title-->
+    <div class="row">
+        <!-- Basket Summary -->
+        <div class="col-12 col-lg-6 mb-4">
+            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="button-row">
+                    <a href="{% url 'products' %}" class="btn-link-as-button seasalt-btn">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="btn text-uppercase cinereous">Cancel</span>
+                    </a>
+                    <button type="submit" class="btn-link-as-button seasalt-btn">
+                        <span class="text-uppercase">Add Product</span>
+                    </button>
+                </div>
+            </form>
+            
+</div>
+
+{% endblock %}
+
