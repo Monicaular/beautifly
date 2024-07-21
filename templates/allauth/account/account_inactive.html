@@ -1,14 +1,20 @@
-{% extends "allauth/layouts/entrance.html" %}
+{% extends "account/base.html" %}
 {% load i18n %}
 {% load allauth %}
+
 {% block head_title %}
     {% translate "Account Inactive" %}
 {% endblock head_title %}
+
 {% block content %}
-    {% element h1 %}
-        {% translate "Account Inactive" %}
-    {% endelement %}
-    {% element p %}
-        {% translate "This account is inactive." %}
-    {% endelement %}
+<div class="centered-container">
+    <div class="auth-box">
+        <h2 class="logo-font text-center">{% translate "Account Inactive" %}</h2>
+        <hr>
+        <p class="text-center">
+            {% translate "This account is inactive." %}
+        </p>
+    </div>
+</div>
 {% endblock content %}
+

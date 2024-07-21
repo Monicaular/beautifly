@@ -416,7 +416,69 @@ body {
     height: auto;
 }
 
+/*-------------------------------Allauth Pages*/
 
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    
+}
+.auth-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 8px 9px 10px rgba(255, 152, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: #6c757d;
+}
+
+.allauth-form-inner-content input {
+    border-color: #8D6E63ff;
+    border-radius: 5px;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: rgba(139, 195, 74, 1);
+    border: 1px solid #4CAF50ff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: rgba(141, 110, 99, 0.7);
+    border-color: #222;
+}
 
 
 /* -------------------------------- Media Queries */
