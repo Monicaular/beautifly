@@ -26,10 +26,90 @@
         </div>
     </div>
     <!-- End of Checkout Page title-->
+    <div class="container mt-4">
+        <!-- Main Container -->
+        <div class="row">
+            <!-- Sidebar Navigation -->
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <ul class="nav nav-tabs flex-column" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">Account Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="orders-tab" data-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="false">My Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="addresses-tab" data-toggle="tab" href="#addresses" role="tab" aria-controls="addresses" aria-selected="false">Addresses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="wishlist-tab" data-toggle="tab" href="#wishlist" role="tab" aria-controls="wishlist" aria-selected="false">Wishlist</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     
-
-
-{% endblock %}
+            <!-- Main Content Area -->
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <!-- Account Dashboard Tab -->
+                    <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                        <!-- Profile Form -->
+                        <h2>Account Information</h2>
+                        <form action="{% url 'profile' %}" method="POST">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <button class="btn btn-primary mt-3">Update Information</button>
+                        </form>
+    
+                        <h3 class="mt-5">Order History</h3>
+                        <div class="order-history">
+                            {% if orders %}
+                            <table class="table table-striped mt-3">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Order No</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Items</th>
+                                        <th scope="col">Order Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for order in orders %}
+                                    <tr>
+                                        <td><a href="{% url 'order_history' order.order_number %}"
+                                            title="{{ order.order_number }}">
+                                                {{ order.order_number|truncatechars:10 }}
+                                            </a></td>
+                                        <td>{{ order.date|date:"M d, Y" }}</td>
+                                        <td>
+                                            <ul>
+                                            {% for item in order.lineitems.all %}
+                                                <li>{{ item.product.name }} x {{ item.quantity }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </td>
+                                        <td>£{{ order.grand_total }}</td>
+                                    </tr>
+                                    {% empty %}
+                                    <tr>
+                                        <td colspan="4">No orders found.</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                            {% else %}
+                            <p>No orders found.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
