@@ -4,8 +4,12 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, NutritionalFacts, RelatedProduct, FastFact
-from .forms import ProductForm
+from .forms import ProductForm, NutritionalFactsForm, RelatedProductForm, FastFactForm
 from urllib.parse import urlencode
+from django.forms.models import inlineformset_factory
+
+
+
 
 def all_products(request):
     """ A view to display all products, including sorting and search queries """
@@ -99,11 +103,36 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 def add_product(request):
-    """ Add a product to the store """
-    form = ProductForm()
-    template = 'products/add_product.html'
-    context = {
-        'form': form,
-    }
+    NutritionalFactsFormSet = inlineformset_factory(Product, NutritionalFacts, form=NutritionalFactsForm, extra=1)
+    RelatedProductFormSet = inlineformset_factory(Product, RelatedProduct, form=RelatedProductForm, fk_name='product', extra=1)
+    FastFactFormSet = inlineformset_factory(Product, FastFact, form=FastFactForm, extra=1)
 
-    return render(request, template, context)
+    if request.method == 'POST':
+        product_form = ProductForm(request.POST, request.FILES)
+        product = product_form.save(commit=False)
+        nutritional_formset = NutritionalFactsFormSet(request.POST, instance=product)
+        related_formset = RelatedProductFormSet(request.POST, instance=product)
+        fast_fact_formset = FastFactFormSet(request.POST, instance=product)
+
+        if product_form.is_valid() and nutritional_formset.is_valid() and related_formset.is_valid() and fast_fact_formset.is_valid():
+            product.save()
+            nutritional_formset.instance = product
+            nutritional_formset.save()
+            related_formset.instance = product
+            related_formset.save()
+            fast_fact_formset.instance = product
+            fast_fact_formset.save()
+            return redirect('products')
+    else:
+        product_form = ProductForm()
+        nutritional_formset = NutritionalFactsFormSet()
+        related_formset = RelatedProductFormSet()
+        fast_fact_formset = FastFactFormSet()
+
+    context = {
+        'product_form': product_form,
+        'nutritional_formset': nutritional_formset,
+        'related_formset': related_formset,
+        'fast_fact_formset': fast_fact_formset,
+    }
+    return render(request, 'products/add_product.html', context)

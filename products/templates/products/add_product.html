@@ -1,35 +1,92 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
 {% block page_header %}
-
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
 </div>
-
 {% endblock %}
 
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-     <!--Checkout Page title-->
-     <div class="row">
+    <!-- Product Management Page title -->
+    <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Product Management</h2>
             <h3 class="text-muted">Add a product</h3>
             <hr>
         </div>
     </div>
-    <!-- End of Checkout Page title-->
+    <!-- End of Page title -->
+    
     <div class="row">
-        <!-- Basket Summary -->
-        <div class="col-12 col-lg-6 mb-4">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+        <!-- Product Form -->
+        <div class="container">
+            <div class="custom-width">
+            <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form | crispy }}
+                {{ product_form|crispy }}
+
+                <h3>Nutritional Facts</h3>
+                <div id="nutrition-facts-formset">
+                    {{ nutritional_formset.management_form }}
+                    {% for form in nutritional_formset %}
+                        <div class="formset-row d-flex align-items-center">
+                            {{ form|crispy }}
+                            <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
+                        </div>
+                    {% endfor %}
+                    <div class="formset-template" style="display: none;">
+                        <div class="formset-row d-flex align-items-center">
+                            {{ nutritional_formset.empty_form|crispy }}
+                            <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start my-2">
+                <button type="button" id="add-nutrition-fact" class="btn custom-add-btn">Add Nutritional Fact</button>
+            </div>
+                <h3>Related Products</h3>
+                <div id="related-products-formset">
+                    {{ related_formset.management_form }}
+                    {% for form in related_formset %}
+                        <div class="formset-row d-flex align-items-center">
+                            {{ form|crispy }}
+                            <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
+                        </div>
+                    {% endfor %}
+                    <div class="formset-template" style="display: none;">
+                        <div class="formset-row d-flex align-items-center">
+                            {{ related_formset.empty_form|crispy }}
+                            <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start my-2">
+                <button type="button" id="add-related-product" class="btn custom-add-btn">Add Related Product</button>
+            </div>
+                <h3>Fast Facts</h3>
+                <div id="fast-facts-formset">
+                    {{ fast_fact_formset.management_form }}
+                    {% for form in fast_fact_formset %}
+                        <div class="formset-row d-flex align-items-center">
+                            {{ form|crispy }}
+                            <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
+                        </div>
+                    {% endfor %}
+                    <div class="formset-template" style="display: none;">
+                        <div class="formset-row d-flex align-items-center">
+                            {{ fast_fact_formset.empty_form|crispy }}
+                            <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start my-2">
+                <button type="button" id="add-fast-fact" class="btn custom-add-btn">Add Fast Fact</button>
+                    </div>
                 <div class="button-row">
                     <a href="{% url 'products' %}" class="btn-link-as-button seasalt-btn">
                         <span class="icon">
@@ -42,8 +99,65 @@
                     </button>
                 </div>
             </form>
-            
+            </div>
+        </div>
+    </div>
 </div>
 
-{% endblock %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function addFormRow(formset, prefix) {
+        let formCount = parseInt(document.querySelector(`#id_${prefix}-TOTAL_FORMS`).value);
+        let newFormHtml = formset.querySelector('.formset-template').innerHTML.replace(/__prefix__/g, formCount);
+        formset.insertAdjacentHTML('beforeend', newFormHtml);
+        document.querySelector(`#id_${prefix}-TOTAL_FORMS`).value = formCount + 1;
+        updateRemoveButtons();
+    }
 
+    function updateRemoveButtons() {
+        document.querySelectorAll('.remove-form-row').forEach(btn => {
+            btn.removeEventListener('click', removeFormRow);
+            btn.addEventListener('click', removeFormRow);
+        });
+    }
+
+    function removeFormRow(event) {
+        event.preventDefault();
+        let row = event.target.closest('.formset-row');
+        if (row) {
+            row.remove();
+            updateFormsetIndices();
+        }
+    }
+
+    function updateFormsetIndices() {
+        ['nutritional_facts', 'related_products', 'fast_facts'].forEach(prefix => {
+            let forms = document.querySelectorAll(`#${prefix}-formset .formset-row`);
+            forms.forEach((form, index) => {
+                form.querySelectorAll('input, select, textarea').forEach(input => {
+                    let nameRegex = new RegExp(`(${prefix}-\\d+-)`);
+                    let newName = `${prefix}-${index}-`;
+                    input.name = input.name.replace(nameRegex, newName);
+                    input.id = input.id.replace(nameRegex, newName);
+                });
+            });
+            document.querySelector(`#id_${prefix}-TOTAL_FORMS`).value = forms.length;
+        });
+    }
+
+    document.querySelector('#add-nutrition-fact').addEventListener('click', function() {
+        addFormRow(document.querySelector('#nutrition-facts-formset'), 'nutritional_facts');
+    });
+
+    document.querySelector('#add-related-product').addEventListener('click', function() {
+        addFormRow(document.querySelector('#related-products-formset'), 'related_products');
+    });
+
+    document.querySelector('#add-fast-fact').addEventListener('click', function() {
+        addFormRow(document.querySelector('#fast-facts-formset'), 'fast_facts');
+    });
+
+    updateRemoveButtons();
+});
+</script>
+{% endblock %}
