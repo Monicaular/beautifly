@@ -129,7 +129,7 @@ def add_product(request):
                     
                     fast_fact_formset.save()
                     messages.success(request, 'Product added successfully!')
-                    return redirect('products')
+                    return redirect (reverse('product_detail', args=[product.id]))
                 except ValueError as e:
                     messages.error(request, f'Error: {str(e)}')
             else:
@@ -211,3 +211,17 @@ def edit_product(request, product_id):
     }
 
     return render(request, 'products/edit_product.html', context)
+
+def delete_product(request, product_id):
+    """ Delete a product from the store """
+    product = get_object_or_404(Product, pk=product_id)
+
+    # if request.method == 'POST':
+    product.delete()
+    messages.success(request, 'Product deleted successfully!')
+    return redirect(reverse('products'))
+
+    # If the request method is GET, redirect or show a message
+    # messages.error(request, 'Invalid request method. Please use the delete button on the product page.')
+    # return redirect(reverse('products'))
+
