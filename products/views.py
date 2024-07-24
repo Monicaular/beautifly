@@ -1,5 +1,6 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -18,7 +19,6 @@ def all_products(request):
     selected_categories = [] 
     sort = None
     direction = None
-
     categories = Category.objects.all()
 
     qd = request.GET.copy()
@@ -101,7 +101,13 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+@login_required
 def add_product(request):
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied: Only store owners are authorized to perform this action.')
+        return redirect(reverse('home'))
+    
     NutritionalFactsFormSet = inlineformset_factory(Product, NutritionalFacts, form=NutritionalFactsForm, extra=1, can_delete=True)
     RelatedProductFormSet = inlineformset_factory(Product, RelatedProduct, form=RelatedProductForm, fk_name='product', extra=1, can_delete=True)
     FastFactFormSet = inlineformset_factory(Product, FastFact, form=FastFactForm, extra=1, can_delete=True)
@@ -154,9 +160,15 @@ def add_product(request):
     }
     return render(request, 'products/add_product.html', context)
 
-
+@login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied: Only store owners are authorized to perform this action.')
+        return redirect(reverse('home'))
+
+    
     product = get_object_or_404(Product, pk=product_id)
     NutritionalFactsFormSet = inlineformset_factory(Product, NutritionalFacts, form=NutritionalFactsForm, extra=1, can_delete=True)
     RelatedProductFormSet = inlineformset_factory(Product, RelatedProduct, form=RelatedProductForm, fk_name='product', extra=1, can_delete=True)
@@ -212,16 +224,19 @@ def edit_product(request, product_id):
 
     return render(request, 'products/edit_product.html', context)
 
+@login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied: Only store owners are authorized to perform this action.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
 
-    # if request.method == 'POST':
     product.delete()
     messages.success(request, 'Product deleted successfully!')
     return redirect(reverse('products'))
 
-    # If the request method is GET, redirect or show a message
-    # messages.error(request, 'Invalid request method. Please use the delete button on the product page.')
-    # return redirect(reverse('products'))
+   
 
