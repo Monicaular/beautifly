@@ -108,24 +108,25 @@ def add_product(request):
 
     if request.method == 'POST':
         product_form = ProductForm(request.POST, request.FILES)
+        nutritional_formset = NutritionalFactsFormSet(request.POST)
+        related_formset = RelatedProductFormSet(request.POST)
+        fast_fact_formset = FastFactFormSet(request.POST)
         
         
-
         if product_form.is_valid():
             product = product_form.save(commit=False)
-            nutritional_formset = NutritionalFactsFormSet(request.POST, instance=product_form.instance)
-            related_formset = RelatedProductFormSet(request.POST, instance=product_form.instance)
-            fast_fact_formset = FastFactFormSet(request.POST, instance=product_form.instance)
-            print('product form is valid:', product_form.is_valid())
+            nutritional_formset.instance = product
+            related_formset.instance = product
+            fast_fact_formset.instance = product
 
             if nutritional_formset.is_valid() and related_formset.is_valid() and fast_fact_formset.is_valid():
                 try:
                     product.save()
-                    nutritional_formset.instance = product
+                    
                     nutritional_formset.save()
-                    related_formset.instance = product
+                    
                     related_formset.save()
-                    fast_fact_formset.instance = product
+                    
                     fast_fact_formset.save()
                     messages.success(request, 'Product added successfully!')
                     return redirect('products')
@@ -135,12 +136,8 @@ def add_product(request):
                 messages.error(request, 'Please correct the errors below.')
         
         else:
-            product = Product()
-            nutritional_formset = NutritionalFactsFormSet(request.POST)
-            related_formset = RelatedProductFormSet(request.POST)
-            fast_fact_formset = FastFactFormSet(request.POST)
             messages.error(request, 'Please correct the errors in the main form below.')
-            print('NOT_VALID : product form erros:', product_form.errors)
+            
     
     else:
         product_form = ProductForm()
