@@ -44,6 +44,7 @@ body {
     background-color: rgba(255, 152, 0, 1);
     color: #FAFAFAff;
 }
+
 /*----------------------------------Bootstrap Toasts */
 .toast {
     position: fixed;
@@ -518,10 +519,20 @@ body {
     align-items: center;
 }
 
-input[type="checkbox"][name$="-DELETE"], 
-input[type="checkbox"][name$="-DELETE"] + label {
-    display: none;
+.form-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
 }
+
+
+/* input[type="checkbox"][name$="-DELETE"], 
+input[type="checkbox"][name$="-DELETE"] + label {
+    display: block;
+    justify-content: end;
+} */
 
 /* -------------------------------- Media Queries */
 

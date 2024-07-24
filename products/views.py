@@ -153,3 +153,61 @@ def add_product(request):
         'fast_fact_formset': fast_fact_formset,
     }
     return render(request, 'products/add_product.html', context)
+
+
+def edit_product(request, product_id):
+    """ Edit a product in the store """
+    product = get_object_or_404(Product, pk=product_id)
+    NutritionalFactsFormSet = inlineformset_factory(Product, NutritionalFacts, form=NutritionalFactsForm, extra=1, can_delete=True)
+    RelatedProductFormSet = inlineformset_factory(Product, RelatedProduct, form=RelatedProductForm, fk_name='product', extra=1, can_delete=True)
+    FastFactFormSet = inlineformset_factory(Product, FastFact, form=FastFactForm, extra=1, can_delete=True)
+
+    if request.method == 'POST':
+        product_form = ProductForm(request.POST, request.FILES, instance=product)
+        nutritional_formset = NutritionalFactsFormSet(request.POST, instance=product)
+        related_formset = RelatedProductFormSet(request.POST, instance=product)
+        fast_fact_formset = FastFactFormSet(request.POST, instance=product)
+
+        if product_form.is_valid() and nutritional_formset.is_valid() and related_formset.is_valid() and fast_fact_formset.is_valid():
+            try:
+                product=product_form.save()
+                for form in nutritional_formset:
+                    if form.cleaned_data.get('DELETE'):
+                        form.instance.delete()
+                    elif form.has_changed():
+                        form.save()
+                
+                for form in related_formset:
+                    if form.cleaned_data.get('DELETE'):
+                        form.instance.delete()
+                    elif form.has_changed():
+                        form.save()
+                
+                for form in fast_fact_formset:
+                    if form.cleaned_data.get('DELETE'):
+                        form.instance.delete()
+                    elif form.has_changed():
+                        form.save()
+
+                messages.success(request, 'Successfully updated product!')
+                return redirect('product_detail', product_id=product.id)
+            except ValueError as e:
+                messages.error(request, f'Error: {str(e)}')
+        else:
+            messages.error(request, 'Please correct the errors below.')
+    else:
+        product_form = ProductForm(instance=product)
+        nutritional_formset = NutritionalFactsFormSet(instance=product)
+        related_formset = RelatedProductFormSet(instance=product)
+        fast_fact_formset = FastFactFormSet(instance=product)
+        messages.info(request, f'You are editing {product.name}')
+
+    context = {
+        'product_form': product_form,
+        'nutritional_formset': nutritional_formset,
+        'related_formset': related_formset,
+        'fast_fact_formset': fast_fact_formset,
+        'product': product,
+    }
+
+    return render(request, 'products/edit_product.html', context)
