@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -78,9 +79,13 @@
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                    <a class="text-danger delete-product-btn" href="#" data-id="{{ product.id }}" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a>
                 </small>
                 {% endif %}
+
+                <!--Delete Modal-->
+                {% include 'products/includes/delete_modal.html' %}
+                  <!--End Delete Modal-->
                 
                 <!-- Add to basket form -->
                 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
@@ -234,4 +239,6 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/adjust-quantity-script.html' %}
+<script src="{% static 'products/js/delete-modal.js' %}"></script>
+
 {% endblock %}

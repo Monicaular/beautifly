@@ -244,7 +244,7 @@ body {
     margin: 10px;
 }
 
-/* Increase/decrease units number buttons*/
+/* Increase/decrease units number buttons & cancel modal button*/
 
 .pigment-green-btn {
     background-color: rgba(76, 175, 80, 0.5);
@@ -275,13 +275,15 @@ body {
     height: 40px;
 }
 
-.seasalt-btn {
+.seasalt-btn, 
+#cancel-btn {
     background-color: #FAFAFA;
     color: black;
     border: 1px solid black;
 }
 
-.seasalt-btn:hover {
+.seasalt-btn:hover,
+#cancel-btn:hover {
     background-color: rgba(141, 110, 99, 0.6);
     color: #FAFAFA;
 }
@@ -294,6 +296,11 @@ body {
     margin-top: 20px;
 }
 
+/*Delete Modal*/
+
+.modal-header {
+    background-color: rgba(255, 152, 0, 0.4);
+}
 
 /*-------------------------*/
 
@@ -501,7 +508,8 @@ body {
     margin-right: 10px;
 }
 
-.custom-remove-btn {
+.custom-remove-btn,
+#confirm-delete {
     background-color: rgba(255, 152, 0, 1) !important;
 }
 
@@ -509,7 +517,8 @@ body {
     background-color:rgba(139, 195, 74, 0.6) !important;
 }
 
-.custom-remove-btn:hover {
+.custom-remove-btn:hover,
+#confirm-delete:hover {
     background-color: rgba(255, 152, 0, 0.6) !important;
 }
 
