@@ -27,32 +27,32 @@
         <div class="col-lg-9 order-1 order-lg-2">
             <div class="row mt-1 mb-2"></div>
             <div class="row">
-                {% for product in products %}
+                {% for item in wishlist_items %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
                     <div class="card h-100 product-card">
-                        {% if product.image %}
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid lazyload" src="{{ product.image.url }}" alt="{{ product.name }}" loading="lazy">
+                        {% if item.product.image %}
+                        <a href="{% url 'product_detail' item.product.id %}">
+                            <img class="card-img-top img-fluid lazyload" src="{{ item.product.image.url }}" alt="{{ item.product.name }}" loading="lazy">
                         </a>
                         {% else %}
-                        <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid lazyload" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}" loading="lazy">
+                        <a href="{% url 'product_detail' item.product.id %}">
+                            <img class="card-img-top img-fluid lazyload" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ item.product.name }}" loading="lazy">
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
-                            <h4 class="card-title mb-0">{{ product.name|capfirst }}</h4>
-                            <a class="btn btn-sm position-absolute top-0 end-0 m-2" href=""><i class="bi bi-heart"></i></a>
+                            <h4 class="card-title mb-0">{{ item.product.name|capfirst }}</h4>
+                           
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="product-price mb-0 text-left">£{{ product.price }}</h5>
-                                    {% if product.size %}
-                                    <p class="small text-muted">{{ product.size }}</p>
+                                    <h5 class="product-price mb-0 text-left">£{{ item.product.price }}</h5>
+                                    {% if item.product.size %}
+                                    <p class="small text-muted">{{ item.product.size }}</p>
                                     {% endif %}
-                                    {% if product.category.exists %}
+                                    {% if item.product.category.exists %}
                                         <p class="small mt-1 mb-0">
-                                            {% for category in product.category.all %}
+                                            {% for category in item.product.category.all %}
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ category.name }}">
                                                     <i class="bi bi-tags"></i>{{ category.friendly_name }}
                                                 </a>
@@ -60,17 +60,17 @@
                                             {% endfor %}
                                         </p>
                                     {% endif %}
-                                    {% if product.rating %}
+                                    {% if item.product.rating %}
                                     <small class="text-muted">
                                         <div class="rating">
                                             {% for i in "12345" %}
-                                                {% if forloop.counter <= product.rating %}
+                                                {% if forloop.counter <= item.product.rating %}
                                                     <i class="bi bi-heart-fill"></i> 
                                                 {% else %}
                                                     <i class="bi bi-heart"></i> 
                                                 {% endif %}
                                             {% endfor %}
-                                            {{ product.rating }} / 5
+                                            {{ item.product.rating }} / 5
                                         </div>
                                     </small>
                                     {% else %}
