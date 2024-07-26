@@ -22,12 +22,12 @@ def add_to_basket(request, item_id):
 
     if item_id in list(basket.keys()):
         basket[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {int(basket[item_id])}')
+        messages.success(request, f'Updated {product.name} quantity to {int(basket[item_id])}', extra_tags='show_basket_preview')
     else:
         basket[item_id] = quantity
 
     request.session['basket'] = basket
-    messages.success(request, f'You added {quantity} x {product.name} to your basket')
+    messages.success(request, f'You added {quantity} x {product.name} to your basket', extra_tags='show_basket_preview')
 
     return redirect(redirect_url)
 
@@ -41,10 +41,10 @@ def adjust_basket(request, item_id):
 
     if quantity > 0:
         basket[item_id] = quantity
-        messages.success(request, f'Updated {product.name} quantity to {int(basket[item_id])}')
+        messages.success(request, f'Updated {product.name} quantity to {int(basket[item_id])}', extra_tags='show_basket_preview')
     else:
         basket.pop(item_id, None)
-        messages.success(request, 'Item removed from your basket')
+        messages.success(request, 'Item removed from your basket', extra_tags='show_basket_preview')
 
     request.session['basket'] = basket
     return redirect(reverse('view_basket'))
@@ -58,7 +58,7 @@ def remove_from_basket(request, item_id):
         if str(item_id) in basket:
             del basket[str(item_id)]
             request.session['basket'] = basket
-            messages.success(request, 'Item successfully removed from basket.')
+            messages.success(request, 'Item successfully removed from basket.', extra_tags='show_basket_preview')
             return HttpResponse(status=200)
         else:
             messages.error(request, 'Item not found in basket.')

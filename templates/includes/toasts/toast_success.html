@@ -9,6 +9,7 @@
         <div class="toast-message">
         {{ message }}
     </div>
+    {% if 'show_basket_preview' in message.tags %}
         <hr class="my-2">
         {% if grand_total %}
             <p class="mb-1">Your Basket:</p>
@@ -44,8 +45,9 @@
             {% endif %}
         </div>
     {% endif %}
+    {% endif %}
 </div>
-{% if basket_items %}
+{% if basket_items and 'show_basket_preview' in message.tags %}
 <div class="toast-footer text-center pb-1">
     <a href="{% url 'view_basket' %}" class="btn btn-dark rounded-0 btn-sm">
         <span class="text-uppercase">Go To Secure Checkout</span>
