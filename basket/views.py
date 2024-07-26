@@ -16,8 +16,8 @@ def add_to_basket(request, item_id):
     """ Add a quantity of the specified product to the shopping basket """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
+    quantity = int(request.POST.get('quantity', 1))
+    redirect_url = request.POST.get('redirect_url', 'products')
     basket = request.session.get('basket', {})
 
     if item_id in list(basket.keys()):
@@ -31,7 +31,6 @@ def add_to_basket(request, item_id):
 
     return redirect(redirect_url)
 
-from django.shortcuts import redirect, reverse
 
 def adjust_basket(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
