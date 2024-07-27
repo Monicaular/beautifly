@@ -1,5 +1,5 @@
 .order-history {
-    max-height: 416px; /* height of profile form + submit button */
+    max-height: 416px;
     overflow-y: auto;
 }
 
@@ -18,4 +18,32 @@
 
 #id_default_country option:first-child {
     color: #aab7c4;
+}
+
+/* Account Information Styling */
+
+.account-info-container {
+    background-color: rgba(255, 235, 59, 0.4);
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;
+}
+
+.account-info-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.account-info-container p {
+    margin: 5px 0;
+}
+
+#toggle-update-form {
+    margin-top: 15px;
+}
+
+/* Styles for the form if required */
+#update-form {
+    margin-top: 15px;
 }

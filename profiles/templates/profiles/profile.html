@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/profile.css' %}">
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -18,14 +18,14 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-     <!--Checkout Page title-->
-     <div class="row">
+    <!-- Page title-->
+    <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">My Account</h2>
             <hr>
         </div>
     </div>
-    <!-- End of Checkout Page title-->
+    <!-- End Page title-->
     <div class="container mt-4">
         <!-- Main Container -->
         <div class="row">
@@ -34,86 +34,140 @@
                 <div class="sidebar">
                     <ul class="nav nav-tabs flex-column" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab" aria-controls="dashboard" aria-selected="true">Account Dashboard</a>
+                            <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" href="#dashboard"
+                                role="tab" aria-controls="dashboard" aria-selected="true">Account Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="orders-tab" data-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="false">My Orders</a>
+                            <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab"
+                                aria-controls="orders" aria-selected="false">My Orders</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="addresses-tab" data-toggle="tab" href="#addresses" role="tab" aria-controls="addresses" aria-selected="false">Addresses</a>
+                            <a class="nav-link" id="addresses-tab" data-bs-toggle="tab" href="#addresses" role="tab"
+                                aria-controls="addresses" aria-selected="false">Addresses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="wishlist-tab" data-toggle="tab" href="#wishlist" role="tab" aria-controls="wishlist" aria-selected="false">Wishlist</a>
+                            <a class="nav-link" id="wishlist-tab" data-bs-toggle="tab" href="#wishlist" role="tab"
+                                aria-controls="wishlist" aria-selected="false">Wishlist</a>
                         </li>
                     </ul>
                 </div>
             </div>
-    
+
             <!-- Main Content Area -->
             <div class="col-md-9">
                 <div class="tab-content">
                     <!-- Account Dashboard Tab -->
-                    <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-                        <!-- Profile Form -->
+                    <div class="tab-pane fade show active" id="dashboard" role="tabpanel"
+                        aria-labelledby="dashboard-tab">
+                       
+                        <!-- Account Information Display -->
                         <h2>Account Information</h2>
-                        <form action="{% url 'profile' %}" method="POST">
-                            {% csrf_token %}
-                            {{ form|crispy }}
-                            <button class="btn btn-primary mt-3">Update Information</button>
-                        </form>
-    
-                        <h3 class="mt-5">Order History</h3>
-                        <div class="order-history">
-                            {% if orders %}
-                            <table class="table table-striped mt-3">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Order No</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Items</th>
-                                        <th scope="col">Order Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {% for order in orders %}
-                                    <tr>
-                                        <td><a href="{% url 'order_history' order.order_number %}"
-                                            title="{{ order.order_number }}">
-                                                {{ order.order_number|truncatechars:10 }}
-                                            </a></td>
-                                        <td>{{ order.date|date:"M d, Y" }}</td>
-                                        <td>
-                                            <ul>
-                                            {% for item in order.lineitems.all %}
-                                                <li>{{ item.product.name }} x {{ item.quantity }}</li>
-                                            {% endfor %}
-                                        </ul>
-                                    </td>
-                                        <td>£{{ order.grand_total }}</td>
-                                    </tr>
-                                    {% empty %}
-                                    <tr>
-                                        <td colspan="4">No orders found.</td>
-                                    </tr>
-                                    {% endfor %}
-                                </tbody>
-                            </table>
-                            {% else %}
-                            <p>No orders found.</p>
-                            {% endif %}
+                        <div class="account-info-container">
+                            <p><strong>Username:</strong> {{ request.user.username }}</p>
+                            <p><strong>Email:</strong> {{ request.user.email }}</p>
+                            <p><strong>Full Name:</strong> {{ profile.default_full_name }} </p>
+                            <p><strong>Phone Number:</strong> {{ profile.default_phone_number }}</p>
+                            <p><strong>Street Address 1:</strong> {{ profile.default_street_address1 }}</p>
+                            <p><strong>Street Address 2:</strong> {{ profile.default_street_address2 }}</p>
+                            <p><strong>Town or City:</strong> {{ profile.default_town_or_city }}</p>
+                            <p><strong>Postcode:</strong> {{ profile.default_postcode }}</p>
+                            <p><strong>County:</strong> {{ profile.default_county }}</p>
                         </div>
+
+                        <!-- Button to Toggle Update Form -->
+                        <button id="editButton" class="btn custom-add-btn mt-3">Update Information</button>
+
+                        <!-- Update Form, initially hidden -->
+                        <div id="updateFormContainer" style="display:none; margin-top: 20px;">
+                            <form id="updateForm" action="{% url 'profile' %}" method="POST">
+                                {% csrf_token %}
+                                {{ form|crispy }}
+                                <button type="submit" class="btn custom-add-btn mt-3">Save Changes</button>
+                            </form>
+                        </div>
+                        </div>
+
+
+                        <!--Order History-->
+                        <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+                            <h3 class="mt-5">Order History</h3>
+                            <div class="order-history">
+                                {% if orders %}
+                                <table class="table table-striped mt-3">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Order No</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Items</th>
+                                            <th scope="col">Order Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for order in orders %}
+                                        <tr>
+                                            <td><a href="{% url 'order_history' order.order_number %}"
+                                                    title="{{ order.order_number }}">
+                                                    {{ order.order_number|truncatechars:10 }}
+                                                </a></td>
+                                            <td>{{ order.date|date:"M d, Y" }}</td>
+                                            <td>
+                                                <ul>
+                                                    {% for item in order.lineitems.all %}
+                                                    <li>{{ item.product.name }} x {{ item.quantity }}</li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </td>
+                                            <td>£{{ order.grand_total }}</td>
+                                        </tr>
+                                        {% empty %}
+                                        <tr>
+                                            <td colspan="4">No orders found.</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                                {% else %}
+                                <p>No orders found.</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <!-- Addresses Tab -->
+                        <div class="tab-pane fade" id="addresses" role="tabpanel" aria-labelledby="addresses-tab">
+                            <h2>Addresses</h2>
+                            <!-- Display or manage addresses here -->
+                        </div>
+                        <!-- Wishlist Tab -->
+                    <div class="tab-pane fade" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
+                        
+                        <h2>Your Wishlist</h2>
+                        {% include 'profiles/includes/wishlist-display.html' %}
                     </div>
-    
-                   
                 </div>
             </div>
         </div>
     </div>
     {% endblock %}
 
-{% block postloadjs %}
+    {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
     {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
-{% endblock %}
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const editButton = document.getElementById('editButton');
+            const updateFormContainer = document.getElementById('updateFormContainer');
+
+            editButton.addEventListener('click', () => {
+                if (updateFormContainer.style.display === 'none' || updateFormContainer.style.display === '') {
+                    updateFormContainer.style.display = 'block';
+                    editButton.textContent = 'Cancel';
+                } else {
+                    updateFormContainer.style.display = 'none';
+                    editButton.textContent = 'Update Information';
+                }
+            });
+        });
+
+    </script>
+    {% endblock %}
