@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="form-container p-4 shadow text-center">
+        <h1>Oops! You've Wandered Off the Menu.</h1>
+        <p>It seems you've taken a detour to a page that's not on the menu. Even the freshest ingredients can't fix this!</p>
+        <img src="{{ MEDIA_URL }}404-image.webp" alt="404 food illustration" class="card-img-top img-fluid">
+        <p style="margin-top: 20px;">
+            <a type="button" class="btn submit-btn" href="{% url 'homepage' %}">Back to the Main Course</a>
+        </p>
+        <p style="font-style: italic;">Don't worry, our kitchen wizards are always cooking up something new. Why not explore our shop for some delicious finds?</p>
+    </div>
+</div>
+{% endblock %}
