@@ -32,7 +32,7 @@
             <!-- Sidebar Navigation -->
             <div class="col-md-3">
                 <div class="sidebar">
-                    <ul class="nav nav-tabs flex-column" role="tablist">
+                    <ul class="nav nav-tabs flex-column custom-tabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" href="#dashboard"
                                 role="tab" aria-controls="dashboard" aria-selected="true">Account Dashboard</a>
@@ -40,10 +40,6 @@
                         <li class="nav-item">
                             <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab"
                                 aria-controls="orders" aria-selected="false">My Orders</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="addresses-tab" data-bs-toggle="tab" href="#addresses" role="tab"
-                                aria-controls="addresses" aria-selected="false">Addresses</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="wishlist-tab" data-bs-toggle="tab" href="#wishlist" role="tab"
@@ -61,7 +57,7 @@
                         aria-labelledby="dashboard-tab">
                        
                         <!-- Account Information Display -->
-                        <h2>Account Information</h2>
+                        <h2 class="mt-5">Account Information</h2>
                         <div class="account-info-container">
                             <p><strong>Username:</strong> {{ request.user.username }}</p>
                             <p><strong>Email:</strong> {{ request.user.email }}</p>
@@ -90,8 +86,9 @@
 
                         <!--Order History-->
                         <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
-                            <h3 class="mt-5">Order History</h3>
                             <div class="order-history">
+                            <h2 class="mt-5">Order History</h2>
+                            
                                 {% if orders %}
                                 <table class="table table-striped mt-3">
                                     <thead>
@@ -107,7 +104,7 @@
                                         <tr>
                                             <td><a href="{% url 'order_history' order.order_number %}"
                                                     title="{{ order.order_number }}">
-                                                    {{ order.order_number|truncatechars:10 }}
+                                                    {{ order.order_number|truncatechars:8 }}
                                                 </a></td>
                                             <td>{{ order.date|date:"M d, Y" }}</td>
                                             <td>
@@ -131,15 +128,11 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <!-- Addresses Tab -->
-                        <div class="tab-pane fade" id="addresses" role="tabpanel" aria-labelledby="addresses-tab">
-                            <h2>Addresses</h2>
-                            <!-- Display or manage addresses here -->
-                        </div>
+                  
                         <!-- Wishlist Tab -->
                     <div class="tab-pane fade" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
                         
-                        <h2>Your Wishlist</h2>
+                        <h2 class="mt-5">Your Wishlist</h2>
                         {% include 'profiles/includes/wishlist-display.html' %}
                     </div>
                 </div>

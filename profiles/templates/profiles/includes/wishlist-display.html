@@ -63,7 +63,9 @@
                                         </form>
                                     </div>
                                 </div>
-                                <a href="{% url 'remove_from_wishlist' item.product.id %}">Remove</a>
+                                <div class="btn-box">
+                                <a class="delete-btn" href="{% url 'remove_from_wishlist' item.product.id %}">Remove</a>
+                            </div>
                             </div>
                         </div>
                     </div>

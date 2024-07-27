@@ -202,7 +202,7 @@ body {
     padding: 0.5em 1em;
     border: none;
     border-radius: 4px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 
@@ -265,6 +265,9 @@ body {
 
 /* -------------------------------- Product detail page */
 
+.btn-box {
+    margin-top: 10px;
+}
 
 
 .wishlist-icon {
@@ -604,7 +607,7 @@ body {
     background-color: rgba(141, 110, 99, 0.8);
     padding: 5px 10px;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .edit-btn:hover,
@@ -619,7 +622,7 @@ body {
     background-color: rgba(255, 152, 0, 1);
     padding: 5px 8px;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 /* -------------------------------- Media Queries */

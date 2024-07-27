@@ -14,18 +14,17 @@
 <div class="container-fluid">
 
     <!--Products page title-->
+    <div class="container mt-4">
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Your Wishlist</h2>
             <hr>
         </div>
     </div>
-    <div class="row">
     <!-- End of Products page title-->
 
         <!--Wish list display-->
-        <div class="col-lg-9 order-1 order-lg-2">
-            <div class="row mt-1 mb-2"></div>
+        <div class="col-lg-12 order-1 order-lg-2">
             <div class="row">
                 {% for item in wishlist_items %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
@@ -87,7 +86,9 @@
                                             </form>
                                         </div>
                                         </div>
-                                        <a href="{% url 'remove_from_wishlist' item.product.id %}">Remove</a>
+                                        <div class="btn-box">
+                                        <a class="delete-btn" href="{% url 'remove_from_wishlist' item.product.id %}">Remove</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
