@@ -591,12 +591,6 @@ body {
 }
 
 
-/* input[type="checkbox"][name$="-DELETE"], 
-input[type="checkbox"][name$="-DELETE"] + label {
-    display: none;
-} */
-
-
 /*----------------------------------------Various Buttons*/
 
 .manage-buttons{
