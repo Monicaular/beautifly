@@ -114,11 +114,64 @@
     </div>
     {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+   
 
     {% block content %}
     {% endblock %}
+
+    {% block footer %}
+
+    <footer class="footer-container py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col-md-3 mb-4">
+                    <h4 class="logo-font mb-3">Wholesome Basket</h4>
+                    <p class="footer-text">Your trusted source for whole foods and natural products.</p>
+                </div>
+    
+                <!-- Contact Us Section -->
+                <div class="col-md-3 mb-4">
+                    <h5>Contact Us</h5>
+                    <a href="#" class="footer-link">Get in touch</a>
+                </div>
+    
+                <!-- Newsletter Section -->
+                <div class="col-md-3 mb-4">
+                    <h5>Newsletter</h5>
+                    <a href="#" class="footer-link">Sign up for updates</a>
+                </div>
+    
+                <!-- Follow Us & Quick Links Section -->
+                <div class="col-md-3 mb-4">
+                    <h5>Follow Us</h5>
+                    <a href="https://facebook.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-instagram"></i></a>
+                    <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok icon-link"></i></a>
+                    <h5 class="mt-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <hr class="bg-light">
+    
+            <!-- Footer Bottom Section -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; {% now "Y" %} Wholesome Basket. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <p>Registered Office: 123 Whole Foods Lane, Leeds, United Kingdom, LS12 9OP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+        {% endblock %}
 
     {% block postloadjs %}
     <script type="text/javascript">
