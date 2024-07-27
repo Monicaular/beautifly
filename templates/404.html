@@ -1,9 +1,20 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block page_header %}
+
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}
+
 {% block title %}Page Not Found{% endblock %}
 
 {% block content %}
+<div class="overlay"></div>
 <div class="container d-flex justify-content-center align-items-center">
     <div class="form-container p-4 shadow text-center">
         <h1>Oops! You've Wandered Off the Menu.</h1>
