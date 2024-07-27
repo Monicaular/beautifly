@@ -185,14 +185,35 @@ body {
     box-shadow: 0px 0px 5px #D7CCC8ff;
     color: white;
     width: 100%;
+    border-radius: 5px;
 }
 
 .cart-btn:hover {
     background-color: rgba(141, 110, 99, 0.6);
-    
     transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
 }
+
+.add-to-basket-btn {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+
+.basket-icon {
+    background-color: #FAFAFAff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: #8BC34Aff;
+}
+
 
 
 /* Sidebar Categories */
@@ -244,6 +265,22 @@ body {
 
 /* -------------------------------- Product detail page */
 
+
+
+.wishlist-icon {
+    background-color: rgba(255, 152, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAFAFAff;
+}
+
+.wishlist-icon:hover {
+    background-color: rgba(255, 152, 0, 1); /* Background color on hover */
+}
+
 .main-image {
     border-radius: 10px;
     box-shadow: 10px 15px 15px rgba(141, 110, 99, 1);
@@ -280,7 +317,7 @@ body {
     font-size: 14px;
     transition: background-color 0.3s ease, color 0.3s ease;
     width: 48%;
-    text-align: center; /* Center text */
+    text-align: center; 
     height: 40px;
 }
 
@@ -382,6 +419,15 @@ body {
 }
 /*-----------------------------------Basket Page*/
 
+.empty-message{
+    background-color: rgba(255, 248, 225, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(141, 110, 99, 1);
+    font-weight: bold;
+
+}
+
 .basket-preview {
     height: 100px;
     overflow-x: hidden;
@@ -418,7 +464,7 @@ body {
 .compact-table {
     width: 100%;
     margin: auto;
-    font-size: 14px;  /* Adjust this value as needed */
+    font-size: 14px;
 }
 
 .compact-table th, .compact-table td {
@@ -511,10 +557,9 @@ body {
     background-color: rgba(139, 195, 74, 1) !important;
     color: white !important;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
-    margin-right: 10px;
+    
 }
 
 .custom-remove-btn,
@@ -532,25 +577,25 @@ body {
 }
 
 .formset-row {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.form-actions {
-    margin-top: 10px;
+.form-fields {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.custom-remove-btn {
+    margin-top: 10px;
+    display: inline-block;
 }
 
 
 /* input[type="checkbox"][name$="-DELETE"], 
 input[type="checkbox"][name$="-DELETE"] + label {
-    display: block;
-    justify-content: end;
+    display: none;
 } */
+
 
 /*----------------------------------------Various Buttons*/
 

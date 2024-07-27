@@ -34,13 +34,13 @@
                     <div id="nutrition-facts-formset">
                         {{ nutritional_formset.management_form }}
                         {% for form in nutritional_formset %}
-                        <div class="formset-row d-flex align-items-center">
+                        <div class="formset-row">
                             {{ form|crispy }}
                             <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
                         </div>
                         {% endfor %}
                         <div class="formset-template" style="display: none;">
-                            <div class="formset-row d-flex align-items-center">
+                            <div class="formset-row">
                                 {{ nutritional_formset.empty_form|crispy }}
                                 <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
                             </div>
@@ -54,7 +54,7 @@
                     <div id="related-products-formset">
                         {{ related_formset.management_form }}
                         {% for form in related_formset %}
-                        <div class="formset-row d-flex align-items-center">
+                        <div class="formset-row">
                             {{ form|crispy }}
                             <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
                         </div>
@@ -74,7 +74,7 @@
                     <div id="fast-facts-formset">
                         {{ fast_fact_formset.management_form }}
                         {% for form in fast_fact_formset %}
-                        <div class="formset-row d-flex align-items-center">
+                        <div class="formset-row">
                             {{ form|crispy }}
                             <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
                         </div>
