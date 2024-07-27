@@ -10,6 +10,7 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -622,7 +623,7 @@ body {
 
 /*----------------------------------------Various Buttons*/
 
-.manage-buttons{
+.manage-buttons {
     padding: 5px;
     margin: 5px;
 }
@@ -648,6 +649,16 @@ body {
     padding: 5px 8px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/*--------------------------------------------------Footer links*/
+
+/*About us page*/
+.about-us-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 /* -------------------------------- Media Queries */

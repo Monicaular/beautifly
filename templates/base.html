@@ -114,10 +114,13 @@
     </div>
     {% endif %}
 
+    {% block page_header %}
+    {% endblock %}
    
-
+    
     {% block content %}
     {% endblock %}
+   
 
     {% block footer %}
 
@@ -132,8 +135,11 @@
     
                 <!-- Contact Us Section -->
                 <div class="col-md-3 mb-4">
-                    <h5>Contact Us</h5>
-                    <a href="#" class="footer-link">Get in touch</a>
+                    <h5 >Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'about_us' %}" class="footer-link">About us</a></li>
+                        <li><a href="#" class="footer-link">Get in touch</a></li>
+                    </ul>
                 </div>
     
                 <!-- Newsletter Section -->
@@ -149,14 +155,8 @@
                     <a href="https://twitter.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://instagram.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-instagram"></i></a>
                     <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok icon-link"></i></a>
-                    <h5 class="mt-4">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">About Us</a></li>
-                        <li><a href="#" class="footer-link">FAQs</a></li>
-                    </ul>
                 </div>
-            </div>
-    
+          
             <hr class="bg-light">
     
             <!-- Footer Bottom Section -->

@@ -6,9 +6,11 @@ from django.conf.urls.static import static
 from django.conf.urls import handler404
 from django.conf.urls import handler500
 from .views import custom_404_page, custom_500_page
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('about/', views.about_us, name='about_us'),
     path('accounts/', include ('allauth.urls')),
     path('', include('homepage.urls')),
     path('products/', include ('products.urls')),
