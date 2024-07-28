@@ -29,6 +29,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!--Mailchimp-->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
@@ -48,6 +50,8 @@
     <script src="https://js.stripe.com/v3/"></script>
     <!--MailChimp-->
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dcc61c89cd068cd70688e8721/f0150196403dc7c462e12e6cd.js");</script>
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     {% endblock %}
 
     {% block extra_js %}
@@ -137,27 +141,43 @@
     
                 <!-- Contact Us Section -->
                 <div class="col-md-3 mb-4">
-                    <h5 >Contact Us</h5>
+                    <h5>Contact Us</h5>
                     <ul class="list-unstyled">
                         <li><a href="{% url 'about_us' %}" class="footer-link">About us</a></li>
-                        <li><a href="#" class="footer-link">Get in touch</a></li>
+                        <li><a href="https://us14.list-manage.com/contact-form?u=dcc61c89cd068cd70688e8721&form_id=4784e42639c4ea6cda446d907db3584c" class="footer-link">Get in touch</a></li>
                     </ul>
                 </div>
     
                 <!-- Newsletter Section -->
-            <div class="col-md-3 mb-4">
-                <h5>Newsletter</h5>
-                <form action="" method="POST">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn custom-add-btn">Sign Up</button>
+                <div class="col-md-3 mb-4">
+                    <h5>Subscribe to our offers</h5> 
+                    <div id="mc_embed_shell"></div>
+                    <div id="mc_embed_signup" class="custom-newsletter-form">
+                        <form action="https://herokuapp.us14.list-manage.com/subscribe/post?u=dcc61c89cd068cd70688e8721&amp;id=21921077c8&amp;f_id=008f8ee0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                            <div id="mc_embed_signup_scroll">
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                </div>
+                                <div id="mce-responses" class="clear foot">
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                    <input type="text" name="b_dcc61c89cd068cd70688e8721_21921077c8" tabindex="-1" value="">
+                                </div>
+                                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                                <div class="optionalParent">
+                                    <div class="clear foot">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button custom-add-btn" value="Subscribe">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
-                <small class="form-text text-muted">Subscribe to receive updates, access to exclusive deals, and more.</small>
-            </div>
+                </div>
     
-                <!-- Follow Us & Quick Links Section -->
+                <!-- Follow Us Section -->
                 <div class="col-md-3 mb-4">
                     <h5>Follow Us</h5>
                     <a href="https://www.facebook.com/profile.php?id=61563483779485" target="_blank" class="mr-2 icon-link"><i class="bi bi-facebook"></i></a>
@@ -165,7 +185,8 @@
                     <a href="https://instagram.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-instagram"></i></a>
                     <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok icon-link"></i></a>
                 </div>
-          
+            </div>
+    
             <hr class="bg-light">
     
             <!-- Footer Bottom Section -->
@@ -179,6 +200,7 @@
             </div>
         </div>
     </footer>
+    
     
         {% endblock %}
 

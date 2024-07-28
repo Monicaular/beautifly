@@ -660,6 +660,33 @@ body {
     border-radius: 10px;
     margin: 20px 0;
 }
+/*Mailchimp Newsletetr sign-up*/
+
+#mc_embed_shell {
+    padding: 0;
+}
+.custom-newsletter-form {
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+.custom-newsletter-form .mc-field-group label {
+    color: #666;
+}
+
+.custom-newsletter-form .mc-field-group input {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.custom-newsletter-form .indicates-required {
+    color: #999;
+}
+
+.custom-newsletter-form .optionalParent {
+    margin-top: 15px;
+}
 
 /* -------------------------------- Media Queries */
 
