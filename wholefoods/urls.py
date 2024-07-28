@@ -11,6 +11,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about/', views.about_us, name='about_us'),
+    path('privacy-policy/', views.privacy_policy, name='privacy-policy'),
     path('accounts/', include ('allauth.urls')),
     path('', include('homepage.urls')),
     path('products/', include ('products.urls')),

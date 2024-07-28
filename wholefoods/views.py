@@ -22,5 +22,6 @@ def about_us(request):
     return render(request, 'about_us.html')
 
 
-
+def privacy_policy(request):
+    return render(request, 'privacy-policy.html')
 
