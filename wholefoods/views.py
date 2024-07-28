@@ -1,3 +1,6 @@
+import requests
+from django.conf import settings
+from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.http import HttpResponseServerError
 
@@ -17,3 +20,7 @@ def custom_500_page(request):
 
 def about_us(request):
     return render(request, 'about_us.html')
+
+
+
+

@@ -46,6 +46,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
+    <!--MailChimp-->
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dcc61c89cd068cd70688e8721/f0150196403dc7c462e12e6cd.js");</script>
     {% endblock %}
 
     {% block extra_js %}
@@ -143,15 +145,22 @@
                 </div>
     
                 <!-- Newsletter Section -->
-                <div class="col-md-3 mb-4">
-                    <h5>Newsletter</h5>
-                    <a href="#" class="footer-link">Sign up for updates</a>
-                </div>
+            <div class="col-md-3 mb-4">
+                <h5>Newsletter</h5>
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="input-group">
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn custom-add-btn">Sign Up</button>
+                    </div>
+                </form>
+                <small class="form-text text-muted">Subscribe to receive updates, access to exclusive deals, and more.</small>
+            </div>
     
                 <!-- Follow Us & Quick Links Section -->
                 <div class="col-md-3 mb-4">
                     <h5>Follow Us</h5>
-                    <a href="https://facebook.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61563483779485" target="_blank" class="mr-2 icon-link"><i class="bi bi-facebook"></i></a>
                     <a href="https://twitter.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://instagram.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-instagram"></i></a>
                     <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok icon-link"></i></a>
