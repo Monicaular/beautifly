@@ -10,7 +10,6 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
-
 .icon {
     align-items: center;
     display: inline-flex;
@@ -132,8 +131,6 @@ body {
     padding: 10px 20px;
     border-radius: 15px;
 }
-
-
 
 /*---------------------------------Products Page */
 
@@ -675,50 +672,65 @@ body {
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
-    }
-  }
-  
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
+/* Fixed top navbar */
 
+
+@media (min-width: 992px) {
     .header-container {
         padding-top: 164px;
     }
   }
 
-/* Mobile Products page */
-
-@media (max-width: 992px) {
-    .btn-primary {
-        width: 100%;
-    }
-    .list-group-item {
-        border: none;
-    }
-    .list-group-item-action {
-        padding: 0.75rem 1.25rem;
+@media (max-width: 502px) {
+    .header-container {
+        padding-top: 200px;
     }
 }
 
 /* Push products list down on mobile*/
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
 
     body {
         height: calc(100vh - 116px);
     }
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .header-container h2 {
+        font-size: 1.5rem;
+
+    }
+
+    .breadcrumb-nav {
+        font-size: 0.85rem;
+        padding: 5px;
+    }
+
+    .breadcrumb-nav .breadcrumb {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .breadcrumb-nav .breadcrumb-item {
+        margin: 0 5px;
+    }
+}
+
+/* Tablet and small desktop styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container h2 {
+        font-size: 2rem;
+    }
+
+    .breadcrumb-nav {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .breadcrumb-nav .breadcrumb {
+        display: flex;
+        justify-content: center;
+    }
+}

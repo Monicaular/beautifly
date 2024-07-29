@@ -34,6 +34,8 @@ def add_to_wishlist(request, product_id):
 @login_required
 def remove_from_wishlist(request, product_id):
     """Remove a product from the user's wishlist"""
+    product = get_object_or_404(Product, id=product_id)
+    
     try:
         wishlist_item = get_object_or_404(Wishlist, product_id=product_id, user=request.user)
         wishlist_item.delete()

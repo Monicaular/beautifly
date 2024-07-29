@@ -17,7 +17,6 @@
 {% endblock %}
 
 
-
 {% block content %}
 
 <!-- Categories Section -->
@@ -26,7 +25,7 @@
         <h2 class="text-center mb-4">Shop by Category</h2>
         {% for category in categories %}
         <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card h-100 border-0 shadow">
+            <div class="card h-100 shadow">
                 <a href="{% url 'products' %}?category={{ category.name }}">
                     {% if category.image %}
                     <img class="card-img-top img-fluid" src="{{ category.image.url }}" alt="{{ category.friendly_name }}">

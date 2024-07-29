@@ -1,5 +1,6 @@
 <div class="wishlist-content">
     <div class="row">
+        {% if wishlist_items %}
         {% for item in wishlist_items %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="card h-100 product-card">
@@ -92,7 +93,13 @@
             <hr>
         </div>
         {% endif %}
+
         {% endfor %}
+        {% else %}
+            <div class="col-12">
+                <p>No items in your wishlist.</p>
+            </div>
+        {% endif %}
     </div>
 </div>
 </div>

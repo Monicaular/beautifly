@@ -4,7 +4,11 @@
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
-        <div class="col"></div>
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Product Management</h2>
+            <h3 class="text-muted">Edit a product</h3>
+            <hr>
+        </div>
     </div>
 </div>
 {% endblock %}
@@ -12,18 +16,9 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-    <!-- Product Management Page title -->
+    
+ <!-- Product Form -->
     <div class="row">
-        <div class="col text-center mt-3">
-            <h2 class="logo-font">Product Management</h2>
-            <h3 class="text-muted">Edit a product</h3>
-            <hr>
-        </div>
-    </div>
-    <!-- End of Page title -->
-
-    <div class="row">
-        <!-- Product Form -->
         <div class="container">
             <div class="custom-width">
                 <form method="post" enctype="multipart/form-data">
