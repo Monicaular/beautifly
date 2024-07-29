@@ -32,9 +32,9 @@
                 <div class="item-column">
                     <div class="basket-item-img">
                         {% if item.product.image %}
-                        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;">
+                        <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded">
                         {% else %}
-                        <img src="{{ MEDIA_URL }}noimage.jpg" alt="{{ item.product.name }}" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;">
+                        <img src="{{ MEDIA_URL }}noimage.jpg" alt="{{ item.product.name }}" class="img-fluid rounded">
                         {% endif %}
                     </div>
                     <div class="basket-item-details">
@@ -54,16 +54,28 @@
                     <div class="basket-item-quantity">
                         <form class="form update-form d-inline" method="POST" action="{% url 'adjust_basket' item.item_id %}">
                             {% csrf_token %}
-                            <div class="input-group">
-                                <button type="button" class="btn btn-outline-secondary btn-sm decrement-qty" data-item_id="{{ item.item_id }}"><i class="fas fa-minus"></i></button>
-                                <input id="quantity_{{ item.item_id }}" class="form-control text-center qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}">
-                                <button type="button" class="btn btn-outline-secondary btn-sm increment-qty" data-item_id="{{ item.item_id }}"><i class="fas fa-plus"></i></button>
+                            <div class="form-group">
+                                <label for="quantity">Quantity:</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button type="button" class="decrement-qty" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                            <span class="icon"><i class="fas fa-minus"></i></span>
+                                        </button>
+                                    </div>
+                                    <input id="quantity_{{ item.item_id }}" class="form-control text-center qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}">
+                                    <div class="input-group-append">
+                                        <button type="button" class="increment-qty" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                            <span class="icon"><i class="fas fa-plus"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
+                            <button type="submit" class=" btn-sm mt-2 update-link">Update</button>
                         </form>
                     </div>
                 </div>
                 <div class="item-column">
-                    <button class="btn btn-danger btn-sm remove-link" data-item_id="{{ item.item_id }}"><i class="fas fa-trash"></i></button>
+                    <button class=" btn-sm remove-link remove-icon" data-item_id="{{ item.item_id }}"><i class=" fas fa-trash"></i></button>
                 </div>
             </div>
             {% endfor %}
