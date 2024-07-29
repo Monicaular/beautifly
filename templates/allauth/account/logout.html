@@ -14,5 +14,6 @@
         {{ form|crispy }}
         {{ redirect_field }}
         <button type="submit" class="btn">{% trans 'Sign Out' %}</button>
+        <button type="button" class="btn btn-secondary" onclick="window.history.back();">{% trans 'Cancel' %}</button>
     </form>
 {% endblock %}

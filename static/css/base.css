@@ -31,15 +31,6 @@ body {
     width: fit-content;
 }
 
-.submit-btn {
-    background-color: rgba(255, 235, 59, 1);
-    color: #8D6E63ff;
-}
-
-.submit-btn:hover {
-    background-color: rgba(245, 245, 220, 1);
-}
-
 .shipping-banner {
     background-color: rgba(255, 152, 0, 1);
     color: #FAFAFAff;
@@ -527,7 +518,6 @@ body {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
 	display: inline-block;
     font-weight: 400;
     color: #fff;
@@ -552,6 +542,7 @@ body {
     background-color: rgba(141, 110, 99, 0.7);
     border-color: #222;
 }
+
 
 /*------------------------------------Product Management*/
 
