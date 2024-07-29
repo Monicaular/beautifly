@@ -8,15 +8,6 @@
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %}
-
-{% block content %}
-<div class="container">
-    <!-- Success Message -->
-    <div class="row mt-5">
         <div class="col text-center">
             <h2 class="logo-font text-success">Order Successful!</h2>
             <p class="lead">Thank you for your purchase.</p>
@@ -24,7 +15,12 @@
             <hr>
         </div>
     </div>
+</div>
+{% endblock %}
 
+{% block content %}
+<div class="container">
+    <div class="overlay"></div>
     <!-- Order and Delivery Details -->
         <div class="col-12 col-lg-8 offset-lg-2">
             <div class="row">
@@ -82,49 +78,58 @@
         </div>
     </div>
 
-    <!-- Order Details -->
-    <div class="row mb-5">
-        <div class="col-12 col-lg-8 offset-lg-2">
-            <h3 class="text-center">Order Details</h3>
-            <table class="table table-bordered table-hover compact-table">
-                <thead class="thead-light">
-                    <tr>
-                        <th>Product</th>
-                        <th>Name</th>
-                        <th>SKU</th>
-                        <th>Size</th>
-                        <th>Quantity</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for item in order.lineitems.all %}
-                    <tr>
-                        <td class="p-3 w-25"> 
-                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded">
-                        </td>
-                        <td class="p-3">{{ item.product.name }}</td>
-                        <td class="p-3">{{ item.product.sku|upper }}</td>
-                        <td class="p-3">{{ item.product.size }}</td>
-                        <td class="p-3">{{ item.quantity }}</td>
-
-                        <td class="p-3">£{{ item.lineitem_total|floatformat:2 }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="5" class="text-right"><strong>Delivery Charge:</strong></td>
-                        <td>£{{ order.shipping_cost|floatformat:2 }}</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="text-right"><strong>Total:</strong></td>
-                        <td>£{{ order.grand_total|floatformat:2 }}</td>
-                    </tr>
-                </tfoot>
-            </table>
+   <!-- Order Summary -->
+<div class="row mb-5">
+    <div class="col-12 col-lg-8 offset-lg-2">
+        <h3 class="text-center">Order Details</h3>
+        <div class="basket-header py-2 border-bottom">
+            <div class="header-column">Product</div>
+            <div class="header-column">Size</div>
+            <div class="header-column">SKU</div>
+            <div class="header-column">Quantity</div>
+            <div class="header-column">Subtotal</div>
+        </div>
+        {% for item in order.lineitems.all %}
+        <div class="basket-item d-flex justify-content-between align-items-center py-2 border-bottom">
+            <div class="item-column">
+                <div class="basket-item-img">
+                    {% if item.product.image %}
+                    <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;">
+                    {% else %}
+                    <img src="{{ MEDIA_URL }}noimage.jpg" alt="{{ item.product.name }}" class="img-fluid rounded" style="width: 100px; height: 100px; object-fit: cover;">
+                    {% endif %}
+                </div>
+                <div class="basket-item-details">
+                    <div class="product-name">{{ item.product.name }}</div>
+                </div>
+            </div>
+            <div class="item-column">
+                <div class="product-size">{{ item.product.size }}</div>
+            </div>
+            <div class="item-column">
+                <div class="product-sku">{{ item.product.sku|upper }}</div>
+            </div>
+            <div class="item-column">
+                <div class="basket-item-quantity">{{ item.quantity }}</div>
+            </div>
+            <div class="item-column">
+                <div class="product-subtotal">£{{ item.lineitem_total|floatformat:2 }}</div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="order-summary mt-4">
+            <div class="d-flex justify-content-between">
+                <strong>Delivery Charge:</strong>
+                <span>£{{ order.shipping_cost|floatformat:2 }}</span>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+                <strong>Total:</strong>
+                <span>£{{ order.grand_total|floatformat:2 }}</span>
+            </div>
         </div>
     </div>
+</div>
+
 
     <!-- Continue Shopping Button -->
     <div class="row mb-5">
