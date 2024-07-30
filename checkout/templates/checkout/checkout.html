@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block page_header %}
-<div class="container header-container">
+<div class="container-fluid header-container">
     <div class="row">
         <div class="col text-center mt-3">
             <h2 class="logo-font">Checkout</h2>
@@ -22,16 +22,17 @@
     <div class="row">
         <!-- Basket Summary -->
         <div class="col-12 col-lg-6 mb-4">
-            <h3>Your Basket</h3>
+            <h3 class="text-center basket-checkout-h3">Your Basket</h3>
             <div class="basket-header py-2 border-bottom d-none d-lg-flex">
                 <div class="header-column">Product</div>
                 <div class="header-column">Size</div>
-                <div class="header-column">SKU</div>
+                <div class="header-column d-none d-lg-block">SKU</div>
                 <div class="header-column">Subtotal</div>
                 <div class="header-column">Quantity</div>
             </div>
             {% for item in basket_items %}
             <div class="basket-item d-flex justify-content-between align-items-center py-2 border-bottom">
+
                 <div class="item-column">
                     <div class="basket-item-img">
                         {% if item.product.image %}
@@ -45,34 +46,32 @@
                     </div>
                 </div>
                 <div class="item-column">
+                    <div class="mobile-label d-block d-lg-none"><strong>Size:</strong></div>
                     <div class="product-size">{{ item.product.size }}</div>
                 </div>
-                <div class="item-column">
+                <div class="item-column d-none d-lg-block">
                     <div class="product-sku">{{ item.product.sku|upper }}</div>
                 </div>
                 <div class="item-column">
+                    <div class="mobile-label d-block d-lg-none"><strong>Subtotal:</strong></div>
                     <div class="product-subtotal">£{{ item.subtotal|floatformat:2 }}</div>
+
                 </div>
                 <div class="item-column">
+                    <div class="mobile-label d-block d-lg-none"><strong>Quantity:</strong></div>
                     <div class="basket-item-quantity">
-                        <form class="form update-form d-inline" method="POST" action="{% url 'adjust_basket' item.item_id %}">
-                            {% csrf_token %}
-                            <div class="input-group">
-                                <button type="button" class="btn btn-outline-secondary btn-sm decrement-qty" data-item_id="{{ item.item_id }}"><i class="fas fa-minus"></i></button>
-                                <input id="quantity_{{ item.item_id }}" class="form-control text-center qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}">
-                                <button type="button" class="btn btn-outline-secondary btn-sm increment-qty" data-item_id="{{ item.item_id }}"><i class="fas fa-plus"></i></button>
-                            </div>
-                        </form>
+                       {{ item.quantity }}
                     </div>
                 </div>
             </div>
             {% endfor %}
             <!-- Order Summary -->
         <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-            <div class="order-summary p-3 border rounded">
+            <div class="order-summary p-3 border rounded w-100">
                 <h2>ORDER SUMMARY</h2>
                 <hr>
                 <h6><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h6>
+                <h6>Total Items: {{ total_quantity }}</h6>
                 <h6>Shipping: £{{ shipping|floatformat:2 }}</h6>
                 <hr>
                 <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
@@ -85,7 +84,7 @@
 
         <!-- Checkout Form -->
         <div class="col-12 col-lg-6 mb-4">
-            <h3>Delivery Details</h3>
+            <h3 class="text-center">Delivery Details</h3>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
                 <fieldset class="rounded px-3 mb-5">

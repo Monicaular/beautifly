@@ -21,7 +21,7 @@
             <div class="basket-header py-2 border-bottom">
                 <div class="header-column">Product</div>
                 <div class="header-column">Size</div>
-                <div class="header-column">SKU</div>
+                <div class="header-column d-none d-lg-block">SKU</div>
                 <div class="header-column">Subtotal</div>
                 <div class="header-column">Quantity</div>
                 <div class="header-column">Remove</div>
@@ -44,7 +44,7 @@
                 <div class="item-column">
                     <div class="product-size">{{ item.product.size }}</div>
                 </div>
-                <div class="item-column">
+                <div class="item-column d-none d-lg-block">
                     <div class="product-sku">{{ item.product.sku|upper }}</div>
                 </div>
                 <div class="item-column">
@@ -55,7 +55,7 @@
                         <form class="form update-form d-inline" method="POST" action="{% url 'adjust_basket' item.item_id %}">
                             {% csrf_token %}
                             <div class="form-group">
-                                <label for="quantity">Quantity:</label>
+                               
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <button type="button" class="decrement-qty" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
@@ -94,8 +94,8 @@
                 <p class="mb-1">You could get free delivery by spending just <strong>£{{ free_shipping_delta }}</strong> more!</p>
                 {% endif %}
                 <div class="text-right mt-3">
-                    <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg"><i class="fas fa-chevron-left"></i> Keep Shopping</a>
-                    <a href="{% url 'checkout' %}" class="btn btn-dark rounded-0 btn-lg"><i class="fas fa-lock"></i> Secure Checkout</a>
+                    <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-md"><i class="fas fa-chevron-left"></i> Keep Shopping</a>
+                    <a href="{% url 'checkout' %}" class="btn btn-dark rounded-0 btn-md"><i class="fas fa-lock"></i> Secure Checkout</a>
                 </div>
             </div>
         </div>

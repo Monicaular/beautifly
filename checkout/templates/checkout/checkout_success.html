@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block page_header %}
-<div class="container header-container">
+<div class="container-fluid header-container">
     <div class="row">
         <div class="col text-center">
             <h2 class="logo-font text-success">Order Successful!</h2>
@@ -81,11 +81,11 @@
    <!-- Order Summary -->
 <div class="row mb-5">
     <div class="col-12 col-lg-8 offset-lg-2">
-        <h3 class="text-center">Order Details</h3>
-        <div class="basket-header py-2 border-bottom">
+        <h3 class="text-center basket-checkout-h3">Order Details</h3>
+        <div class="basket-header py-2 border-bottom d-none d-lg-flex">
             <div class="header-column">Product</div>
             <div class="header-column">Size</div>
-            <div class="header-column">SKU</div>
+            <div class="header-column d-none d-lg-block">SKU</div>
             <div class="header-column">Quantity</div>
             <div class="header-column">Subtotal</div>
         </div>
@@ -104,15 +104,18 @@
                 </div>
             </div>
             <div class="item-column">
+                <div class="mobile-label d-block d-lg-none"><strong>Size:</strong></div>
                 <div class="product-size">{{ item.product.size }}</div>
             </div>
-            <div class="item-column">
+            <div class="item-column d-none d-lg-block">
                 <div class="product-sku">{{ item.product.sku|upper }}</div>
             </div>
             <div class="item-column">
+                <div class="mobile-label d-block d-lg-none"><strong>Quantity:</strong></div>
                 <div class="basket-item-quantity">{{ item.quantity }}</div>
             </div>
             <div class="item-column">
+                <div class="mobile-label d-block d-lg-none"><strong>Subtotal:</strong></div>
                 <div class="product-subtotal">£{{ item.lineitem_total|floatformat:2 }}</div>
             </div>
         </div>
@@ -144,7 +147,7 @@
         </div>
         {% else %}
         <div class="col text-center pb-1">
-            <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg">
+            <a href="{% url 'products' %}" class="btn btn-outline-dark btn dark rounded-0 btn-lg">
                 <span class="font-weight-bold">Continue Shopping</span>
                 <span class="icon">
                     <i class="fas fa-shopping-bag"></i>

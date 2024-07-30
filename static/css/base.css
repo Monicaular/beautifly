@@ -214,7 +214,6 @@ body {
 }
 
 
-
 /* Sidebar Categories */
 
 .btn-categories:hover {
@@ -231,7 +230,6 @@ body {
     background-color:rgba(141, 110, 99, 0.5);
     color: #FAFAFAff;
 }
-
 
 .form-check-input {
     margin-top: 5px !important;
@@ -265,7 +263,7 @@ body {
 /* -------------------------------- Product detail page */
 
 .btn-box {
-    margin-top: 10px;
+    margin-top: 10px; /* for aligning buttons */
 }
 
 
@@ -280,7 +278,7 @@ body {
 }
 
 .wishlist-icon:hover {
-    background-color: rgba(255, 152, 0, 1); /* Background color on hover */
+    background-color: rgba(255, 152, 0, 1);
 }
 
 .main-image {
@@ -293,8 +291,6 @@ body {
 }
 
 /* Increase/decrease units number buttons & cancel modal button*/
-
-
 
 .decrement-qty,
 .increment-qty {
@@ -323,19 +319,6 @@ body {
     color: #a0a0a0;
     cursor: not-allowed;
 }
-
-.qty_input {
-    max-width: 60px; /* Set a reasonable width */
-    height: 36px; /* Match the button height */
-    text-align: center; /* Center text */
-    font-size: 1rem; /* Font size for readability */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Slight rounding of corners */
-    margin: 0 5px; /* Spacing around the input */
-    outline: none; /* Remove default outline */
-    box-shadow: inset 0 0 0 1px #ced4da; /* Subtle inner shadow to mimic a border */
-}
-
 
 /* Add to basket section */
 
@@ -500,14 +483,12 @@ body {
     transform: scale(1.5);
 }
 
-
 .header-column,
 .item-column {
     flex: 1;
     padding: 0.5rem;
     text-align: center;
 }
-
 
 .basket-item-img img {
     max-width: 100px;
@@ -528,7 +509,6 @@ body {
    background-color: rgba(215, 204, 200, 1);
 }
 
-
 .basket-item-quantity {
     width: 100%;
     display: flex;
@@ -542,6 +522,21 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.qty_input {
+    max-width: 60px;
+    height: 36px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    outline: none;
+    box-shadow: inset 0 0 0 1px #ced4da;
+}
+
+/*---------------------------------Checkout page*/
+
 
 
 /*-------------------------------Allauth Pages*/
@@ -728,11 +723,13 @@ body {
 /* -------------------------------- Media Queries */
 
 /* Fixed top navbar */
-
-
 @media (min-width: 992px) {
     .header-container {
         padding-top: 164px;
+    }
+
+    .mobile-label {
+        display: none !important;
     }
   }
 
@@ -749,6 +746,12 @@ body {
     }
     body {
         height: calc(100vh - 116px);
+    }
+
+    .basket-checkout-h3 {
+        background-color: rgba(255, 152, 0, 0.3);
+        padding: 10px;
+        border-radius: 10px;
     }
 }
 
@@ -774,6 +777,7 @@ body {
         margin: 0 5px;
     }
 
+
 }
 
 /* Tablet and small desktop styles */
@@ -791,6 +795,8 @@ body {
         display: flex;
         justify-content: center;
     }
+
+   
 }
 
 /* Hide headers on mobile */
@@ -801,6 +807,7 @@ body {
     .basket-item {
         flex-direction: column;
         align-items: flex-start;
+        box-shadow: 5px 5px 5px rgba(255, 152, 0, 0.1);
     }
     .basket-item-img {
         width: 100%;
@@ -817,7 +824,10 @@ body {
         align-self: flex-end;
     }
 
+    
+
 }
+
 
 
 
