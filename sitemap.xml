@@ -1,0 +1,2512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=pantry_staples</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=flours_and_baking</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=dried_fruits</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=nuts_and_seeds</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=grains_and_rice</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=flours_and_powders</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=pasta_and_noodles</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=snacks_and_treats</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=cooking_ingredients</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=herbs_species_seasonings</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=chilled</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=savoury_snacks</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=sweet_snacks</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=tofu</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=vegan_cheese</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=cereals_and_muesli</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?category=powders</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/basket/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/delivery-terms/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/about/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/privacy-policy/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/quality_guarantee/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/80/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/80</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/150/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/150</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/225/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/225</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/99/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/99</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/222/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/222</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/226/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/226</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/224/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/224</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/223/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/223</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/243/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/243</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/244/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/244</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/61/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/61</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/50/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/50</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;sort=price&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;sort=price&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/250/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/250</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/235/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/235</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/255/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/255</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/249/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/249</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/3/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/3</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/86/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/86</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/19/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/19</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/15/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/15</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/109/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/109</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/128/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/128</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/157/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/157</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/156/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/156</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/144/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/144</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/153/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/153</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/154/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/154</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/155/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/155</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/134/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/134</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/126/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/126</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/76/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/76</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/152/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/152</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/77/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/77</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/158/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/158</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;sort=category&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;sort=category&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/11/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/11</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/5/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/5</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/7/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/7</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/8/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/8</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/2/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/2</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/10/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/10</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/12/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/12</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/13/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/13</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/14/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/14</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/1/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/1</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/9/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/9</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/4/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/4</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/6/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/6</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=pantry_staples</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;category=pantry_staples</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/28/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/28</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/29/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/29</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/30/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/30</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/31/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/31</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/32/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/32</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/33/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/33</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/34/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/34</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/81/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/81</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/16/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/16</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/17/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/17</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/18/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/18</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/20/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/20</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/21/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/21</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/22/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/22</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/23/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/23</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/24/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/24</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/25/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/25</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/26/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/26</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/27/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/27</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/44/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/44</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/75/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/75</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/79/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/79</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/83/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/83</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/84/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/84</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/85/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/85</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/87/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/87</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/88/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/88</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/89/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/89</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/90/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/90</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=nuts_and_seeds</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;category=nuts_and_seeds</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=grains_and_rice</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;category=grains_and_rice</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/35/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/35</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/36/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/36</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/37/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/37</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/38/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/38</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=flours_and_powders</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;category=flours_and_powders</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/135/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/135</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/136/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/136</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/137/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/137</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/138/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/138</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/139/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/139</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/140/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/140</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/141/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/141</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/142/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/142</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/143/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/143</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/163/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/163</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/164/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/164</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/165/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/165</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/166/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/166</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/167/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/167</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/168/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/168</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/169/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/169</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/170/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/170</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/171/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/171</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/172/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/172</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/173/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/173</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=snacks_and_treats</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/64/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/64</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/78/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/78</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/127/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/127</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/129/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/129</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/130/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/130</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/131/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/131</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/132/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/132</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/147/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/147</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=cooking_ingredients</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/65/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/65</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/133/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/133</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/186/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/186</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/187/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/187</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/188/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/188</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/189/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/189</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/190/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/190</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/191/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/191</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/192/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/192</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/193/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/193</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/194/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/194</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/195/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/195</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=herbs_species_seasonings</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=3&amp;category=herbs_species_seasonings</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/82/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/82</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/182/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/182</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/183/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/183</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/237/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/237</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/238/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/238</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/184/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/184</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/185/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/185</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/233/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/233</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/234/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/234</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/231/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/231</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/232/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/232</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/63/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/63</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/66/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/66</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/67/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/67</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/68/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/68</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/69/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/69</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=cereals_and_muesli</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/39/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/39</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/40/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/40</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/41/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/41</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/42/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/42</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/43/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/43</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/74/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/74</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/145/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/145</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/149/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/149</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=2&amp;category=powders</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2F</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F80</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F150</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F225</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F99</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F222</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F226</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F224</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F223</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F243</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F244</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F61</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/174/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F50</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/217/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/217</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/57/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/57</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/55/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/55</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/95/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/95</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/59/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/59</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=1&amp;sort=price&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=4&amp;sort=price&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/221/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/221</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/216/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/216</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/242/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/242</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/58/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/58</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/72/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/72</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=5&amp;sort=price&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F250</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F235</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F255</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/104/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/209/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F249</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F3</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/121/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/113/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/91/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/92/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F86</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F19</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F15</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F109</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F128</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/177/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/177</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/204/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/204</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/196/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/196</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/179/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/179</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/124/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/124</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=1&amp;sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=4&amp;sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/205/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/205</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/175/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/175</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/113</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/202/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/202</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/115/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/115</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=5&amp;sort=rating&amp;direction=desc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F157</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F156</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F144</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F153</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F154</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F155</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F134</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F126</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F76</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F152</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F77</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F158</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/162/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/162</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=1&amp;sort=category&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=4&amp;sort=category&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=5&amp;sort=category&amp;direction=asc</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F11</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F5</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F7</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F8</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F2</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F10</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F12</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F13</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F14</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F1</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F9</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=1&amp;</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=4&amp;</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=5&amp;</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F4</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F6</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/70/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/70</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/71/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/71</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/73/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/73</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/?page=1&amp;category=pantry_staples</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/228/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/228</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/236/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/236</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F28</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F29</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F30</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F31</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F32</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F33</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F34</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F81</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F16</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F17</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F18</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F20</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F21</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F22</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F23</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F24</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F25</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F26</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F27</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F44</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F75</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F79</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F83</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F84</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F85</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F87</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F88</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F89</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/signup/?next=%2Fwishlist%2Fadd%2F90</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/91</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/92</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/93/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/93</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/94/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/94</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/96/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/96</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/97/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/accounts/login/?next=/wishlist/add/97</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/products/98/</loc>
+  <lastmod>2024-07-31T11:44:17+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
