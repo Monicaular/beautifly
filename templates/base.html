@@ -8,6 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Explore our selection of organic snacks, gluten-free foods, and natural supplements. Wholesome Basket offers healthy, non-GMO products with free UK delivery over £30.">
+    <meta name="keywords"
+        content="Wholefoods, Healthy Eating, Natural Foods, Healthy Snacks, Organic Groceries, Natural Ingredients,
+        Buy wholefoods online, Natural whole foods store, Healthy snacks delivery, Spices variety, Organic dried fruits shop,
+        Natural spices for cooking, Healthy eating grocery store, Affordable organic groceries">
     {% endblock %}
 
     {% block extrameta %}
@@ -31,6 +37,9 @@
         rel="stylesheet">
     <!--Mailchimp-->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-ico" href="{{ MEDIA_URL }}favicon.ico">
     {% endblock %}
 
     {% block extra_css %}
@@ -49,16 +58,20 @@
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     <!--MailChimp-->
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/dcc61c89cd068cd70688e8721/f0150196403dc7c462e12e6cd.js");</script>
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/dcc61c89cd068cd70688e8721/f0150196403dc7c462e12e6cd.js");</script>
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script
+        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
     {% endblock %}
 
     {% block extra_js %}
     <script src="{% static 'js/toasts.js' %}"></script>
     {% endblock %}
 
-    <title>Wholesome Basket {% block extra_title %}{% endblock %}</title>
+    <title>Wholesome Basket
+        {% block extra_title %}
+        {% endblock %}</title>
 </head>
 
 <body>
@@ -72,8 +85,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border" type="text" name="q"
-                            placeholder="Look for a product...">
+                        <input class="form-control border" type="text" name="q" placeholder="Look for a product...">
                         <div class="input-group-append">
                             <button class="form-control btn submit-btn border" type="submit">
                                 <span class="icon">
@@ -97,7 +109,8 @@
         </div>
         <div id="delivery-banner" class="row text-center">
             <div class="col shipping-banner">
-                <h4 class="my-1"><strong>FREE UK Mainland delivery</strong> on orders over £{{ free_shipping_threshold }}!</h4>
+                <h4 class="my-1"><strong>FREE UK Mainland delivery</strong> on orders over £{{ free_shipping_threshold
+                    }}!</h4>
             </div>
         </div>
     </header>
@@ -122,11 +135,11 @@
 
     {% block page_header %}
     {% endblock %}
-   
-    
+
+
     {% block content %}
     {% endblock %}
-   
+
 
     {% block footer %}
 
@@ -138,59 +151,70 @@
                     <h4 class="logo-font mb-3">Wholesome Basket</h4>
                     <p class="footer-text">Your trusted source for whole foods and natural products.</p>
                 </div>
-    
+
                 <!-- Contact Us Section -->
                 <div class="col-md-3 mb-4">
                     <h5>Contact Us</h5>
                     <ul class="list-unstyled">
                         <li><a href="{% url 'about_us' %}" class="footer-link">About us</a></li>
-                        <li><a href="https://us14.list-manage.com/contact-form?u=dcc61c89cd068cd70688e8721&form_id=4784e42639c4ea6cda446d907db3584c" class="footer-link">Get in touch</a></li>
+                        <li><a href="https://us14.list-manage.com/contact-form?u=dcc61c89cd068cd70688e8721&form_id=4784e42639c4ea6cda446d907db3584c"
+                                class="footer-link">Get in touch</a></li>
                         <li><a href="{% url 'privacy-policy' %}" class="footer-link">Privacy Policy</a></li>
                         <li><a href="{% url 'quality_guarantee' %}" class="footer-link">Returns Policy</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Newsletter Section -->
                 <div class="col-md-3 mb-4">
-                    <h5>Subscribe to our offers</h5> 
+                    <h5>Subscribe to our offers</h5>
                     <div id="mc_embed_shell"></div>
                     <div id="mc_embed_signup" class="custom-newsletter-form">
-                        <form action="https://herokuapp.us14.list-manage.com/subscribe/post?u=dcc61c89cd068cd70688e8721&amp;id=21921077c8&amp;f_id=008f8ee0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        <form
+                            action="https://herokuapp.us14.list-manage.com/subscribe/post?u=dcc61c89cd068cd70688e8721&amp;id=21921077c8&amp;f_id=008f8ee0f0"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank">
                             <div id="mc_embed_signup_scroll">
                                 <div class="mc-field-group">
                                     <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required=""
+                                        value="">
                                 </div>
                                 <div id="mce-responses" class="clear foot">
                                     <div class="response" id="mce-error-response" style="display: none;"></div>
                                     <div class="response" id="mce-success-response" style="display: none;"></div>
                                 </div>
                                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                                    <input type="text" name="b_dcc61c89cd068cd70688e8721_21921077c8" tabindex="-1" value="">
+                                    <input type="text" name="b_dcc61c89cd068cd70688e8721_21921077c8" tabindex="-1"
+                                        value="">
                                 </div>
                                 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                                 <div class="optionalParent">
                                     <div class="clear foot">
-                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button custom-add-btn" value="Subscribe">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                            class="button custom-add-btn" value="Subscribe">
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-    
+
                 <!-- Follow Us Section -->
                 <div class="col-md-3 mb-4">
                     <h5>Follow Us</h5>
-                    <a href="https://www.facebook.com/profile.php?id=61563483779485" target="_blank" class="mr-2 icon-link"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-twitter-x"></i></a>
-                    <a href="https://instagram.com" target="_blank" class="mr-2 icon-link"><i class="bi bi-instagram"></i></a>
-                    <a href="https://tiktok.com" target="_blank"><i class="bi bi-tiktok icon-link"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61563483779485" target="_blank"
+                        class="mr-2 icon-link" rel="noopener"><i class="bi bi-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="mr-2 icon-link" rel="noopener"><i
+                            class="bi bi-twitter-x"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="mr-2 icon-link" rel="noopener"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener"><i
+                            class="bi bi-tiktok icon-link"></i></a>
                 </div>
             </div>
-    
+
             <hr class="bg-light">
-    
+
             <!-- Footer Bottom Section -->
             <div class="row">
                 <div class="col-md-6">
@@ -202,9 +226,9 @@
             </div>
         </div>
     </footer>
-    
-    
-        {% endblock %}
+
+
+    {% endblock %}
 
     {% block postloadjs %}
     <script type="text/javascript">
