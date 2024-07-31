@@ -18,6 +18,7 @@ body {
     min-height: calc(100vh - 164px);
 }
 
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -44,11 +45,29 @@ body {
     color: #FAFAFAff;
 }
 
+/* Dropdown item hover style */
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(139, 195, 74, 0.8);
+    color: #FAFAFA; 
+}
+
+
+.nav-link i {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover i {
+    color: rgba(139, 195, 74, 0.8);
+    transform: scale(1.2);
+}
+
+/*-----------------------------------------Footer Styling*/
 .footer-container {
     background-color: rgba(215, 204, 200, 0.7);
 }
 .footer-text {
     font-weight: 600;
+    font-style: italic;
 }
 
 .footer-link {
@@ -623,7 +642,10 @@ body {
 .custom-width {
     max-width: 800px; 
     margin: 20px auto; 
-    padding: 15px; 
+    padding: 15px 20px;
+    background-color: rgba(255, 248, 225, 1);
+    border-radius: 10px;
+    box-shadow: 8px 8px 5px #8D6E63ff;
 }
 
 .custom-add-btn,
@@ -664,6 +686,11 @@ body {
     display: inline-block;
 }
 
+/*--------------------------------------Profile Page */
+
+/* .order-history {
+    border-radius: 10px;
+} */
 
 /*----------------------------------------Various Buttons*/
 
@@ -698,7 +725,7 @@ body {
 /*--------------------------------------------------Footer links*/
 
 /*About us page*/
-.about-us-container {
+.custom-container {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;

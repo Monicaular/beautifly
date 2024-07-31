@@ -76,7 +76,7 @@
                 </div>
             {% endif %}
         </div>
-    </div>
+   
 
    <!-- Order Summary -->
 <div class="row mb-5">
@@ -138,7 +138,7 @@
     <div class="row mb-5">
         {% if from_profile %}
         <div class="col text-center pb-1">
-            <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
+            <a href="{% url 'profile' %}" class="btn btn-black my-2">
                 <span class="icon mr-2">
                     <i class="fas fa-angle-left"></i>
                 </span>
@@ -147,7 +147,7 @@
         </div>
         {% else %}
         <div class="col text-center pb-1">
-            <a href="{% url 'products' %}" class="btn btn-outline-dark btn dark rounded-0 btn-lg">
+            <a href="{% url 'products' %}" class="btn btn-outline-dark btn dark btn-lg">
                 <span class="font-weight-bold">Continue Shopping</span>
                 <span class="icon">
                     <i class="fas fa-shopping-bag"></i>
@@ -156,6 +156,7 @@
         </div>
         {% endif %}
     </div>
+</div>
 </div>
 {% endblock %}
 
