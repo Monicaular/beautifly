@@ -10,6 +10,14 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+.header-container {
+    padding-top: 164px;
+}
+
+.container {
+    min-height: calc(100vh - 164px);
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -322,6 +330,10 @@ body {
 
 /* Add to basket section */
 
+.product-name {
+    font-weight:600;
+}
+
 /* Adjusting button size and color */
 
 .btn-link-as-button {
@@ -447,7 +459,7 @@ body {
 }
 
 .order-summary {
-    padding: 10px;
+    margin-bottom: 20px;
     background-color: rgba(255, 152, 0, 0.3);
 }
 
@@ -724,29 +736,31 @@ body {
 
 /* Fixed top navbar */
 @media (min-width: 992px) {
-    .header-container {
-        padding-top: 164px;
-    }
 
     .mobile-label {
         display: none !important;
     }
-  }
-
-@media (max-width: 502px) {
-    .header-container {
-        padding-top: 200px;
-    }
 }
 
-/* Push products list down on mobile*/
+/* Tablet and small desktop styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container h2 {
+        font-size: 2rem;
+    }
+
+    .breadcrumb-nav {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .breadcrumb-nav .breadcrumb {
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 164px;
-    }
-    body {
-        height: calc(100vh - 116px);
-    }
 
     .basket-checkout-h3 {
         background-color: rgba(255, 152, 0, 0.3);
@@ -755,7 +769,6 @@ body {
     }
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
     .header-container h2 {
         font-size: 1.5rem;
@@ -777,30 +790,6 @@ body {
         margin: 0 5px;
     }
 
-
-}
-
-/* Tablet and small desktop styles */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .header-container h2 {
-        font-size: 2rem;
-    }
-
-    .breadcrumb-nav {
-        font-size: 1rem;
-        padding: 10px;
-    }
-
-    .breadcrumb-nav .breadcrumb {
-        display: flex;
-        justify-content: center;
-    }
-
-   
-}
-
-/* Hide headers on mobile */
-@media (max-width: 768px) {
     .basket-header {
         display: none;
     }
@@ -824,8 +813,17 @@ body {
         align-self: flex-end;
     }
 
-    
+}
 
+@media (max-width: 502px) {
+    .header-container {
+        padding-top: 200px;
+    }
+}
+@media (max-width: 350px) {
+    .header-container {
+        padding-top: 230px;
+    }
 }
 
 

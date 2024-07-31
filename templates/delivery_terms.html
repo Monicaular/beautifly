@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container-fluid header-container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Delivery Terms and Conditions</h2>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container about-us-container mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="section mb-4">
+                <h3 class="fw-bold">Free Delivery Over £30 to Mainland UK (Excluding Highlands, Northern Ireland & Islands)</h3>
+                <p>Delivery rates and times vary depending on postcodes and couriers. For the most accurate delivery estimates, please use the delivery calculator on the basket or checkout page.</p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Orders to Mainland UK</h4>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Order Value</th>
+                            <th>Cost</th>
+                            <th>Working Days</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Over £30</td>
+                            <td>FREE</td>
+                            <td>3-4</td>
+                        </tr>
+                        <tr>
+                            <td>Express</td>
+                            <td>£2.99 (per 20kg)</td>
+                            <td>1-2</td>
+                        </tr>
+                        <tr>
+                            <td>Under £30</td>
+                            <td>Standard Delivery £3.49</td>
+                            <td>3-4</td>
+                        </tr>
+                        <tr>
+                            <td>Express</td>
+                            <td>£6.00 (per 20kg)</td>
+                            <td>1-2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Our cut-off point for same-day dispatch is currently 2pm from Monday to Friday.</p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Chilled Deliveries</h4>
+                <p>Chilled Deliveries are currently free of charge if you spend over £30. Additional costs may apply in the future. Chilled Deliveries cannot be sent on a Friday due to delivery time. More information on chilled deliveries can be found here.</p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Tracking</h4>
+                <p>We currently send Standard parcels under 5kg with Royal Mail and over 5kg with Parcel Force. Express parcels under 3.75kg are sent with Royal Mail and over 3.75kg with Parcel Force.</p>
+                <p>Royal Mail Tracking: <a href="https://www3.royalmail.com/track-your-item#" target="_blank">Track Your Item</a></p>
+                <p>Parcel Force Tracking: <a href="https://www.parcelforce.com/track-trace" target="_blank">Track Your Parcel</a></p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Orders to Northern Ireland and Other Islands</h4>
+                <p>We offer free shipping over £30 and under 10kg OR over £100 with no weight limit to Northern Ireland (BT Postcode). Unfortunately, we cannot offer free shipping to Jersey, Guernsey, or the Isle of Man. For detailed shipping costs to these regions, please refer to our shipping information.</p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Scottish Highlands & Scottish Islands</h4>
+                <p>We offer free shipping to the Scottish Highlands and Islands for orders over £30 and under 5kg, and for orders over £60 and over 5kg. Standard Delivery is charged at £3.49. Express orders are sent under 3.75kg with Royal Mail and over 3.75kg with Parcelforce.</p>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Area</th>
+                            <th>Location</th>
+                            <th>Postcodes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AB</td>
+                            <td>Aberdeen</td>
+                            <td>AB31, AB33, AB34, AB35, AB36, AB37, AB38, AB45, AB52, AB53, AB54, AB55, AB56</td>
+                        </tr>
+                        <tr>
+                            <td>FK</td>
+                            <td>Falkirk & Stirling</td>
+                            <td>FK17, FK18, FK19, FK20, FK21</td>
+                        </tr>
+                        <tr>
+                            <td>HS</td>
+                            <td>Outer Hebrides</td>
+                            <td>HS1, HS2, HS3, HS4, HS5, HS6, HS7, HS8, HS9</td>
+                        </tr>
+                        <tr>
+                            <td>IV</td>
+                            <td>Inverness</td>
+                            <td>IV1, IV2, IV3, IV10, IV11, IV12, IV13, IV14, IV15, IV16, IV17, IV18, IV19, IV20, IV21, IV22, IV23, IV24, IV25, IV26, IV27, IV28, IV30, IV31, IV32, IV36, IV40, IV41, IV42, IV43, IV44, IV45, IV46, IV47, IV48, IV49, IV51, IV52, IV53, IV54, IV55, IV56, IV99</td>
+                        </tr>
+                        <tr>
+                            <td>KA</td>
+                            <td>Kilmarnock</td>
+                            <td>KA27, KA28</td>
+                        </tr>
+                        <tr>
+                            <td>KW</td>
+                            <td>Kirkwall</td>
+                            <td>KW1, KW2, KW3, KW5, KW6, KW7, KW8, KW9, KW10, KW11, KW12, KW13, KW14, KW15, KW16, KW17</td>
+                        </tr>
+                        <tr>
+                            <td>PA</td>
+                            <td>Paisley</td>
+                            <td>PA20, PA21, PA22, PA23, PA24, PA25, PA26, PA27, PA28, PA29, PA30, PA31, PA32, PA33, PA34, PA35, PA36, PA37, PA38, PA41, PA42, PA43, PA44, PA45, PA46, PA47, PA48, PA49, PA60, PA61, PA62, PA63, PA64, PA65, PA66, PA67, PA68, PA69, PA70, PA71, PA72, PA73, PA74, PA75, PA76, PA77, PA78, PA80</td>
+                        </tr>
+                        <tr>
+                            <td>PH</td>
+                            <td>Perth</td>
+                            <td>PH17, PH18, PH19, PH20, PH21, PH22, PH23, PH24, PH25, PH26, PH30, PH31, PH32, PH33, PH34, PH35, PH36, PH37, PH38, PH39, PH40, PH41, PH42, PH43, PH44, PH49, PH50</td>
+                        </tr>
+                        <tr>
+                            <td>ZE</td>
+                            <td>Lerwick</td>
+                            <td>ZE1, ZE2, ZE3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">UK Delivery Exceptions</h4>
+                <p>Some postcodes are excluded from normal delivery times in the UK. This means the delivery may take longer than 24 or 48 hours, or the service may not be available at all. This will be taken into account in the estimated delivery time.</p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Late Deliveries (UK)</h4>
+                <p>If your order has been delivered late, you may be entitled to a refund on these costs. Standard delivery services are not guaranteed and will only be refunded if the time delay is unreasonable.</p>
+                <p>BuyWholefoodsOnline cannot be held accountable for late deliveries if the courier is at fault. We will not offer compensation or be held accountable unless we have signed a guarantee contract for delivery. If you require a legally binding contract, this must be made at least 2 days in advance.</p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Damaged Orders</h4>
+                <p>If your goods arrive in an unfit state, please refuse delivery and contact us so we can resend your order quickly and report the damage.</p>
+                <p>If you are unable to refuse the delivery and your goods do not arrive in perfect condition, please contact us within 14 days of receipt. Photographic evidence of damage is required or the return of the damaged item in order to request a replacement or refund.</p>
+            </div>
+
+            <div class="section mb-4">
+                <h4 class="fw-bold">Returns Information (UK)</h4>
+                <p>For UK orders, we offer a No Quibble 30 Day Quality Guarantee. <a href="{% url 'quality_guarantee' %}" class="text-info" target="_blank">Click here</a> to view the full details of our Guarantee and Returns Policy.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
