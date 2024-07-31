@@ -6,11 +6,11 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('homepage', '0003_carouselitem_text_link_carouselitem_title_link'),
+        ("homepage", "0003_carouselitem_text_link_carouselitem_title_link"),
     ]
 
     operations = [
         migrations.DeleteModel(
-            name='CarouselItem',
+            name="CarouselItem",
         ),
     ]

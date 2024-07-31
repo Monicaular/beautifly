@@ -7,28 +7,65 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0009_remove_category_image'),
+        ("products", "0009_remove_category_image"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='nutritionalfacts',
-            options={'verbose_name_plural': 'Nutritional Facts'},
+            name="nutritionalfacts",
+            options={"verbose_name_plural": "Nutritional Facts"},
         ),
         migrations.CreateModel(
-            name='RelatedProduct',
+            name="RelatedProduct",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='related_products', to='products.product')),
-                ('related_product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='related_to', to='products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="related_products",
+                        to="products.product",
+                    ),
+                ),
+                (
+                    "related_product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="related_to",
+                        to="products.product",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='FastFact',
+            name="FastFact",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('fact', models.TextField()),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='fast_facts', to='products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("fact", models.TextField()),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="fast_facts",
+                        to="products.product",
+                    ),
+                ),
             ],
         ),
     ]

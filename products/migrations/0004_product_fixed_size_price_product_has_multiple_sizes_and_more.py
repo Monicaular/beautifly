@@ -6,23 +6,27 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0003_alter_category_image'),
+        ("products", "0003_alter_category_image"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='product',
-            name='fixed_size_price',
-            field=models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True),
+            model_name="product",
+            name="fixed_size_price",
+            field=models.DecimalField(
+                blank=True, decimal_places=2, max_digits=6, null=True
+            ),
         ),
         migrations.AddField(
-            model_name='product',
-            name='has_multiple_sizes',
+            model_name="product",
+            name="has_multiple_sizes",
             field=models.BooleanField(default=True),
         ),
         migrations.AlterField(
-            model_name='product',
-            name='price',
-            field=models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True),
+            model_name="product",
+            name="price",
+            field=models.DecimalField(
+                blank=True, decimal_places=2, max_digits=6, null=True
+            ),
         ),
     ]

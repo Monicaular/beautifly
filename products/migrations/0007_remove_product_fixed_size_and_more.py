@@ -6,21 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0006_alter_product_size_options'),
+        ("products", "0006_alter_product_size_options"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='product',
-            name='fixed_size',
+            model_name="product",
+            name="fixed_size",
         ),
         migrations.RemoveField(
-            model_name='product',
-            name='size_options',
+            model_name="product",
+            name="size_options",
         ),
         migrations.AddField(
-            model_name='product',
-            name='fixed_size_price',
-            field=models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True),
+            model_name="product",
+            name="fixed_size_price",
+            field=models.DecimalField(
+                blank=True, decimal_places=2, max_digits=6, null=True
+            ),
         ),
     ]

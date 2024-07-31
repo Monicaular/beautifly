@@ -7,30 +7,45 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0007_remove_product_fixed_size_and_more'),
+        ("products", "0007_remove_product_fixed_size_and_more"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='product',
-            name='fixed_size_price',
+            model_name="product",
+            name="fixed_size_price",
         ),
         migrations.RemoveField(
-            model_name='product',
-            name='has_multiple_sizes',
+            model_name="product",
+            name="has_multiple_sizes",
         ),
         migrations.RemoveField(
-            model_name='product',
-            name='nutritional_facts',
+            model_name="product",
+            name="nutritional_facts",
         ),
         migrations.CreateModel(
-            name='NutritionalFacts',
+            name="NutritionalFacts",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=255)),
-                ('amount', models.CharField(max_length=255)),
-                ('unit', models.CharField(blank=True, max_length=50, null=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='nutritional_facts', to='products.product')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=255)),
+                ("amount", models.CharField(max_length=255)),
+                ("unit", models.CharField(blank=True, max_length=50, null=True)),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="nutritional_facts",
+                        to="products.product",
+                    ),
+                ),
             ],
         ),
     ]

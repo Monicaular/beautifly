@@ -7,18 +7,25 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='CarouselItem',
+            name="CarouselItem",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('image', models.ImageField(blank=True, null=True, upload_to='')),
-                ('caption_title', models.CharField(blank=True, max_length=100)),
-                ('caption_text', models.TextField(blank=True)),
-                ('is_active', models.BooleanField(default=False)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("image", models.ImageField(blank=True, null=True, upload_to="")),
+                ("caption_title", models.CharField(blank=True, max_length=100)),
+                ("caption_text", models.TextField(blank=True)),
+                ("is_active", models.BooleanField(default=False)),
             ],
         ),
     ]

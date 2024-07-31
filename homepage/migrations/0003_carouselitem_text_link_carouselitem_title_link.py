@@ -6,18 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('homepage', '0002_alter_carouselitem_image'),
+        ("homepage", "0002_alter_carouselitem_image"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='carouselitem',
-            name='text_link',
+            model_name="carouselitem",
+            name="text_link",
             field=models.URLField(blank=True),
         ),
         migrations.AddField(
-            model_name='carouselitem',
-            name='title_link',
+            model_name="carouselitem",
+            name="title_link",
             field=models.URLField(blank=True),
         ),
     ]

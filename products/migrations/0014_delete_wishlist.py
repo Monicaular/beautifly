@@ -6,11 +6,11 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0013_alter_product_price_wishlist'),
+        ("products", "0013_alter_product_price_wishlist"),
     ]
 
     operations = [
         migrations.DeleteModel(
-            name='Wishlist',
+            name="Wishlist",
         ),
     ]

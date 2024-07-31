@@ -6,13 +6,21 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0005_remove_product_fixed_size_price_product_fixed_size_and_more'),
+        (
+            "products",
+            "0005_remove_product_fixed_size_price_product_fixed_size_and_more",
+        ),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='product',
-            name='size_options',
-            field=models.CharField(blank=True, choices=[('100g', '100g'), ('250g', '250g'), ('1kg', '1kg')], max_length=10, null=True),
+            model_name="product",
+            name="size_options",
+            field=models.CharField(
+                blank=True,
+                choices=[("100g", "100g"), ("250g", "250g"), ("1kg", "1kg")],
+                max_length=10,
+                null=True,
+            ),
         ),
     ]
