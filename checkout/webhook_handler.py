@@ -1,4 +1,4 @@
-from django.core.mail import send_mail
+from django.core.mail import EmailMultiAlternatives
 from django.conf import settings
 from django.http import HttpResponse
 from django.utils.html import strip_tags
@@ -25,13 +25,20 @@ class StripeWH_Handler:
         subject = render_to_string(
             "checkout/confirmation_emails/confirmation_email_subject.txt",
             {"order": order},
-        )
-        body = render_to_string(
-            "checkout/confirmation_emails/confirmation_email_body.txt",
+        ).strip()
+        html_content = render_to_string(
+            "checkout/confirmation_emails/confirmation_email_body.html",
             {"order": order, "contact_email": settings.DEFAULT_FROM_EMAIL},
         )
 
-        send_mail(subject, body, settings.DEFAULT_FROM_EMAIL, [cust_email])
+        email = EmailMultiAlternatives(
+            subject=subject,
+            body=html_content,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            to=[cust_email]
+        )
+        email.attach_alternative(html_content, "text/html")
+        email.send()
 
     def handle_event(self, event):
         """
