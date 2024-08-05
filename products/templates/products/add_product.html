@@ -119,14 +119,5 @@
 {% block postloadjs %}
 {{ block.super }}
 <script src="{% static 'products/js/formsets.js' %}"></script>
-<script>
-    document.getElementById('id_image').addEventListener('change', function (event) {
-        const [file] = event.target.files;
-        if (file) {
-            const preview = document.getElementById('image-preview');
-            preview.src = URL.createObjectURL(file);
-            preview.style.display = 'block';
-        }
-    });
-    </script>
+<script src="{% static 'products/js/preview-product-image.js' %}"></script>
 {% endblock %}
