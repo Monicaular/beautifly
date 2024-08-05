@@ -35,7 +35,7 @@
                     {% endif %}
                     <div class="card-body pb-0">
                         <h4 class="card-title mb-0">{{ item.product.name|capfirst }}</h4>
-
+                        <small class="text-muted">Added on: {{ item.added_at|date:"F j, Y" }}</small>
                     </div>
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
@@ -85,7 +85,9 @@
                                     <div class="btn-box">
                                         <a class="delete-btn"
                                             href="{% url 'remove_from_wishlist' item.product.id %}">Remove</a>
+                                            
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
