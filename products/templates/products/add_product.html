@@ -20,10 +20,25 @@
         <!-- Product Form -->
         <div class="container">
             <div class="custom-width">
-                <form method="post" enctype="multipart/form-data">
+                <form method="post" class='form' enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ product_form|crispy }}
-
+                    {% for field in product_form %}
+                        {% if field.name != 'image' %}
+                            {{ field|as_crispy_field }}
+                        {% else %}
+                            <div class="mb-3">
+                                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                                <div>
+                                    {% if field.value %}
+                                        <img id="image-preview" src="{{ field.value.url }}" alt="{{ field.label }}" class="img-fluid rounded mb-2" style="max-height: 200px;">
+                                    {% else %}
+                                        <img id="image-preview" src="#" alt="Image Preview" class="img-fluid rounded mb-2" style="max-height: 200px; display: none;">
+                                    {% endif %}
+                                </div>
+                                {{ field }}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                     <h3>Nutritional Facts</h3>
                     <div id="nutrition-facts-formset">
                         {{ nutritional_formset.management_form }}
@@ -104,4 +119,14 @@
 {% block postloadjs %}
 {{ block.super }}
 <script src="{% static 'products/js/formsets.js' %}"></script>
+<script>
+    document.getElementById('id_image').addEventListener('change', function (event) {
+        const [file] = event.target.files;
+        if (file) {
+            const preview = document.getElementById('image-preview');
+            preview.src = URL.createObjectURL(file);
+            preview.style.display = 'block';
+        }
+    });
+    </script>
 {% endblock %}

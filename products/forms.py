@@ -9,10 +9,6 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = "__all__"
 
-        # widgets = {
-        #     'image': CustomClearableFileInput,
-        # }
-
         image = forms.ImageField(label='Image',
                              required=False,
                              widget=CustomClearableFileInput)
