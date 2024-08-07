@@ -98,7 +98,6 @@ class StripeWH_Handler:
                     postcode__iexact=shipping_details.address.postal_code,
                     town_or_city__iexact=shipping_details.address.city,
                     street_address1__iexact=shipping_details.address.line1,
-                    street_address2__iexact=shipping_details.address.line2,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
                     original_basket=basket,
@@ -118,6 +117,7 @@ class StripeWH_Handler:
             )
 
         else:
+            print('no order exists, creating one.')
             order = None
             try:
                 order = Order.objects.create(
