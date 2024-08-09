@@ -51,7 +51,7 @@
                         </div>
                         {% endfor %}
                         <div class="formset-template" style="display: none;">
-                            <div class="formset-row d-flex align-items-center">
+                            <div class="formset-row">
                                 {{ nutritional_formset.empty_form|crispy }}
                                 <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
                             </div>
@@ -71,7 +71,7 @@
                         </div>
                         {% endfor %}
                         <div class="formset-template" style="display: none;">
-                            <div class="formset-row d-flex align-items-center">
+                            <div class="formset-row">
                                 {{ related_formset.empty_form|crispy }}
                                 <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
                             </div>
@@ -91,7 +91,7 @@
                         </div>
                         {% endfor %}
                         <div class="formset-template" style="display: none;">
-                            <div class="formset-row d-flex align-items-center">
+                            <div class="formset-row">
                                 {{ fast_fact_formset.empty_form|crispy }}
                                 <button type="button" class="btn custom-remove-btn remove-form-row">Remove</button>
                             </div>
@@ -122,4 +122,11 @@
 {{ block.super }}
 <script src="{% static 'products/js/formsets.js' %}"></script>
 <script src="{% static 'products/js/preview-product-image.js' %}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.custom-remove-btn').forEach(function(button) {
+            button.style.display = 'none';
+        });
+    });
+</script>
 {% endblock %}
