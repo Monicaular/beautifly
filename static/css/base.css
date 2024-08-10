@@ -313,9 +313,95 @@ body {
     box-shadow: 10px 15px 15px rgba(141, 110, 99, 1);
 }
 
-.rating {
-    margin: 10px;
+
+/*Rating Styles*/
+
+
+#rating-hearts i {
+    font-size: 2rem;
+    cursor: pointer;
 }
+
+
+#rating-hearts i.bi-heart-fill {
+    color: rgba(255, 152, 0, 1);
+}
+
+
+#rating-form-container {
+    margin-top: 10px;
+    background-color: rgba(250, 250, 250, 1);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+#rating-hearts i[title] {
+    position: relative;
+}
+
+#rating-hearts i[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+.product-rating {
+    display: block;
+    margin: 10px 0;
+}
+
+.product-rating .rating {
+    display: inline-flex;
+    align-items: center;
+}
+
+.product-rating .rating-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.product-rating .rating-text small {
+    margin-left: 8px;
+}
+
+.product-rating i {
+    margin-right: 2px;
+}
+
+.rate-link {
+    color: grey;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+}
+
+.rate-link:hover {
+    text-decoration: underline;
+}
+
+.rating-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn.custom-add-btn, .btn.custom-remove-btn {
+    margin-top: 0;
+}
+
+.ms-3 {
+    margin-left: 1rem;
+}
+
 
 /* Increase/decrease units number buttons & cancel modal button*/
 
@@ -721,6 +807,9 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
+
+
+
 
 /*--------------------------------------------------Footer links*/
 

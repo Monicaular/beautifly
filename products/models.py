@@ -33,6 +33,31 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    def update_rating(self):
+        ratings = self.ratings.all()
+        if ratings.exists():
+            average_rating = sum(rating.value for rating in ratings) / ratings.count()
+            self.rating = round(average_rating, 2)
+        else:
+            self.rating = None
+        self.save()
+
+class Rating(models.Model):
+    product = models.ForeignKey(Product, related_name="ratings", on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    value = models.IntegerField(choices=[(i, str(i)) for i in range(1, 6)])
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=["user", "product"], name="rating_per_user")
+        ]
+
+    def __str__(self):
+        return f'{self.user.username} rated {self.product.name} {self.value} stars'
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+        self.product.update_rating()
 
 class NutritionalFacts(models.Model):
     product = models.ForeignKey(
@@ -69,3 +94,4 @@ class FastFact(models.Model):
 
     def __str__(self):
         return f"{self.product.name} - {self.fact[:40]}"
+

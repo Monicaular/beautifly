@@ -2,13 +2,14 @@ from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.db import IntegrityError, transaction
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, NutritionalFacts, RelatedProduct, FastFact
-from .forms import ProductForm, NutritionalFactsForm, RelatedProductForm, FastFactForm
+from .models import Product, Category, NutritionalFacts, RelatedProduct, FastFact, Rating
+from .forms import ProductForm, NutritionalFactsForm, RelatedProductForm, FastFactForm, RatingForm
 from urllib.parse import urlencode
 from django.forms.models import inlineformset_factory
-
+import logging
 
 def all_products(request):
     """A view to display all products, including sorting and search queries"""
@@ -85,13 +86,28 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     categories = product.category.all()
+    ratings = product.ratings.all()
     nutritional_facts = product.nutritional_facts.all()
     related_products = product.related_products.all()
     fast_facts = product.fast_facts.all()
 
+    rating_form = RatingForm()
+
+    # Prepare the hearts and labels for the template
+    heart_labels = [
+        (1, "Poor"),
+        (2, "Quite Good"),
+        (3, "Good"),
+        (4, "Very Good"),
+        (5, "Excellent"),
+    ]
+
     context = {
         "product": product,
         "categories": categories,
+        'rating_form': rating_form,
+        "heart_labels": heart_labels,
+        "ratings": ratings,
         "nutritional_facts": nutritional_facts,
         "related_products": related_products,
         "interesting_facts": fast_facts,
@@ -274,3 +290,39 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, "Product deleted successfully!")
     return redirect(reverse("products"))
+
+logger = logging.getLogger(__name__)
+
+@login_required
+def add_rating(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == "POST":
+        # Check if the user has already rated this product
+        if Rating.objects.filter(product=product, user=request.user).exists():
+            messages.error(request, "You have already rated this product.")
+            return redirect(reverse("product_detail", args=[product.id]))
+
+        rating_form = RatingForm(request.POST)
+
+        if rating_form.is_valid():
+            try:
+                with transaction.atomic():
+                    # Create and save the rating
+                    rating = rating_form.save(commit=False)
+                    rating.product = product
+                    rating.user = request.user
+                    rating.save()
+                    logger.debug(f"Rating saved: {rating}")
+
+                messages.success(request, "Your rating has been successfully submitted!")
+                return redirect(reverse("product_detail", args=[product.id]))
+            except IntegrityError as e:
+                logger.error(f"IntegrityError caught: {e}")
+                messages.error(request, "An error occurred while submitting your rating.")
+                return redirect(reverse("product_detail", args=[product.id]))
+        else:
+            logger.debug("Form is not valid")
+            messages.error(request, "There was a problem with your rating submission.")
+
+    return redirect(reverse("product_detail", args=[product.id]))

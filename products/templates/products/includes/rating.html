@@ -1,0 +1,47 @@
+<div class="product-rating">
+    {% if product.rating %}
+        <div class="rating d-flex align-items-center">
+            {% for i in "12345" %}
+                {% if forloop.counter <= product.rating %}
+                    <i class="bi bi-heart-fill"></i>
+                {% else %}
+                    <i class="bi bi-heart"></i>
+                {% endif %}
+            {% endfor %}
+            <div class="rating-text ms-2">
+                <small>{{ product.rating }} / 5</small>
+                <small>({{ ratings.count }} ratings)</small>
+            </div>
+        </div>
+    {% else %}
+        <div class="rating d-flex align-items-center">
+            {% for i in "12345" %}
+                <i class="bi bi-heart"></i>
+            {% endfor %}
+            <small class="ms-2">No ratings yet</small>
+        </div>
+    {% endif %}
+
+    <!-- "Rate this product" link -->
+    {% if request.user.is_authenticated %}
+        <a href="#" id="rate-product-link" class="rate-link mt-2">Rate this product!</a>
+    {% endif %}
+</div>
+
+
+<!-- Hidden rating form that appears when the link is clicked -->
+<div id="rating-form-container" style="display: none; margin-top: 20px;">
+    <form method="post" action="{% url 'add_rating' product.id %}">
+        {% csrf_token %}
+        <div id="rating-hearts">
+            {% for value, label in heart_labels %}
+                <i class="bi bi-heart" id="heart-{{ value }}" data-value="{{ value }}" title="{{ value }} - {{ label }}"></i>
+            {% endfor %}
+        </div>
+        {{ rating_form.as_p }} <!-- Hidden input to store the rating value -->
+        <div class="rating-buttons d-flex align-items-center">
+        <button type="submit" class="btn custom-add-btn">Submit Rating</button>
+        <button type="button" id="cancel-rating" class="btn custom-remove-btn">Cancel</button>
+    </div>
+    </form>
+</div>

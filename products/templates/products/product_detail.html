@@ -65,30 +65,11 @@
                     {% endfor %}
                 </p>
                 {% endif %}
-                {% if product.rating %}
-                <small class="text-muted">
-                    <div class="rating">
-                        {% for i in "12345" %}
-                        {% if forloop.counter <= product.rating %} <i class="bi bi-heart-fill"></i>
-                            {% else %}
-                            <i class="bi bi-heart"></i>
-                            {% endif %}
-                            {% endfor %}
-                            {{ product.rating }} / 5
-                    </div>
-                </small>
-                {% else %}
-                <small class="text-muted">No Rating</small>
-                {% endif %}
-                <div class="manage-buttons">
-                {% if request.user.is_superuser %}
-                <small class="ml-3">
-                    <a class="edit-btn" href="{% url 'edit_product' product.id %}">Edit</a> 
-                    <a class="delete-btn" href="#" data-id="{{ product.id }}" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a>
-                </small>
-                {% endif %}
-            </div>
-
+                
+                <!-- Display the product's average rating and the number of ratings -->
+                {% include 'products/includes/rating.html' %}
+                    
+                            
                 <!--Delete Modal-->
                 {% include 'products/includes/delete_modal.html' %}
                   <!--End Delete Modal-->
@@ -246,5 +227,5 @@
 {{ block.super }}
 {% include 'products/includes/adjust-quantity-script.html' %}
 <script src="{% static 'products/js/delete-modal.js' %}"></script>
-
+<script src="{% static 'products/js/rating.js' %}"></script>
 {% endblock %}

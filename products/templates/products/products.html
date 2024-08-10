@@ -95,20 +95,20 @@
                                     {% endif %}
                                     {% if product.rating %}
                                     <small class="text-muted">
-                                        <div class="rating">
+                                        <div class="rating d-flex align-items-center">
                                             {% for i in "12345" %}
                                                 {% if forloop.counter <= product.rating %}
-                                                    <i class="bi bi-heart-fill"></i> 
+                                                    <i class="bi bi-heart-fill"></i>
                                                 {% else %}
-                                                    <i class="bi bi-heart"></i> 
+                                                    <i class="bi bi-heart"></i>
                                                 {% endif %}
                                             {% endfor %}
-                                            {{ product.rating }} / 5
+                                            <span>{{ product.rating }} / 5</span>
                                         </div>
                                     </small>
-                                    {% else %}
+                                {% else %}
                                     <small class="text-muted">No Rating</small>
-                                    {% endif %}
+                                {% endif %}
                                     <div class="manage-buttons">
                                         {% if request.user.is_superuser %}
                                         <small class="ml-3">
