@@ -5,11 +5,25 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db import IntegrityError, transaction
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, NutritionalFacts, RelatedProduct, FastFact, Rating
-from .forms import ProductForm, NutritionalFactsForm, RelatedProductForm, FastFactForm, RatingForm
+from .models import (
+    Product,
+    Category,
+    NutritionalFacts,
+    RelatedProduct,
+    FastFact,
+    Rating,
+)
+from .forms import (
+    ProductForm,
+    NutritionalFactsForm,
+    RelatedProductForm,
+    FastFactForm,
+    RatingForm,
+)
 from urllib.parse import urlencode
 from django.forms.models import inlineformset_factory
 import logging
+
 
 def all_products(request):
     """A view to display all products, including sorting and search queries"""
@@ -105,7 +119,7 @@ def product_detail(request, product_id):
     context = {
         "product": product,
         "categories": categories,
-        'rating_form': rating_form,
+        "rating_form": rating_form,
         "heart_labels": heart_labels,
         "ratings": ratings,
         "nutritional_facts": nutritional_facts,
@@ -291,7 +305,9 @@ def delete_product(request, product_id):
     messages.success(request, "Product deleted successfully!")
     return redirect(reverse("products"))
 
+
 logger = logging.getLogger(__name__)
+
 
 @login_required
 def add_rating(request, product_id):
@@ -315,11 +331,15 @@ def add_rating(request, product_id):
                     rating.save()
                     logger.debug(f"Rating saved: {rating}")
 
-                messages.success(request, "Your rating has been successfully submitted!")
+                messages.success(
+                    request, "Your rating has been successfully submitted!"
+                )
                 return redirect(reverse("product_detail", args=[product.id]))
             except IntegrityError as e:
                 logger.error(f"IntegrityError caught: {e}")
-                messages.error(request, "An error occurred while submitting your rating.")
+                messages.error(
+                    request, "An error occurred while submitting your rating."
+                )
                 return redirect(reverse("product_detail", args=[product.id]))
         else:
             logger.debug("Form is not valid")

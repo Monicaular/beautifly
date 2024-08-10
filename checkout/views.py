@@ -58,7 +58,7 @@ def checkout(request):
             order = order_form.save(commit=False)
             # Extract the payment intent ID from the client_secret
             pid = request.POST.get("client_secret").split("_secret")[0]
-            print('stripe pid from form POST request', pid, ' ****')
+            print("stripe pid from form POST request", pid, " ****")
             order.stripe_pid = pid
             order.original_basket = json.dumps(basket)  # Save basket as JSON
             order.save()
