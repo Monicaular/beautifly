@@ -21,7 +21,7 @@
             <div class="basket-header py-2 border-bottom">
                 <div class="header-column">Product</div>
                 <div class="header-column">Size</div>
-                <div class="header-column d-none d-lg-block">SKU</div>
+                <div class="header-column d-none d-lg-block">Product Id</div>
                 <div class="header-column">Subtotal</div>
                 <div class="header-column">Quantity</div>
                 <div class="header-column">Remove</div>
@@ -38,7 +38,9 @@
                         {% endif %}
                     </div>
                     <div class="basket-item-details">
-                        <div class="product-name">{{ item.product.name }}</div>
+                        <div class="product-name">
+                            <a class="product-name" href="{% url 'product_detail' item.product.id %}">{{ item.product.name }}</a>
+                        </div>
                     </div>
                 </div>
                 <div class="item-column">

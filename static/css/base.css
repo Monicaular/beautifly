@@ -293,6 +293,10 @@ body {
     margin-top: 10px; /* for aligning buttons */
 }
 
+.cinereous {
+    padding: 10px;
+}
+
 
 .wishlist-icon {
     background-color: rgba(255, 152, 0, 0.6);
@@ -437,6 +441,12 @@ body {
 
 .product-name {
     font-weight:600;
+    text-decoration: none;
+    color: black;
+}
+
+.product-name:hover {
+    color: rgba(141, 110, 99, 1);
 }
 
 /* Adjusting button size and color */
