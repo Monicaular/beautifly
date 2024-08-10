@@ -8,7 +8,9 @@ from products.models import Product
 
 @login_required
 def view_wishlist(request):
-    """A view that renders the wishlist content page"""
+    """
+    Render the page displaying the user's wishlist.
+    """
 
     wishlist_items = Wishlist.objects.filter(user=request.user).select_related(
         "product"
@@ -23,7 +25,9 @@ def view_wishlist(request):
 
 @login_required
 def add_to_wishlist(request, product_id):
-    """Add a product to the user's wishlist"""
+    """
+    Add a product to the user's wishlist if it's not already added.
+    """
     product = get_object_or_404(Product, pk=product_id)
     wishlist, created = Wishlist.objects.get_or_create(
         user=request.user, product=product
@@ -39,7 +43,9 @@ def add_to_wishlist(request, product_id):
 
 @login_required
 def remove_from_wishlist(request, product_id):
-    """Remove a product from the user's wishlist"""
+    """
+    Remove a product from the user's wishlist.
+    """
     product = get_object_or_404(Product, id=product_id)
 
     try:

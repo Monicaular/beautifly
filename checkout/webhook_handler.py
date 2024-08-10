@@ -50,7 +50,6 @@ class StripeWH_Handler:
         basket = intent.metadata.basket
         save_info = intent.metadata.save_info
 
-        # Retrieve the Charge object to get billing details
         try:
             stripe_charge = stripe.Charge.retrieve(intent.charges.data[0].id)
         except stripe.error.StripeError as e:
@@ -62,12 +61,10 @@ class StripeWH_Handler:
         shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2)
 
-        # Clean data in the shipping details
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
 
-        # Update profile information if save_info was checked
         profile = None
         username = intent.metadata.username
         if username != "AnonymousUser":
@@ -82,7 +79,6 @@ class StripeWH_Handler:
                 profile.default_county = shipping_details.address.state
                 profile.save()
 
-        # Attempt to find the order
         order_exists = False
         attempt = 1
         while attempt <= 5:

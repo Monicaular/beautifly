@@ -9,8 +9,9 @@ from django_countries.fields import CountryField
 
 class UserProfile(models.Model):
     """
-    A user profile model for maintaining default
-    delivery information and order history
+    Represents a user profile containing default delivery information
+    and order history. This model extends the built-in Django User model
+    via a one-to-one relationship.
     """
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -24,15 +25,16 @@ class UserProfile(models.Model):
     default_county = models.CharField(max_length=80, null=True, blank=True)
 
     def __str__(self):
+        """Return the username associated with this profile."""
         return self.user.username
 
 
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
-    Create or update the user profile
+    Create a new user profile if a user is created,
+    or update the existing profile for an existing user.
     """
     if created:
         UserProfile.objects.create(user=instance)
-    # Existing users: just save the profile
     instance.userprofile.save()

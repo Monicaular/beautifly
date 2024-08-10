@@ -3,14 +3,19 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    Form for updating user profile information, excluding the user field.
+    Adds placeholders, classes, and autofocus to form fields.
+    """
+
     class Meta:
         model = UserProfile
         exclude = ("user",)
 
     def __init__(self, *args, **kwargs):
         """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        Customize form fields with placeholders, CSS classes,
+        and autofocus on the phone number field.
         """
         super().__init__(*args, **kwargs)
         placeholders = {

@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 
 class Category(models.Model):
+    """Model representing a product category."""
 
     class Meta:
         verbose_name_plural = "Categories"
@@ -16,10 +17,13 @@ class Category(models.Model):
         return self.name
 
     def get_friendly_name(self):
+        """Return the friendly name of the category."""
         return self.friendly_name
 
 
 class Product(models.Model):
+    """Model representing a product."""
+
     category = models.ManyToManyField("Category", related_name="products")
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
@@ -34,6 +38,7 @@ class Product(models.Model):
         return self.name
 
     def update_rating(self):
+        """Update the product's average rating based on user ratings."""
         ratings = self.ratings.all()
         if ratings.exists():
             average_rating = sum(rating.value for rating in ratings) / ratings.count()
@@ -44,6 +49,8 @@ class Product(models.Model):
 
 
 class Rating(models.Model):
+    """Model representing a user's rating of a product."""
+
     product = models.ForeignKey(
         Product, related_name="ratings", on_delete=models.CASCADE
     )
@@ -59,11 +66,14 @@ class Rating(models.Model):
         return f"{self.user.username} rated {self.product.name} {self.value} stars"
 
     def save(self, *args, **kwargs):
+        """Override save to update product's average rating after saving."""
         super().save(*args, **kwargs)
         self.product.update_rating()
 
 
 class NutritionalFacts(models.Model):
+    """Model representing nutritional facts associated with a product."""
+
     product = models.ForeignKey(
         Product, related_name="nutritional_facts", on_delete=models.CASCADE
     )
@@ -79,6 +89,8 @@ class NutritionalFacts(models.Model):
 
 
 class RelatedProduct(models.Model):
+    """Model representing a product related to another product."""
+
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name="related_products"
     )
@@ -91,6 +103,8 @@ class RelatedProduct(models.Model):
 
 
 class FastFact(models.Model):
+    """Model representing a fast fact about a product."""
+
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name="fast_facts"
     )

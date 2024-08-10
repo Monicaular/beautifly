@@ -16,11 +16,9 @@ class Command(BaseCommand):
             categories = fields.pop("category", [])
             nutritional_facts = fields.pop("nutritional_facts", {})
 
-            # Find the product by SKU
             product = Product.objects.filter(sku=fields["sku"]).first()
 
             if product:
-                # Update product fields
                 product.name = fields["name"]
                 product.description = fields["description"]
                 product.price = Decimal(fields["price"])
@@ -29,16 +27,13 @@ class Command(BaseCommand):
                 product.image = fields["image"]
                 product.save()
 
-                # Clear existing categories and add new ones
                 product.category.clear()
                 for category_id in categories:
                     category = Category.objects.get(pk=category_id)
                     product.category.add(category)
 
-                # Clear existing nutritional facts
                 product.nutritional_facts.all().delete()
 
-                # Add new nutritional facts
                 for fact_name, fact_amount in nutritional_facts.items():
                     if fact_amount is not None:
                         NutritionalFacts.objects.create(

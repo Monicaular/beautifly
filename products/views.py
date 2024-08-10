@@ -22,11 +22,10 @@ from .forms import (
 )
 from urllib.parse import urlencode
 from django.forms.models import inlineformset_factory
-import logging
 
 
 def all_products(request):
-    """A view to display all products, including sorting and search queries"""
+    """Display all products with options for sorting and search queries."""
 
     products = Product.objects.all()
     query = None
@@ -96,7 +95,7 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """A view to display individual product details"""
+    """Display details of an individual product."""
 
     product = get_object_or_404(Product, pk=product_id)
     categories = product.category.all()
@@ -107,7 +106,6 @@ def product_detail(request, product_id):
 
     rating_form = RatingForm()
 
-    # Prepare the hearts and labels for the template
     heart_labels = [
         (1, "Poor"),
         (2, "Quite Good"),
@@ -132,6 +130,7 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
+    """Allow store owners to add a new product."""
 
     if not request.user.is_superuser:
         messages.error(
@@ -207,7 +206,7 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """Edit a product in the store"""
+    """Allow store owners to edit an existing product."""
 
     if not request.user.is_superuser:
         messages.error(
@@ -290,7 +289,7 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """Delete a product from the store"""
+    """Allow store owners to delete a product from the store."""
 
     if not request.user.is_superuser:
         messages.error(
@@ -306,11 +305,10 @@ def delete_product(request, product_id):
     return redirect(reverse("products"))
 
 
-logger = logging.getLogger(__name__)
-
-
 @login_required
 def add_rating(request, product_id):
+    """Allow users to submit a rating for a product."""
+
     product = get_object_or_404(Product, pk=product_id)
 
     if request.method == "POST":
@@ -329,20 +327,17 @@ def add_rating(request, product_id):
                     rating.product = product
                     rating.user = request.user
                     rating.save()
-                    logger.debug(f"Rating saved: {rating}")
 
                 messages.success(
                     request, "Your rating has been successfully submitted!"
                 )
                 return redirect(reverse("product_detail", args=[product.id]))
             except IntegrityError as e:
-                logger.error(f"IntegrityError caught: {e}")
                 messages.error(
                     request, "An error occurred while submitting your rating."
                 )
                 return redirect(reverse("product_detail", args=[product.id]))
         else:
-            logger.debug("Form is not valid")
             messages.error(request, "There was a problem with your rating submission.")
 
     return redirect(reverse("product_detail", args=[product.id]))

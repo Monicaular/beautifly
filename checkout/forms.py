@@ -4,6 +4,8 @@ from django_countries.widgets import CountrySelectWidget
 
 
 class OrderForm(forms.ModelForm):
+    """Form for collecting order details from the user."""
+
     class Meta:
         model = Order
         fields = (
@@ -23,8 +25,8 @@ class OrderForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         """
-        Add placeholders and classes, remove auto-generated
-        labels and set autofocus on first field
+        Initialize the form: add placeholders, CSS classes,
+        remove auto-generated labels, and set autofocus on the first field.
         """
         super().__init__(*args, **kwargs)
         placeholders = {

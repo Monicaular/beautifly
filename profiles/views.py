@@ -9,7 +9,9 @@ from wishlist.models import Wishlist
 
 @login_required
 def profile(request):
-    """Display the user's profile."""
+    """
+    Display and allow updating of the user's profile.
+    """
 
     profile = get_object_or_404(UserProfile, user=request.user)
     wishlist_items = Wishlist.objects.filter(user=request.user)
@@ -39,6 +41,9 @@ def profile(request):
 
 @login_required
 def order_history(request, order_number):
+    """
+    Display the details of a past order from the user's order history.
+    """
     order = get_object_or_404(Order, order_number=order_number)
     lineitems = order.lineitems.all()
 

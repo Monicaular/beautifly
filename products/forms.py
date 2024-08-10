@@ -11,6 +11,7 @@ from .widgets import CustomClearableFileInput
 
 
 class ProductForm(forms.ModelForm):
+    """Form for creating and updating Product objects."""
 
     class Meta:
         model = Product
@@ -21,6 +22,7 @@ class ProductForm(forms.ModelForm):
         )
 
     def __init__(self, *args, **kwargs):
+        """Initialize form, customize category choices and apply CSS classes."""
         super().__init__(*args, **kwargs)
         categories = Category.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
@@ -31,6 +33,8 @@ class ProductForm(forms.ModelForm):
 
 
 class RatingForm(forms.ModelForm):
+    """Form for submitting a rating for a product."""
+
     class Meta:
         model = Rating
         fields = ["value"]
@@ -40,18 +44,24 @@ class RatingForm(forms.ModelForm):
 
 
 class NutritionalFactsForm(forms.ModelForm):
+    """Form for creating and updating NutritionalFacts objects."""
+
     class Meta:
         model = NutritionalFacts
         fields = ["name", "amount", "unit"]
 
 
 class RelatedProductForm(forms.ModelForm):
+    """Form for managing related products within a product."""
+
     class Meta:
         model = RelatedProduct
         fields = ["related_product"]
 
 
 class FastFactForm(forms.ModelForm):
+    """Form for managing fast facts related to a product."""
+
     class Meta:
         model = FastFact
         fields = ["fact"]

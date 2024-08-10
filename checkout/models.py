@@ -9,6 +9,8 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    """Model representing a customer's order."""
+
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
         UserProfile,
@@ -46,10 +48,8 @@ class Order(models.Model):
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
-        """
-        Update grand total each time a line item is added,
-        accounting for delivery costs.
-        """
+        """Update the grand total including shipping costs."""
+
         self.order_total = (
             self.lineitems.aggregate(Sum("lineitem_total"))["lineitem_total__sum"] or 0
         )
@@ -63,10 +63,8 @@ class Order(models.Model):
         self.save()
 
     def save(self, *args, **kwargs):
-        """
-        Override the original save method to set the order number
-        if it hasn't been set already.
-        """
+        """Override save to set order number if not already set."""
+
         if not self.order_number:
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
@@ -76,6 +74,8 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
+    """Model representing an item within an order."""
+
     order = models.ForeignKey(
         Order,
         null=False,

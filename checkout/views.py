@@ -17,14 +17,14 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    Cache checkout data in the PaymentIntent's metadata.
+    """
     try:
-        # Extract PaymentIntent ID from the client secret
         pid = request.POST.get("client_secret").split("_secret")[0]
 
-        # Set the Stripe API key
         stripe.api_key = settings.STRIPE_SECRET_KEY
 
-        # Modify the PaymentIntent metadata
         stripe.PaymentIntent.modify(
             pid,
             metadata={
@@ -38,7 +38,6 @@ def cache_checkout_data(request):
 
         return HttpResponse(status=200)
     except Exception as e:
-        # Display error message and return HTTP 400 response
         messages.error(
             request,
             "Sorry, your payment cannot be processed right now. Please try again later.",
@@ -47,6 +46,9 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    Handle the checkout process, including order creation and payment.
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -56,14 +58,12 @@ def checkout(request):
 
         if order_form.is_valid():
             order = order_form.save(commit=False)
-            # Extract the payment intent ID from the client_secret
             pid = request.POST.get("client_secret").split("_secret")[0]
             print("stripe pid from form POST request", pid, " ****")
             order.stripe_pid = pid
-            order.original_basket = json.dumps(basket)  # Save basket as JSON
+            order.original_basket = json.dumps(basket)
             order.save()
 
-            # Create OrderLineItems for each item in the basket
             for item_id, item_data in basket.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -127,7 +127,6 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
-        # Retrieve basket items and calculate total quantity
         basket_items = basket_contents(request)["basket_items"]
         total_quantity = sum(item["quantity"] for item in basket_items)
 
@@ -169,16 +168,13 @@ def checkout_success(request, order_number):
     if "basket" in request.session:
         del request.session["basket"]
 
-    # Handle saving user profile information if requested
     save_info = request.session.get("save_info")
     if save_info:
         profile = UserProfile.objects.get(user=request.user)
 
-        # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
 
-        # Prepare and save the user's profile with order information
         profile_data = {
             "default_phone_number": order.phone_number,
             "default_country": order.country,

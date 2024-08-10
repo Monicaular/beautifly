@@ -20,8 +20,14 @@ def custom_500_page(request):
 
 
 def about_us(request):
+    """
+    Render the 'About Us' page.
+    """
     return render(request, "about_us.html")
 
 
 def privacy_policy(request):
+    """
+    Render the 'Privacy Policy' page.
+    """
     return render(request, "privacy-policy.html")

@@ -13,7 +13,7 @@ def view_basket(request):
 
 
 def add_to_basket(request, item_id):
-    """Add a quantity of the specified product to the shopping basket"""
+    """Add or update the quantity of a product in the shopping basket."""
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get("quantity", 1))

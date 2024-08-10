@@ -3,6 +3,9 @@ from products.models import Category
 
 
 def index(request):
+    """
+    Render the homepage with a list of categories, excluding certain ones.
+    """
     categories = Category.objects.exclude(
         name__in=[
             "tofu",
