@@ -36,6 +36,8 @@ body {
     font-weight: 800;
 }
 
+
+
 .main-logo-link {
     width: fit-content;
 }
@@ -290,13 +292,8 @@ body {
 /* -------------------------------- Product detail page */
 
 .btn-box {
-    margin-top: 10px; /* for aligning buttons */
+    margin-top: 10px;
 }
-
-.cinereous {
-    padding: 10px;
-}
-
 
 .wishlist-icon {
     background-color: rgba(255, 152, 0, 0.6);
@@ -948,13 +945,24 @@ body {
         padding-top: 200px;
     }
 }
-@media (max-width: 350px) {
-    .header-container {
-        padding-top: 230px;
+
+
+@media (max-width: 308px) {
+   
+    .nav-link-text {
+        display: none;
     }
+    .mobile-top-logo .word1, 
+    .mobile-top-logo .word2 {
+        display: block;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .mobile-top-logo .word1 {
+        margin-bottom: 2px;
+    }
+
 }
-
-
-
 
 

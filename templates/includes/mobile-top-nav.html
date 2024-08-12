@@ -1,7 +1,10 @@
 <li class="list-inline-item">
-<a href="{% url 'homepage' %}" class="nav-link d-block main-logo-link d-lg-none">
-    <h4 class="logo-font"><strong>Wholesome</strong>BASKET</h4>
-  </a>
+    <a href="{% url 'homepage' %}" class="nav-link d-block main-logo-link d-lg-none">
+        <h4 class="logo-font mobile-top-logo">
+            <span class="word1">Wholesome</span>
+            <span class="word2">BASKET</span>
+        </h4>
+    </a>
 </li>
 <li class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -13,7 +16,7 @@
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
         <form class="form" method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
-                <input class="form-control border" type="text" name="q" placeholder="Look for a product...">
+                <input class="form-control border nav-link-text" type="text" name="q" placeholder="Look for a product...">
                 <div class="input-group-append">
                     <button class="form-control form-control btn btn-black border" type="submit">
                         <span class="icon">
