@@ -44,3 +44,34 @@ This project follows an Agile methodology to ensure flexibility, collaboration, 
 
 This approach helps to maintain focus on delivering the most important features while allowing flexibility for adjustments as the project progresses.
 
+<details>
+<summary> User Stories Template
+</summary>
+
+![User Stories, Template](/documentation/user-story-template.png)
+</details>
+
+<details>
+<summary> User Stories, Issues
+</summary>
+
+![User Stories, Issues](/documentation/user-stories.png)
+</details>
+
+<summary> Project Milestones
+</summary>
+
+![Project Milestones](/documentation/milestones-iterations.png)
+</details>
+
+<details>
+<summary> Project Board
+</summary>
+
+![Project Board](/documentation/project-board.png)
+
+- <a href="https://github.com/Monicaular/wholesomebasket" target="_blank">Visit GitHub repository here.</a>
+
+- <a href="https://github.com/users/Monicaular/projects/6" target="_blank">Visit GitHub Project roadmap here.</a>
+
+</details>
