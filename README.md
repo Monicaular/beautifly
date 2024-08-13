@@ -55,23 +55,74 @@ This approach helps to maintain focus on delivering the most important features 
 <summary> User Stories, Issues
 </summary>
 
-![User Stories, Issues](/documentation/user-stories.png)
+![User Stories, Issues](/documentation/user-stories-screenshot.png)
 </details>
 
+<details>
 <summary> Project Milestones
 </summary>
 
-![Project Milestones](/documentation/milestones-iterations.png)
+![Project Milestones](/documentation/project-milestones.png)
 </details>
 
 <details>
 <summary> Project Board
 </summary>
 
-![Project Board](/documentation/project-board.png)
+![Project Board](/documentation/project-kanban-board.png)
 
 - <a href="https://github.com/Monicaular/wholesomebasket" target="_blank">Visit GitHub repository here.</a>
 
 - <a href="https://github.com/users/Monicaular/projects/6" target="_blank">Visit GitHub Project roadmap here.</a>
 
 </details>
+
+#### Project tasks breakdown
+
+Iterations
+
+- Iteration 1: Project Setup and Core Foundation
+    - Install Django and supporting libraries.
+    - Create a new Django project and app.
+    - Set up the project to use PostgreSQL.
+    - Deploy to Heroku.
+    - Viewing products list to choose items/pagination.
+    - Identifying website products.
+
+- Iteration 2: User Authentication and Basic E-commerce Features
+    - Easy account registration.
+    - Easy login and logout.
+    - Easy password recovery.
+    - Receiving an email confirmation after registering.
+    - Selecting quantity for a product.
+    - Viewing total purchase amount.
+    - Searching products by name or description.
+    - Wishlist feature.
+
+- Iteration 3: Product Management and Display
+    - Displaying ingredients and allergens for products.
+    - Displaying nutrition facts for products.
+    - Sorting products by name, price, rating, categories.
+    - Sorting products with a specific category.
+    - Sorting multiple categories simultaneously.
+    - Rating feature.
+
+- Iteration 4: Admin Features and User Experience
+    - Adding products for site admin.
+    - Editing products for site admin.
+    - Deleting products for site admin.
+    - Viewing total purchase amount.
+    - Receiving an email with order summary.
+
+- Iteration 5: Final Touches and Testing
+    - Search and filter functionality refinement.
+    - Final testing and bug fixing.
+    - Code refactoring and optimization.
+    - Comprehensive documentation creation.
+    - Final deployment and stress testing.
+
+For detailed look of the project board, check this [link](https://github.com/users/Monicaular/projects/6).
+
+
+
+
