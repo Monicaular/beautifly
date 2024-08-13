@@ -177,3 +177,15 @@ This diverse audience is united by a common goal of making informed, health-orie
 
 - **User Management**: Admin users have the authority to manage the user base, including the ability to remove users when necessary, maintaining the integrity of the community.
 
+## SEO and Marketing Strategy
+
+- **Meta Data**: Implemented meta tags in the HTML, including both short-tail and long-tail keywords to improve search engine ranking.
+- **Image Optimization**: Named all images specifically according to the products they represent to enhance search relevance.
+- **Sitemap Generation**: Created a sitemap to ensure thorough indexing by search engines.
+- **Robots.txt File**: Added a robots.txt file to guide search engine crawlers effectively.
+- **Security Enhancement**: Applied the rel="noopener" attribute to external links for improved security.
+- **Page Load Optimization**: Enhanced page load speed through the use of pagination and by compressing images.
+
+
+
+
