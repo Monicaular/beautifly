@@ -4,7 +4,7 @@ Wholesome Basket is an e-commerce site developed to provide a simple and secure 
 
 The Wholesome Basket website is targeting health-conscious consumers and individuals interested in purchasing whole, natural, and organic foods. This includes those who are looking for healthy, unprocessed food options, including people following specific dietary lifestyles like vegan, gluten-free, or other dietary restrictions. The site aims to serve a community that values nutritious, sustainable, and ethically sourced food products.
 
-![Website's Preview on different scrren sizes](/documentation/read-me-website-preview.png)
+![Website's Preview on different scrren sizes](/documentation/responsiveness-screenshot-preview.png)
 
 Checkout the live website [here](https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/).
 
@@ -88,7 +88,7 @@ This diverse audience is united by a common goal of making informed, health-orie
 - **User Management**: Admin users have the authority to manage the user base, including the ability to remove users when necessary, maintaining the integrity of the community.
 
 
-### Agile Methodology
+## Agile Methodology
 
 This project follows an Agile methodology to ensure flexibility, collaboration, and continuous delivery of features. Here's how the process is managed:
 - **User story creation**: User stories are created to define the project goals and user requirements. Each story is a concise description of a feature from the user's perspective, helping to clarify what needs to be built and why.
@@ -136,7 +136,7 @@ This approach helps to maintain focus on delivering the most important features 
 
 </details>
 
-## User Stories
+### User Stories
 
 Iterations
 
@@ -405,4 +405,60 @@ I designed detailed wireframes for both mobile and desktop versions of the proje
 I created an Entity-Relationship Diagram (ERD) to visually represent the database structure and relationships within the project. This ERD was carefully crafted to ensure efficient data management and clear associations between various entities, such as products, users, orders, and ratings. By mapping out the database design in advance, I was able to identify and implement the necessary tables and relationships, ensuring that the application's data flow is both logical and scalable.
 
 ![Database Schema](documentation/erd-wholesome-basket.png)
+
+## Main Plan
+
+- **Designing a visually appealing homepage** that highlights the website's focus on whole foods, making it clear to users what the site offers right from the start.
+- **Implementing a product catalog** that allows users to browse, search, and filter products based on various criteria such as categories, price, and ratings.
+- **Setting up secure user accounts** to enable features like adding items to wishlists, saving basket contents, and providing a personalized shopping experience with faster checkouts.
+- **Developing a fully responsive website** that delivers a seamless user experience across all devices, with special attention to mobile-friendly navigation and optimized page load speeds.
+- **Empowering superusers with the ability** to manage the product catalog, including adding, editing, and deleting products, as well as managing categories and user accounts directly from the admin panel.
+
+## The Strategy Plane
+
+### Features
+
+#### Existing Features
+
+#### Home Page
+
+- **Hero Image with Welcome Text:** The homepage features a striking hero image that immediately captures the user's attention. Overlaid on the image is a warm welcome message that reads, "Welcome to Wholesome Basket. Start your health journey here." This introduction sets the tone for the site, inviting users to explore further. Below the text, a prominent "Shop Now" button is placed, encouraging users to begin shopping with just one click.
+![Hero Image](/documentation/hero-image-web-screenshot.png)
+
+- **Shop by Category Section:** Directly below the hero image, the homepage showcases a "Shop by Category" section. This section features key product categories, each represented with visually appealing images. Users can easily click on these images to navigate directly to their desired category, streamlining the shopping experience and helping them find what they need quickly.
+![Shop By Category](/documentation/shop-by-category-screnshot.png)
+
+#### Footer
+The footer maintains a consistent presence across all pages, providing easy access to essential links and features no matter where users navigate on the site. This uniformity ensures that users always have a convenient way to reach contact information, policy details, and social media channels, enhancing overall site usability and cohesion.
+![Footer Preview](/documentation/footer-screenshot.png)
+- **Contact Us Section**: This section provides essential links and options for user support and information. It includes an "About Us" link that gives users insight into the website's mission, a "Get in Touch" contact form for direct inquiries, a "Privacy Policy" link outlining how user data is handled, and a "Returns Policy" link detailing the process for returns.
+- **Subscribe to Our Offers**: Adjacent to the contact section is a subscription area where users can enter their email address to join the mailing list and receive updates on offers and promotions.
+![Succesfull subscribe](/documentation/subscription-succesful-screenshot.png)
+- **Social Media Links**: To foster community engagement and provide more ways to stay connected, the footer includes links to the website's social media profiles on Facebook, X (formerly Twitter), Instagram, and TikTok.
+
+### About Us Page
+
+The "About Us" page at Wholesome Basket outlines the brand's commitment to natural, sustainable foods and making healthy eating accessible. It emphasizes quality products, customer care, and eco-friendly practices, inviting users to connect with the team for support and feedback.
+
+![About us page preview](/documentation/about-us-page-screenshot.png)
+
+### Get in Touch Page
+
+The "Contact Us" page features a simple form where users can provide their email, subject, and message to get in touch with the team. Additionally, there's an option to subscribe to the newsletter by ticking a box.
+
+![Contact us page preview](/documentation/contact-us-form.png)
+
+### Privacy Policy Page
+
+The Privacy Policy page outlines how Wholesome Basket collects, uses, and protects user information. It provides details on data privacy, user rights, and the measures in place to ensure the security of personal data.
+
+![Privacy Policy page preview](/documentation/privacy-policy-page.png)
+
+### Returns Policy Page
+
+The Returns Policy page details Wholesome Basket's commitment to customer satisfaction with a "No Quibbles 30 Day Quality Guarantee" for UK customers. It explains the process for returning products within 30 days for a full refund, including instructions on how to return items, conditions for returns, and procedures for handling damaged orders.
+
+![Returns Policy page preview](/documentation/returns-policy.png)
+
+
 
