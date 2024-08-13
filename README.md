@@ -12,14 +12,18 @@ Checkout the live website [here](https://wholesome-basket-e-commerce-72c9883373e
 
 ## Table of Contents
 
-### [User Experience](#user-experience)
-
-- [Project Goals](#project-goals)
-- [Agile Methodology](#agile-methodology)
-- [Target Audience](#target-audience)
-- [First Time User Benefits](#first-time-user-benefits)
-- [Registered User Benefits](#registered-user-benefits)
-- [Admin User Benefits](#admin-user-benefits)
+1. ### [User Experience](#user-experience)
+2. ### [The Strategy Plane](#the-strategy-plane)
+    - [Project Goals](#project-goals)
+    - [Target Audience](#target-audience)
+    - [First Time User Benefits](#first-time-user-benefits)
+    - [Registered User Benefits](#registered-user-benefits)
+    - [Admin User Benefits](#admin-user-benefits)
+3. [Agile Methodology](#agile-methodology)
+    - [User Stories](#user-stories)
+4. [Fundamental Structure](#fundamental-structure)
+    - [Wireframes](#wireframes)
+    - [Entity Relationship Diagram](#entity-relationship-diagram-erd)
 
 ## User Experience (UX)
 
@@ -32,100 +36,6 @@ The **clean design** and **quick access to support** make the site pleasant and 
 ### Project Goals
 
 The goal of the Wholesome Basket website is to provide a user-friendly platform where customers can easily browse, select, and purchase a variety of whole, natural, and organic food products. The project aims to promote healthier eating habits by offering high-quality, unprocessed foods that cater to various dietary needs and preferences. Additionally, the website seeks to create a seamless online shopping experience that emphasizes accessibility, convenience, and customer satisfaction.
-
-### Agile Methodology
-
-This project follows an Agile methodology to ensure flexibility, collaboration, and continuous delivery of features. Here's how the process is managed:
-- **User story creation**: User stories are created to define the project goals and user requirements. Each story is a concise description of a feature from the user's perspective, helping to clarify what needs to be built and why.
-- **Iterations**: The work is organized into iterations (sprints), with each iteration focusing on completing specific user stories. This approach helps to keep tasks organized and planned, ensuring that progress is made steadily.
-- **Progress tracking**: Progress is tracked using GitHub project boards. User stories move from To Do to In Progress, and finally to Done when completed. This helps in keeping track of what's being worked on and what's already completed.
-- **Priority labelling**:
-    User stories are labeled to manage their priority effectively:
-    - **Must Have**: Essential features that will be delivered.
-    - **Should Have**: Important features that should be delivered but are not critical.
-    - **Could Have**: Nice-to-have features that add value but are not essential.
-    - **Won't Have**: Features that will not be included in this project cycle.
-
-This approach helps to maintain focus on delivering the most important features while allowing flexibility for adjustments as the project progresses.
-
-<details>
-<summary> User Stories Template
-</summary>
-
-![User Stories, Template](/documentation/user-story-template.png)
-</details>
-
-<details>
-<summary> User Stories, Issues
-</summary>
-
-![User Stories, Issues](/documentation/user-stories-screenshot.png)
-</details>
-
-<details>
-<summary> Project Milestones
-</summary>
-
-![Project Milestones](/documentation/project-milestones.png)
-</details>
-
-<details>
-<summary> Project Board
-</summary>
-
-![Project Board](/documentation/project-kanban-board.png)
-
-- <a href="https://github.com/Monicaular/wholesomebasket" target="_blank">Visit GitHub repository here.</a>
-
-- <a href="https://github.com/users/Monicaular/projects/6" target="_blank">Visit GitHub Project roadmap here.</a>
-
-</details>
-
-#### Project tasks breakdown
-
-Iterations
-
-- Iteration 1: Project Setup and Core Foundation
-    - Install Django and supporting libraries.
-    - Create a new Django project and app.
-    - Set up the project to use PostgreSQL.
-    - Deploy to Heroku.
-    - Viewing products list to choose items/pagination.
-    - Identifying website products.
-
-- Iteration 2: User Authentication and Basic E-commerce Features
-    - Easy account registration.
-    - Easy login and logout.
-    - Easy password recovery.
-    - Receiving an email confirmation after registering.
-    - Selecting quantity for a product.
-    - Viewing total purchase amount.
-    - Searching products by name or description.
-    - Wishlist feature.
-
-- Iteration 3: Product Management and Display
-    - Displaying ingredients and allergens for products.
-    - Displaying nutrition facts for products.
-    - Sorting products by name, price, rating, categories.
-    - Sorting products with a specific category.
-    - Sorting multiple categories simultaneously.
-    - Rating feature.
-
-- Iteration 4: Admin Features and User Experience
-    - Adding products for site admin.
-    - Editing products for site admin.
-    - Deleting products for site admin.
-    - Viewing total purchase amount.
-    - Receiving an email with order summary.
-
-- Iteration 5: Final Touches and Testing
-    - Search and filter functionality refinement.
-    - Final testing and bug fixing.
-    - Code refactoring and optimization.
-    - Comprehensive documentation creation.
-    - Final deployment and stress testing.
-
-For detailed look of the project board, check this [link](https://github.com/users/Monicaular/projects/6).
 
 ### Target Audience
 
@@ -177,6 +87,102 @@ This diverse audience is united by a common goal of making informed, health-orie
 
 - **User Management**: Admin users have the authority to manage the user base, including the ability to remove users when necessary, maintaining the integrity of the community.
 
+
+### Agile Methodology
+
+This project follows an Agile methodology to ensure flexibility, collaboration, and continuous delivery of features. Here's how the process is managed:
+- **User story creation**: User stories are created to define the project goals and user requirements. Each story is a concise description of a feature from the user's perspective, helping to clarify what needs to be built and why.
+- **Iterations**: The work is organized into iterations (sprints), with each iteration focusing on completing specific user stories. This approach helps to keep tasks organized and planned, ensuring that progress is made steadily.
+- **Progress tracking**: Progress is tracked using GitHub project boards. User stories move from To Do to In Progress, and finally to Done when completed. This helps in keeping track of what's being worked on and what's already completed.
+- **Priority labelling**:
+    User stories are labeled to manage their priority effectively:
+    - **Must Have**: Essential features that will be delivered.
+    - **Should Have**: Important features that should be delivered but are not critical.
+    - **Could Have**: Nice-to-have features that add value but are not essential.
+    - **Won't Have**: Features that will not be included in this project cycle.
+
+This approach helps to maintain focus on delivering the most important features while allowing flexibility for adjustments as the project progresses.
+
+<details>
+<summary> User Stories Template
+</summary>
+
+![User Stories, Template](/documentation/user-story-template.png)
+</details>
+
+<details>
+<summary> User Stories, Issues
+</summary>
+
+![User Stories, Issues](/documentation/user-stories-screenshot.png)
+</details>
+
+<details>
+<summary> Project Milestones
+</summary>
+
+![Project Milestones](/documentation/project-milestones.png)
+</details>
+
+<details>
+<summary> Project Board
+</summary>
+
+![Project Board](/documentation/project-kanban-board.png)
+
+- <a href="https://github.com/Monicaular/wholesomebasket" target="_blank">Visit GitHub repository here.</a>
+
+- <a href="https://github.com/users/Monicaular/projects/6" target="_blank">Visit GitHub Project roadmap here.</a>
+
+</details>
+
+## User Stories
+
+Iterations
+
+- Iteration 1: Project Setup and Core Foundation
+    - Install Django and supporting libraries.
+    - Create a new Django project and app.
+    - Set up the project to use PostgreSQL.
+    - Deploy to Heroku.
+    - Viewing products list to choose items/pagination.
+    - Identifying website products.
+
+- Iteration 2: User Authentication and Basic E-commerce Features
+    - Easy account registration.
+    - Easy login and logout.
+    - Easy password recovery.
+    - Receiving an email confirmation after registering.
+    - Selecting quantity for a product.
+    - Viewing total purchase amount.
+    - Searching products by name or description.
+    - Wishlist feature.
+
+- Iteration 3: Product Management and Display
+    - Displaying ingredients and allergens for products.
+    - Displaying nutrition facts for products.
+    - Sorting products by name, price, rating, categories.
+    - Sorting products with a specific category.
+    - Sorting multiple categories simultaneously.
+    - Rating feature.
+
+- Iteration 4: Admin Features and User Experience
+    - Adding products for site admin.
+    - Editing products for site admin.
+    - Deleting products for site admin.
+    - Viewing total purchase amount.
+    - Receiving an email with order summary.
+
+- Iteration 5: Final Touches and Testing
+    - Search and filter functionality refinement.
+    - Final testing and bug fixing.
+    - Code refactoring and optimization.
+    - Comprehensive documentation creation.
+    - Final deployment and stress testing.
+
+For detailed look of the project board, check this [link](https://github.com/users/Monicaular/projects/6).
+
+
 ## SEO and Marketing Strategy
 
 - **Meta Data**: Implemented meta tags in the HTML, including both short-tail and long-tail keywords to improve search engine ranking.
@@ -187,5 +193,216 @@ This diverse audience is united by a common goal of making informed, health-orie
 - **Page Load Optimization**: Enhanced page load speed through the use of pagination and by compressing images.
 
 
+## Fundamental Structure
 
+I designed detailed wireframes for both mobile and desktop versions of the project using Lucidchart to ensure a seamless and responsive user experience across all devices.
+
+### Home Page
+
+<details>
+<summary>Home Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/home-page-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/home-page-wireframe.png)
+
+</details>
+
+### Products List Page
+
+<details>
+<summary>Products List Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/products-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/products-page-wireframe.png)
+
+</details>
+
+### Product Details Page
+
+<details>
+<summary>Products Detail Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/product-detail-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/product-detail-page-wireframe.png)
+
+</details>
+
+### Basket Page
+
+<details>
+<summary>Basket Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/basket-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/basket-page-wireframe.png)
+
+</details>
+
+### Checkout Page
+
+<details>
+<summary>Checkout Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/checkout-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/checkout-page-wireframe.png)
+
+</details>
+
+### Checkout Success Page
+
+<details>
+<summary>Checkout Success Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/checkout-success-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/checkout-success-page-wireframe.png)
+
+</details>
+
+### Add a Product
+
+<details>
+<summary>Add a Product Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/add-a-product-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/add-a-product-page-wireframe.png)
+
+</details>
+
+### Edit a Product Page
+
+<details>
+<summary>Edit a Product Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/edit-a-product-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/edit-product-page-wireframe.png)
+
+</details>
+
+### My Account Page
+
+<details>
+<summary>Account Dashboard Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/account-details-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/my-account-page-dashboard-wireframe.png)
+
+</details>
+
+<details>
+<summary>Order History Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/order-history-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/my-account-orders-page-wireframe.png)
+
+</details>
+
+<details>
+<summary>Wishlist Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/my-account-wishlist-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/my-account-wishlist-page-wireframe.png)
+
+</details>
+
+### Wishlist Page
+
+<details>
+<summary>Wishlist Page Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/wishlist-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/wishlist-page-wireframe.png)
+
+</details>
+
+### Authentication Pages
+
+<details>
+<summary>Sign Out Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/sign-out-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/sign-out-page-wireframe.png)
+
+</details>
+
+<details>
+<summary>Sign In Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/sign-in-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/sign-in-page-wireframe.png)
+
+</details>
+
+<details>
+<summary>Sign Up Wireframe</summary>
+
+#### Mobile
+![screenshot](documentation/sign-up-wf-mobile.png)
+
+
+#### Desktop
+![screenshot](documentation/sign-up-page-wireframe.png)
+
+</details>
+
+
+### Entity Relationship Diagram (ERD)
+
+I created an Entity-Relationship Diagram (ERD) to visually represent the database structure and relationships within the project. This ERD was carefully crafted to ensure efficient data management and clear associations between various entities, such as products, users, orders, and ratings. By mapping out the database design in advance, I was able to identify and implement the necessary tables and relationships, ensuring that the application's data flow is both logical and scalable.
+
+![Database Schema](documentation/erd-wholesome-basket.png)
 
