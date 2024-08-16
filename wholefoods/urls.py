@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from django.conf.urls import handler404
 from django.conf.urls import handler500
 from django.views.generic import TemplateView
-from .views import custom_404_page, custom_500_page
+from .views import custom_404_page, custom_500_page, induce_500_error
 from . import views
 
 urlpatterns = [
@@ -29,6 +29,7 @@ urlpatterns = [
     path("checkout/", include("checkout.urls")),
     path("profile/", include("profiles.urls")),
     path("wishlist/", include("wishlist.urls")),
+    path('induce-500-error/', induce_500_error, name='induce_500_error'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = custom_404_page
