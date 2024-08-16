@@ -506,7 +506,52 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 
         ![Subscription Form](/documentation/subscription-screenshot.png)
 
+## Technologies
+
+### Languages used
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+## Frameworks Used
+
+* [Django](https://www.djangoproject.com/)
+* [Bootstrap](https://blog.getbootstrap.com/)
 
 
+## Libraries and Installed Packages
 
+- [**asgiref==3.8.1**](https://asgi.readthedocs.io/en/latest/): provides a reference implementation of the ASGI standard, which is used for handling asynchronous requests in Django and other Python web frameworks.
+- [**boto3==1.34.136**](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html): The Amazon Web Services (AWS) SDK for Python, which allows developers to interact with AWS services like S3, EC2, and others.
+- [**botocore==1.34.136**](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html): A low-level core package used by `boto3` to interact with AWS services, handling the underlying API requests.
+- [**countries==0.2.0**](https://pypi.org/project/pycountry/): A package that provides an easy-to-use list of country names and codes, useful for forms and databases.
+- [**crispy-bootstrap5==2024.2**](https://django-crispy-forms.readthedocs.io/en/latest/crispy_tag_forms.html#bootstrap5): A Django package that integrates Bootstrap 5 with `django-crispy-forms`, enabling easy and customizable form styling.
+- [**dj-database-url==2.2.0**](https://pypi.org/project/dj-database-url/): A utility that allows easy configuration of Django databases using a single URL, simplifying database setup, especially in deployment.
+- [**Django==4.2.13**](https://docs.djangoproject.com/en/stable/): A high-level Python web framework that promotes rapid development and clean, pragmatic design.
+- [**django-allauth==0.63.3**](https://django-allauth.readthedocs.io/en/latest/): A Django package that provides a comprehensive solution for handling user authentication, including social logins and account management.
+- [**django-countries==7.6.1**](https://pypi.org/project/django-countries/): A Django package that provides country choices for use in Django models, forms, and views.
+- [**django-crispy-forms==2.2**](https://django-crispy-forms.readthedocs.io/en/latest/): A Django application that allows for DRY (Don't Repeat Yourself) forms by helping to control the rendering behavior of Django forms.
+- [**django-storages==1.14.3**](https://django-storages.readthedocs.io/en/latest/): A Django package that provides a variety of storage backends, including support for storing files on AWS S3 and other cloud services.
+- [**gunicorn==22.0.0**](https://docs.gunicorn.org/en/stable/): A Python WSGI HTTP Server for UNIX, often used to deploy Django applications in production environments.
+- [**jmespath==1.0.1**](https://jmespath.org/): A package that provides a query language for searching and manipulating JSON data, used primarily with AWS services.
+- [**pillow==10.3.0**](https://pillow.readthedocs.io/en/stable/): A powerful image processing library in Python, used for opening, manipulating, and saving many different image file formats.
+- [**psycopg2==2.9.9**](https://www.psycopg.org/docs/): A popular PostgreSQL database adapter for Python, commonly used with Django to interact with PostgreSQL databases.
+- [**s3transfer==0.10.2**](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-example-download-file.html#download-a-file-from-s3): A utility package used by `boto3` to efficiently manage file uploads and downloads to and from AWS S3.
+- [**sqlparse==0.5.0**](https://sqlparse.readthedocs.io/en/latest/): A non-validating SQL parser for Python, used for splitting, formatting, and parsing SQL statements.
+- [**stripe==10.3.0**](https://stripe.com/docs/api): The official Python library for Stripe, a service that allows developers to handle online payments and transactions easily.
+
+
+## Tools and Resources
+
+- [**GitHub**](https://github.com/): Version control and collaboration platform.
+- [**Gitpod**](https://www.gitpod.io/): Cloud-based IDE for coding.
+- [**Heroku**](https://www.heroku.com/): Cloud platform for deploying and managing apps.
+- [**PostgreSQL**](https://www.postgresql.org/): Open-source relational database system.
+- [**Am I Responsive**](http://ami.responsivedesign.is/): Tool to view website responsiveness across devices.
+- [**Temp Mail**](https://temp-mail.org/en/): Service for temporary, disposable email addresses.
+- [**FreeConvert - JPG to WebP**](https://www.freeconvert.com/jpg-to-webp): Online tool for converting JPG to WebP format.
+- [**Mailchimp**](https://mailchimp.com/): Email marketing and automation platform.
+- [**AWS (Amazon Web Services)**](https://aws.amazon.com/): Comprehensive cloud services platform.
 
