@@ -182,17 +182,6 @@ Iterations
 
 For detailed look of the project board, check this [link](https://github.com/users/Monicaular/projects/6).
 
-
-## SEO and Marketing Strategy
-
-- **Meta Data**: Implemented meta tags in the HTML, including both short-tail and long-tail keywords to improve search engine ranking.
-- **Image Optimization**: Named all images specifically according to the products they represent to enhance search relevance.
-- **Sitemap Generation**: Created a sitemap to ensure thorough indexing by search engines.
-- **Robots.txt File**: Added a robots.txt file to guide search engine crawlers effectively.
-- **Security Enhancement**: Applied the rel="noopener" attribute to external links for improved security.
-- **Page Load Optimization**: Enhanced page load speed through the use of pagination and by compressing images.
-
-
 ## Fundamental Structure
 
 I designed detailed wireframes for both mobile and desktop versions of the project using Lucidchart to ensure a seamless and responsive user experience across all devices.
@@ -459,6 +448,65 @@ The Privacy Policy page outlines how Wholesome Basket collects, uses, and protec
 The Returns Policy page details Wholesome Basket's commitment to customer satisfaction with a "No Quibbles 30 Day Quality Guarantee" for UK customers. It explains the process for returning products within 30 days for a full refund, including instructions on how to return items, conditions for returns, and procedures for handling damaged orders.
 
 ![Returns Policy page preview](/documentation/returns-policy.png)
+
+### Error Pages 
+
+![Error 404 page](/documentation/error-404-screenshot.png)
+![Error 500 page](/documentation/error-500-screenshot.png)
+
+### Future Features
+
+- Allow users to select the quantity of products they wish to purchase, initially designed for bulk buying.
+- Enable customers to leave detailed reviews that include text and photos.
+- Offer discounts and special promotions to incentivize purchases.
+- Provide multiple images for each product to give a better visual representation.
+- Display real-time stock levels to inform customers of product availability.
+- Implement a recommendation system that suggests products based on users' previous purchases.
+
+## Design
+
+### Colour Scheme
+
+**Orange Peel (#FC9909)**: This vibrant and energetic orange serves as the primary accent color, drawing attention to key elements such as buttons, calls-to-action, or promotional banners. The warmth of orange is often associated with enthusiasm, creativity, and appetite, making it an ideal choice for an e-commerce site focused on wholesome and delicious foods.
+
+**Timberwolf (#DFD7CF)**: The warm, off-white Timberwolf color has been been chosen for its versatility and ability to harmonize with both the vibrant and earthy tones in the palette. It offers a clean, sophisticated background that can help make text and images stand out, while also adding a touch of elegance and simplicity to the overall design.
+
+**Seasalt (#CCD1C8)**: The soft, neutral tone of Seasalt has been selected for its calming and clean appearance. It works well as a background or secondary color, providing a light, airy feel that doesn't compete with other, more vibrant colors. This color might also evoke a sense of freshness and purity, aligning with the idea of healthy, whole foods.
+
+**Cinereous (#8D6E63)**: This muted, earthy brown tone has been chosen to convey a sense of stability, reliability, and naturalness. It can help ground the design and create a strong connection to the organic and natural products being offered, reinforcing the brand's authenticity and commitment to quality.
+
+## Typography
+
+**Playwrite IT Moderna** and **Playwrite NG Modern** are sleek, contemporary typefaces that bring a touch of sophistication and modernity to your site. These fonts are used for headings, logos, and key elements where a strong, stylish impact is needed. Their clean lines and refined appearance help convey professionalism and innovation, reflecting the brand's commitment to offering high-quality, modern products.
+
+**Raleway** is a highly versatile and elegant font that complements the Playwrite fonts with its range of weights from light to bold. Raleway is used for body text and other content where readability is crucial, offering a smooth and pleasant reading experience. Its modern yet approachable style ensures that the text remains clear and engaging, supporting the site's clean and user-friendly design.
+
+## Images
+
+Most of the images used on the site are sourced from another website, with their permission. Additionally, some images are from free stock photo websites like [Pexels](https://www.pexels.com/) and [Vecteezy](https://www.pexels.com/).
+
+## Business Model
+
+This online platform operates on a Business to Consumer (B2C) model, offering customers the ability to purchase organic and wholesome products directly. It is designed to facilitate seamless transactions for both registered and unregistered users, with enhanced features and benefits available to registered members and newsletter subscribers.
+
+### SEO and Marketing Strategy
+
+- **Meta Data**: Implemented meta tags in the HTML, including both short-tail and long-tail keywords to improve search engine ranking.
+- **Image Optimization**: Named all images specifically according to the products they represent to enhance search relevance.
+- **Sitemap Generation**: Created a sitemap to ensure thorough indexing by search engines.
+- **Robots.txt File**: Added a robots.txt file to guide search engine crawlers effectively.
+- **Security Enhancement**: 
+    - Applied the rel="noopener" attribute to external links for improved security.
+- **Page Load Optimization**: 
+    - Enhanced page load speed through the use of pagination and by compressing images.
+- **Social Media Marketing**:
+   -  The Facebook business page serves as a hub for connecting with the community, sharing updates on the latest organic and wholesome products, promoting special offers, and providing valuable content related to health and wellness. It's a space where customers can engage with the store, stay informed about new arrivals, and join in discussions around living a healthier lifestyle.
+- **Newsletter Marketing**: 
+    - I’ve integrated a Mailchimp sign-up form in the footer, which serves as a convenient way for users to subscribe to the newsletter, keeping them informed about the latest products, special offers, and updates.
+
+        ![Subscription Form](/documentation/subscription-screenshot.png)
+
+
 
 
 
