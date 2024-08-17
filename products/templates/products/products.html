@@ -74,7 +74,7 @@
                         {% endif %}
                         <div class="card-body pb-0">
                             <h4 class="card-title mb-0">{{ product.name|capfirst }}</h4>
-                            <a class="btn btn-lg position-absolute top-0 end-0 m-2" href="{% url 'add_to_wishlist' product.id %}"><i class=" wishlist-icon far fa-heart"></i></i></a>
+                            <a class="btn btn-lg position-absolute top-0 end-0 m-2" href="{% url 'add_to_wishlist' product.id %}"><i class=" wishlist-icon far fa-heart"></i></a>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
                             <div class="row">
@@ -95,7 +95,7 @@
                                     {% endif %}
                                     {% if product.rating %}
                                     <small class="text-muted">
-                                        <div class="rating d-flex align-items-center">
+                                        <span class="rating d-flex align-items-center">
                                             {% for i in "12345" %}
                                                 {% if forloop.counter <= product.rating %}
                                                     <i class="bi bi-heart-fill"></i>
@@ -104,7 +104,7 @@
                                                 {% endif %}
                                             {% endfor %}
                                             <span>{{ product.rating }} / 5</span>
-                                        </div>
+                                        </span>
                                     </small>
                                 {% else %}
                                     <small class="text-muted">No Rating</small>
