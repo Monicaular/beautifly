@@ -555,39 +555,38 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 The buttons for the authentication pages are located in the "My Account" tab. If the user is logged in, they have the option to log out. If they are not logged in, they can choose to register or sign in. Additionally, the sign-in page is automatically prompted when users attempt to access the Wishlist page.
 
-- Sign In
+#### Sign In
 
 ![Screenshot of the sign in page](/documentation/sign-in-screenshot.png)
 
-    - When a user signs in, they receive a message confirming that they are logged in as their username.
+- When a user signs in, they receive a message confirming that they are logged in as their username.
 
 ![Screenshot with sign in message](/documentation/sign-in-message.png)
 
-- Sign Out
+#### Sign Out
 
 ![Screenshot of the sign out page](/documentation/sign-out-screenshot.png)
 
-    - When a user signs out, they receive a notification confirming that they have successfully signed out.
+- When a user signs out, they receive a notification confirming that they have successfully signed out.
 
 ![Screenshot with sign out message](/documentation/sign-out-message.png)
 
-- Register
+#### Register
 
 ![Screenshot of the register page](/documentation/sign-up-screenshot.png)
-
-    - When a user signs up, they receive a message indicating that a confirmation email has been sent to their email address.
+- When a user signs up, they receive a message indicating that a confirmation email has been sent to their email address.
 
 ![Screenshot with verify email address message](/documentation/verify-email-address-message.png)
 
-    - The user receives an email containing a link that they can click to confirm their email address.
+- The user receives an email containing a link that they can click to confirm their email address.
 
 ![Screenshot with confirmation email address link](/documentation/confirmation-email-address.png)
 
-    - After the user clicks the link in the email, they are directed to a page where they receive a notification with a button labeled "Confirm."
+- After the user clicks the link in the email, they are directed to a page where they receive a notification with a button labeled "Confirm."
 
 ![Screenshot with email confirmation page](/documentation/confirm-email-address-message.png)
 
-    - When they press the "Confirm" button, they receive a success message indicating that their email has been confirmed and are then redirected to the sign-in page.
+- When they press the "Confirm" button, they receive a success message indicating that their email has been confirmed and are then redirected to the sign-in page.
 
 ![Screenshot with the success registration message](/documentation/success-register-message.png)
 
@@ -728,13 +727,16 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
 ### Colour Scheme
 
-**Orange Peel (#FC9909)**: This vibrant and energetic orange serves as the primary accent color, drawing attention to key elements such as buttons, calls-to-action, or promotional banners. The warmth of orange is often associated with enthusiasm, creativity, and appetite, making it an ideal choice for an e-commerce site focused on wholesome and delicious foods.
+![Screenshot with the color scheme used for the website](/documentation/wholesome-basket-pallete.png)
 
-**Timberwolf (#DFD7CF)**: The warm, off-white Timberwolf color has been been chosen for its versatility and ability to harmonize with both the vibrant and earthy tones in the palette. It offers a clean, sophisticated background that can help make text and images stand out, while also adding a touch of elegance and simplicity to the overall design.
+These colors have been chosen for the Wholesoem Basket's website because they align with the brand's identity and values, creating a visual experience that resonates with the natural, organic, and sustainable focus of the brand.
 
-**Seasalt (#CCD1C8)**: The soft, neutral tone of Seasalt has been selected for its calming and clean appearance. It works well as a background or secondary color, providing a light, airy feel that doesn't compete with other, more vibrant colors. This color might also evoke a sense of freshness and purity, aligning with the idea of healthy, whole foods.
+- The chosen colors create a balance between vibrancy and earthiness, reflecting Whole Foods' brand values of health, sustainability, and natural living.
+- The greens and yellows evoke freshness and vitality, key qualities associated with organic foods.
+- The neutral tones like cinereous, timberwolf, and beige provide a calming backdrop that enhances readability and focuses attention on the content.
 
-**Cinereous (#8D6E63)**: This muted, earthy brown tone has been chosen to convey a sense of stability, reliability, and naturalness. It can help ground the design and create a strong connection to the organic and natural products being offered, reinforcing the brand's authenticity and commitment to quality.
+Together, these colors create a cohesive, inviting, and trustworthy aesthetic that aligns with the Whole Foods brand and appeals to its target audience.
+
 
 ## Typography
 
