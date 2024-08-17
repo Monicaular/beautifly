@@ -60,9 +60,8 @@
     <!--MailChimp-->
     <script
         id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/dcc61c89cd068cd70688e8721/f0150196403dc7c462e12e6cd.js");</script>
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script
-        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
     {% endblock %}
 
     {% block extra_js %}
@@ -105,6 +104,7 @@
                 </button>
                 {% include 'includes/mobile-top-nav.html' %}
                 {% include 'includes/main-nav.html' %}
+            
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
@@ -230,7 +230,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const toastElements = document.querySelectorAll('.toast');
             toastElements.forEach(toastEl => {
