@@ -766,7 +766,7 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
    -  The Facebook business page serves as a hub for connecting with the community, sharing updates on the latest organic and wholesome products, promoting special offers, and providing valuable content related to health and wellness. It's a space where customers can engage with the store, stay informed about new arrivals, and join in discussions around living a healthier lifestyle.
 
    [Link to the Facebook Business Page](https://www.facebook.com/profile.php?id=61563483779485)
-   
+
 
    ![Screenshot with the Wholesome basket facebook business page](/documentation/facebook-business-page.png)
 
@@ -839,3 +839,342 @@ Here are some of the bugs I encountered along with the solutions I implemented.
 - When adding a new product on the product management page, the form wouldn’t allow me to save more than one nutrition fact, related product, or fast fact. I resolved this issue by modifying the view.
 
 - When editing a product, the remove button wasn’t functioning correctly for deleting any of the nutrition facts, related products, or fast facts because the view also required a delete button. The remove button was only intended to remove a field when adding a new product. To fix this and avoid confusion for the admin user, I hid the delete button in the add product form and hid the remove button in the edit form.
+
+- A particularly significant bug I encountered occurred when I forgot to add my `env` file to the `.gitignore` file, resulting in all my secret keys being exposed in the repository. With the assistance of the tutors, I was able to resolve this issue using a tool called `git filter-repo`, which successfully removed the sensitive data from my commit history.
+
+## Credits
+
+### Credits
+
+This project was inspired and shaped by several valuable resources and individuals:
+
+- **Boutique Ado Walkthrough Project from Code Institute:** Provided foundational guidance and inspiration, particularly in the structure and functionality of e-commerce features.
+- **The Whiskey Drop Project:** Served as a reference for SEO and marketing strategies, contributing to the overall optimization of the project.
+- **Stack Overflow:** Assisted in troubleshooting and resolving various bugs encountered during development.
+- **Amazon Web Services (AWS) - Zero to Hero on Udemy by Backspace Academy**: Provided essential knowledge for working with AWS services used in this project.
+- **Django Masterclass: Build 9 Real World Django Projects on Udemy by Ashutosh Pawar**: Offered practical insights and skills for developing robust Django applications.
+- **The Buy Whole Foods Online Team:** Thank you for granting permission to use your photos in this project.
+
+These resources and individuals were instrumental in the successful completion of the project.
+
+### Deployment
+
+The live version of the application is available on [Heroku](https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/).
+
+### PostgreSQL Database
+
+The database link was provided by Code Institute, and no additional configuration was required to obtain it.
+
+### Amazon Web Services (AWS)
+
+### Amazon AWS
+
+This project utilizes [AWS](https://aws.amazon.com) to store media and static files online, as Heroku does not persist this type of data.
+
+To connect your project to AWS, follow these steps after creating and logging into your AWS account. Ensure you’re on the **AWS Management Console** page.
+
+#### S3 Bucket Setup
+
+- Search for **S3** in the console.
+- Create a new bucket, name it (preferably matching your Heroku app name), and choose the region closest to you.
+- Uncheck **Block all public access** and acknowledge that the bucket will be public (necessary for it to function with Heroku).
+- Under **Object Ownership**, ensure **ACLs enabled** and **Bucket owner preferred** are selected.
+- In the **Properties** tab, enable static website hosting and enter `index.html` and `error.html` in their respective fields, then click **Save**.
+- In the **Permissions** tab, enter the following CORS configuration:
+
+	```shell
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+	```
+
+- Copy your **ARN** string.
+- In the **Bucket Policy** tab, click on the **Policy Generator** link and follow these steps:
+	- Policy Type: **S3 Bucket Policy**
+	- Effect: **Allow**
+	- Principal: `*`
+	- Actions: **GetObject**
+	- Amazon Resource Name (ARN): **paste-your-ARN-here**
+	- Click **Add Statement**
+	- Click **Generate Policy**
+	- Copy the generated policy and paste it into the **Bucket Policy Editor**:
+
+		```shell
+		{
+			"Id": "Policy1234567890",
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Sid": "Stmt1234567890",
+					"Action": [
+						"s3:GetObject"
+					],
+					"Effect": "Allow",
+					"Resource": "arn:aws:s3:::your-bucket-name/*",
+					"Principal": "*"
+				}
+			]
+		}
+		```
+
+	- Before saving, add `/*` to the end of the Resource key in the Bucket Policy Editor (as shown above).
+	- Click **Save**.
+- In the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
+	- If the edit button is disabled, ensure the **Object Ownership** section above is set to **ACLs enabled**.
+
+#### IAM Setup
+
+In the AWS Services Menu, search for and open **IAM** (Identity and Access Management). Follow these steps:
+
+- Go to **User Groups** and click **Create New Group**.
+	- Suggested Name: `group-retro-reboot` (group + project name)
+- Tags are optional, but required to proceed to the **review policy** page.
+- In **User Groups**, select your newly created group and go to the **Permissions** tab.
+- Open the **Add Permissions** dropdown and click **Attach Policies**.
+- Select the appropriate policy, then click **Add Permissions**.
+- In the **JSON** tab, click on **Import Managed Policy**.
+	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+	- Paste your ARN from the S3 Bucket into the "Resources" key on the Policy:
+
+		```shell
+		{
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Effect": "Allow",
+					"Action": "s3:*",
+					"Resource": [
+						"arn:aws:s3:::your-bucket-name",
+						"arn:aws:s3:::your-bucket-name/*"
+					]
+				}
+			]
+		}
+		```
+	
+	- Click **Review Policy**.
+	- Suggested Name: `policy-retro-reboot` (policy + project name)
+	- Provide a description:
+		- "Access to S3 Bucket for retro-reboot static files."
+	- Click **Create Policy**.
+- In **User Groups**, click your `group-retro-reboot`.
+- Click **Attach Policy**.
+- Search for the policy you just created (`policy-retro-reboot`), select it, then click **Attach Policy**.
+- In **User Groups**, click **Add User**.
+	- Suggested Name: `user-retro-reboot` (user + project name)
+- For "Select AWS Access Type," choose **Programmatic Access**.
+- Select the group to add your new user to: `group-retro-reboot`
+- Tags are optional, but required to proceed to the **review user** page.
+- Click **Create User**.
+- Download the `.csv` file containing your **Access key ID** and **Secret access key** immediately.
+	- **IMPORTANT**: You cannot download it again later.
+	- `AWS_ACCESS_KEY_ID` = **Access key ID**
+	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+
+#### Final AWS Setup
+
+- If `DISABLE_COLLECTSTATIC` is still present in Heroku Config Vars, you can now remove it so AWS handles the static files.
+- Within **S3**, create a new folder named `media`.
+- Prepare and upload any existing media images to this new folder.
+- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
+- Click **Upload**—no further settings are required.
+
+### Stripe API
+
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to manage e-commerce payments.
+
+After creating and logging into your Stripe account, follow these steps to connect your project:
+
+- In your Stripe dashboard, expand the "Get your test API keys" section.
+- You will see two keys:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (begins with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (begins with **sk**)
+
+To handle cases where users might close the purchase-order page prematurely during payment, you can set up Stripe Webhooks:
+
+- In your Stripe dashboard, go to **Developers** and select **Webhooks**.
+- Click **Add Endpoint**.
+	- Enter the URL: `https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/checkout/wh/`
+- Choose **receive all events**.
+- Click **Add Endpoint** to finalize the setup.
+- You will get a new key:
+	- `STRIPE_WH_SECRET` = Signing Secret (Webhook) Key (begins with **wh**)
+
+If you are using Gitpod, you can save these keys so that they don't need to be added each time you open the workspace.
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to manage sending emails to users for account verification and purchase order confirmations.
+
+After creating and logging into your Gmail (Google) account, follow these steps to connect your project:
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Go to the **Accounts and Import** tab.
+- In the "Change account settings" section, click on **Other Google Account settings**.
+- On the new page, select **Security** from the left-hand menu.
+- Enable **2-Step Verification** (you'll need to verify your password and account).
+- Once verified, turn on **2FA**.
+- Return to the **Security** page, where you’ll see a new option called **App passwords**.
+- You may be prompted again to confirm your password and account.
+- Select **Mail** as the app type.
+- Choose **Other (Custom name)** for the device type.
+	- Enter any custom name, such as "Django".
+- You’ll receive a 16-character password (API key).
+	- Save this key locally, as you won’t be able to access it later.
+	- `EMAIL_HOST_PASS` = Your 16-character API key.
+	- `EMAIL_HOST_USER` = Your personal Gmail email address.
+
+### Heroku Deployment
+
+This project is deployed on [Heroku](https://www.heroku.com), a platform as a service (PaaS) that allows developers to build, run, and manage applications entirely in the cloud.
+
+To deploy your project, follow these steps after setting up your Heroku account:
+
+- In your Heroku Dashboard, click **New** in the top-right corner and select **Create new app** from the dropdown menu.
+- Choose a unique app name, select the region closest to you (EU or USA), and then click **Create App**.
+- In the new app’s **Settings** tab, click **Reveal Config Vars** and set your environment variables.
+
+| Key | Value |
+| --- | --- |
+| `AWS_ACCESS_KEY_ID` | your value |
+| `AWS_SECRET_ACCESS_KEY` | your value |
+| `DATABASE_URL` | your value |
+| `DISABLE_COLLECTSTATIC` | 1 (*temporary, can be removed for final deployment*) |
+| `EMAIL_HOST_PASS` | your value |
+| `EMAIL_HOST_USER` | your value |
+| `SECRET_KEY` | your value |
+| `STRIPE_PUBLIC_KEY` | your value |
+| `STRIPE_SECRET_KEY` | your value |
+| `STRIPE_WH_SECRET` | your value |
+| `USE_AWS` | True |
+
+Heroku requires two additional files for proper deployment:
+- `requirements.txt`
+- `Procfile`
+
+To install the project’s dependencies, run:
+- `pip3 install -r requirements.txt`
+
+If you’ve installed your own packages, update the `requirements.txt` file by running:
+- `pip3 freeze --local > requirements.txt`
+
+Create the **Procfile** with the following command:
+- `echo web: gunicorn app_name.wsgi > Procfile`
+- Replace **app_name** with the name of your primary Django app (the folder containing `settings.py`).
+
+To deploy your project to Heroku and connect your GitHub repository, you can:
+
+- Select **Automatic Deployment** from the Heroku app settings.
+
+Or:
+
+- Use the Terminal/CLI to connect to Heroku with: `heroku login -i`
+- Set the Heroku remote: `heroku git:remote -a app_name` (replace *app_name* with your Heroku app name).
+- After performing the usual Git `add`, `commit`, and `push` to GitHub, deploy to Heroku with:
+	- `git push heroku main`
+
+Your project should now be successfully connected and deployed on Heroku!
+
+
+### Local Deployment
+
+To create a local copy of this project on your system, you can either clone or fork the repository.
+
+After obtaining the project files, you’ll need to install the necessary packages listed in the *requirements.txt* file:
+- `pip3 install -r requirements.txt`
+
+Next, create a new file called `env.py` at the root level of the project, and include the environment variables mentioned in the Heroku deployment steps.
+
+Here’s a sample `env.py` file:
+
+```python
+import os
+
+os.environ.setdefault("AWS_ACCESS_KEY_ID", "your_value_here")
+os.environ.setdefault("AWS_SECRET_ACCESS_KEY", "your_value_here")
+os.environ.setdefault("DATABASE_URL", "your_value_here")
+os.environ.setdefault("EMAIL_HOST_PASS", "your_value_here")
+os.environ.setdefault("EMAIL_HOST_USER", "your_value_here")
+os.environ.setdefault("SECRET_KEY", "your_value_here")
+os.environ.setdefault("STRIPE_PUBLIC_KEY", "your_value_here")
+os.environ.setdefault("STRIPE_SECRET_KEY", "your_value_here")
+os.environ.setdefault("STRIPE_WH_SECRET", "your_value_here")
+
+# For local environment only (do not include these in production/deployment)
+os.environ.setdefault("DEBUG", "True")
+```
+
+Once the project is set up locally, follow these steps to run it:
+
+1. Start the Django app: `python3 manage.py runserver`
+2. Stop the app once it's loaded by pressing `CTRL+C` (or `⌘+C` on Mac).
+3. Make any necessary migrations: `python3 manage.py makemigrations`
+4. Apply the migrations to the database: `python3 manage.py migrate`
+5. Create a superuser: `python3 manage.py createsuperuser`
+6. Load any fixtures, if applicable: `python3 manage.py loaddata file-name.json` (repeat for each file)
+
+Once everything is set up, run the Django app again using:
+- `python3 manage.py runserver`
+
+To back up your database models, you can create a fixture for each model with the following command:
+- `python3 manage.py dumpdata your-model > your-model.json`
+- *Repeat this command for each model you wish to back up.*
+
+#### Cloning
+
+To clone the repository, follow these steps:
+
+1. Visit the [GitHub repository](https://github.com/Monicaular/wholesomebasket).
+2. Click the **Code** button located above the list of files.
+3. Choose your preferred cloning method (HTTPS, SSH, or GitHub CLI), and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash or Terminal.
+5. Navigate to the directory where you want to place the cloned repository.
+6. In your IDE terminal, enter the following command to clone the repository:
+   - `git clone https://github.com/Monicaular/wholesomebasket.git`
+7. Press Enter to create your local clone.
+
+Alternatively, if you're using Gitpod, you can create your own workspace with this repository by clicking the button below:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/new#https://github.com/Monicaular/wholesomebasket)
+
+Please note that to open the project directly in Gitpod, you need to have the Gitpod browser extension installed. You can find a tutorial on how to install it [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
+
+#### Forking
+
+Forking a GitHub repository allows you to create a copy of the original repository in your own GitHub account. This enables you to view and make changes without impacting the original repository owned by someone else. To fork this repository, follow these steps:
+
+1. Log in to GitHub and navigate to the [GitHub Repository](https://github.com/Monicaular/wholesomebasket).
+2. At the top of the repository page (just above the "Settings" button), locate and click the "Fork" button.
+3. After clicking, you will have a copy of the original repository in your own GitHub account!
+
+
+### Acknowledgements
+
+### Acknowledgements
+
+I would like to express my heartfelt gratitude to the following individuals and communities who have supported me throughout this journey:
+
+- **Mitko Bachvarov, my mentor:** Thank you for your invaluable tips, support, and assistance throughout my entire learning process. Your guidance has been instrumental in my growth and success.
+
+- **Tutors from the Code Institute team:** I am deeply grateful for your help in resolving bugs I couldn’t tackle on my own and for your patience in guiding me through challenges.
+
+- **The Slack community:** Thank you for always being there to answer my questions and for sharing your experiences. Your insights have been incredibly helpful.
+
+- **My family:** A special thanks to my family for their unwavering support and understanding, helping me manage my time effectively while working on this project.
+
+Your support and encouragement have made this achievement possible. Thank you!
+
+
