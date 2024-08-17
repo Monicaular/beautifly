@@ -12,8 +12,8 @@ Checkout the live website [here](https://wholesome-basket-e-commerce-72c9883373e
 
 ## Table of Contents
 
-1. ### [User Experience](#user-experience)
-2. ### [The Strategy Plane](#the-strategy-plane)
+1. [User Experience](#user-experience)
+2. [The Strategy Plane](#the-strategy-plane)
     - [Project Goals](#project-goals)
     - [Target Audience](#target-audience)
     - [First Time User Benefits](#first-time-user-benefits)
@@ -24,6 +24,53 @@ Checkout the live website [here](https://wholesome-basket-e-commerce-72c9883373e
 4. [Fundamental Structure](#fundamental-structure)
     - [Wireframes](#wireframes)
     - [Entity Relationship Diagram](#entity-relationship-diagram-erd)
+5. [Main Plan](#main-plan)
+6. [Structure Plane](#structure-plane)
+	- [Features](#features)
+		- [Home Page](#home-page)
+		- [Footer](#footer)
+			- [About Us Page](#about-us-page)
+			- [Get in Touch Page](#get-in-touch-page)
+			- [Privacy Policy Page](#privacy-policy-page)
+			- [Returns Policy Page](#returns-policy-page)
+		- [Main Navigation Menu](#main-nav-menu)
+			- [Search Bar](#search-bar)
+			- [Main Nav Bar](#main-nav-bar)
+			- [Basket Page](#basket-page)
+			- [Wishlist Page](#wishlist-page)
+			- [Product Management Tab](#product-management-tab)
+			- [Account Info Page](#account-info-page)
+			- [Authentication Pages](#authentication-pages)
+		- [All Products Page](#all-products-page)
+		- [Product Detail Page](#product-detail-page)
+		- [Checkout Page](#checkout-page)
+		- [Checkout Success Page](#checkout-success-page)
+		- [Error Pages](#error-pages)
+	- [Future Features](#future-features)
+7. [Design](#design)
+	- [Colour Scheme](#colour-scheme)
+	- [Typography](#typography)
+	- [Images](#images)
+8. [Business Model](#business-model)
+	- [SEO and Marketing Strategy](#seo-and-marketing-strategy)
+9. [Technologies](#technologies)
+	- [Languages Used](#languages-used)
+	- [Frameworks](#frameworks-used)
+	- [Libraries and Installed Packages](#ibraries-and-installed-packages)
+	- [Tools and Resources](#tools-and-resources)
+10. [Testing](#testing)
+11. [Bugs](#fixed-bugs)
+12. [Credits](#credits)
+13. [Deployment](#deployment)
+	- [PostgreSQL Database](#postgresql-database)
+	- [Amazon web Services](#amazon-web-services-aws)
+	- [Stripe API](#stripe-api)
+	- [Gmail API](#gmail-api)
+	- [Heroku Deployment](#heroku-deployment)
+	- [Local Deployment](#local-deployment)
+	- [Cloning](#cloning)
+14. [Acknowledgements](#acknowledgements)
+
 
 ## User Experience (UX)
 
@@ -32,6 +79,8 @@ Users can easily navigate through **well-organized** categories and a **responsi
 The site offers **detailed product information**, ensuring informed decisions, and a **smooth, secure checkout process**.
 It's **mobile-friendly**, with features like **wishlists** and **personalized profiles** enhancing the shopping experience.
 The **clean design** and **quick access to support** make the site pleasant and reliable to use across all devices.
+
+## The Strategy Plane
 
 ### Project Goals
 
@@ -185,6 +234,8 @@ For detailed look of the project board, check this [link](https://github.com/use
 ## Fundamental Structure
 
 I designed detailed wireframes for both mobile and desktop versions of the project using Lucidchart to ensure a seamless and responsive user experience across all devices.
+
+### Wireframes
 
 ### Home Page
 
@@ -403,11 +454,9 @@ I created an Entity-Relationship Diagram (ERD) to visually represent the databas
 - **Developing a fully responsive website** that delivers a seamless user experience across all devices, with special attention to mobile-friendly navigation and optimized page load speeds.
 - **Empowering superusers with the ability** to manage the product catalog, including adding, editing, and deleting products, as well as managing categories and user accounts directly from the admin panel.
 
-## The Strategy Plane
+## Structure Plane
 
 ### Features
-
-#### Existing Features
 
 #### Home Page
 
@@ -425,33 +474,33 @@ The footer maintains a consistent presence across all pages, providing easy acce
 ![Succesfull subscribe](/documentation/subscription-succesful-screenshot.png)
 - **Social Media Links**: To foster community engagement and provide more ways to stay connected, the footer includes links to the website's social media profiles on Facebook, X (formerly Twitter), Instagram, and TikTok.
 
-### About Us Page
+##### About Us Page
 
 The "About Us" page at Wholesome Basket outlines the brand's commitment to natural, sustainable foods and making healthy eating accessible. It emphasizes quality products, customer care, and eco-friendly practices, inviting users to connect with the team for support and feedback.
 
 ![About us page preview](/documentation/about-us-page-screenshot.png)
 
-### Get in Touch Page
+##### Get in Touch Page
 
 The "Contact Us" page features a simple form where users can provide their email, subject, and message to get in touch with the team. Additionally, there's an option to subscribe to the newsletter by ticking a box.
 
 ![Contact us page preview](/documentation/contact-us-form.png)
 
-### Privacy Policy Page
+##### Privacy Policy Page
 
 The Privacy Policy page outlines how Wholesome Basket collects, uses, and protects user information. It provides details on data privacy, user rights, and the measures in place to ensure the security of personal data.
 
 ![Privacy Policy page preview](/documentation/privacy-policy-page.png)
 
-### Returns Policy Page
+##### Returns Policy Page
 
 The Returns Policy page details Wholesome Basket's commitment to customer satisfaction with a "No Quibbles 30 Day Quality Guarantee" for UK customers. It explains the process for returning products within 30 days for a full refund, including instructions on how to return items, conditions for returns, and procedures for handling damaged orders.
 
 ![Returns Policy page preview](/documentation/returns-policy.png)
 
-## Main Nav Menu
+#### Main Nav Menu
 
-### Search Bar
+##### Search Bar
 
 In the top-middle section of the main navigation bar, there is a search bar where users can search for products by entering a word or a fragment of a word found either in the product name or description. If no products match the search term, the results will display `'0 products found.'` Otherwise, the search results will list the matching products and indicate the total number of products containing the entered word. If the search bar is submitted without any input, an error message will appear stating, `'You need to enter a search criteria.'`
 
@@ -464,7 +513,7 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 ![Screenshot of the number of products found](/documentation/searched-products-found.png)
 
 
-### Main Nav Bar
+##### Main Nav Bar
 
 - In the next line of the main navigation, there are 5 main categories, one of which is the "All Products" tab where users can sort products by price, rating, and category, as well as display all products on the page.
 
@@ -482,13 +531,32 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot of the account tab](/documentation/account-dropdown.png)
 
-- In the Wishlist tab, logged-in users can view products they have saved. If the wishlist is empty, the page will indicate this. Users who are not logged in are redirected to the login page when they attempt to access this feature.
-
-![Screenshot of empty wishlist page](/documentation/wishlist-empty.png) ![Screenshot of wishlist with products page](/documentation/wishlist-page.png)
+##### Basket Page
 
 - In the basket tab, users can view the products in their basket if any are present; otherwise, it will indicate that the basket is empty.
 
 ![Screenshot of empty basket page](/documentation/empty-basket.png) ![Screenshot of basket with items page](/documentation/basket-page.png)
+
+- A scrollable summary of the basket is displayed each time the user adds an item to the basket. This message box also informs them of the amount they still need to spend to qualify for free delivery.
+
+![Screnshot with the basket summary message](/documentation/message-basket-summary.png) ![Alt text](/documentation/message-basket-summary-2.png)
+
+- On the basket page, users can adjust the quantity of products by using the quantity button and then pressing "Update." A message will appear confirming that the quantity has been updated to the specified number.
+
+![Screenshot with the updated quantity](/documentation/update-quantity-successful.png)
+
+- When updating the quantity of the products, the order summary details are automatically updated as well.
+
+![Screenshot with the initial basket products](/documentation/initial-basket-products.png)
+
+![Screenshot with the basket products and summary after updating](/documentation/updated-basket-products.png)
+
+##### Wishlist Page
+
+- In the Wishlist tab, logged-in users can view products they have saved. If the wishlist is empty, the page will indicate this. Users who are not logged in are redirected to the login page when they attempt to access this feature.
+
+![Screenshot of empty wishlist page](/documentation/wishlist-empty.png) ![Screenshot of wishlist with products page](/documentation/wishlist-page.png)
+
 
 - The last tab in the main navigation bar is the Delivery Info tab, which is available to all users and contains the delivery terms and conditions.
 
@@ -496,9 +564,9 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ### My Account Tab
 
-#### Product Management
+##### Product Management
 
-#### Add a Product Form
+###### Add a Product Form
 
 - As previously mentioned, the product management tab provides admin users with access to an "Add a Product" page, where they can add new products to the catalog. This page also includes a feature that allows them to preview any uploaded images.
 
@@ -508,7 +576,7 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot with the add product success message](/documentation/add-a-product-success-message.png)
 
-#### Edit Product Form
+###### Edit Product Form
 
 - The edit product form appears for admin users when they click on "Edit" either from the products list page or the product detail page. This form is pre-filled with the existing product information, allowing them to add, remove, or modify any fields as needed.
 
@@ -522,7 +590,7 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot with success message after editing product](/documentation/success-edit-product-message.png)
 
-#### Delete Product Section
+###### Delete Product Section
 
 - The admin user has the option to delete a product by clicking on the delete button, which is displayed next to the product photo while they are logged in.
 
@@ -537,7 +605,7 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 ![Screenshot with successfull delete message](/documentation/delete-successful.png)
 
 
-#### Account Info
+##### Account Info
 
 - In the "My Account" tab, users can view their account information, including their username, email, and address. A button is available to update this information, which will bring up a form for making any necessary corrections.
 
@@ -551,11 +619,11 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot of the my account wishlist page](/documentation/wishlist-my-account.png)
 
-### Authentication Pages
+##### Authentication Pages
 
 The buttons for the authentication pages are located in the "My Account" tab. If the user is logged in, they have the option to log out. If they are not logged in, they can choose to register or sign in. Additionally, the sign-in page is automatically prompted when users attempt to access the Wishlist page.
 
-#### Sign In
+###### Sign In
 
 ![Screenshot of the sign in page](/documentation/sign-in-screenshot.png)
 
@@ -563,7 +631,7 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
 ![Screenshot with sign in message](/documentation/sign-in-message.png)
 
-#### Sign Out
+###### Sign Out
 
 ![Screenshot of the sign out page](/documentation/sign-out-screenshot.png)
 
@@ -571,7 +639,7 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
 ![Screenshot with sign out message](/documentation/sign-out-message.png)
 
-#### Register
+###### Register
 
 ![Screenshot of the register page](/documentation/sign-up-screenshot.png)
 - When a user signs up, they receive a message indicating that a confirmation email has been sent to their email address.
@@ -590,7 +658,7 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
 ![Screenshot with the success registration message](/documentation/success-register-message.png)
 
-### All Products Page
+#### All Products Page
 
 - This page includes several features for an improved user experience. Users are shown 12 products per page, with pagination provided to prevent endless scrolling and to ensure faster page loading.
 
@@ -626,7 +694,7 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
     ![Screenshot with the product card](/documentation/product-card.png)
 
-### Product Detail Page
+#### Product Detail Page
 
 - On this page, users can view all the details of the product, including the name, price, size, rating, description, ingredients, nutrition facts, interesting facts, and some related products. 
 
@@ -646,23 +714,9 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 - For easy navigation, the user also has access to a breadcrumb navigation bar on the product detail page.
 
 ![Screenshot with the breadcrumb navigation](/documentation/breadcrumb-navigation.png)
-### Basket Page
 
-- A scrollable summary of the basket is displayed each time the user adds an item to the basket. This message box also informs them of the amount they still need to spend to qualify for free delivery.
 
-![Screnshot with the basket summary message](/documentation/message-basket-summary.png) ![Alt text](/documentation/message-basket-summary-2.png)
-
-- On the basket page, users can adjust the quantity of products by using the quantity button and then pressing "Update." A message will appear confirming that the quantity has been updated to the specified number.
-
-![Screenshot with the updated quantity](/documentation/update-quantity-successful.png)
-
-- When updating the quantity of the products, the order summary details are automatically updated as well.
-
-![Screenshot with the initial basket products](/documentation/initial-basket-products.png)
-
-![Screenshot with the basket products and summary after updating](/documentation/updated-basket-products.png)
-
-### Checkout Page
+#### Checkout Page
 
 - Guest users also have the option to proceed with checkout. On the checkout page, users are presented with a basket summary and a form that they need to fill out with their delivery details and card information.
 
@@ -685,7 +739,7 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 ![Screenshot with the adjust basket and compleet order button](/documentation/complete-order-adjust-basket.png)
 ![Screenshot with the loading page](/documentation/loading-page.png)
 
-### Checkout Success Page
+#### Checkout Success Page
 
 - On the checkout success page, users are presented with a thank you message, along with their order information, delivery details, and a summary of their order. Additionally, they are informed that a confirmation has been sent to their email address.
 
@@ -704,13 +758,13 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 ![Screenshot with the order confirmation email](/documentation/order-confirmation-email.png)
 
 
-## Error Pages
+#### Error Pages
 
-### Error 404
+##### Error 404
 
 ![Error 404 page](/documentation/error-404-screenshot.png)
 
-### Error 500
+##### Error 500
 
 ![Error 500 page](/documentation/error-500-screenshot.png)
 
@@ -738,13 +792,13 @@ These colors have been chosen for the Wholesoem Basket's website because they al
 Together, these colors create a cohesive, inviting, and trustworthy aesthetic that aligns with the Whole Foods brand and appeals to its target audience.
 
 
-## Typography
+### Typography
 
 **Playwrite IT Moderna** and **Playwrite NG Modern** are sleek, contemporary typefaces that bring a touch of sophistication and modernity to your site. These fonts are used for headings, logos, and key elements where a strong, stylish impact is needed. Their clean lines and refined appearance help convey professionalism and innovation, reflecting the brand's commitment to offering high-quality, modern products.
 
 **Raleway** is a highly versatile and elegant font that complements the Playwrite fonts with its range of weights from light to bold. Raleway is used for body text and other content where readability is crucial, offering a smooth and pleasant reading experience. Its modern yet approachable style ensures that the text remains clear and engaging, supporting the site's clean and user-friendly design.
 
-## Images
+### Images
 
 Most of the images used on the site are sourced from another website, with their permission. Additionally, some images are from free stock photo websites like [Pexels](https://www.pexels.com/) and [Vecteezy](https://www.pexels.com/).
 
@@ -784,13 +838,13 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-## Frameworks Used
+### Frameworks Used
 
 * [Django](https://www.djangoproject.com/)
 * [Bootstrap](https://blog.getbootstrap.com/)
 
 
-## Libraries and Installed Packages
+### Libraries and Installed Packages
 
 - [**asgiref==3.8.1**](https://asgi.readthedocs.io/en/latest/): provides a reference implementation of the ASGI standard, which is used for handling asynchronous requests in Django and other Python web frameworks.
 - [**boto3==1.34.136**](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html): The Amazon Web Services (AWS) SDK for Python, which allows developers to interact with AWS services like S3, EC2, and others.
@@ -812,7 +866,7 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 - [**stripe==10.3.0**](https://stripe.com/docs/api): The official Python library for Stripe, a service that allows developers to handle online payments and transactions easily.
 
 
-## Tools and Resources
+### Tools and Resources
 
 - [**GitHub**](https://github.com/): Version control and collaboration platform.
 - [**Gitpod**](https://www.gitpod.io/): Cloud-based IDE for coding.
@@ -844,8 +898,6 @@ Here are some of the bugs I encountered along with the solutions I implemented.
 
 ## Credits
 
-### Credits
-
 This project was inspired and shaped by several valuable resources and individuals:
 
 - **Boutique Ado Walkthrough Project from Code Institute:** Provided foundational guidance and inspiration, particularly in the structure and functionality of e-commerce features.
@@ -857,7 +909,7 @@ This project was inspired and shaped by several valuable resources and individua
 
 These resources and individuals were instrumental in the successful completion of the project.
 
-### Deployment
+## Deployment
 
 The live version of the application is available on [Heroku](https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/).
 
@@ -866,8 +918,6 @@ The live version of the application is available on [Heroku](https://wholesome-b
 The database link was provided by Code Institute, and no additional configuration was required to obtain it.
 
 ### Amazon Web Services (AWS)
-
-### Amazon AWS
 
 This project utilizes [AWS](https://aws.amazon.com) to store media and static files online, as Heroku does not persist this type of data.
 
@@ -989,8 +1039,6 @@ In the AWS Services Menu, search for and open **IAM** (Identity and Access Manag
 - Prepare and upload any existing media images to this new folder.
 - Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
 - Click **Upload**—no further settings are required.
-
-### Stripe API
 
 ### Stripe API
 
@@ -1133,7 +1181,7 @@ To back up your database models, you can create a fixture for each model with th
 - `python3 manage.py dumpdata your-model > your-model.json`
 - *Repeat this command for each model you wish to back up.*
 
-#### Cloning
+### Cloning
 
 To clone the repository, follow these steps:
 
@@ -1152,7 +1200,7 @@ Alternatively, if you're using Gitpod, you can create your own workspace with th
 
 Please note that to open the project directly in Gitpod, you need to have the Gitpod browser extension installed. You can find a tutorial on how to install it [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
-#### Forking
+### Forking
 
 Forking a GitHub repository allows you to create a copy of the original repository in your own GitHub account. This enables you to view and make changes without impacting the original repository owned by someone else. To fork this repository, follow these steps:
 
@@ -1161,9 +1209,8 @@ Forking a GitHub repository allows you to create a copy of the original reposito
 3. After clicking, you will have a copy of the original repository in your own GitHub account!
 
 
-### Acknowledgements
+## Acknowledgements
 
-### Acknowledgements
 
 I would like to express my heartfelt gratitude to the following individuals and communities who have supported me throughout this journey:
 
