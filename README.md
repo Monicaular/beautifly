@@ -764,6 +764,12 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
     - Enhanced page load speed through the use of pagination and by compressing images.
 - **Social Media Marketing**:
    -  The Facebook business page serves as a hub for connecting with the community, sharing updates on the latest organic and wholesome products, promoting special offers, and providing valuable content related to health and wellness. It's a space where customers can engage with the store, stay informed about new arrivals, and join in discussions around living a healthier lifestyle.
+
+   [Link to the Facebook Business Page](https://www.facebook.com/profile.php?id=61563483779485)
+   
+
+   ![Screenshot with the Wholesome basket facebook business page](/documentation/facebook-business-page.png)
+
 - **Newsletter Marketing**: 
     - I’ve integrated a Mailchimp sign-up form in the footer, which serves as a convenient way for users to subscribe to the newsletter, keeping them informed about the latest products, special offers, and updates.
 
@@ -818,3 +824,18 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 - [**Mailchimp**](https://mailchimp.com/): Email marketing and automation platform.
 - [**AWS (Amazon Web Services)**](https://aws.amazon.com/): Comprehensive cloud services platform.
 
+## Testing
+
+For any testing procedures, please consult the [TESTING.md](TESTING.md) file.
+
+## Fixed Bugs
+
+Here are some of the bugs I encountered along with the solutions I implemented.
+
+- After checkout, the user was receiving three email confirmations, with one of them not displaying the total costs. The first issue was in the webhook handler related to processing the payment intent. The payment was not succeeding because one of the order objects wasn’t recognized during the initial payment intent. I identified the problematic object by process of elimination and removed it, as it wasn’t necessary given that the Stripe payment ID (pid) is unique for each transaction. The second issue was on the Stripe account, where two webhooks were enabled, causing the confirmation to be sent twice. I resolved this by disabling one of the webhooks.
+
+- Another frustrating bug was caused by an unclosed div tag that was obscuring my Django messages. After spending hours debugging without success, I reached out to tutor support, and they helped me identify the issue.
+
+- When adding a new product on the product management page, the form wouldn’t allow me to save more than one nutrition fact, related product, or fast fact. I resolved this issue by modifying the view.
+
+- When editing a product, the remove button wasn’t functioning correctly for deleting any of the nutrition facts, related products, or fast facts because the view also required a delete button. The remove button was only intended to remove a field when adding a new product. To fix this and avoid confusion for the admin user, I hid the delete button in the add product form and hid the remove button in the edit form.
