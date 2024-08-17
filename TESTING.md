@@ -44,6 +44,28 @@ I have validated all of my CSS files using the [W3C CSS Validator](https://jigsa
 | `profile.css`  | ![Screenshot](documentation/profiles-css-validation.png)      | Pass: No Errors  |
 
 
+### JavaScript Validation
+
+I have validated all of my JS files using the [JSHint Validator](https://jshint.com).
+
+| File                                | Screenshot                                          | Notes                                               |
+|-------------------------------------|----------------------------------------------------|-----------------------------------------------------|
+| `basket.html` (postloadjs)            | ![Screenshot](documentation/basket-html-js-code.png)         | Pass: No Errors                                     |
+| `stripe_elements.js`                  | ![Screenshot](documentation/stripe_elements-js.png)         | Pass: No Errors                                     |
+| `delete_modal.js`     | ![Screenshot](documentation/delete_modal_js.png)         | Pass: No Errors                                     |
+| `preview-product-image.js`    | ![Screenshot](documentation/preview-product-image.png)         | Pass: No Errors                                     |
+| `rating.js`       | ![Screenshot](documentation/rating-js.png)         | Pass: No Errors                                     |
+| `adjust-quantity-script.html`             | ![Screenshot](documentation/adjust-quantity-script-html.png)         | Pass: No Errors                                     |
+| `products-categories-display-script.html`        | ![Screenshot](documentation/products-category-display-html.png)         | Pass: No Errors |
+| `add_product.html` (postloadjs)                | ![Screenshot](documentation/add-product-postload-js.png)          | Pass: No Errors                           |
+| `edit_product.html` (postloadjs)                | ![Screenshot](documentation/edit-product-postload-js.png)          | Pass: No Errors                           |
+| `toasts.js`               | ![Screenshot](documentation/edit-product-postload-js.png)          | Unused variables: 	showSuccessToast, showWarningToast, showInfoToast, showErrorToast |
+| `base.html` (postloadjs)                | ![Screenshot](documentation/base-html-postloads.png)          | Pass: No Errors                           |
+
+
+
+
+
 
 
 
