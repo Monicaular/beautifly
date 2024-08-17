@@ -10,7 +10,7 @@ Checkout the live website [here](https://wholesome-basket-e-commerce-72c9883373e
 
 ---
 
-## Table of Contents
+## [Table of Contents](#table-of-contents)
 
 1. [User Experience](#user-experience)
 2. [The Strategy Plane](#the-strategy-plane)
@@ -40,7 +40,7 @@ Checkout the live website [here](https://wholesome-basket-e-commerce-72c9883373e
 			- [Wishlist Page](#wishlist-page)
 			- [Product Management Tab](#product-management-tab)
 			- [Account Info Page](#account-info-page)
-			- [Authentication Pages](#authentication-pages)
+			- [Authentication Features](#authentication-features)
 		- [All Products Page](#all-products-page)
 		- [Product Detail Page](#product-detail-page)
 		- [Checkout Page](#checkout-page)
@@ -80,11 +80,23 @@ The site offers **detailed product information**, ensuring informed decisions, a
 It's **mobile-friendly**, with features like **wishlists** and **personalized profiles** enhancing the shopping experience.
 The **clean design** and **quick access to support** make the site pleasant and reliable to use across all devices.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ## The Strategy Plane
 
 ### Project Goals
 
 The goal of the Wholesome Basket website is to provide a user-friendly platform where customers can easily browse, select, and purchase a variety of whole, natural, and organic food products. The project aims to promote healthier eating habits by offering high-quality, unprocessed foods that cater to various dietary needs and preferences. Additionally, the website seeks to create a seamless online shopping experience that emphasizes accessibility, convenience, and customer satisfaction.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### Target Audience
 
@@ -106,6 +118,12 @@ The goal of the Wholesome Basket website is to provide a user-friendly platform 
 
 This diverse audience is united by a common goal of making informed, health-oriented decisions about the food they consume, and they seek a shopping experience that aligns with their values and dietary preferences.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### First Time User Benefits
 
 - **Effortless Navigation**: The website is designed with user-friendly navigation, making it easy for first-time visitors to explore the product catalog. Users can seamlessly browse through categories, access the product list, and quickly find what they’re looking for.
@@ -113,6 +131,12 @@ This diverse audience is united by a common goal of making informed, health-orie
 - **Informative Product Details**: Each product page is rich with essential information. Users can easily access detailed descriptions, including ingredients, nutrition facts, and additional insights that help them make informed purchasing decisions.
 - **Simple Registration Process**: New users can quickly create an account with minimal steps, enabling them to start shopping without delays. The registration process is straightforward and designed to encourage engagement.
 - **Smooth Payment Experience**: The checkout process is intuitive and efficient, ensuring that users can complete their purchases without any hassle. The payment system is secure and easy to navigate, contributing to a positive overall experience.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### Registered User Benefits
 
@@ -128,6 +152,12 @@ This diverse audience is united by a common goal of making informed, health-orie
 
 - **Faster Checkout Process**: With saved details and a personalized account, registered users can enjoy a quicker, more efficient checkout process.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### Admin User Benefits
 
 - **Full Product Management**: Admin users can easily add, edit, and delete products through a user-friendly interface, ensuring the store's inventory is always up-to-date.
@@ -135,6 +165,12 @@ This diverse audience is united by a common goal of making informed, health-orie
 - **Category Management**: Admins can efficiently add or remove product categories directly from the admin panel, allowing for flexible organization of products.
 
 - **User Management**: Admin users have the authority to manage the user base, including the ability to remove users when necessary, maintaining the integrity of the community.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 
 ## Agile Methodology
@@ -151,6 +187,12 @@ This project follows an Agile methodology to ensure flexibility, collaboration, 
     - **Won't Have**: Features that will not be included in this project cycle.
 
 This approach helps to maintain focus on delivering the most important features while allowing flexibility for adjustments as the project progresses.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 <details>
 <summary> User Stories Template
@@ -184,6 +226,12 @@ This approach helps to maintain focus on delivering the most important features 
 - <a href="https://github.com/users/Monicaular/projects/6" target="_blank">Visit GitHub Project roadmap here.</a>
 
 </details>
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### User Stories
 
@@ -230,6 +278,12 @@ Iterations
     - Final deployment and stress testing.
 
 For detailed look of the project board, check this [link](https://github.com/users/Monicaular/projects/6).
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ## Fundamental Structure
 
@@ -439,12 +493,23 @@ I designed detailed wireframes for both mobile and desktop versions of the proje
 
 </details>
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### Entity Relationship Diagram (ERD)
 
 I created an Entity-Relationship Diagram (ERD) to visually represent the database structure and relationships within the project. This ERD was carefully crafted to ensure efficient data management and clear associations between various entities, such as products, users, orders, and ratings. By mapping out the database design in advance, I was able to identify and implement the necessary tables and relationships, ensuring that the application's data flow is both logical and scalable.
 
 ![Database Schema](documentation/erd-wholesome-basket.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ## Main Plan
 
@@ -453,6 +518,12 @@ I created an Entity-Relationship Diagram (ERD) to visually represent the databas
 - **Setting up secure user accounts** to enable features like adding items to wishlists, saving basket contents, and providing a personalized shopping experience with faster checkouts.
 - **Developing a fully responsive website** that delivers a seamless user experience across all devices, with special attention to mobile-friendly navigation and optimized page load speeds.
 - **Empowering superusers with the ability** to manage the product catalog, including adding, editing, and deleting products, as well as managing categories and user accounts directly from the admin panel.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ## Structure Plane
 
@@ -466,6 +537,12 @@ I created an Entity-Relationship Diagram (ERD) to visually represent the databas
 - **Shop by Category Section:** Directly below the hero image, the homepage showcases a "Shop by Category" section. This section features key product categories, each represented with visually appealing images. Users can easily click on these images to navigate directly to their desired category, streamlining the shopping experience and helping them find what they need quickly.
 ![Shop By Category](/documentation/shop-by-category-screnshot.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 #### Footer
 The footer maintains a consistent presence across all pages, providing easy access to essential links and features no matter where users navigate on the site. This uniformity ensures that users always have a convenient way to reach contact information, policy details, and social media channels, enhancing overall site usability and cohesion.
 ![Footer Preview](/documentation/footer-screenshot.png)
@@ -473,6 +550,12 @@ The footer maintains a consistent presence across all pages, providing easy acce
 - **Subscribe to Our Offers**: Adjacent to the contact section is a subscription area where users can enter their email address to join the mailing list and receive updates on offers and promotions.
 ![Succesfull subscribe](/documentation/subscription-succesful-screenshot.png)
 - **Social Media Links**: To foster community engagement and provide more ways to stay connected, the footer includes links to the website's social media profiles on Facebook, X (formerly Twitter), Instagram, and TikTok.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ##### About Us Page
 
@@ -486,17 +569,35 @@ The "Contact Us" page features a simple form where users can provide their email
 
 ![Contact us page preview](/documentation/contact-us-form.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ##### Privacy Policy Page
 
 The Privacy Policy page outlines how Wholesome Basket collects, uses, and protects user information. It provides details on data privacy, user rights, and the measures in place to ensure the security of personal data.
 
 ![Privacy Policy page preview](/documentation/privacy-policy-page.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ##### Returns Policy Page
 
 The Returns Policy page details Wholesome Basket's commitment to customer satisfaction with a "No Quibbles 30 Day Quality Guarantee" for UK customers. It explains the process for returning products within 30 days for a full refund, including instructions on how to return items, conditions for returns, and procedures for handling damaged orders.
 
 ![Returns Policy page preview](/documentation/returns-policy.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 #### Main Nav Menu
 
@@ -511,6 +612,12 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 ![Screenshot of no products found](/documentation/no-products-found.png)
 
 ![Screenshot of the number of products found](/documentation/searched-products-found.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 
 ##### Main Nav Bar
@@ -530,6 +637,12 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 - The Account tab displays a register/login dropdown for users who are logged out or do not have an account. For users who are logged in, the tab shows their account details and a log out button. If they are the admin of the site, the product management feature is also available here.
 
 ![Screenshot of the account tab](/documentation/account-dropdown.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ##### Basket Page
 
@@ -551,6 +664,12 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot with the basket products and summary after updating](/documentation/updated-basket-products.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ##### Wishlist Page
 
 - In the Wishlist tab, logged-in users can view products they have saved. If the wishlist is empty, the page will indicate this. Users who are not logged in are redirected to the login page when they attempt to access this feature.
@@ -561,6 +680,12 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 - The last tab in the main navigation bar is the Delivery Info tab, which is available to all users and contains the delivery terms and conditions.
 
 ![Screenshot of shipping info page](/documentation/delivery-info-page.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### My Account Tab
 
@@ -576,6 +701,12 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot with the add product success message](/documentation/add-a-product-success-message.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ###### Edit Product Form
 
 - The edit product form appears for admin users when they click on "Edit" either from the products list page or the product detail page. This form is pre-filled with the existing product information, allowing them to add, remove, or modify any fields as needed.
@@ -590,6 +721,12 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot with success message after editing product](/documentation/success-edit-product-message.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ###### Delete Product Section
 
 - The admin user has the option to delete a product by clicking on the delete button, which is displayed next to the product photo while they are logged in.
@@ -603,6 +740,12 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 - If they proceed with deleting the product, they are redirected to the products list page and receive a success message confirming the deletion.
 
 ![Screenshot with successfull delete message](/documentation/delete-successful.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 
 ##### Account Info
@@ -619,7 +762,13 @@ In the top-middle section of the main navigation bar, there is a search bar wher
 
 ![Screenshot of the my account wishlist page](/documentation/wishlist-my-account.png)
 
-##### Authentication Pages
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
+##### Authentication Features
 
 The buttons for the authentication pages are located in the "My Account" tab. If the user is logged in, they have the option to log out. If they are not logged in, they can choose to register or sign in. Additionally, the sign-in page is automatically prompted when users attempt to access the Wishlist page.
 
@@ -631,6 +780,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
 ![Screenshot with sign in message](/documentation/sign-in-message.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ###### Sign Out
 
 ![Screenshot of the sign out page](/documentation/sign-out-screenshot.png)
@@ -638,6 +793,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 - When a user signs out, they receive a notification confirming that they have successfully signed out.
 
 ![Screenshot with sign out message](/documentation/sign-out-message.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ###### Register
 
@@ -657,6 +818,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 - When they press the "Confirm" button, they receive a success message indicating that their email has been confirmed and are then redirected to the sign-in page.
 
 ![Screenshot with the success registration message](/documentation/success-register-message.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 #### All Products Page
 
@@ -694,6 +861,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
     ![Screenshot with the product card](/documentation/product-card.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 #### Product Detail Page
 
 - On this page, users can view all the details of the product, including the name, price, size, rating, description, ingredients, nutrition facts, interesting facts, and some related products. 
@@ -714,6 +887,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 - For easy navigation, the user also has access to a breadcrumb navigation bar on the product detail page.
 
 ![Screenshot with the breadcrumb navigation](/documentation/breadcrumb-navigation.png)
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 
 #### Checkout Page
@@ -739,6 +918,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 ![Screenshot with the adjust basket and compleet order button](/documentation/complete-order-adjust-basket.png)
 ![Screenshot with the loading page](/documentation/loading-page.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 #### Checkout Success Page
 
 - On the checkout success page, users are presented with a thank you message, along with their order information, delivery details, and a summary of their order. Additionally, they are informed that a confirmation has been sent to their email address.
@@ -757,6 +942,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
 ![Screenshot with the order confirmation email](/documentation/order-confirmation-email.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 
 #### Error Pages
 
@@ -768,6 +959,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 
 ![Error 500 page](/documentation/error-500-screenshot.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### Future Features
 
 - Allow users to select the quantity of products they wish to purchase, initially designed for bulk buying.
@@ -776,6 +973,12 @@ The buttons for the authentication pages are located in the "My Account" tab. If
 - Provide multiple images for each product to give a better visual representation.
 - Display real-time stock levels to inform customers of product availability.
 - Implement a recommendation system that suggests products based on users' previous purchases.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ## Design
 
@@ -791,6 +994,12 @@ These colors have been chosen for the Wholesoem Basket's website because they al
 
 Together, these colors create a cohesive, inviting, and trustworthy aesthetic that aligns with the Whole Foods brand and appeals to its target audience.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 
 ### Typography
 
@@ -798,9 +1007,21 @@ Together, these colors create a cohesive, inviting, and trustworthy aesthetic th
 
 **Raleway** is a highly versatile and elegant font that complements the Playwrite fonts with its range of weights from light to bold. Raleway is used for body text and other content where readability is crucial, offering a smooth and pleasant reading experience. Its modern yet approachable style ensures that the text remains clear and engaging, supporting the site's clean and user-friendly design.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### Images
 
 Most of the images used on the site are sourced from another website, with their permission. Additionally, some images are from free stock photo websites like [Pexels](https://www.pexels.com/) and [Vecteezy](https://www.pexels.com/).
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ## Business Model
 
@@ -829,6 +1050,12 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 
         ![Subscription Form](/documentation/subscription-screenshot.png)
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ## Technologies
 
 ### Languages used
@@ -838,10 +1065,23 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 * [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 * [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### Frameworks Used
 
 * [Django](https://www.djangoproject.com/)
 * [Bootstrap](https://blog.getbootstrap.com/)
+
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 
 ### Libraries and Installed Packages
@@ -865,6 +1105,11 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 - [**sqlparse==0.5.0**](https://sqlparse.readthedocs.io/en/latest/): A non-validating SQL parser for Python, used for splitting, formatting, and parsing SQL statements.
 - [**stripe==10.3.0**](https://stripe.com/docs/api): The official Python library for Stripe, a service that allows developers to handle online payments and transactions easily.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### Tools and Resources
 
@@ -878,9 +1123,21 @@ This online platform operates on a Business to Consumer (B2C) model, offering cu
 - [**Mailchimp**](https://mailchimp.com/): Email marketing and automation platform.
 - [**AWS (Amazon Web Services)**](https://aws.amazon.com/): Comprehensive cloud services platform.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ## Testing
 
 For any testing procedures, please consult the [TESTING.md](TESTING.md) file.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ## Fixed Bugs
 
@@ -896,6 +1153,12 @@ Here are some of the bugs I encountered along with the solutions I implemented.
 
 - A particularly significant bug I encountered occurred when I forgot to add my `env` file to the `.gitignore` file, resulting in all my secret keys being exposed in the repository. With the assistance of the tutors, I was able to resolve this issue using a tool called `git filter-repo`, which successfully removed the sensitive data from my commit history.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ## Credits
 
 This project was inspired and shaped by several valuable resources and individuals:
@@ -909,13 +1172,31 @@ This project was inspired and shaped by several valuable resources and individua
 
 These resources and individuals were instrumental in the successful completion of the project.
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ## Deployment
 
 The live version of the application is available on [Heroku](https://wholesome-basket-e-commerce-72c9883373ee.herokuapp.com/).
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### PostgreSQL Database
 
 The database link was provided by Code Institute, and no additional configuration was required to obtain it.
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 ### Amazon Web Services (AWS)
 
@@ -1136,6 +1417,12 @@ Or:
 
 Your project should now be successfully connected and deployed on Heroku!
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 
 ### Local Deployment
 
@@ -1181,6 +1468,12 @@ To back up your database models, you can create a fixture for each model with th
 - `python3 manage.py dumpdata your-model > your-model.json`
 - *Repeat this command for each model you wish to back up.*
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### Cloning
 
 To clone the repository, follow these steps:
@@ -1200,6 +1493,12 @@ Alternatively, if you're using Gitpod, you can create your own workspace with th
 
 Please note that to open the project directly in Gitpod, you need to have the Gitpod browser extension installed. You can find a tutorial on how to install it [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
+
 ### Forking
 
 Forking a GitHub repository allows you to create a copy of the original repository in your own GitHub account. This enables you to view and make changes without impacting the original repository owned by someone else. To fork this repository, follow these steps:
@@ -1207,6 +1506,12 @@ Forking a GitHub repository allows you to create a copy of the original reposito
 1. Log in to GitHub and navigate to the [GitHub Repository](https://github.com/Monicaular/wholesomebasket).
 2. At the top of the repository page (just above the "Settings" button), locate and click the "Fork" button.
 3. After clicking, you will have a copy of the original repository in your own GitHub account!
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 
 ## Acknowledgements
@@ -1223,5 +1528,11 @@ I would like to express my heartfelt gratitude to the following individuals and 
 - **My family:** A special thanks to my family for their unwavering support and understanding, helping me manage my time effectively while working on this project.
 
 Your support and encouragement have made this achievement possible. Thank you!
+
+<br>
+
+[Back to Top](#table-of-contents)
+
+<br>
 
 
