@@ -7,7 +7,9 @@ Order Date: {{ order.date|date:"F j, Y" }}
 
 Delivery Address:
 {{ order.street_address1 }}
+{{ order.street_address2 }}
 {{ order.town_or_city }}
+{{ order.postcode }}
 
 Order Summary:
 {% for item in order.lineitems.all %}
