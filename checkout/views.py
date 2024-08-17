@@ -31,7 +31,9 @@ def cache_checkout_data(request):
                 "basket": json.dumps(request.session.get("basket", {})),
                 "save_info": request.POST.get("save_info"),
                 "username": (
-                    request.user.username if request.user.is_authenticated else ""
+                    request.user.username
+                    if request.user.is_authenticated
+                    else ""
                 ),
             },
         )
@@ -84,7 +86,9 @@ def checkout(request):
                     return redirect(reverse("view_basket"))
 
             request.session["save_info"] = "save-info" in request.POST
-            return redirect(reverse("checkout_success", args=[order.order_number]))
+            return redirect(
+                reverse("checkout_success", args=[order.order_number])
+            )
         else:
             messages.error(
                 request,
@@ -95,7 +99,9 @@ def checkout(request):
         basket = request.session.get("basket", {})
 
         if not basket:
-            messages.error(request, "There's nothing in your basket at the moment")
+            messages.error(
+                request, "There's nothing in your basket at the moment"
+            )
             return redirect(reverse("products"))
 
         current_basket = basket_contents(request)
@@ -188,7 +194,9 @@ def checkout_success(request, order_number):
         if user_profile_form.is_valid():
             user_profile_form.save()
         else:
-            messages.error(request, "There was an error updating your profile.")
+            messages.error(
+                request, "There was an error updating your profile."
+            )
 
     context = {
         "order": order,

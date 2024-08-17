@@ -12,9 +12,9 @@ def view_wishlist(request):
     Render the page displaying the user's wishlist.
     """
 
-    wishlist_items = Wishlist.objects.filter(user=request.user).select_related(
-        "product"
-    )
+    wishlist_items = Wishlist.objects.filter(
+        user=request.user
+    ).select_related("product")
 
     context = {
         "wishlist_items": wishlist_items,
@@ -34,9 +34,13 @@ def add_to_wishlist(request, product_id):
     )
 
     if created:
-        messages.success(request, f"{product.name} has been added to your wishlist.")
+        messages.success(
+            request, f"{product.name} has been added to your wishlist."
+        )
     else:
-        messages.info(request, f"{product.name} is already in your wishlist.")
+        messages.info(
+            request, f"{product.name} is already in your wishlist."
+        )
 
     return redirect(request.META.get("HTTP_REFERER", "products"))
 
@@ -53,7 +57,9 @@ def remove_from_wishlist(request, product_id):
             Wishlist, product_id=product_id, user=request.user
         )
         wishlist_item.delete()
-        messages.success(request, f"{product.name} Item removed from your wishlist.")
+        messages.success(
+            request, f"{product.name} Item removed from your wishlist."
+        )
     except Wishlist.DoesNotExist:
         messages.error(request, "Item was not found in your wishlist.")
 

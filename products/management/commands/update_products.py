@@ -62,5 +62,7 @@ class Command(BaseCommand):
                 )
             else:
                 self.stdout.write(
-                    self.style.WARNING(f'Product with SKU {fields["sku"]} not found.')
+                    self.style.WARNING(
+                        f'Product with SKU {fields["sku"]} not found.'
+                    )
                 )

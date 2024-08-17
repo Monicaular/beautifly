@@ -13,6 +13,8 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="carouselitem",
             name="image",
-            field=models.ImageField(blank=True, null=True, upload_to="carousel/"),
+            field=models.ImageField(
+                blank=True, null=True, upload_to="carousel/"
+            ),
         ),
     ]

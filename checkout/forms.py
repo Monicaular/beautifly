@@ -20,7 +20,9 @@ class OrderForm(forms.ModelForm):
             "county",
         )
         widgets = {
-            "country": CountrySelectWidget(attrs={"class": "stripe-style-input"})
+            "country": CountrySelectWidget(
+                attrs={"class": "stripe-style-input"}
+            )
         }
 
     def __init__(self, *args, **kwargs):

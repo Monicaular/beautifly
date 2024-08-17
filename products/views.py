@@ -64,7 +64,9 @@ def all_products(request):
     if "q" in request.GET:
         query = request.GET["q"]
         if query:
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query
+            )
             products = products.filter(queries)
         else:
             messages.error(request, "You need to enter a search criteria!")
@@ -140,7 +142,11 @@ def add_product(request):
         return redirect(reverse("home"))
 
     NutritionalFactsFormSet = inlineformset_factory(
-        Product, NutritionalFacts, form=NutritionalFactsForm, extra=1, can_delete=True
+        Product,
+        NutritionalFacts,
+        form=NutritionalFactsForm,
+        extra=1,
+        can_delete=True,
     )
     RelatedProductFormSet = inlineformset_factory(
         Product,
@@ -180,14 +186,18 @@ def add_product(request):
 
                     fast_fact_formset.save()
                     messages.success(request, "Product added successfully!")
-                    return redirect(reverse("product_detail", args=[product.id]))
+                    return redirect(
+                        reverse("product_detail", args=[product.id])
+                    )
                 except ValueError as e:
                     messages.error(request, f"Error: {str(e)}")
             else:
                 messages.error(request, "Please correct the errors below.")
 
         else:
-            messages.error(request, "Please correct the errors in the main form below.")
+            messages.error(
+                request, "Please correct the errors in the main form below."
+            )
 
     else:
         product_form = ProductForm()
@@ -217,7 +227,11 @@ def edit_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     NutritionalFactsFormSet = inlineformset_factory(
-        Product, NutritionalFacts, form=NutritionalFactsForm, extra=1, can_delete=True
+        Product,
+        NutritionalFacts,
+        form=NutritionalFactsForm,
+        extra=1,
+        can_delete=True,
     )
     RelatedProductFormSet = inlineformset_factory(
         Product,
@@ -232,9 +246,15 @@ def edit_product(request, product_id):
     )
 
     if request.method == "POST":
-        product_form = ProductForm(request.POST, request.FILES, instance=product)
-        nutritional_formset = NutritionalFactsFormSet(request.POST, instance=product)
-        related_formset = RelatedProductFormSet(request.POST, instance=product)
+        product_form = ProductForm(
+            request.POST, request.FILES, instance=product
+        )
+        nutritional_formset = NutritionalFactsFormSet(
+            request.POST, instance=product
+        )
+        related_formset = RelatedProductFormSet(
+            request.POST, instance=product
+        )
         fast_fact_formset = FastFactFormSet(request.POST, instance=product)
 
         if (
@@ -313,7 +333,9 @@ def add_rating(request, product_id):
 
     if request.method == "POST":
         # Check if the user has already rated this product
-        if Rating.objects.filter(product=product, user=request.user).exists():
+        if Rating.objects.filter(
+            product=product, user=request.user
+        ).exists():
             messages.error(request, "You have already rated this product.")
             return redirect(reverse("product_detail", args=[product.id]))
 
@@ -334,10 +356,13 @@ def add_rating(request, product_id):
                 return redirect(reverse("product_detail", args=[product.id]))
             except IntegrityError as e:
                 messages.error(
-                    request, "An error occurred while submitting your rating."
+                    request,
+                    "An error occurred while submitting your rating.",
                 )
                 return redirect(reverse("product_detail", args=[product.id]))
         else:
-            messages.error(request, "There was a problem with your rating submission.")
+            messages.error(
+                request, "There was a problem with your rating submission."
+            )
 
     return redirect(reverse("product_detail", args=[product.id]))

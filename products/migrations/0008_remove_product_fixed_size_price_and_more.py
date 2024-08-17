@@ -37,7 +37,10 @@ class Migration(migrations.Migration):
                 ),
                 ("name", models.CharField(max_length=255)),
                 ("amount", models.CharField(max_length=255)),
-                ("unit", models.CharField(blank=True, max_length=50, null=True)),
+                (
+                    "unit",
+                    models.CharField(blank=True, max_length=50, null=True),
+                ),
                 (
                     "product",
                     models.ForeignKey(

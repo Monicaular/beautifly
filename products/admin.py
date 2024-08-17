@@ -1,5 +1,11 @@
 from django.contrib import admin
-from .models import Product, Category, NutritionalFacts, RelatedProduct, FastFact
+from .models import (
+    Product,
+    Category,
+    NutritionalFacts,
+    RelatedProduct,
+    FastFact,
+)
 
 
 class NutritionalFactsInline(admin.TabularInline):

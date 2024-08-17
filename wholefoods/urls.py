@@ -29,7 +29,7 @@ urlpatterns = [
     path("checkout/", include("checkout.urls")),
     path("profile/", include("profiles.urls")),
     path("wishlist/", include("wishlist.urls")),
-    path('induce-500-error/', induce_500_error, name='induce_500_error'),
+    path("induce-500-error/", induce_500_error, name="induce_500_error"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = custom_404_page

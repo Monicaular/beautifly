@@ -22,8 +22,14 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("image", models.ImageField(blank=True, null=True, upload_to="")),
-                ("caption_title", models.CharField(blank=True, max_length=100)),
+                (
+                    "image",
+                    models.ImageField(blank=True, null=True, upload_to=""),
+                ),
+                (
+                    "caption_title",
+                    models.CharField(blank=True, max_length=100),
+                ),
                 ("caption_text", models.TextField(blank=True)),
                 ("is_active", models.BooleanField(default=False)),
             ],

@@ -57,7 +57,9 @@ def adjust_basket(request, item_id):
     else:
         basket.pop(item_id, None)
         messages.success(
-            request, "Item removed from your basket", extra_tags="show_basket_preview"
+            request,
+            "Item removed from your basket",
+            extra_tags="show_basket_preview",
         )
 
     request.session["basket"] = basket

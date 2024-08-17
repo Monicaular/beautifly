@@ -20,4 +20,6 @@ class Command(BaseCommand):
                 },
             )
 
-        self.stdout.write(self.style.SUCCESS("Categories have been loaded or updated."))
+        self.stdout.write(
+            self.style.SUCCESS("Categories have been loaded or updated.")
+        )

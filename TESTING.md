@@ -62,15 +62,25 @@ I have validated all of my JS files using the [JSHint Validator](https://jshint.
 | `toasts.js`               | ![Screenshot](documentation/edit-product-postload-js.png)          | Unused variables: 	showSuccessToast, showWarningToast, showInfoToast, showErrorToast |
 | `base.html` (postloadjs)                | ![Screenshot](documentation/base-html-postloads.png)          | Pass: No Errors                           |
 
+### Python Validation
 
+I have used [Black](https://black.readthedocs.io/en/stable/) to format all my Python code according to standard practices, setting the maximum line length to 79 characters. However, it's important to note that Black may still keep some lines up to 88 characters long. This is because Black prioritizes readability and consistent formatting, even if it means slightly exceeding the specified line length in certain cases. I also randomly tested several Python files using [PEP8 CI](https://pep8ci.herokuapp.com/) to ensure the formatting was applied correctly.
 
-
-
-
-
-
-
-
+| File                         | Screenshot                                              | Notes           |
+|------------------------------|---------------------------------------------------------|-----------------|
+| Basket contexts.py              | ![screenshot](documentation/contexts.png)              | Pass: No Errors |
+| Basket urls.py                  | ![screenshot](documentation/basket-urls-py.png)              | Pass: No Errors |
+| Basket views.py                 | ![screenshot](documentation/basket-views-py.png)              | Pass: No Errors |
+| Profiles models.py                 | ![screenshot](documentation/profiles-models-py.png)              | Pass: No Errors |
+| Profiles forms.py                | ![screenshot](documentation/profiles-forms-py.png)              | Pass: No Errors |
+| Products models.py            | ![screenshot](documentation/products-models-py.png)              | 72: E501 line too long (83 > 79 characters) |
+| Products admin.py            | ![screenshot](documentation/products-admin-py.png)              | Pass: No Errors |
+| Products views.py           | ![screenshot](documentation/products-views-py.png)              | 140: E501 line too long (86 > 79 characters), 224: E501 line too long, (86 > 79 characters), 317: E501 line too long (86 > 79 characters) |
+| Wishlist urls.py          | ![screenshot](documentation/wishlist-urls-py.png)              | Pass: No Errors |
+| Wishlist views.py             | ![screenshot](documentation/wishlist-views-py.png)              | Pass: No Errors |
+| Checkout forms.py            | ![screenshot](documentation/checkout-forms-py.png)              | Pass: No Errors |
+| Checkout models.py            | ![screenshot](documentation/checkout-models-py.png)              | Pass: No Errors |
+| Checkout webhook_handler.py  | ![screenshot](documentation/checkout-webhook-handler.png)              | 115: E501 line too long (107 > 79 characters), 152: E501 line too long (81 > 79 characters), 166: E501 line too long (93 > 79 characters), 177: E501 line too long (119 > 79 characters) |
 
 
 

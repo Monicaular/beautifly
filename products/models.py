@@ -30,7 +30,9 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2, default=0.00)
     ingredients = models.TextField()
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True
+    )
     image = models.ImageField(null=True, blank=True)
     size = models.CharField(max_length=254, null=True, blank=True)
 
@@ -41,7 +43,9 @@ class Product(models.Model):
         """Update the product's average rating based on user ratings."""
         ratings = self.ratings.all()
         if ratings.exists():
-            average_rating = sum(rating.value for rating in ratings) / ratings.count()
+            average_rating = (
+                sum(rating.value for rating in ratings) / ratings.count()
+            )
             self.rating = round(average_rating, 2)
         else:
             self.rating = None
@@ -59,7 +63,9 @@ class Rating(models.Model):
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=["user", "product"], name="rating_per_user")
+            models.UniqueConstraint(
+                fields=["user", "product"], name="rating_per_user"
+            )
         ]
 
     def __str__(self):

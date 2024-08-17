@@ -18,6 +18,7 @@ def custom_500_page(request):
     """
     return render(request, "500.html", status=500)
 
+
 def induce_500_error(request):
     # Intentionally raise an exception to trigger a 500 error
     raise Exception("This is an intentional 500 error for testing purposes.")

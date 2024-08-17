@@ -28,7 +28,13 @@ class Migration(migrations.Migration):
                 (
                     "value",
                     models.IntegerField(
-                        choices=[(1, "1"), (2, "2"), (3, "3"), (4, "4"), (5, "5")]
+                        choices=[
+                            (1, "1"),
+                            (2, "2"),
+                            (3, "3"),
+                            (4, "4"),
+                            (5, "5"),
+                        ]
                     ),
                 ),
                 (
