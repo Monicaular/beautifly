@@ -31,6 +31,19 @@ I utilized the [W3C HTML Validator](https://validator.w3.org), the recommended t
 | Basket        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fbasket%2F)                                                             | ![screenshot](/documentation/basket-html-validation.png)  | Pass: No Errors  |
 | Checkout        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fcheckout%2F)                                                             | ![screenshot](/documentation/checkout-html-validation.png)  | Pass: No Errors  |
 |Checkout Success        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fbasket%2F)                                                             | ![screenshot](/documentation/checkout-success-html-validation.png)  | Pass: No Errors  |
+|Wishlist        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fwishlist%2F)                                                             | ![screenshot](/documentation/wishlist-html-validation.png)  | Pass: No Errors  |
+
+### CSS Validation
+
+I have validated all of my CSS files using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator).
+
+| File           | Screenshot                                                    | Notes            |
+|----------------|---------------------------------------------------------------|------------------|
+| `base.css`     | ![Screenshot](documentation/base-css-validation.png)          | Pass: No Errors  |
+| `checkout.css` | ![Screenshot](documentation/checkout-css-validation.png)      | Pass: No Errors  |
+| `profile.css`  | ![Screenshot](documentation/profiles-css-validation.png)      | Pass: No Errors  |
+
+
 
 
 
