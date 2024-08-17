@@ -28,6 +28,9 @@ I utilized the [W3C HTML Validator](https://validator.w3.org), the recommended t
 | Register         | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Faccounts%2Flogin%2F)                                                             | ![screenshot](/documentation/register-html-validation.png)  | Pass: No Errors  |
 | Add Product        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Faccounts%2Flogin%2F)                                                             | ![screenshot](/documentation/add-product-html-validation.png)  | Pass: No Errors  |
 | Edit Product        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fproducts%2Fedit%2F86%2F)                                                             | ![screenshot](/documentation/edit-product-html-validation.png)  | Pass: No Errors  |
+| Basket        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fbasket%2F)                                                             | ![screenshot](/documentation/basket-html-validation.png)  | Pass: No Errors  |
+| Checkout        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fcheckout%2F)                                                             | ![screenshot](/documentation/checkout-html-validation.png)  | Pass: No Errors  |
+|Checkout Success        | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwholesome-basket-e-commerce-72c9883373ee.herokuapp.com%2Fbasket%2F)                                                             | ![screenshot](/documentation/checkout-success-html-validation.png)  | Pass: No Errors  |
 
 
 
