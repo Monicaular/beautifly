@@ -116,7 +116,7 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/adjust-quantity-script.html' %}
-<script type="text/javascript">
+<script>
     document.addEventListener('DOMContentLoaded', function() {
         // Update quantity on click
         document.querySelectorAll('.update-link').forEach(button => {
