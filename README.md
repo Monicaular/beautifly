@@ -449,9 +449,270 @@ The Returns Policy page details Wholesome Basket's commitment to customer satisf
 
 ![Returns Policy page preview](/documentation/returns-policy.png)
 
-### Error Pages 
+## Main Nav Menu
+
+### Search Bar
+
+In the top-middle section of the main navigation bar, there is a search bar where users can search for products by entering a word or a fragment of a word found either in the product name or description. If no products match the search term, the results will display `'0 products found.'` Otherwise, the search results will list the matching products and indicate the total number of products containing the entered word. If the search bar is submitted without any input, an error message will appear stating, `'You need to enter a search criteria.'`
+
+![Screenshot of the top main-nav](/documentation/search-bar-screenshot.png)
+
+![Screenshot of search criteria error](/documentation/search-criteria-error.png)
+
+![Screenshot of no products found](/documentation/no-products-found.png)
+
+![Screenshot of the number of products found](/documentation/searched-products-found.png)
+
+
+### Main Nav Bar
+
+- In the next line of the main navigation, there are 5 main categories, one of which is the "All Products" tab where users can sort products by price, rating, and category, as well as display all products on the page.
+
+![Screenshot of the categories part of the main navigation bar](/documentation/all-categories-bar.png)
+
+- The other 4 tabs break down the main categories into subcategories, allowing users to more easily select the products they are looking for.
+
+![Screenshot of the categories and their subcategories](/documentation/all-products-tab.png) ![alt text](/documentation/food-cupboard-tab.png) ![alt text](/documentation/snacks-tab.png) ![alt text](/documentation/chilled-tab.png) ![alt text ](/documentation/breakfast-tab.png)
+
+- At the right end of this navigation line, there are tabs for Account, Shopping Basket, Wishlist, and Delivery Information.
+
+![Screenshot of the account part of the main navigation bar](/documentation/account-info-tabs.png)
+
+- The Account tab displays a register/login dropdown for users who are logged out or do not have an account. For users who are logged in, the tab shows their account details and a log out button. If they are the admin of the site, the product management feature is also available here.
+
+![Screenshot of the account tab](/documentation/account-dropdown.png)
+
+- In the Wishlist tab, logged-in users can view products they have saved. If the wishlist is empty, the page will indicate this. Users who are not logged in are redirected to the login page when they attempt to access this feature.
+
+![Screenshot of empty wishlist page](/documentation/wishlist-empty.png) ![Screenshot of wishlist with products page](/documentation/wishlist-page.png)
+
+- In the basket tab, users can view the products in their basket if any are present; otherwise, it will indicate that the basket is empty.
+
+![Screenshot of empty basket page](/documentation/empty-basket.png) ![Screenshot of basket with items page](/documentation/basket-page.png)
+
+- The last tab in the main navigation bar is the Delivery Info tab, which is available to all users and contains the delivery terms and conditions.
+
+![Screenshot of shipping info page](/documentation/delivery-info-page.png)
+
+### My Account Tab
+
+#### Product Management
+
+#### Add a Product Form
+
+- As previously mentioned, the product management tab provides admin users with access to an "Add a Product" page, where they can add new products to the catalog. This page also includes a feature that allows them to preview any uploaded images.
+
+![Screenshot with the add product form](/documentation/add-product-management-form.png)
+
+- When admin users add a new product, they receive a message confirming that the product has been successfully added and are then redirected to the product's page.
+
+![Screenshot with the add product success message](/documentation/add-a-product-success-message.png)
+
+#### Edit Product Form
+
+- The edit product form appears for admin users when they click on "Edit" either from the products list page or the product detail page. This form is pre-filled with the existing product information, allowing them to add, remove, or modify any fields as needed.
+
+![Screenshot with the edit product form](/documentation/edit-product-form-page.png)
+
+- While on the editing form, users receive a notification indicating which product they are currently editing.
+
+![Screenshot with info message on edit product form](/documentation/info-message-edit-product.png)
+
+- After updating the product, the user receives a notification confirming that the product has been successfully updated and is then redirected to the product's page.
+
+![Screenshot with success message after editing product](/documentation/success-edit-product-message.png)
+
+#### Delete Product Section
+
+- The admin user has the option to delete a product by clicking on the delete button, which is displayed next to the product photo while they are logged in.
+
+![Screenshot with the edit and delete buttons](/documentation/edit-delete-buttons.png)
+
+- When they click the delete button, a modal appears asking for confirmation, giving them the option to cancel if they change their mind.
+
+![Screenshot with the delete modal](/documentation/delete-modal-prompt.png)
+
+- If they proceed with deleting the product, they are redirected to the products list page and receive a success message confirming the deletion.
+
+![Screenshot with successfull delete message](/documentation/delete-successful.png)
+
+
+#### Account Info
+
+- In the "My Account" tab, users can view their account information, including their username, email, and address. A button is available to update this information, which will bring up a form for making any necessary corrections.
+
+![Screenshot with the account info ](/documentation/account-information-display.png) ![alt text](/documentation/account-information-update-details-form.png)
+
+- Additionally, there is a "My Orders" tab where users can view a list of their past orders along with the order details.
+
+![Screenshot of the order history page](/documentation/order-history.png)
+
+- The final section within the "My Account" tab is the Wishlist, where users can see the products they've added. Here, they have the option to either remove items or add them to their basket.
+
+![Screenshot of the my account wishlist page](/documentation/wishlist-my-account.png)
+
+### Authentication Pages
+
+The buttons for the authentication pages are located in the "My Account" tab. If the user is logged in, they have the option to log out. If they are not logged in, they can choose to register or sign in. Additionally, the sign-in page is automatically prompted when users attempt to access the Wishlist page.
+
+- Sign In
+
+![Screenshot of the sign in page](/documentation/sign-in-screenshot.png)
+
+    - When a user signs in, they receive a message confirming that they are logged in as their username.
+
+![Screenshot with sign in message](/documentation/sign-in-message.png)
+
+- Sign Out
+
+![Screenshot of the sign out page](/documentation/sign-out-screenshot.png)
+
+    - When a user signs out, they receive a notification confirming that they have successfully signed out.
+
+![Screenshot with sign out message](/documentation/sign-out-message.png)
+
+- Register
+
+![Screenshot of the register page](/documentation/sign-up-screenshot.png)
+
+    - When a user signs up, they receive a message indicating that a confirmation email has been sent to their email address.
+
+![Screenshot with verify email address message](/documentation/verify-email-address-message.png)
+
+    - The user receives an email containing a link that they can click to confirm their email address.
+
+![Screenshot with confirmation email address link](/documentation/confirmation-email-address.png)
+
+    - After the user clicks the link in the email, they are directed to a page where they receive a notification with a button labeled "Confirm."
+
+![Screenshot with email confirmation page](/documentation/confirm-email-address-message.png)
+
+    - When they press the "Confirm" button, they receive a success message indicating that their email has been confirmed and are then redirected to the sign-in page.
+
+![Screenshot with the success registration message](/documentation/success-register-message.png)
+
+### All Products Page
+
+- This page includes several features for an improved user experience. Users are shown 12 products per page, with pagination provided to prevent endless scrolling and to ensure faster page loading.
+
+![Screenshot with all the products displayed on the page](/documentation/show-all-products.png)
+
+
+- Users can sort all products by price, rating, name, or category, in either ascending or descending order. Additionally, they can filter and display a specific category in real-time from the left-hand side of the page.
+
+![Screenshot of sorting all the products by price descending](/documentation/sort-all-products-by-price.png)
+
+![Screenshot of products filtered by a category](/documentation/show-a-category-for-products.png)
+
+
+![Screenshot of the products filtered by a category and sorted by price ascending](/documentation/sort-a-category-by-price.png)
+
+- The sorting options—by price, rating, name, or category—remain consistent even when users navigate to the next page, ensuring the sorting preferences do not reset. 
+
+    ![Screenshot with sorting options](/documentation/sorting-screenshot.png)
+
+
+- Users can also easily skip to the first or last page using the pagination feature.
+![Screenshot with the pagination](/documentation/pagination-screenshot.png)
+
+- Users can add products to their wishlist by clicking on the heart icon located in the top-right corner of the product image.
+
+![Screenshot with success wishlist message](/documentation/add-to-wishlist-success-message.png)
+
+- If users already have a certain product in their wishlist, they will receive a message indicating that the product is already there.
+
+![Screenshot with info wishlist message](/documentation/info-wishlist-message.png)
+
+- To add a product to the basket, users can click on the "Add to Basket" button at the bottom of the product card.
+
+    ![Screenshot with the product card](/documentation/product-card.png)
+
+### Product Detail Page
+
+- On this page, users can view all the details of the product, including the name, price, size, rating, description, ingredients, nutrition facts, interesting facts, and some related products. 
+
+![Screenshots of the product detail page](/documentation/product-detail-part1.png)
+![Alt Text](/documentation/product-description.png)
+![Alt Text](/documentation/product-ingredients.png)
+![Alt Text](/documentation/product-nutrition.png)
+![Alt Text](/documentation/product-interesting-fact.png)
+
+- Users have the option to add the product to their wishlist, rate the product, select a quantity, add it to the basket, or simply return to the products page. Logged-in users can perform all these actions, while other users can only select the quantity and add the product to the basket.
+
+![Screenshot with the rating functionality](/documentation/product-rating.png)
+![Screenshot with the guest user product view](/documentation/product-for-guest-user.png)
+
+- Admin users have the ability to edit or delete this product, but these buttons are hidden from other users.
+
+- For easy navigation, the user also has access to a breadcrumb navigation bar on the product detail page.
+
+![Screenshot with the breadcrumb navigation](/documentation/breadcrumb-navigation.png)
+### Basket Page
+
+- A scrollable summary of the basket is displayed each time the user adds an item to the basket. This message box also informs them of the amount they still need to spend to qualify for free delivery.
+
+![Screnshot with the basket summary message](/documentation/message-basket-summary.png) ![Alt text](/documentation/message-basket-summary-2.png)
+
+- On the basket page, users can adjust the quantity of products by using the quantity button and then pressing "Update." A message will appear confirming that the quantity has been updated to the specified number.
+
+![Screenshot with the updated quantity](/documentation/update-quantity-successful.png)
+
+- When updating the quantity of the products, the order summary details are automatically updated as well.
+
+![Screenshot with the initial basket products](/documentation/initial-basket-products.png)
+
+![Screenshot with the basket products and summary after updating](/documentation/updated-basket-products.png)
+
+### Checkout Page
+
+- Guest users also have the option to proceed with checkout. On the checkout page, users are presented with a basket summary and a form that they need to fill out with their delivery details and card information.
+
+![Checkout Page Screenshot](/documentation/checkout-pahe-screenshot.png)
+
+- On the checkout page, users can view the products in their basket, along with an order summary that includes the total costs and the number of items they have.
+
+![Screenshot with basket products in the checkout page](/documentation/baskt-summary-checkout.png)
+
+- On the checkout page, users are shown their order summary again, including all the associated costs.
+
+![Screenshot with the order costs](/documentation/order-summary-checkout.png)
+
+- Also on the checkout page, users are presented with a form to fill in their delivery and card details. If the user has previously saved their information in the account info section, the delivery details will be prefilled.
+
+![Screenshot with delivery details form](/documentation/delivery-and-payment-form-checkout.png)
+
+- Lastly, on the checkout page, users are presented with two buttons. One button allows them to modify their basket and redirects them to the basket page if clicked. The other button takes them to the successful checkout page, displaying a loading screen while the payment is being processed. Below these buttons, the amount that will be charged to their card is clearly displayed.
+
+![Screenshot with the adjust basket and compleet order button](/documentation/complete-order-adjust-basket.png)
+![Screenshot with the loading page](/documentation/loading-page.png)
+
+### Checkout Success Page
+
+- On the checkout success page, users are presented with a thank you message, along with their order information, delivery details, and a summary of their order. Additionally, they are informed that a confirmation has been sent to their email address.
+
+![Screenshot of the checkout success page](/documentation/checkout-success-screenshot.png)
+
+![Screenshot with the confirmation order message](/documentation/confrimation-email-sent-message.png)
+
+![Screenshot with the order information](/documentation/order-informaiton-checkout-success.png)
+
+![Screenshot with the delivery information](/documentation/delivery-information-checkout-success.png)
+
+![Screenshot with the order details and the costs](/documentation/order-details-checkout-success.png)
+
+- The email confirmation is sent to the email address they signed up with and includes a summary of the order and delivery details.
+
+![Screenshot with the order confirmation email](/documentation/order-confirmation-email.png)
+
+
+## Error Pages
+
+### Error 404
 
 ![Error 404 page](/documentation/error-404-screenshot.png)
+
+### Error 500
+
 ![Error 500 page](/documentation/error-500-screenshot.png)
 
 ### Future Features
