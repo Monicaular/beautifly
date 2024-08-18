@@ -217,3 +217,21 @@ I used the Lighthouse Audit tool to assess my deployed project for any significa
 | | User clicks on the Order Number link in My Orders tab | User is taken to that order summary | Pass | User can go back to their profile |
 | | User clicks on the Add to Basket button in My Wishlist tab | Product is added to the basket | Pass | User gets a success or info message |
 | | User clicks on the Remove button in My Wishlist tab | Product is removed from the wishlist | Pass | User is shown a success message |
+
+## User Story Testing
+
+Below are the user stories I've included, along with corresponding screenshots for your review:
+
+| User Story | Screenshot |
+| --- | --- |
+| As a shopper I can identify what the website is selling so that I can understand the types of products available and decide if they meet my needs. | ![screenshot](documentation/products-desktop.png) |
+| As a shopper, I can see a list of products, so that I can easily choose the ones that I need. | ![screenshot](documentation/products-list.png) ![screenshot](documentation/products-list-2.png) |
+| As a shopper I can view my total purchase amount at any time, so that I can manage my spending and avoid exceeding my budget. |![screenshot](documentation/basket-totals.png) ![screenshot](documentation/totals-info.png) |
+|As a site user I can easily register for an account, so that I can save my preferences, track orders, and receive personalized recommendations. | ![screenshot](documentation/sign-up-screenshot.png) ![screenshot](documentation/subscribe-screenshot.png) ![screenshot](documentation/orders-screenshot.png)|
+| As a site user, I can easily log in and log out of my account, so that I can access personalized features and ensure my account security. | ![screenshot](documentation/sign-in-screenshot.png) ![screenshot](documentation/sign-out-screenshot.png) ![screenshot](documentation/account-information-display.png) |
+| As a site user I can have a personalized user profile, so that I can manage my preferences, view order history, and receive personalized recommendations. | ![screenshot](documentation/orders-screenshot.png) ![screenshot](documentation/account-information-display.png) ![screenshot](documentation/wishlist-profile.png) |
+|As a site user I can have a wishlist where I can save products for future reference or purchase, so that I can easily track items I am interested in. | ![screenshot](documentation/your-wishlist.png) |
+| As a site user, I can sort the list of available products by price, alphabetically, and popularity, so that I can find products more easily based on my preferences. | ![screenshot](documentation/sorting-feature.png) |
+| As a site user, I can sort products within a specific category by various criteria, so that I can easily find the most relevant products in that category. | ![screenshot](documentation/sorting-a-category.png) |
+|As a site user, I can sort products across multiple categories simultaneously by various criteria, so that I can compare and find the most relevant products efficiently. | ![screenshot](documentation/sort-all-categories.png) |
+| As a site user, I can search for products by entering keywords related to their name or description, so that I can quickly find specific products that match my interests or needs. | ![screenshot](documentation/image-198.png) |
