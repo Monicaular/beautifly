@@ -234,4 +234,23 @@ Below are the user stories I've included, along with corresponding screenshots f
 | As a site user, I can sort the list of available products by price, alphabetically, and popularity, so that I can find products more easily based on my preferences. | ![screenshot](documentation/sorting-feature.png) |
 | As a site user, I can sort products within a specific category by various criteria, so that I can easily find the most relevant products in that category. | ![screenshot](documentation/sorting-a-category.png) |
 |As a site user, I can sort products across multiple categories simultaneously by various criteria, so that I can compare and find the most relevant products efficiently. | ![screenshot](documentation/sort-all-categories.png) |
-| As a site user, I can search for products by entering keywords related to their name or description, so that I can quickly find specific products that match my interests or needs. | ![screenshot](documentation/image-198.png) |
+| As a site user, I can search for products by entering keywords related to their name or description, so that I can quickly find specific products that match my interests or needs. | ![screenshot](documentation/search-query-result.png) |
+| As a site user, I can easily select the quantity of a product when purchasing it, so that I can ensure I am ordering the correct amount of the item. | ![screenshot](documentation/select-quantity-product.png) ![screenshot](documentation/add-quantity-product.png) ![screenshot](documentation/update-quantity-product.png) |
+| As a site user, I can easily select the quantity of a product when purchasing it, so that I can ensure I am ordering the correct amount of the item. | ![screenshot](documentation/nutrition-facts.png) |
+| As a shopper, I can view the ingredients and allergens for products so that I can make informed decisions about their suitability for my dietary needs and preferences. | ![screenshot](documentation/ingredients-and-allergens.png) |
+| As a site admin I can add new products directly from the website so that I can efficiently manage the product catalog without accessing the admin panel. | ![screenshot](documentation/add-product-management-form.png) |
+|As a site admin I can edit products directly from the website so that I can efficiently update product details without accessing the admin panel. | ![screenshot](documentation/edit-product-form-page.png) |
+|As a site admin I can delete products directly from the website so that I can efficiently remove products from the catalog without accessing the admin panel. | ![screenshot](documentation/delete-modal.png) ![screenshot](documentation/succes-delete-info.png) |
+|As a new user, I can receive an email confirmation after registering so that I can verify my email address and activate my account. | ![screenshot](documentation/email-registration-user.png) |
+|As a shopper, I can receive an email with the order summary after making a purchase so that I can review the details of my order and have a record for future reference. | ![screenshot](documentation/order-confirmation-email.png) |
+|As a shopper I can rate products that I have purchased or viewed so that I can share my opinion on the product's quality and help others make informed decisions. | ![screenshot](documentation/rating-section.png) ![screenshot](documentation/rating-box.png) ![screenshot](documentation/rating-successfull.png)|
+
+
+Below are the user stories that I plan to implement in the future:
+
+| User Story | Screenshot |
+| --- | --- |
+| As a shopper, I can see if a product is out of stock on the product listing page so that informed purchasing decisions and avoid clicking on unavailable items. | N/A |
+| As a site user I can easily select the size and quantity of a product with different prices for each size so that I can ensure I am ordering the correct amount and dimensions of the item at the appropriate price. | N/A |
+| As a shopper I can easily identify offers and discounts, so that I can save money on my purchases. | N/A |
+
