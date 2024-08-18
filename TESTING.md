@@ -141,3 +141,79 @@ I used the Lighthouse Audit tool to assess my deployed project for any significa
 | Checkout Success | Desktop | ![screenshot](/documentation/lighthouse-checkout-success-desktop.png) | **Score: 71** - Moderate performance; improvements recommended. |
 | Checkout Success | Mobile | ![screenshot](/documentation/lighthouse-checkout-success-mobile.png) | **Score: 63** - Moderate performance; mobile optimizations needed. |
 
+
+## Manual testing
+
+| Page | User Action | Expected Result | Pass/Fail | Comments |
+| --- | --- | --- | --- | --- |
+| **Homepage** | | | | |
+| | Click on Shop Now button | Takes the user to the All Products page | Pass | n/a |
+| | Click on the Logo | Refreshes the page | Pass | n/a |
+| | Click on one category | Takes the user to that category | Pass | That certain category sidebar is ticked on the products page |
+| **Search Bar** | | | | |
+| | Insert a word and press Enter/press search icon | Displays the results for user | Pass | In the case that the products contain that word or part of the word |
+| | No word inserted | User gets an error | Pass | The error shows: enter a search criteria |
+| | Insert word that is not in any product | User gets zero results | Pass | User gets the message "0 products found" |
+| **Footer** | | | | |
+| | Click on the About Us link | User is taken to About Us page | Pass | n/a |
+| | Click on the Get in Touch link | User is taken to a contact form | Pass | n/a |
+| | Click on the Privacy Policy link | User is taken to the Privacy Policy page | Pass | n/a |
+| | Click on the Returns Policy link | User is taken to the Returns Policy page | Pass | n/a |
+| | Insert email and click on Subscribe button | User is taken to the success subscription page | Pass | User is seeing the success message for subscription |
+| | Click on any of the social media icons | User is taken to that social media profile | Pass | n/a |
+| **Products** | | | | |
+| | Click on any of the categories on the side | Page displays products from that category | Pass | n/a |
+| | Untick the category they are on | The page displays all the products | Pass | n/a |
+| | Click on a product image | User is taken to that product detail page | Pass | n/a |
+| | Click on the Add to Basket button | One unit of that product is added to the basket | Pass | User gets a notification that the product has been added to the basket |
+| | Admin user clicks on the Edit button | Admin user is taken to Edit form page | Pass | n/a |
+| | Admin user clicks on the Delete button | User gets a pop-up modal | Pass | User can delete the product or cancel |
+| | User clicks on the Heart button | Product is added to the wishlist | Pass | User gets a success message |
+| | User clicks on the Heart button on the same product | User gets a message that the product is already in the wishlist | Pass | n/a |
+| **Product Detail** | | | | |
+| | Click on Rate This Product link | A box with fillable hearts opens | Pass | n/a |
+| | Fill the hearts and click on Submit | User gets a success message | Pass | User cannot rate the same product twice |
+| | Insert numbers in the quantity input and click on Add to Basket | The number of products selected are added to the basket | Pass | User gets a notification |
+| | Use the plus/minus to adjust quantity for the product and click on Add to Basket | The number of the item selected is added to the basket | Pass | n/a |
+| | Click on the Heart button | Product is added to the wishlist | Pass | User gets a success message |
+| | Admin user clicks on the Edit button | Admin user is taken to Edit form page | Pass | n/a |
+| | Admin user clicks on the Delete button | User gets a pop-up modal | Pass | User can delete the product or cancel |
+| | Click on the Description tab | Product description is displayed | Pass | n/a |
+| | Click on the Ingredients tab | Product ingredients are displayed | Pass | n/a |
+| | Click on the Nutrition Facts tab | Product nutrition facts are displayed | Pass | n/a |
+| | Click on the Interesting Facts tab | Product interesting facts are displayed | Pass | n/a |
+| | Click on the View button on the related product | User is taken to that product detail page | Pass | n/a |
+| | Click on the Keep Shopping button | User is taken back to the Products page | Pass | n/a |
+| **Product Management** | | | | |
+| | Admin user clicks on the Edit button on product | Admin user is taken to Edit Product page | Pass | n/a |
+| | Admin user clicks on the Delete button on product | User gets a pop-up modal | Pass | User can delete the product or cancel |
+| | User clicks on the Delete button on modal | Product is deleted | Pass | User is taken to the products page and receives a success notification |
+| | User clicks on the Heart button on product | Product is added to the wishlist | Pass | User gets a success message |
+| **Basket** | | | | |
+| | User adds a product to the basket and clicks on the Checkout button | User is taken to the Basket page | Pass | User gets a success message |
+| | User clicks on the product name in the basket | User is taken to that product detail page | Pass | n/a |
+| | User changes the quantity and clicks on Update | The quantity of the product and the order summary is updated | Pass | User is shown a success message |
+| | User clicks on the Bin icon | Product gets deleted from the basket and the order summary updates accordingly | Pass | User is shown a success message |
+| | User clicks on the Keep Shopping button | User is taken back to the Products page | Pass | n/a |
+| | User clicks on the Secure Checkout button | User is taken to the Checkout page | Pass | n/a |
+| **Checkout** | | | | |
+| | User clicks on the product name in the basket | User is taken to that product detail page | Pass | n/a |
+| | User fills in all the required fields and clicks Complete Order | User is taken to the Checkout Success page | Pass | User is shown their order summary again and receives a confirmation email |
+| | User clicks on the Adjust Basket button | User is taken back to the Basket page | Pass | User can modify the products in the basket |
+| **Checkout Success** | | | | |
+| | User clicks on Continue Shopping button | User is taken to the Products page | Pass | n/a |
+| **Sign In** | | | | |
+| | User inserts credentials and clicks Sign In | User is taken to the homepage or to the page they were on before signing in | Pass | n/a |
+| **Sign Out** | | | | |
+| | User clicks on Sign Out button | User is taken to the homepage | Pass | n/a |
+| **Sign Up** | | | | |
+| | User fills their credentials and clicks Sign Up button | User is shown a message to verify their email | Pass | n/a |
+| | User clicks on the link sent to their email | User is taken to the Confirm button | Pass | n/a |
+| | User clicks on the Confirm button | User is taken to the Sign In page | Pass | User needs to insert their credentials |
+| **Account** | | | | |
+| | User clicks on the My Account tab under Account | User is taken to their account details | Pass | User is displayed the account info tab |
+| | User clicks on the Update Information button in Account Dashboard | User is displayed a form | Pass | User can cancel the update |
+| | User fills the form and clicks Save Changes | Information box is updated | Pass | n/a |
+| | User clicks on the Order Number link in My Orders tab | User is taken to that order summary | Pass | User can go back to their profile |
+| | User clicks on the Add to Basket button in My Wishlist tab | Product is added to the basket | Pass | User gets a success or info message |
+| | User clicks on the Remove button in My Wishlist tab | Product is removed from the wishlist | Pass | User is shown a success message |
