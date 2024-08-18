@@ -5,6 +5,24 @@ Return back to the [README.md](README.md) file.
 Throughout the development of this project, I carried out extensive testing to verify that every aspect of the website operates as intended. This section provides comprehensive documentation of all the tests conducted, detailing the procedures, outcomes, and any issues identified and resolved. Each test was designed to rigorously assess the functionality, performance, and user experience of the site, ensuring that it meets the highest standards of quality and reliability.
 
 
+
+# Table of Contents
+
+- [Testing](#testing)
+  - [Code Validation](#code-validation)
+    - [HTML](#html)
+    - [CSS Validation](#css-validation)
+    - [JavaScript Validation](#javascript-validation)
+    - [Python Validation](#python-validation)
+  - [Browser Compatibility](#browser-compatibility)
+  - [Responsiveness](#responsiveness)
+  - [Lighthouse Audit](#lighthouse-audit)
+  - [Manual Testing](#manual-testing)
+  - [User Story Testing](#user-story-testing)
+  - [Testing Summary](#testing-summary)
+
+
+
 ## Code Validation
 
 I thoroughly tested all of my code using the recommended programming tools for each specific language.
@@ -253,4 +271,30 @@ Below are the user stories that I plan to implement in the future:
 | As a shopper, I can see if a product is out of stock on the product listing page so that informed purchasing decisions and avoid clicking on unavailable items. | N/A |
 | As a site user I can easily select the size and quantity of a product with different prices for each size so that I can ensure I am ordering the correct amount and dimensions of the item at the appropriate price. | N/A |
 | As a shopper I can easily identify offers and discounts, so that I can save money on my purchases. | N/A |
+
+
+
+## Testing Summary
+
+Comprehensive testing was conducted across various aspects of the site to ensure a seamless user experience, robust functionality, and adherence to best practices. The testing included:
+
+1. **Responsiveness Testing**: The site was tested for responsiveness across different devices, including mobile, tablet, and desktop. The tests confirmed that the site adapts well to different screen sizes, ensuring a consistent user experience across all devices.
+
+2. **HTML Validation**: The site's HTML code was validated using the W3C HTML Validator. The validation ensured that the markup adheres to web standards, contributing to better accessibility and SEO performance.
+
+3. **CSS Validation**: CSS code was validated using the W3C CSS Validator. The validation process confirmed that the stylesheets are free of errors and follow best practices, leading to consistent presentation across browsers.
+
+4. **JavaScript Code Review**: The JavaScript code was reviewed for functionality and efficiency. The review focused on ensuring that scripts are optimized for performance, properly handle errors, and do not negatively impact the user experience.
+
+5. **Python Code Review**: The Python backend code was thoroughly reviewed for efficiency, security, and adherence to best practices. This review included checking for proper use of data structures, error handling, and security measures like input validation and protection against common vulnerabilities.
+
+6. **Performance Testing**: Performance scores were evaluated for various pages on both desktop and mobile platforms. The results highlight areas where optimizations could improve user experience.
+
+7. **Manual Testing**: All key user actions were validated across different pages, including navigation, product interactions, basket operations, and checkout processes. Each interaction was verified to meet expected outcomes, ensuring the site functions as intended.
+
+8. **Admin Functionality Testing**: Administrative features were tested, including product management tasks such as creating, updating, and deleting products. This ensured that site administrators can effectively manage content.
+
+9. **User Story Testing**: Specific user stories were tested to confirm that the site meets user needs, such as viewing and filtering products, managing accounts, adding items to the basket, and completing purchases. The responsiveness of the site was also tested across mobile, tablet, and desktop platforms.
+
+Overall, the site was tested thoroughly to ensure both end-users and administrators can interact with the platform effectively and efficiently. The results indicate that the site is performing well with minor areas for improvement identified, ensuring a high-quality, responsive, and reliable user experience.
 
