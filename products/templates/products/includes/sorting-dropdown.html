@@ -19,10 +19,10 @@
     </div>
     <div class="col-md-6 mb-2">
         <p class="text-muted mt-3 text-center text-md-right">
-            {% if search_term or current_categories or current_sorting != 'None_None' %}
+            {% if query or current_categories or current_sorting != 'None_None' %}
                 <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
             {% endif %}
-            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+            {{ products|length }} Products{% if query %} found for <strong>"{{ query }}"</strong>{% endif %}
         </p>
     </div>
 </div>
