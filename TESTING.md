@@ -82,5 +82,62 @@ I have used [Black](https://black.readthedocs.io/en/stable/) to format all my Py
 | Checkout models.py            | ![screenshot](documentation/checkout-models-py.png)              | Pass: No Errors |
 | Checkout webhook_handler.py  | ![screenshot](documentation/checkout-webhook-handler.png)              | 115: E501 line too long (107 > 79 characters), 152: E501 line too long (81 > 79 characters), 166: E501 line too long (93 > 79 characters), 177: E501 line too long (119 > 79 characters) |
 
+## Browser Compatibility
 
+I have tested my deployed project across multiple browsers to ensure compatibility.
+
+| Browser | Screenshot | Notes |
+| --- | --- | --- |
+| Chrome | ![screenshot](documentation/chrome.png) | Functions as expected |
+| Firefox | ![screenshot](documentation/firefox.png) | Functions as expected |
+| Edge | ![screenshot](documentation/edge.png) | Functions as expected |
+
+
+## Responsiveness
+
+I have tested my deployed project on various devices to ensure it is fully responsive.
+
+| Device | Screenshot | Notes |
+| --- | --- | --- |
+| Mobile (Responsively App) | ![screenshot](documentation/home-iphone-12-pro.jpeg) ![screenshot](documentation/products-iphone-12-pro.jpeg) ![screenshot](documentation/product-detail-iphone-12-pro.jpeg) | Functions as expected |
+| Tablet (Responsively App) | ![screenshot](documentation/home-ipad.jpeg) ![screenshot](documentation/products-ipad.jpeg) ![screenshot](documentation/product-detail-ipad.jpeg) | Functions as expected |
+| Laptop (Responsively App)| ![screenshot](documentation/home-macbook-pro.jpeg) ![screenshot](documentation/products-macbook-pro.jpeg) | Functions as expected |
+| Desktop (DevTools)| ![screenshot](documentation/products-desktop.png) ![screenshot](documentation/product-detail-desktop.png) | Functions as expected |
+
+## Lighthouse Audit
+
+I used the Lighthouse Audit tool to assess my deployed project for any significant issues.
+
+| Page | Size | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | Desktop | ![screenshot](/documentation/lighthouse-homepage-desktop.png) | **Score: 71** - Moderate performance; improvements recommended. |
+| Home | Mobile | ![screenshot](/documentation/lighthouse-homepage-mobile.png) | **Score: 59** - Moderate performance; mobile optimizations needed. |
+| Products | Desktop | ![screenshot](/documentation/lighthouse-products-desktop.png) | **Score: 63** - Moderate performance; optimizations possible. |
+| Products | Mobile | ![screenshot](/documentation/lighthouse-products-mobile.png) | **Score: 61** - Moderate performance; mobile optimizations needed. |
+| Product detail | Desktop | ![screenshot](/documentation/lighthouse-product-detail-desktop.png) | **Score: 82** - Near optimal performance; minor improvements possible. |
+| Product detail | Mobile | ![screenshot](/documentation/lighthouse-product-detail-mobile.png) | **Score: 63** - Moderate performance; mobile optimizations needed. |
+| Wishlist | Desktop | ![screenshot](/documentation/lighthouse-wishlist-desktop.png) | **Score: 63** - Moderate performance; optimizations possible. |
+| Wishlist | Mobile | ![screenshot](/documentation/lighthouse-wishlist-mobile.png) | **Score: 58** - Moderate performance; mobile optimizations needed. |
+| Add Product | Desktop | ![screenshot](/documentation/lighthouse-add-product-desktop.png) | **Score: 78** - Moderate to good performance; minor optimizations recommended. |
+| Add Product | Mobile | ![screenshot](/documentation/lighthouse-add-product-mobile.png) | **Score: 62** - Moderate performance; mobile optimizations needed. |
+| Edit Product | Desktop | ![screenshot](/documentation/lighthouse-edit-product-desktop.png) | **Score: 75** - Moderate performance; optimizations recommended. |
+| Edit Product | Mobile | ![screenshot](/documentation/lighthouse-edit-product-mobile.png) | **Score: 61** - Moderate performance; mobile optimizations needed. |
+| Profile | Desktop | ![screenshot](/documentation/lighthouse-profile-desktop.png) | **Score: 55** - Moderate performance; significant improvements needed. |
+| Profile | Mobile | ![screenshot](/documentation/lighthouse-profile-mobile.png) | **Score: 55** - Moderate performance; significant improvements needed. |
+| Basket | Desktop | ![screenshot](/documentation/lighthouse-basket-desktop.png) | **Score: 80** - Good performance; minor optimizations possible. |
+| Basket | Mobile | ![screenshot](/documentation/lighthouse-basket-mobile.png) | **Score: 59** - Moderate performance; mobile optimizations needed. |
+| Delivery Terms | Desktop | ![screenshot](/documentation/lighthouse-delivery-terms-desktop.png) | **Score: 83** - Near optimal performance; minor improvements possible. |
+| Delivery Terms | Mobile | ![screenshot](/documentation/lighthouse-delivery-terms-mobile.png) | **Score: 64** - Moderate performance; mobile optimizations needed. |
+| Privacy Policy | Desktop | ![screenshot](/documentation/lighthouse-privacy-policy-desktop.png) | **Score: 85** - Near optimal performance; minor improvements possible. |
+| Privacy Policy | Mobile | ![screenshot](/documentation/lighthouse-privacy-policy-mobile.png) | **Score: 64** - Moderate performance; mobile optimizations needed. |
+| Log Out | Desktop | ![screenshot](/documentation/lighthouse-log-out-desktop.png) | **Score: 78** - Moderate to good performance; minor optimizations recommended. |
+| Log Out | Mobile | ![screenshot](/documentation/lighthouse-log-out-mobile.png) | **Score: 67** - Moderate performance; some improvements needed. |
+| Sign Up | Desktop | ![screenshot](/documentation/lighthouse-sign-up-desktop.png) | **Score: 79** - Moderate to good performance; minor optimizations recommended. |
+| Sign Up | Mobile | ![screenshot](/documentation/lighthouse-sign-up-mobile.png) | **Score: 68** - Moderate performance; some improvements needed. |
+| Log In | Desktop | ![screenshot](/documentation/lighthouse-log-in-desktop.png) | **Score: 85** - Near optimal performance; minor improvements possible. |
+| Log In | Mobile | ![screenshot](/documentation/lighthouse-log-in-mobile.png) | **Score: 68** - Moderate performance; some improvements needed. |
+| Checkout | Desktop | ![screenshot](/documentation/lighthouse-checkout-desktop.png) | **Score: 64** - Moderate performance; optimizations recommended. |
+| Checkout | Mobile | ![screenshot](/documentation/lighthouse-checkout-mobile.png) | **Score: 57** - Moderate performance; mobile optimizations needed. |
+| Checkout Success | Desktop | ![screenshot](/documentation/lighthouse-checkout-success-desktop.png) | **Score: 71** - Moderate performance; improvements recommended. |
+| Checkout Success | Mobile | ![screenshot](/documentation/lighthouse-checkout-success-mobile.png) | **Score: 63** - Moderate performance; mobile optimizations needed. |
 
