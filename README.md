@@ -1149,7 +1149,6 @@ Here are some of the bugs I encountered along with the solutions I implemented.
 
 - When adding a new product on the product management page, the form wouldn’t allow me to save more than one nutrition fact, related product, or fast fact. I resolved this issue by modifying the view.
 
-- When editing a product, the remove button wasn’t functioning correctly for deleting any of the nutrition facts, related products, or fast facts because the view also required a delete button. The remove button was only intended to remove a field when adding a new product. To fix this and avoid confusion for the admin user, I hid the delete button in the add product form and hid the remove button in the edit form.
 
 - A particularly significant bug I encountered occurred when I forgot to add my `env` file to the `.gitignore` file, resulting in all my secret keys being exposed in the repository. With the assistance of the tutors, I was able to resolve this issue using a tool called `git filter-repo`, which successfully removed the sensitive data from my commit history.
 
