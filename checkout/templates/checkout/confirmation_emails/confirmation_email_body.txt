@@ -16,9 +16,9 @@ Order Summary:
 - {{ item.product.name }} (Quantity: {{ item.quantity }}) - £{{ item.lineitem_total }}
 {% endfor %}
 
-Subtotal: £{{ order.order_total }}
-Shipping: £{{ order.shipping_cost }}
-Grand Total: £{{ order.grand_total }}
+Subtotal: £{{ order.order_total|floatformat:2 }}
+Shipping: £{{ order.shipping_cost|floatformat:2 }}
+Grand Total: £{{ order.grand_total|floatformat:2 }}
 
 You can view your order status and history by logging into your account on our website.
 
